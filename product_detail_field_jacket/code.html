@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recycled Tech Field Jacket | The Living Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Public+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#c3cba3",
+              "surface-dim": "#d9dad7",
+              "surface-container-lowest": "#ffffff",
+              "error": "#ba1a1a",
+              "on-secondary-fixed-variant": "#384b42",
+              "secondary-container": "#cfe5d9",
+              "on-error-container": "#93000a",
+              "surface-tint": "#3f6653",
+              "tertiary-fixed": "#dfe7bd",
+              "inverse-primary": "#a5d0b9",
+              "secondary-fixed-dim": "#b6cbc0",
+              "on-surface": "#1a1c1a",
+              "surface-container-high": "#e7e9e5",
+              "on-tertiary-fixed": "#181e05",
+              "secondary": "#4f6359",
+              "on-secondary-fixed": "#0d1f18",
+              "primary": "#012d1d",
+              "on-primary-container": "#86af99",
+              "outline-variant": "#c1c8c2",
+              "surface-container-low": "#f3f4f0",
+              "on-tertiary-fixed-variant": "#434a2b",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#274e3d",
+              "on-primary-fixed": "#002114",
+              "background": "#f9faf6",
+              "primary-container": "#1b4332",
+              "on-surface-variant": "#414844",
+              "on-error": "#ffffff",
+              "error-container": "#ffdad6",
+              "outline": "#717973",
+              "on-secondary-container": "#54675e",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#f0f1ed",
+              "secondary-fixed": "#d2e7dc",
+              "primary-fixed-dim": "#a5d0b9",
+              "surface-bright": "#f9faf6",
+              "on-secondary": "#ffffff",
+              "on-background": "#1a1c1a",
+              "inverse-surface": "#2e312f",
+              "tertiary-container": "#383f22",
+              "surface-variant": "#e2e3df",
+              "primary-fixed": "#c1ecd4",
+              "on-tertiary-container": "#a2aa85",
+              "surface-container": "#edeeea",
+              "tertiary": "#22290e",
+              "surface": "#f9faf6",
+              "surface-container-highest": "#e2e3df"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-margin {
+            margin-left: 8.333333%;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9faf6] dark:bg-[#1a1c1a] opacity-85 glass-nav">
+<div class="flex justify-between items-center px-8 h-20 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-headline italic text-[#012d1d] dark:text-[#f9faf6]">The Living Archive</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#717973] dark:text-[#c1c8c2] hover:text-[#1B4332] font-label text-[0.75rem] tracking-[0.05rem] transition-opacity duration-300" href="#">ARCHIVE</a>
+<a class="text-[#1B4332] dark:text-[#cfe5d9] font-bold border-b-2 border-[#1B4332] dark:border-[#cfe5d9] pb-1 font-label text-[0.75rem] tracking-[0.05rem]" href="#">REPORTS</a>
+<a class="text-[#717973] dark:text-[#c1c8c2] hover:text-[#1B4332] font-label text-[0.75rem] tracking-[0.05rem] transition-opacity duration-300" href="#">MERCH</a>
+<a class="text-[#717973] dark:text-[#c1c8c2] hover:text-[#1B4332] font-label text-[0.75rem] tracking-[0.05rem] transition-opacity duration-300" href="#">ABOUT</a>
+</nav>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-surface-container-low px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-outline text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm font-body ml-2 w-32" placeholder="Search archive..." type="text"/>
+</div>
+<button class="hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined text-primary" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</header>
+<!-- SideNavBar (Contextual: Collections) -->
+<aside class="hidden lg:flex flex-col pt-24 fixed left-0 h-screen w-64 border-r border-[#c1c8c2]/20 bg-[#f3f4f0] dark:bg-[#232623] z-40">
+<div class="px-6 mb-10">
+<h2 class="font-headline text-xl text-[#012d1d] dark:text-[#f9faf6]">Collections</h2>
+<p class="font-label text-[0.65rem] tracking-wider text-outline uppercase mt-1">Sustainable Materials</p>
+</div>
+<nav class="flex flex-col">
+<a class="text-[#717973] dark:text-[#c1c8c2] px-6 py-4 flex items-center gap-3 hover:bg-[#e7e9e5] dark:hover:bg-[#2d302d] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+<span class="font-label text-sm tracking-wide">Organic Cotton</span>
+</a>
+<a class="text-[#1B4332] dark:text-[#f9faf6] font-semibold bg-[#e7e9e5] dark:bg-[#2d302d] rounded-r-full px-6 py-4 flex items-center gap-3 translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="recycling">recycling</span>
+<span class="font-label text-sm tracking-wide">Recycled Tech</span>
+</a>
+<a class="text-[#717973] dark:text-[#c1c8c2] px-6 py-4 flex items-center gap-3 hover:bg-[#e7e9e5] dark:hover:bg-[#2d302d] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="brush">brush</span>
+<span class="font-label text-sm tracking-wide">Artisanal</span>
+</a>
+<a class="text-[#717973] dark:text-[#c1c8c2] px-6 py-4 flex items-center gap-3 hover:bg-[#e7e9e5] dark:hover:bg-[#2d302d] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-label text-sm tracking-wide">Limited Editions</span>
+</a>
+</nav>
+</aside>
+<main class="lg:pl-64 pt-20">
+<!-- Hero Section: Product Layout -->
+<section class="max-w-screen-2xl mx-auto px-8 py-12 md:py-20 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Gallery Grid -->
+<div class="lg:col-span-7 grid grid-cols-12 gap-4">
+<div class="col-span-12">
+<img alt="Recycled Tech Field Jacket" class="w-full h-[716px] object-cover rounded-md shadow-sm" data-alt="Main shot of olive green technical field jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ5Y4lfft5gWz8g95zySyQAX8TTB4HafN_R3_XTu84cScUnVVomGvT5LnZZ9gHBHazV-3A14LOgKRziENJMMAJZ5qBU8z2ktQLNbb4keFzAcirWmTLxaW-82aWBmdJTFXEUoCuAP0mJRdgUEnhQpZgHMHL6vU32WLFXHoYPCc2KSa2W355TnaCN-dtVO6DPxeHeJbrh7kurxXPMaP3lRS4Wio74I0xGH3SPqDQn5kK-Q5yxLDz1fHfhhizC4xFLIMw4M0LwJ4o0DYi"/>
+</div>
+<div class="col-span-4">
+<img alt="Fabric Detail" class="w-full h-48 object-cover rounded-md" data-alt="Close up of recycled synthetic fabric texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4jsixXpxMBvIjSACLBRdnjDR44SCwt1RZw53q4J0BWxWq9MRH1jeBf4laDf83ovPYjyw5K5COlGz9RwQ5B4j449Axa9rbTQ-7KgLMwhb-eoKwpNADw30wgF7GhKr6hKB3jgI_11eExTtssaO1Fxb4HYrNQY87EyYd_4x-ExiE4X-7u_2Db1KD4oWiab91t_DN2z690dErLbYN4-OpkmcOigIe8vb5TlKw3lfmnq74TiMMrSSTruvlAfHOcTSTzmYaJaGHTT1b0QS7"/>
+</div>
+<div class="col-span-4">
+<img alt="Pocket Detail" class="w-full h-48 object-cover rounded-md" data-alt="Detailed view of reinforced cargo pocket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1U_XksLovnmnEyvF6PFjQdDHZA3ERjQbzpr80s1wqvvreLWMY9qhEKpSZ2aODUpebVFtFhNJqVixdLhV0mhKu_CPyBHOvo8k9s7kgCuLRaoEUHXnyLwp8nw1axigHJipAhpxANoEJODSfsuNhuQP3dGYElgAfxzNSJhrI7X6Or8anQG2JFvfS_erf_7jkGHgcajbjw--zFBLQ47xfGoDYaQLb9Ndp9ICXTSHC3-yKVWZbOpaHqay6EQsdYIO5SQMCgolZtcr-70s9"/>
+</div>
+<div class="col-span-4">
+<img alt="Field Use" class="w-full h-48 object-cover rounded-md" data-alt="Person wearing jacket in misty forest environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNhTYh784qO0n9WaRH04qMd_TPsxeG2Qv-xvu6cEKytSBry-f_DUzzuiNeoisBAvAPP6bXJpHQtVDrwQYbRCqgDIYK0vGLvW3-JA00YQNalJb7jCxUm81S21NhdrnstmrnBTzFyM-HEmatw0TAI4ycQlHwr8iYNS2ujYeeWl4zXlk9Zpgxlhju6OfR1N2118QKKcFHOiyvjo6Aii-1T_YYm8WnrR7WcA_YDRJsjqNW2dRg3fLTiyEJg33EGpP8KxCPqyOLLDfqFV5N"/>
+</div>
+</div>
+<!-- Product Purchase Actions -->
+<div class="lg:col-span-5 flex flex-col justify-start">
+<nav class="flex gap-2 mb-6">
+<span class="font-label text-[0.65rem] tracking-widest text-outline uppercase">Collections</span>
+<span class="font-label text-[0.65rem] tracking-widest text-outline uppercase">/</span>
+<span class="font-label text-[0.65rem] tracking-widest text-primary uppercase">Recycled Tech</span>
+</nav>
+<h1 class="font-headline text-5xl md:text-6xl text-primary leading-tight mb-4">Recycled Tech Field Jacket</h1>
+<p class="font-headline italic text-2xl text-on-surface-variant mb-8">$425.00</p>
+<div class="space-y-8 mb-12">
+<p class="font-body text-on-surface-variant leading-relaxed text-lg">
+                        A permanent staple for the environmental observer. Engineered from 100% post-consumer ocean plastics and treated with a PFC-free water repellent finish. Designed for a lifetime of utility.
+                    </p>
+<div class="space-y-4">
+<label class="font-label text-xs tracking-widest uppercase text-outline">Select Size</label>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-2 border border-outline-variant hover:border-primary rounded-full font-label text-sm transition-colors">XS</button>
+<button class="px-6 py-2 border border-outline-variant hover:border-primary rounded-full font-label text-sm transition-colors">S</button>
+<button class="px-6 py-2 bg-primary-container text-on-primary rounded-full font-label text-sm border border-primary-container">M</button>
+<button class="px-6 py-2 border border-outline-variant hover:border-primary rounded-full font-label text-sm transition-colors">L</button>
+<button class="px-6 py-2 border border-outline-variant hover:border-primary rounded-full font-label text-sm transition-colors">XL</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<button class="w-full py-5 bg-gradient-to-br from-primary to-primary-container text-white rounded-full font-label tracking-widest uppercase text-sm shadow-xl active:scale-95 transition-all">
+                        Add to Bag
+                    </button>
+<button class="w-full py-5 bg-surface-container-high text-on-surface rounded-full font-label tracking-widest uppercase text-sm hover:opacity-80 transition-opacity">
+                        Sustainability Report (PDF)
+                    </button>
+</div>
+<div class="mt-12 flex items-center gap-4 p-4 bg-secondary-container/30 rounded-lg">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">package_2</span>
+<div>
+<p class="font-label text-xs font-bold text-on-secondary-container">Carbon Neutral Delivery</p>
+<p class="font-body text-xs text-on-secondary-container/80">Every shipment is offset via our reforestation archive.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact & Materials: The Deep Dive -->
+<section class="bg-surface-container-low py-24 mt-12">
+<div class="max-w-screen-xl mx-auto px-8">
+<div class="mb-16 editorial-margin">
+<h2 class="font-headline text-4xl text-primary mb-4">Impact &amp; Materials</h2>
+<p class="font-body text-outline max-w-xl">We believe transparency is the foundation of modern craft. Every thread tells a story of reclamation.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Data Pull-out 1 -->
+<div class="bg-surface p-10 rounded-xl shadow-sm border-b-4 border-secondary flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">water_drop</span>
+<h3 class="font-headline text-2xl mb-4">Water Saved</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">By using recycled polymers instead of virgin polyester, we saved 2,400 liters of water during production.</p>
+</div>
+<div class="mt-8">
+<span class="font-headline text-5xl text-primary">2.4k</span>
+<span class="font-label text-xs tracking-tighter uppercase ml-1">Liters</span>
+</div>
+</div>
+<!-- Data Pull-out 2 -->
+<div class="bg-tertiary-container p-10 rounded-xl shadow-sm text-on-tertiary-container flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-on-tertiary-container text-4xl mb-6">co2</span>
+<h3 class="font-headline text-2xl mb-4 text-white">Carbon Footprint</h3>
+<p class="font-body text-on-tertiary-container text-sm leading-relaxed">Calculated from raw material extraction to final assembly. 40% lower than industry average.</p>
+</div>
+<div class="mt-8">
+<span class="font-headline text-5xl text-white">12.4</span>
+<span class="font-label text-xs tracking-tighter uppercase ml-1">kg CO2e</span>
+</div>
+</div>
+<!-- Data Pull-out 3 -->
+<div class="bg-surface p-10 rounded-xl shadow-sm border-b-4 border-primary flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">history_edu</span>
+<h3 class="font-headline text-2xl mb-4">Material Origin</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">Source: North Sea Ghost Nets. Processed in our closed-loop facility in Eindhoven.</p>
+</div>
+<div class="mt-8">
+<span class="font-headline text-5xl text-primary">100%</span>
+<span class="font-label text-xs tracking-tighter uppercase ml-1">Reclaimed</span>
+</div>
+</div>
+</div>
+<!-- Lifecycle Section -->
+<div class="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<img alt="Process" class="w-full aspect-video object-cover rounded-md" data-alt="Abstract view of recycled fibers being woven" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBmDJbs8uDTltuvlTCZsNEq315SBb09vDKdfEPZ6VZBjGnM8iywWFS4_MnUx0cF1UgHhatriAP5twHPOt8XBWNtHOTtJ3X54aJR84LXywPsRukfd6RGsJnjGZaKgxg0EUsqd5_wqw-EfV01rFLP0ZB4V64SJQZDUFjFJa-rekrqjLtRufzKn_gxMcTyHYIRGizlOcgxOTtmuo8fZhuNdr2Fr-AhsBXfSphL0ICSkgwp6IJxwdRrBC_A4xWui3d0khifx7_7hUeAfzh"/>
+</div>
+<div class="space-y-6">
+<h4 class="font-headline text-3xl text-primary">Engineered for Longevity</h4>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                            The Field Jacket isn't just made from waste; it's designed never to become it. We use reinforced double-stitch seams and modular hardware that can be easily replaced. Through our 'Archive Repair Program', we offer free stitching repairs for the lifetime of the garment.
+                        </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm font-label">
+<span class="material-symbols-outlined text-secondary text-lg" data-weight="fill">check_circle</span>
+                                PFAS-Free DWR Coating
+                            </li>
+<li class="flex items-center gap-3 text-sm font-label">
+<span class="material-symbols-outlined text-secondary text-lg" data-weight="fill">check_circle</span>
+                                Recycled Brass Hardware
+                            </li>
+<li class="flex items-center gap-3 text-sm font-label">
+<span class="material-symbols-outlined text-secondary text-lg" data-weight="fill">check_circle</span>
+                                Tencel Internal Linings
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews: Field Performance -->
+<section class="max-w-screen-xl mx-auto px-8 py-24">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label text-[0.65rem] tracking-[0.2rem] text-outline uppercase mb-2 block">Voices from the field</span>
+<h2 class="font-headline text-4xl text-primary">Field Performance</h2>
+</div>
+<button class="text-primary font-label text-sm underline underline-offset-8 decoration-outline-variant hover:decoration-primary transition-all">Write a Review</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Review 1 -->
+<div class="border-l border-outline-variant/30 pl-8 pb-8">
+<div class="flex gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h5 class="font-headline text-xl mb-3">Resilient in the Highlands</h5>
+<p class="font-body text-on-surface-variant italic mb-6 leading-relaxed">
+                        "Took this jacket through three weeks of rainy fieldwork in the Scottish Highlands. The breathability is unmatched for a recycled tech shell. The pockets are perfectly placed for quick access to lenses and maps."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center font-headline text-secondary">A</div>
+<div>
+<p class="font-label text-xs font-bold text-primary">Alistair M.</p>
+<p class="font-label text-[0.65rem] text-outline uppercase tracking-wider">Verified Explorer</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="border-l border-outline-variant/30 pl-8 pb-8">
+<div class="flex gap-1 text-primary mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<h5 class="font-headline text-xl mb-3">The Last Jacket I'll Buy</h5>
+<p class="font-body text-on-surface-variant italic mb-6 leading-relaxed">
+                        "The texture is surprisingly soft, not crinkly like most tech jackets. You can feel the quality in the weight. It's clearly built to last a generation, which justifies the premium price point."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-headline text-secondary">E</div>
+<div>
+<p class="font-label text-xs font-bold text-primary">Elena G.</p>
+<p class="font-label text-[0.65rem] text-outline uppercase tracking-wider">Field Researcher</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 flex flex-col md:flex-row justify-between items-start gap-8 mt-20 bg-[#f3f4f0] dark:bg-[#1a1c1a] border-t border-[#c1c8c2]/20">
+<div class="space-y-4 max-w-xs">
+<div class="font-headline italic text-lg text-[#1B4332] dark:text-[#cfe5d9]">The Living Archive</div>
+<p class="font-body text-sm text-[#717973]">Dedicated to the documentation and preservation of our environment through sustainable craft.</p>
+<p class="font-label text-[0.7rem] uppercase tracking-widest text-outline">© 2024 The Living Archive. Ethically Sourced.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+<div class="space-y-4">
+<h6 class="font-label text-xs font-bold uppercase tracking-widest text-[#1B4332]">About</h6>
+<ul class="space-y-2">
+<li><a class="font-body text-sm text-[#717973] hover:text-[#012d1d] transition-colors" href="#">Sourcing Transparency</a></li>
+<li><a class="font-body text-sm text-[#717973] hover:text-[#012d1d] transition-colors" href="#">Carbon Report</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h6 class="font-label text-xs font-bold uppercase tracking-widest text-[#1B4332]">Support</h6>
+<ul class="space-y-2">
+<li><a class="font-body text-sm text-[#717973] hover:text-[#012d1d] transition-colors" href="#">Shipping Policy</a></li>
+<li><a class="font-body text-sm text-[#717973] hover:text-[#012d1d] transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+</footer>
+<!-- FAB (Contextual for Product Page: Size Guide) -->
+<button class="fixed bottom-8 right-8 p-4 bg-primary text-white rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-transform flex items-center gap-2">
+<span class="material-symbols-outlined">straighten</span>
+<span class="font-label text-xs tracking-widest uppercase pr-2">Size Guide</span>
+</button>
+</body></html>

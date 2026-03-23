@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#e2e3df",
+              "on-tertiary-container": "#a2aa85",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#c3cba3",
+              "on-primary": "#ffffff",
+              "secondary": "#4f6359",
+              "outline-variant": "#c1c8c2",
+              "on-primary-fixed": "#002114",
+              "on-secondary-container": "#54675e",
+              "on-surface-variant": "#414844",
+              "on-secondary-fixed": "#0d1f18",
+              "background": "#f9faf6",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#274e3d",
+              "secondary-fixed": "#d2e7dc",
+              "on-primary-container": "#86af99",
+              "primary-fixed": "#c1ecd4",
+              "inverse-surface": "#2e312f",
+              "inverse-primary": "#a5d0b9",
+              "outline": "#717973",
+              "tertiary-fixed": "#dfe7bd",
+              "on-surface": "#1a1c1a",
+              "on-background": "#1a1c1a",
+              "on-secondary-fixed-variant": "#384b42",
+              "surface-variant": "#e2e3df",
+              "surface-bright": "#f9faf6",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#434a2b",
+              "surface-tint": "#3f6653",
+              "secondary-fixed-dim": "#b6cbc0",
+              "surface-container-high": "#e7e9e5",
+              "surface-container-low": "#f3f4f0",
+              "primary": "#012d1d",
+              "tertiary-container": "#383f22",
+              "error": "#ba1a1a",
+              "surface-dim": "#d9dad7",
+              "primary-container": "#1b4332",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#edeeea",
+              "on-tertiary": "#ffffff",
+              "secondary-container": "#cfe5d9",
+              "tertiary": "#22290e",
+              "primary-fixed-dim": "#a5d0b9",
+              "on-tertiary-fixed": "#181e05",
+              "surface": "#f9faf6",
+              "on-error-container": "#93000a",
+              "inverse-on-surface": "#f0f1ed"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f9faf6;
+        color: #1a1c1a;
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 backdrop-blur-md flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#1B4332] active:scale-95 duration-100 transition-opacity hover:opacity-80">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-lg font-serif italic text-[#1B4332] tracking-tight">The Living Archive</h1>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center overflow-hidden">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="User profile avatar portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw_AtlBuaDYDjQCFL8VmVxOt0Y2Mwk0q7jv8564jMQqBdNX8ZK2oO0ZerZv97q3V-7H213OTL8sJQ5FXjAcy3nfKYdepYymnd_u5WdKZrXFKqg_GxddR4N4nvifZNY8STZRykZbYIM04xt2KiEgHhgYs7MMnUFyHfOL8YgtUS4dpqUo0DEK8wvQYysbhLQ8SVRBkp72ucRTOTYnHlAkljaxidAuNfIgrZvWS1Mzm5C63H-IJKKCfulxtpFPJGlho6Hopj43DT4undd"/>
+</div>
+</header>
+<main class="pt-16 pb-24">
+<!-- Hero Section - Vertical Layout -->
+<section class="px-6 py-8">
+<div class="flex flex-col gap-6">
+<div class="relative w-full aspect-[3/4] rounded-md overflow-hidden bg-surface-container">
+<img alt="Ancient Forest" class="w-full h-full object-cover" data-alt="Deep lush green ancient forest sunlight beams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP6axiU3fJDm_3N6sFaQxBLV-9BFtwZJAqClTuUMGavHrPi_LafiPu50B5qZZfvzYBIlPQ2xJNNCWMKLnjdc--M4LRRL0oRenb-iEZHj7_fvEngYwDEheeLFDiSChtsqBLXNcChLWXl7yucdR-c1X_kpTUTP-izAaSi6yHgVRyPpREYOGqfQW0M9GMP5s3ESgJDaCykx-iAmGYL0I-LI3j8JJvb6dRX6YK08lrgvSBHcsuxl4p9oWl_4Px-Mcy8WJBRddIj3uh86uk"/>
+<div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-primary/80 to-transparent">
+<span class="inline-block px-3 py-1 bg-secondary-container text-primary text-[10px] font-label font-bold tracking-widest uppercase rounded-full mb-3">Feature Report</span>
+<h2 class="text-3xl font-headline font-bold text-white leading-tight mb-2">The Silent Guardians: Old-Growth Forests in Peril</h2>
+</div>
+</div>
+<div class="space-y-4">
+<p class="text-on-surface-variant font-body leading-relaxed text-lg">
+                        As climate patterns shift, the world's ancient woodlands face unprecedented threats. A deep dive into the resilient ecosystems holding our carbon balance.
+                    </p>
+<div class="flex items-center gap-4 text-xs font-label text-outline uppercase tracking-wider">
+<span>By Elena Vance</span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span>12 Min Read</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Horizontal Scroll -->
+<section class="py-4 overflow-hidden">
+<div class="flex gap-4 overflow-x-auto px-6 hide-scrollbar">
+<button class="flex-shrink-0 px-4 py-2 rounded-full bg-primary-container text-on-primary-container text-xs font-label font-bold tracking-wide">All Topics</button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant text-xs font-label font-bold tracking-wide">Climate Change</button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant text-xs font-label font-bold tracking-wide">Conservation</button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant text-xs font-label font-bold tracking-wide">Energy Transition</button>
+<button class="flex-shrink-0 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant text-xs font-label font-bold tracking-wide">Policy</button>
+</div>
+</section>
+<!-- The Latest News Feed - Stacked -->
+<section class="px-6 py-8 bg-surface-container-low">
+<h3 class="text-xl font-headline font-bold text-primary mb-8 border-l-4 border-primary pl-4">The Latest</h3>
+<div class="flex flex-col gap-10">
+<!-- Article Card 1 -->
+<article class="group active:opacity-70 transition-opacity">
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-video rounded-md overflow-hidden bg-surface-container-highest">
+<img alt="Wind Turbines" class="w-full h-full object-cover" data-alt="Wind turbines on a rolling green hill sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2LI1NwYju1e-MiYpN2LvVNDeKqBWngIOZM0GnAiZd9Sfarin-awgaEv2RQWQfCIXhND3HX8ImVAnNIDbuQMqEGsvFgIPBOwt0q3bcg6W_E701AidDBWFjPmeTuWBwBnV7xMzAxLpfUkU3S8BeWDtX1iBYQQZpt3NZLZZXDrnj0ymbz0Se7GLh1C4aA2pHv71-FnJV3cpyXKYIk6LAznpOaIVTgGqfb0Fj_4_D4rXXk8qlBJaxJYnpapYfCvYsredFIEgnPh2cMFAZ"/>
+</div>
+<div class="space-y-2">
+<span class="text-[10px] font-label font-bold tracking-widest text-on-tertiary-container uppercase">Energy</span>
+<h4 class="text-xl font-headline font-semibold text-on-surface group-hover:text-primary transition-colors">Offshore Wind Projects See Record Funding in Q3</h4>
+<p class="text-sm text-on-surface-variant line-clamp-2">Global investment in marine renewables hits new heights as coastal nations pivot away from fossil fuels.</p>
+</div>
+</div>
+</article>
+<!-- Article Card 2 -->
+<article class="group active:opacity-70 transition-opacity">
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-video rounded-md overflow-hidden bg-surface-container-highest">
+<img alt="Coral Reef" class="w-full h-full object-cover" data-alt="Vibrant underwater coral reef with tropical fish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjpl-QTZgi1lscBFQ1JCJc9m-t5YNCFCAShCfvNRG-gVo-jWl2d38TUP1pB7_BIZ8os7MVfklRVEPhH88rAUw48vr9E5EVQdfef1950ylPFzi_0INqBwsVCEtabd3d23DeKSuFqGUlNu5c6vC2V2tQ7asy0xVlseFOyLcZXuOYdC_UyOzYErI2NeGlCW80da29Z2MBfqvvaolTAarSMh8ZX4fLw8abFC1E2lcjS4OORFS8UmpwHJ1N1VhEBWPy_t4BbiceiqNhOLp4"/>
+</div>
+<div class="space-y-2">
+<span class="text-[10px] font-label font-bold tracking-widest text-on-tertiary-container uppercase">Biodiversity</span>
+<h4 class="text-xl font-headline font-semibold text-on-surface group-hover:text-primary transition-colors">Hope for the Great Barrier Reef: New Spawning Success</h4>
+<p class="text-sm text-on-surface-variant line-clamp-2">Marine biologists report the most significant coral spawning event in a decade, signaling resilience.</p>
+</div>
+</div>
+</article>
+<!-- Article Card 3 -->
+<article class="group active:opacity-70 transition-opacity">
+<div class="flex flex-col gap-4">
+<div class="w-full aspect-video rounded-md overflow-hidden bg-surface-container-highest">
+<img alt="Solar Farm" class="w-full h-full object-cover" data-alt="Vast field of solar panels reflecting sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8D0cdYbi5GA54Qh_1RcKdKuEKj8KUytJadx4SxLfiuT2Bea8dya0EpknXzF4TJDGrom0BcYZSzADaCy6BFvUkMQcYmn-XYaeHI7VGgEgIRbuGKH_F5gkGo3vUZ5fTRpix7YVfYSJdAE-DoHXznr7Q57owXOruSwVknOTX8R9MMaFi13CiIYtifZP2utGwgWWvSbxfW4ZdZTA9U9QhmpeWSoiAoyIj_WcqrspxOOisi2Q5u7eql5Y7IL5xeqOgmvSSrPwR5n2a3JVJ"/>
+</div>
+<div class="space-y-2">
+<span class="text-[10px] font-label font-bold tracking-widest text-on-tertiary-container uppercase">Policy</span>
+<h4 class="text-xl font-headline font-semibold text-on-surface group-hover:text-primary transition-colors">New Global Treaty Proposed for Plastic Waste Reduction</h4>
+<p class="text-sm text-on-surface-variant line-clamp-2">Nations convene in Nairobi to draft a legally binding agreement to end plastic pollution by 2040.</p>
+</div>
+</div>
+</article>
+</div>
+<button class="w-full mt-10 py-4 bg-primary text-white font-label font-bold text-sm tracking-widest uppercase rounded-full shadow-lg">Load More Stories</button>
+</section>
+<!-- Editorial Spotlight - Asymmetric Layout -->
+<section class="px-6 py-12 bg-background">
+<div class="bg-surface-container-high rounded-xl p-8 relative overflow-hidden">
+<div class="relative z-10 max-w-xs">
+<span class="material-symbols-outlined text-primary mb-4" style="font-size: 48px;">history_edu</span>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4 italic">From the Archive</h3>
+<p class="text-on-surface-variant italic mb-6">"The earth does not belong to us; we belong to the earth." — An exploration of 19th-century conservation philosophy.</p>
+<a class="text-primary font-label font-bold text-xs uppercase tracking-widest border-b-2 border-primary pb-1" href="#">Read the Essay</a>
+</div>
+<div class="absolute -right-16 -bottom-16 opacity-10">
+<span class="material-symbols-outlined" style="font-size: 240px;">eco</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f3f4f0] dark:bg-[#1a1c1a] border-t border-[#c1c8c2]/20 flex flex-col items-center space-y-8 py-16 px-8 w-full">
+<div class="flex flex-col items-center gap-6">
+<h2 class="text-xl font-serif italic text-primary">The Living Archive</h2>
+<nav class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+<a class="text-[#717973] font-sans text-xs tracking-tight hover:text-[#1B4332] transition-colors" href="#">Sustainability Report</a>
+<a class="text-[#717973] font-sans text-xs tracking-tight hover:text-[#1B4332] transition-colors" href="#">Masthead</a>
+<a class="text-[#717973] font-sans text-xs tracking-tight hover:text-[#1B4332] transition-colors" href="#">Terms</a>
+<a class="text-[#717973] font-sans text-xs tracking-tight hover:text-[#1B4332] transition-colors" href="#">Contact</a>
+</nav>
+</div>
+<p class="text-[#717973] font-sans text-xs tracking-tight text-center">© 2024 The Living Archive. All rights reserved.</p>
+</footer>
+<!-- BottomNavBar (Mobile Primary Shell) -->
+<nav class="fixed bottom-0 left-0 right-0 h-16 bg-surface/95 backdrop-blur-md flex items-center justify-around z-50 px-4 md:hidden">
+<button class="flex flex-col items-center gap-1 text-[#1B4332]">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-label font-bold">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#717973]">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+<span class="text-[10px] font-label font-bold">Climate</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#717973]">
+<span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+<span class="text-[10px] font-label font-bold">Energy</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#717973]">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+<span class="text-[10px] font-label font-bold">Archives</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#717973]">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="text-[10px] font-label font-bold">Explore</span>
+</button>
+</nav>
+</body></html>

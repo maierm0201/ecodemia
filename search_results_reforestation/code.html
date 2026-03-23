@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Public+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#e2e3df",
+              "on-secondary-fixed-variant": "#384b42",
+              "on-tertiary-fixed-variant": "#434a2b",
+              "tertiary-fixed-dim": "#c3cba3",
+              "on-primary": "#ffffff",
+              "outline-variant": "#c1c8c2",
+              "tertiary-fixed": "#dfe7bd",
+              "on-primary-fixed": "#002114",
+              "on-error-container": "#93000a",
+              "on-background": "#1a1c1a",
+              "on-primary-fixed-variant": "#274e3d",
+              "surface-dim": "#d9dad7",
+              "on-secondary-fixed": "#0d1f18",
+              "on-primary-container": "#86af99",
+              "on-tertiary": "#ffffff",
+              "primary-fixed": "#c1ecd4",
+              "secondary-fixed": "#d2e7dc",
+              "secondary-container": "#cfe5d9",
+              "surface-tint": "#3f6653",
+              "inverse-primary": "#a5d0b9",
+              "background": "#f9faf6",
+              "outline": "#717973",
+              "tertiary": "#22290e",
+              "on-tertiary-container": "#a2aa85",
+              "on-secondary": "#ffffff",
+              "primary-container": "#1b4332",
+              "surface-container-low": "#f3f4f0",
+              "surface-container-high": "#e7e9e5",
+              "on-tertiary-fixed": "#181e05",
+              "on-surface-variant": "#414844",
+              "error-container": "#ffdad6",
+              "surface-container": "#edeeea",
+              "primary-fixed-dim": "#a5d0b9",
+              "secondary-fixed-dim": "#b6cbc0",
+              "surface": "#f9faf6",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#f9faf6",
+              "primary": "#012d1d",
+              "on-surface": "#1a1c1a",
+              "surface-variant": "#e2e3df",
+              "error": "#ba1a1a",
+              "tertiary-container": "#383f22",
+              "secondary": "#4f6359",
+              "inverse-on-surface": "#f0f1ed",
+              "inverse-surface": "#2e312f",
+              "on-secondary-container": "#54675e",
+              "on-error": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Inter"],
+              "label": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .leaning-margin {
+            margin-left: 8.333333%;
+        }
+        .atmospheric-shadow {
+            box-shadow: 0px 20px 40px rgba(26, 28, 26, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 backdrop-blur-xl transition-colors">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold font-headline text-[#012d1d] tracking-tight">The Living Archive</div>
+<div class="hidden md:flex space-x-8 font-headline tracking-tight">
+<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="#">The Archive</a>
+<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="#">Biodiversity</a>
+<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="#">Climate</a>
+<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="#">Policy</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label uppercase tracking-[0.05rem] text-[12px] font-bold atmospheric-shadow">
+                    Support Us
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-28 pb-20 px-8 max-w-screen-2xl mx-auto">
+<!-- Search Header -->
+<header class="mb-16">
+<div class="max-w-3xl">
+<div class="relative mb-6">
+<input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline/40 focus:border-primary focus:ring-0 text-3xl font-headline italic py-2 outline-none transition-all" placeholder="Search the archive..." type="text" value="reforestation"/>
+<span class="absolute right-0 bottom-2 text-primary font-label uppercase text-[12px] tracking-widest">Searching</span>
+</div>
+<p class="font-label uppercase tracking-[0.05rem] text-[12px] text-on-surface-variant">
+                    12 results for <span class="text-primary font-bold">"reforestation"</span>
+</p>
+</div>
+</header>
+<div class="flex flex-col lg:flex-row gap-16">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-64 shrink-0 space-y-10">
+<div class="bg-surface-container-low p-6 rounded-lg">
+<h3 class="font-headline text-lg mb-6 border-b border-outline-variant/20 pb-2">Filter by Topic</h3>
+<div class="space-y-3">
+<label class="flex items-center group cursor-pointer">
+<input checked="" class="rounded-sm border-outline/40 text-primary focus:ring-primary/20 bg-transparent mr-3" type="checkbox"/>
+<span class="font-label uppercase tracking-tight text-[11px] group-hover:text-primary transition-colors">Climate</span>
+</label>
+<label class="flex items-center group cursor-pointer">
+<input class="rounded-sm border-outline/40 text-primary focus:ring-primary/20 bg-transparent mr-3" type="checkbox"/>
+<span class="font-label uppercase tracking-tight text-[11px] group-hover:text-primary transition-colors">Wildlife</span>
+</label>
+<label class="flex items-center group cursor-pointer">
+<input class="rounded-sm border-outline/40 text-primary focus:ring-primary/20 bg-transparent mr-3" type="checkbox"/>
+<span class="font-label uppercase tracking-tight text-[11px] group-hover:text-primary transition-colors">Energy</span>
+</label>
+<label class="flex items-center group cursor-pointer">
+<input class="rounded-sm border-outline/40 text-primary focus:ring-primary/20 bg-transparent mr-3" type="checkbox"/>
+<span class="font-label uppercase tracking-tight text-[11px] group-hover:text-primary transition-colors">Policy</span>
+</label>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg">
+<h3 class="font-headline text-lg mb-6 border-b border-outline-variant/20 pb-2">Temporal Range</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center font-label text-[10px] uppercase opacity-60">
+<span>2010</span>
+<span>Present</span>
+</div>
+<input class="w-full h-1 bg-outline-variant/40 rounded-lg appearance-none cursor-pointer accent-primary" type="range"/>
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full text-left font-label text-[11px] uppercase tracking-wider py-2 border-b border-outline-variant/20 hover:text-primary transition-colors">Past 12 Months</button>
+<button class="w-full text-left font-label text-[11px] uppercase tracking-wider py-2 border-b border-outline-variant/20 hover:text-primary transition-colors">The 2020 Decade</button>
+</div>
+</div>
+</div>
+</aside>
+<!-- Search Results Content -->
+<section class="flex-grow space-y-16">
+<!-- Result 1: Featured Result -->
+<article class="group">
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="w-full md:w-2/5 aspect-[4/3] bg-surface-container overflow-hidden rounded-md atmospheric-shadow">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Dense young forest growing in sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAglQ7qUX5Fe_xjssdPTXR3RX-UM576AcWCdtQe74ushew0_YhpEA5JEwwgUMIwk9GhejPsgK9-z7bCrSKkEF-wBOMnUiRRrmfO-GvIo7Y1OPE9_wYgpUgIcot_So1bIBrn4XNdX0AHvFZZf62tZC8jqEdn0ixSkeWAE6uFzu4aCMrNgeZKVuWQL1AVzw9NcUetQLM8VOtKGVpZnpgxHJ0f7r1pavM_dfBkESBGOkWktqVMHZsEXqHlj9rfcClMgk0XrY4KZb4BTnWX"/>
+</div>
+<div class="w-full md:w-3/5 leaning-margin">
+<div class="flex items-center space-x-4 mb-4">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label text-[10px] uppercase tracking-widest font-bold">Climate Strategy</span>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Nov 14, 2024</span>
+</div>
+<h2 class="font-headline text-4xl mb-4 leading-tight group-hover:text-primary-container transition-colors">The Amazon Renaissance: Strategic Reforestation as Carbon Infrastructure</h2>
+<p class="text-on-surface-variant font-body leading-relaxed mb-6 max-w-xl">New satellite data suggests that human-led replanting efforts in the southern basin are outpacing natural degradation for the first time in a decade...</p>
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-[10px] font-bold uppercase overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Author portrait of a man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp0vn-HH-oyhJ04UoP3GgQwYAoR4JlP8Lmt51Rab_G1oCtK--n-5jZwNqwjngP0IuW-GwBpUGRqtK4YfqzpSRD3x0FPVQ64Rox_zSAwRafdlDhVLLOd3ha_UyF6jbN1aI8cPVwLq0fkcQ1Jx2rWPyPluIJ1Mlp3Zw7YUWg2V8F4GGBoPt4zSQWVM0kji6cxPRrOS0utVN8e7ybyBHZrxPzRkNZAolRfMEHw3fDROojk8dIhsBDJeZjIe9hbbv3doa7bvyHHAJTu90z"/>
+</div>
+<span class="font-label text-[11px] uppercase tracking-wider font-semibold">Dr. Elias Vance</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Result 2: Editorial List Item -->
+<article class="group border-t border-outline-variant/20 pt-16">
+<div class="flex flex-col md:flex-row-reverse gap-8 items-start">
+<div class="w-full md:w-1/3 aspect-video bg-surface-container overflow-hidden rounded-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Vast green landscape with scattered trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_zznpNPXymjCxePbSqKFob0lcDUjCWTfacvmIb0v8vBzXIypAwzGJKJ85gAAYmI-w3wi7NYKCFxW_yhl7bmi-P9BuE_T8scr6hqiNMSZyzE8mQbepUPtVLMWXGHZQaHyCJEyPdaBqZeZ5WhU2o9H-bJsRY4MxFh1moo19ifGGthtHYZtlOcpLxsu-s6Fwcz9DCfZEm4RZ8hgf8jaMMhsGp2rTu_U8jbmOAEqGgbE7D8SNNglIENw3QoIXyYfK-8NxNXDgcD-Q0KUS"/>
+</div>
+<div class="w-full md:w-2/3">
+<div class="flex items-center space-x-4 mb-3">
+<span class="text-on-secondary-fixed-variant font-label text-[10px] uppercase tracking-widest font-bold">Policy Analysis</span>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Oct 28, 2024</span>
+</div>
+<h2 class="font-headline text-2xl mb-3 leading-snug group-hover:text-primary transition-colors">Legislating the Canopy: Why Seedling Subsidies Fail without Maintenance Clauses</h2>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-4 max-w-lg">An investigation into the 5-year survival rates of state-funded reforestation projects reveals a critical gap in local monitoring capacity.</p>
+<span class="font-label text-[11px] uppercase tracking-wider font-semibold">Sarah J. Miller</span>
+</div>
+</div>
+</article>
+<!-- Result 3: Editorial List Item -->
+<article class="group border-t border-outline-variant/20 pt-16">
+<div class="flex flex-col md:flex-row-reverse gap-8 items-start">
+<div class="w-full md:w-1/3 aspect-video bg-surface-container overflow-hidden rounded-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Person planting a small tree seedling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5ZoxgdcxfX5fHdeXKdz_vA2G-kILgud5wjEGYvwxoapctqD3Pu15ETeQboAx1xgJL7fCa523B2C2SKvFAEcsjZaI85-onRLxEgfMHyAFjX1mby20kcIDOVsl72_8bGCcJ8i9CrVg83fcy7JIW1SH0O4GGkkDEF0FCCRihslZMh5xBjS2NWZF2wTseuMeQwmkdU33s4wsJ1YV3tuYKducwdGfZD5ygsTLqFI9hdWhrfIMPxm537Z0edgGkaUg2Hull6L6mk9aCJEJU"/>
+</div>
+<div class="w-full md:w-2/3">
+<div class="flex items-center space-x-4 mb-3">
+<span class="text-on-secondary-fixed-variant font-label text-[10px] uppercase tracking-widest font-bold">Biodiversity</span>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Sept 12, 2024</span>
+</div>
+<h2 class="font-headline text-2xl mb-3 leading-snug group-hover:text-primary transition-colors">Indigenous Mycology: The Hidden Role of Fungi in Reforestation Success</h2>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-4 max-w-lg">New research from the Pacific Northwest demonstrates how fungal networks accelerate forest recovery by 40% in post-burn sites.</p>
+<span class="font-label text-[11px] uppercase tracking-wider font-semibold">Marcus Thorne</span>
+</div>
+</div>
+</article>
+<!-- Data Pull-out (Specialized Component) -->
+<div class="bg-tertiary-container p-12 rounded-lg text-on-tertiary-container atmospheric-shadow relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-tertiary-fixed/10 rounded-full blur-3xl"></div>
+<div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="max-w-md">
+<h4 class="font-label uppercase text-[12px] tracking-widest mb-4 opacity-80">Reforestation Impact Metric</h4>
+<p class="font-headline text-3xl italic leading-tight">Every hectare of native forest restored provides habitat for up to 400 unique species.</p>
+</div>
+<div class="text-center">
+<span class="block font-headline text-7xl font-bold text-tertiary-fixed">1.2B</span>
+<span class="font-label uppercase text-[10px] tracking-widest opacity-80">Trees Tracked in 2024</span>
+</div>
+</div>
+</div>
+<!-- Load More -->
+<div class="flex justify-center pt-8">
+<button class="font-label uppercase text-[12px] tracking-[0.2em] border-b-2 border-primary pb-1 hover:opacity-60 transition-opacity">
+                        View More Archives
+                    </button>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1b4332] text-[#cfe5d9] w-full mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-[#f9faf6] font-headline text-2xl mb-2">The Living Archive</div>
+<p class="font-body text-[12px] opacity-70 normal-case max-w-xs leading-relaxed">Dedicated to the permanent record of our changing planet. All data is verified by independent research panels.</p>
+</div>
+<div class="flex flex-col items-center md:items-end space-y-4">
+<div class="flex space-x-8 font-label uppercase tracking-[0.05rem] text-[12px]">
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Ethics Policy</a>
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Editorial Team</a>
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Contact</a>
+</div>
+<div class="text-[10px] opacity-50 uppercase tracking-[0.1rem]">
+                    © 2024 The Living Archive.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>

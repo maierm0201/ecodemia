@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Public+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#e2e3df",
+              "on-tertiary-container": "#a2aa85",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#c3cba3",
+              "on-primary": "#ffffff",
+              "secondary": "#4f6359",
+              "outline-variant": "#c1c8c2",
+              "on-primary-fixed": "#002114",
+              "on-secondary-container": "#54675e",
+              "on-surface-variant": "#414844",
+              "on-secondary-fixed": "#0d1f18",
+              "background": "#f9faf6",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#274e3d",
+              "secondary-fixed": "#d2e7dc",
+              "on-primary-container": "#86af99",
+              "primary-fixed": "#c1ecd4",
+              "inverse-surface": "#2e312f",
+              "inverse-primary": "#a5d0b9",
+              "outline": "#717973",
+              "tertiary-fixed": "#dfe7bd",
+              "on-surface": "#1a1c1a",
+              "on-background": "#1a1c1a",
+              "on-secondary-fixed-variant": "#384b42",
+              "surface-variant": "#e2e3df",
+              "surface-bright": "#f9faf6",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#434a2b",
+              "surface-tint": "#3f6653",
+              "secondary-fixed-dim": "#b6cbc0",
+              "surface-container-high": "#e7e9e5",
+              "surface-container-low": "#f3f4f0",
+              "primary": "#012d1d",
+              "tertiary-container": "#383f22",
+              "error": "#ba1a1a",
+              "surface-dim": "#d9dad7",
+              "primary-container": "#1b4332",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#edeeea",
+              "on-tertiary": "#ffffff",
+              "secondary-container": "#cfe5d9",
+              "tertiary": "#22290e",
+              "primary-fixed-dim": "#a5d0b9",
+              "on-tertiary-fixed": "#181e05",
+              "surface": "#f9faf6",
+              "on-error-container": "#93000a",
+              "inverse-on-surface": "#f0f1ed"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Inter"],
+              "label": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .leaning-margin {
+            margin-left: 8.333333%;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 dark:bg-[#1a1c1a]/85 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-8">
+<a class="font-['Newsreader'] font-bold text-2xl text-[#1a1c1a] dark:text-[#f9faf6]" href="#">The Living Archive</a>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="#">Climate</a>
+<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="#">Wildlife</a>
+<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="#">Energy</a>
+<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="#">Policy</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface p-2">search</button>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label text-sm uppercase tracking-wider font-semibold shadow-sm hover:opacity-90 transition-opacity">Subscribe</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="pt-24 pb-12">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col gap-6 mb-12">
+<span class="font-label text-xs font-bold tracking-[0.2em] text-on-primary-fixed-variant uppercase">Policy &amp; Governance</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-on-surface leading-[1.1] max-w-5xl">
+                    The Silent Breath of the Taiga: Tracking Carbon Sequestration in Northern Forests
+                </h1>
+<div class="flex items-center gap-4 pt-4">
+<img class="w-12 h-12 rounded-full object-cover grayscale" data-alt="Close up portrait of an environmental journalist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6pyPMX1sBYFEtSjat55QDxWffn3xcCJKhvgCiG9nVmZ4iNbIm_YQRA-LgaxOEfmG6XK1lC9vcNtV_Tc-5lJrnV-2tk6aG-DbA_pmI7MYyzDldLytsFQkcVYNqHZRkF-YTvYr1zMWcsjbGIZkRbHcy8Iv4637DqEVJMTKFFltKiobIPa5X-_ueKi6sHJM9ACNq6K6BBtUUeg-Us9QCpbEUqksx9fxsSfIL6gFwvbAPGWIeDgIkZOw-oJ39iWq3ZH3-EuFc4MkRJNOr"/>
+<div class="flex flex-col">
+<span class="font-body font-semibold text-on-surface">Elena Vance</span>
+<span class="font-label text-xs text-outline tracking-wide uppercase">October 24, 2024 • 12 Min Read</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full h-[716px] relative">
+<img class="w-full h-full object-cover" data-alt="Atmospheric wide shot of misty evergreen forest morning" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByFAjTF_xMaC1DoQrIqB41N3-BDgwu3RpEU_nnqosZmjZXzn1hiZJrLR0MnX733Ff65qUTxmsTdZLw8xRUW17vd751d4eaPUX7cF2yQjTWNY_8bd3XL-yekVukkCczdrFcULegENzsuu3GJwGhcDYvC7AM3TqVi-taQ9XV860Tf_5hCCThWhZuS1nJiYe5k5tWmmab8NBT-0j-ry4ql9ErUaQl5lxH4_bfxeAP3-M-63AtbNiEAzVD-6WmR52xXTKYudBX4DVKdjDC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent"></div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="max-w-screen-2xl mx-auto px-8 pb-20">
+<div class="grid grid-cols-12 gap-8">
+<!-- Article Body -->
+<article class="col-span-12 lg:col-span-8 leaning-margin">
+<div class="font-body text-lg leading-relaxed text-on-surface space-y-8">
+<p class="first-letter:text-7xl first-letter:font-headline first-letter:float-left first-letter:mr-4 first-letter:font-bold first-letter:text-primary">
+                        In the vast, frost-touched expanses of the northern hemisphere, the Boreal forests stand as a quiet sentry against the warming of the globe. Known as the Taiga, this ecosystem spans continents, bridging Russia, Canada, and Scandinavia in a green belt that breaths with a rhythm older than human history. Recent studies suggest that these forests are doing more than just existing; they are becoming the primary carbon sponges of the 21st century.
+                    </p>
+<h2 class="font-headline text-3xl font-bold pt-6">The Resilience of the Canopy</h2>
+<p>
+                        While much of the world's attention focuses on the rapid deforestation of the Amazon, the Taiga operates in a different temporal mode. Its sequestration capacity is deeply tied to its soil—a dense, peat-rich layer that holds carbon in a state of suspended animation. However, as permafrost thaws, this storage becomes a potential liability.
+                    </p>
+<!-- Pull Quote -->
+<blockquote class="my-16 border-l-4 border-primary pl-8 py-4">
+<p class="font-headline italic text-4xl text-primary leading-tight">
+                            "The forest is not merely a collection of trees, but a living archive of atmospheric history, storing the carbon of centuries within its moss-covered floor."
+                        </p>
+<cite class="block mt-4 font-label text-sm uppercase tracking-widest text-outline">— Dr. Aris Thorne, Forest Ecology Lead</cite>
+</blockquote>
+<p>
+                        Environmental researchers are now deploying advanced LiDAR technology to map the biomass density of these regions. This data is critical for policy makers who are negotiating the terms of international carbon credits. Understanding the exact tonnage of sequestered carbon allows for a more rigorous economic valuation of these "natural assets."
+                    </p>
+<!-- Mid-article Image -->
+<div class="py-8">
+<img class="w-full aspect-video object-cover rounded-lg shadow-sm" data-alt="Detailed texture shot of forest moss and lichen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChiYyJwY1Vujkb5Pt5cKCwsdQqrr3XJSbVboW4zZQdSxJIagd8U3JXojoVtoz7airTBUBauyNzo3T6SHeT7msRUI5yZQE7Aq4mImTt3m-riYmxkGs-XH6hgKu59hFw2BQXPoHvT9-A-x_eCsMd3m_QrzUtWpz-anUxhkSLekbIDXTTFwCDhRgXy5fa8ivGq8LuRb1MPws2V8PUoleVx2xLxvlnDynlOrI8xgozsRNa1ypNCFp-2DWYRV_yOs8eO967fbzTgqgxoQe1"/>
+<p class="mt-4 font-label text-xs text-outline italic text-center">Ground-level sequestration observation at the Yukon Research Station.</p>
+</div>
+<p>
+                        The challenge remains the volatility of the landscape. Wildfires, increased by rising global temperatures, threaten to turn these carbon sinks into carbon sources overnight. A single season of intense heat can release decades of stored CO2 back into the atmosphere, creating a feedback loop that researchers are scrambling to model with greater accuracy.
+                    </p>
+<!-- Data Pull-out Component -->
+<div class="bg-tertiary-container text-on-tertiary-container p-12 rounded-xl my-12 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h3 class="font-label text-xs font-bold uppercase tracking-widest mb-2 opacity-80">Annual Sequestration Rate</h3>
+<div class="font-headline text-7xl font-bold text-tertiary-fixed">1.5B</div>
+<p class="font-body text-sm mt-2 opacity-90">Metric tons of CO2 absorbed by northern forests annually.</p>
+</div>
+<div class="w-px h-24 bg-on-tertiary-container/20 hidden md:block"></div>
+<div class="flex-1">
+<h3 class="font-label text-xs font-bold uppercase tracking-widest mb-2 opacity-80">Critical Risk Area</h3>
+<div class="font-headline text-7xl font-bold text-tertiary-fixed">42%</div>
+<p class="font-body text-sm mt-2 opacity-90">Percentage of Boreal permafrost currently at risk of thawing by 2050.</p>
+</div>
+</div>
+</div>
+<!-- Tags -->
+<div class="flex flex-wrap gap-2 mt-16 pt-8 border-t border-outline-variant/20">
+<span class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label text-xs uppercase tracking-wide">Carbon Sequestration</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label text-xs uppercase tracking-wide">Boreal Ecology</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full font-label text-xs uppercase tracking-wide">Climate Policy</span>
+</div>
+</article>
+<!-- Sidebar / Metadata -->
+<aside class="col-span-12 lg:col-span-3 lg:col-start-10">
+<div class="sticky top-24 space-y-12">
+<div class="bg-surface-container-low p-8 rounded-lg">
+<h4 class="font-label text-xs font-bold uppercase tracking-widest mb-6 border-b border-outline-variant/30 pb-2">The Digest</h4>
+<div class="space-y-6">
+<div class="group cursor-pointer">
+<span class="font-label text-[10px] text-primary/60 font-bold uppercase">Topic: Energy</span>
+<h5 class="font-headline text-lg font-bold leading-tight group-hover:text-primary transition-colors">Offshore Wind: The Quiet Revolution in the North Sea</h5>
+</div>
+<div class="group cursor-pointer">
+<span class="font-label text-[10px] text-primary/60 font-bold uppercase">Topic: Wildlife</span>
+<h5 class="font-headline text-lg font-bold leading-tight group-hover:text-primary transition-colors">Tracking the Great Migration: How AI is Protecting Rhinos</h5>
+</div>
+</div>
+</div>
+<div class="p-4 border-l-2 border-surface-container-highest">
+<p class="font-body text-sm text-outline italic">
+                            Elena Vance is an award-winning journalist focusing on the intersection of ecology and economics. Her recent book, "The Frozen Ledger," explores the financial future of the Arctic.
+                        </p>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Related Stories -->
+<section class="bg-surface-container-low py-20">
+<div class="max-w-screen-2xl mx-auto px-8">
+<h2 class="font-headline text-4xl font-bold mb-12">Further Reading</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-md mb-6 aspect-[4/3]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Aerial view of winding river in a dense green valley" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGp3HaD2ryFFp2g8a1M2deJdc61xrkHvJV3NWmnnHbxHqUCKBeHj7hRiX0VBePB9bjshsxyRY_U79HVnl0q2HHvGGhfANaTiQ7KspD4IsTKoKbcynP2aOri-0KFUel4_4n45D1k5eIJDbYSfcXjl9sTx9RkvTXKRqlGjd5xTSLTj4m1K_pjZiNf0e-bfHNjAEEN_Olw5eKJSHEGyefO7GPf_wjLS6r-WYJa2LZ4WE3DQ8NEiy7wjH2UGj4QHcorScfRR3mt65w8tlu"/>
+</div>
+<span class="font-label text-[10px] font-bold text-primary tracking-widest uppercase mb-2 block">Ecosystems</span>
+<h3 class="font-headline text-2xl font-bold group-hover:underline decoration-1 underline-offset-4 decoration-outline-variant">The Amazon's Invisible Water Cycles</h3>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-md mb-6 aspect-[4/3]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Solar panels reflecting the orange sunset sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAaHXzaebuaqnd-9gPn2XKjj5eC6wBDYMuPzsdMXqPd-RCRnF3hlohtzAdoK6MzRI8JMv-GFsfU0ztkTZHmib1WjJU8cxbPvxRdHXLhELO7N-szcQCUU_49Pl689ZYxsKk2OngZDAO0PVcaTBj6yGg_2aovVsX5SUY3YBbmaAdDdXtmyO8Sgd2C99nSns2PROyegx0uswCZ3Kn1IzLGPv2_TT3_PZJiqtQ2adtQHSQN1O8VhujeZeVn6n5FRsISBWkImZi55Br1bVb"/>
+</div>
+<span class="font-label text-[10px] font-bold text-primary tracking-widest uppercase mb-2 block">Energy</span>
+<h3 class="font-headline text-2xl font-bold group-hover:underline decoration-1 underline-offset-4 decoration-outline-variant">Grid Modernization: Powering the Future City</h3>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-md mb-6 aspect-[4/3]">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Dramatic mountain range reflected in a calm glacial lake" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe8BNVLPkNafI-h8NtzsKi8D4Qtv5EsgKimIlYqboNFYWooQ-B2QHd18tO7uLUABnJ7-R8B8D6bahe__i85eCmmSSzEomA8ex93XVznTeNBY37IzIdQgPok9ECx5noSDnWCwHcAVlIeFGLFK2dK2nkGjDM3MydTn75_CSxd3-pdKWnEiu7_aVbJ9AWsobRJNcMdamm98KjsTKj-9CfEB9yOd8GuFqoJWGUNokHDFqdRpdpasGOFct7lqUh3rAgzKSgE_EaZO3eYr4o"/>
+</div>
+<span class="font-label text-[10px] font-bold text-primary tracking-widest uppercase mb-2 block">Policy</span>
+<h3 class="font-headline text-2xl font-bold group-hover:underline decoration-1 underline-offset-4 decoration-outline-variant">The Global Commons: Redefining Sovereignty</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter CTA -->
+<section class="py-24 max-w-screen-xl mx-auto px-8 text-center">
+<div class="bg-primary text-on-primary py-20 px-8 rounded-xl relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary-fixed to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-2xl mx-auto space-y-8">
+<h2 class="font-headline text-4xl md:text-5xl font-bold leading-tight">Join the movement of conscious reporting.</h2>
+<p class="font-body text-lg opacity-80">Weekly deep-dives into the environmental stories that matter, delivered with depth and clarity directly to your inbox.</p>
+<div class="flex flex-col md:flex-row gap-4 mt-8">
+<input class="flex-grow bg-white/10 border-b-2 border-white/30 focus:border-white focus:outline-none focus:ring-0 text-white placeholder:text-white/50 py-3 px-4 font-body" placeholder="Email Address" type="email"/>
+<button class="bg-surface-container-lowest text-primary px-8 py-3 rounded-full font-label text-sm font-bold uppercase tracking-widest hover:bg-secondary-container transition-colors">Join The Archive</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#f3f4f0] dark:bg-[#121412] w-full py-16 px-8 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-['Newsreader'] text-xl font-bold text-[#1a1c1a] dark:text-[#f9faf6] mb-6">The Living Archive</div>
+<p class="font-['Inter'] text-sm text-[#717973] leading-relaxed max-w-xs">A modern journal dedicated to documenting the changing state of our planet through rigorous journalism and evocative visual storytelling.</p>
+</div>
+<div>
+<h6 class="font-label text-xs font-bold uppercase tracking-widest text-[#1B4332] dark:text-[#cfe5d9] mb-6">Content</h6>
+<ul class="space-y-4">
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Climate &amp; Science</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Wildlife Conservation</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Sustainable Tech</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Global Policy</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-label text-xs font-bold uppercase tracking-widest text-[#1B4332] dark:text-[#cfe5d9] mb-6">Company</h6>
+<ul class="space-y-4">
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">About Us</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Editorial Board</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Contact Support</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Press Kit</a></li>
+</ul>
+</div>
+<div>
+<h6 class="font-label text-xs font-bold uppercase tracking-widest text-[#1B4332] dark:text-[#cfe5d9] mb-6">Social</h6>
+<div class="flex gap-4">
+<a class="text-[#717973] hover:text-[#1B4332] transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-[#717973] hover:text-[#1B4332] transition-colors" href="#"><span class="material-symbols-outlined">eco</span></a>
+<a class="text-[#717973] hover:text-[#1B4332] transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto mt-16 pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2]">© 2024 The Living Archive. All rights reserved.</span>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332]" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332]" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

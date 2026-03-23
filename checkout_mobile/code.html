@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout | The Living Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@400;500;600&amp;family=Public_Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#181e05",
+              "on-secondary-fixed-variant": "#384b42",
+              "tertiary-fixed": "#dfe7bd",
+              "secondary": "#4f6359",
+              "surface-tint": "#3f6653",
+              "secondary-fixed-dim": "#b6cbc0",
+              "surface-container-low": "#f3f4f0",
+              "inverse-on-surface": "#f0f1ed",
+              "on-surface-variant": "#414844",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed": "#0d1f18",
+              "primary-fixed": "#c1ecd4",
+              "on-tertiary": "#ffffff",
+              "inverse-primary": "#a5d0b9",
+              "on-error": "#ffffff",
+              "surface-container-high": "#e7e9e5",
+              "on-tertiary-fixed-variant": "#434a2b",
+              "surface-variant": "#e2e3df",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#002114",
+              "surface-dim": "#d9dad7",
+              "secondary-container": "#cfe5d9",
+              "on-background": "#1a1c1a",
+              "on-primary-fixed-variant": "#274e3d",
+              "outline-variant": "#c1c8c2",
+              "on-secondary": "#ffffff",
+              "on-surface": "#1a1c1a",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#d2e7dc",
+              "background": "#f9faf6",
+              "tertiary-fixed-dim": "#c3cba3",
+              "surface-container-highest": "#e2e3df",
+              "primary-container": "#1b4332",
+              "on-secondary-container": "#54675e",
+              "error": "#ba1a1a",
+              "inverse-surface": "#2e312f",
+              "surface": "#f9faf6",
+              "tertiary": "#22290e",
+              "surface-bright": "#f9faf6",
+              "on-tertiary-container": "#a2aa85",
+              "on-primary-container": "#86af99",
+              "primary": "#012d1d",
+              "on-primary": "#ffffff",
+              "surface-container": "#edeeea",
+              "outline": "#717973",
+              "tertiary-container": "#383f22",
+              "primary-fixed-dim": "#a5d0b9"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Inter"],
+              "label": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .step-active {
+            @apply text-primary font-bold;
+        }
+        .step-inactive {
+            @apply text-outline;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container">
+<!-- TopAppBar (Transactional - Modified for focus) -->
+<header class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 backdrop-blur-xl shadow-[0px_20px_40px_rgba(26,28,26,0.06)] flex justify-between items-center px-6 h-16">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer active:scale-95 duration-200" data-icon="arrow_back">arrow_back</span>
+</div>
+<h1 class="text-2xl font-headline italic font-medium tracking-tight text-[#1B4332]">The Living Archive</h1>
+<div class="w-6"></div> <!-- Spacer for balance -->
+</header>
+<main class="pt-24 pb-32 px-6 max-w-md mx-auto">
+<!-- Multi-step Indicator -->
+<nav class="flex justify-between items-center mb-10 px-2">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label text-[10px] uppercase tracking-wider font-bold text-primary">Shipping</span>
+</div>
+<div class="h-[1px] w-full mx-4 bg-outline-variant/30"></div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-6 h-6 rounded-full border-2 border-primary flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+</div>
+<span class="font-label text-[10px] uppercase tracking-wider font-bold text-primary">Payment</span>
+</div>
+<div class="h-[1px] w-full mx-4 bg-outline-variant/30"></div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant flex items-center justify-center">
+</div>
+<span class="font-label text-[10px] uppercase tracking-wider font-bold text-outline">Review</span>
+</div>
+</nav>
+<!-- Section Heading -->
+<div class="mb-8">
+<h2 class="font-headline text-3xl text-primary leading-tight">Payment Details</h2>
+<p class="text-on-surface-variant text-sm mt-2">Secure encrypted transaction via Archive Pay.</p>
+</div>
+<!-- Order Summary Card (Asymmetric Layout) -->
+<section class="bg-surface-container-low p-6 rounded-xl mb-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-label text-xs uppercase tracking-widest text-outline font-bold">Your Selection</h3>
+<span class="text-xs text-primary font-semibold underline underline-offset-4">Edit Cart</span>
+</div>
+<div class="flex gap-4 items-center">
+<div class="w-16 h-20 bg-surface-variant rounded-md overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Vintage botanical illustration book cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwbujQRuJdFNh8eRTDRfeswLt5PlHPQeHnYaWXOmZTOTOQA5WDnkxdz-4T0C1D-cEDB47jlpaNpmu4AarY9rSSYc-nBp4vDc9FxWqBdXX7S-wtB3tneQ5Umcb4VqdNoIlI8vioh6fcC44Wx-2sRjmfaKHY15InNZYfG6MTKvoFjGPIye1cIANW4tDcWQBiT9RqY6TVBShx58qwm2nuwI6XXIUOI9wipHl94jfkI3auQTLUYMd8YlPIaJal4FJ2ldfqjy-jtrKmVzzl"/>
+</div>
+<div>
+<p class="font-headline italic text-lg text-primary">The Flora of the Jura</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">Hardcover Edition • $84.00</p>
+</div>
+</div>
+</section>
+<!-- Payment Form -->
+<form class="space-y-8">
+<!-- Carbon Neutral Badge -->
+<div class="bg-secondary-container/50 border border-secondary-container p-4 rounded-xl flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-0.5" data-icon="eco">eco</span>
+<div>
+<h4 class="font-label text-xs font-bold uppercase tracking-wide text-primary">Carbon-Neutral Shipping</h4>
+<p class="text-xs text-on-secondary-fixed-variant leading-relaxed mt-1">We offset 100% of the carbon emitted during the delivery of your archive pieces through our reforestation partners in the Amazon Basin.</p>
+</div>
+</div>
+<!-- Card Info -->
+<div class="space-y-6">
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline font-bold block mb-1">Cardholder Name</label>
+<input class="w-full border-b border-outline/40 border-t-0 border-x-0 bg-transparent px-0 py-2 focus:ring-0 focus:border-primary placeholder:text-outline-variant transition-colors outline-none" placeholder="Julian Thorne" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline font-bold block mb-1">Card Number</label>
+<div class="flex items-center">
+<input class="w-full border-b border-outline/40 border-t-0 border-x-0 bg-transparent px-0 py-2 focus:ring-0 focus:border-primary placeholder:text-outline-variant transition-colors outline-none" placeholder="0000 0000 0000 0000" type="text"/>
+<span class="material-symbols-outlined text-outline-variant" data-icon="credit_card">credit_card</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline font-bold block mb-1">Expiry Date</label>
+<input class="w-full border-b border-outline/40 border-t-0 border-x-0 bg-transparent px-0 py-2 focus:ring-0 focus:border-primary placeholder:text-outline-variant transition-colors outline-none" placeholder="MM/YY" type="text"/>
+</div>
+<div class="relative">
+<label class="font-label text-[10px] uppercase tracking-widest text-outline font-bold block mb-1">CVC</label>
+<input class="w-full border-b border-outline/40 border-t-0 border-x-0 bg-transparent px-0 py-2 focus:ring-0 focus:border-primary placeholder:text-outline-variant transition-colors outline-none" placeholder="123" type="text"/>
+</div>
+</div>
+</div>
+<!-- Total Breakdown -->
+<div class="pt-6 space-y-3">
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Subtotal</span>
+<span>$84.00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Shipping (Carbon Neutral)</span>
+<span class="text-primary font-medium">Free</span>
+</div>
+<div class="h-[1px] w-full bg-outline-variant/20 pt-2"></div>
+<div class="flex justify-between items-baseline pt-2">
+<span class="font-label text-xs uppercase font-bold tracking-widest">Total</span>
+<span class="font-headline text-3xl font-bold text-primary">$84.00</span>
+</div>
+</div>
+<!-- Submit Button (Jewel-like depth) -->
+<button class="w-full h-16 rounded-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-label text-xs uppercase tracking-[0.2rem] font-bold shadow-lg active:scale-95 transition-transform flex items-center justify-center gap-3" type="submit">
+                Complete Purchase
+                <span class="material-symbols-outlined" data-icon="lock" style="font-size: 18px;">lock</span>
+</button>
+</form>
+<p class="text-[10px] text-center text-outline mt-8 uppercase tracking-widest">
+            By purchasing, you agree to our <span class="underline">Terms of Curation</span>.
+        </p>
+</main>
+<!-- Suppressed BottomNavBar and SideNav as per Task-Focused Page rules -->
+<!-- Suppressed FAB as per Contextual Suppression rules -->
+</body></html>

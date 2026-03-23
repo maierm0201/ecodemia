@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,700;1,6..72,400&amp;family=Public+Sans:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#c3cba3",
+              "surface-dim": "#d9dad7",
+              "surface-container-lowest": "#ffffff",
+              "error": "#ba1a1a",
+              "on-secondary-fixed-variant": "#384b42",
+              "secondary-container": "#cfe5d9",
+              "on-error-container": "#93000a",
+              "surface-tint": "#3f6653",
+              "tertiary-fixed": "#dfe7bd",
+              "inverse-primary": "#a5d0b9",
+              "secondary-fixed-dim": "#b6cbc0",
+              "on-surface": "#1a1c1a",
+              "surface-container-high": "#e7e9e5",
+              "on-tertiary-fixed": "#181e05",
+              "secondary": "#4f6359",
+              "on-secondary-fixed": "#0d1f18",
+              "primary": "#012d1d",
+              "on-primary-container": "#86af99",
+              "outline-variant": "#c1c8c2",
+              "surface-container-low": "#f3f4f0",
+              "on-tertiary-fixed-variant": "#434a2b",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#274e3d",
+              "on-primary-fixed": "#002114",
+              "background": "#f9faf6",
+              "primary-container": "#1b4332",
+              "on-surface-variant": "#414844",
+              "on-error": "#ffffff",
+              "error-container": "#ffdad6",
+              "outline": "#717973",
+              "on-secondary-container": "#54675e",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#f0f1ed",
+              "secondary-fixed": "#d2e7dc",
+              "primary-fixed-dim": "#a5d0b9",
+              "surface-bright": "#f9faf6",
+              "on-secondary": "#ffffff",
+              "on-background": "#1a1c1a",
+              "inverse-surface": "#2e312f",
+              "tertiary-container": "#383f22",
+              "surface-variant": "#e2e3df",
+              "primary-fixed": "#c1ecd4",
+              "on-tertiary-container": "#a2aa85",
+              "surface-container": "#edeeea",
+              "tertiary": "#22290e",
+              "surface": "#f9faf6",
+              "surface-container-highest": "#e2e3df"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .leaning-margin {
+            padding-left: 8.333%; /* 1/12th offset */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9faf6] dark:bg-[#1a1c1a] opacity-85 backdrop-blur-md">
+<nav class="flex justify-between items-center px-8 h-20 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-headline italic text-[#012d1d] dark:text-[#f9faf6]">The Living Archive</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#717973] dark:text-[#c1c8c2] hover:text-[#1B4332] font-label uppercase text-[0.65rem] tracking-[0.05rem] transition-opacity duration-300" href="#">Archive</a>
+<a class="text-[#717973] dark:text-[#c1c8c2] hover:text-[#1B4332] font-label uppercase text-[0.65rem] tracking-[0.05rem] transition-opacity duration-300" href="#">Reports</a>
+<a class="text-[#1B4332] dark:text-[#cfe5d9] font-bold border-b-2 border-[#1B4332] dark:border-[#cfe5d9] pb-1 font-label uppercase text-[0.65rem] tracking-[0.05rem] transition-opacity duration-300" href="#">Merch</a>
+<a class="text-[#717973] dark:text-[#c1c8c2] hover:text-[#1B4332] font-label uppercase text-[0.65rem] tracking-[0.05rem] transition-opacity duration-300" href="#">About</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined text-primary">search</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-300 relative">
+<span class="material-symbols-outlined text-primary">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+</button>
+</div>
+</nav>
+</header>
+<div class="flex min-h-screen">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex flex-col pt-24 fixed left-0 h-screen h-full w-64 border-r border-[#c1c8c2]/20 bg-[#f3f4f0] dark:bg-[#232623] z-40">
+<div class="px-8 mb-10">
+<h2 class="font-headline text-2xl text-[#012d1d] dark:text-on-background">Collections</h2>
+<p class="font-label text-[0.65rem] uppercase tracking-widest text-outline">Sustainable Materials</p>
+</div>
+<nav class="flex flex-col gap-1 pr-4">
+<a class="text-[#1B4332] dark:text-[#f9faf6] font-semibold bg-[#e7e9e5] dark:bg-[#2d302d] rounded-r-full px-8 py-3 flex items-center gap-3 translate-x-1 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label text-xs uppercase tracking-tight">Organic Cotton</span>
+</a>
+<a class="text-[#717973] dark:text-[#c1c8c2] px-8 py-3 flex items-center gap-3 hover:bg-[#e7e9e5] dark:hover:bg-[#2d302d] transition-colors rounded-r-full" href="#">
+<span class="material-symbols-outlined">recycling</span>
+<span class="font-label text-xs uppercase tracking-tight">Recycled Tech</span>
+</a>
+<a class="text-[#717973] dark:text-[#c1c8c2] px-8 py-3 flex items-center gap-3 hover:bg-[#e7e9e5] dark:hover:bg-[#2d302d] transition-colors rounded-r-full" href="#">
+<span class="material-symbols-outlined">brush</span>
+<span class="font-label text-xs uppercase tracking-tight">Artisanal</span>
+</a>
+<a class="text-[#717973] dark:text-[#c1c8c2] px-8 py-3 flex items-center gap-3 hover:bg-[#e7e9e5] dark:hover:bg-[#2d302d] transition-colors rounded-r-full" href="#">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="font-label text-xs uppercase tracking-tight">Limited Editions</span>
+</a>
+</nav>
+<div class="mt-auto px-8 pb-12">
+<div class="space-y-8">
+<div>
+<h3 class="font-label text-[0.6rem] uppercase tracking-widest text-outline mb-4">Sizing</h3>
+<div class="flex flex-wrap gap-2">
+<button class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-[10px] font-label hover:border-primary transition-colors">XS</button>
+<button class="w-8 h-8 rounded-full border border-primary bg-primary text-white flex items-center justify-center text-[10px] font-label">S</button>
+<button class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-[10px] font-label hover:border-primary transition-colors">M</button>
+<button class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center text-[10px] font-label hover:border-primary transition-colors">L</button>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 lg:ml-64 pt-20">
+<!-- Hero Section -->
+<section class="relative h-[614px] w-full overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0">
+<img alt="Sustainable Cotton Field" class="w-full h-full object-cover" data-alt="Vast golden cotton field at sunset editorial shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAt7aEbzGMbQsfLjHIhpFVpPRHjWAvT4xXc4lsoFVbYWjjkZF3iH01cyAQuBg3sIcI0C3TJrTayxG16wCKavsVYYQSks0q-A2xUZ4PPU8_ImsKt3Z94-2ryj95WnV30-zc5MPHHpQLdCN0gSfI2me5O-zUksnLywQsILk0lfhaQFpMn5pRXsSrVat9bJcyuLkcpJSONP8pUQUk9v5xChZRHJXvz9_3CMDj9aWgorkKG9WLU_sjLkJfObJKIO2-KbHsQsUoE-NNkZQE"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/40 to-transparent"></div>
+</div>
+<div class="relative h-full flex flex-col justify-center px-12 lg:px-24">
+<span class="font-label text-xs text-white uppercase tracking-[0.2rem] mb-4">Series 004</span>
+<h1 class="font-headline text-5xl md:text-7xl text-white max-w-2xl leading-tight mb-8">The Regenerative Cotton Series</h1>
+<p class="font-body text-white/90 max-w-md text-lg leading-relaxed mb-10 leaning-margin">
+                        A permanent collection built from soil-first agriculture in the Aegean valley. Traceable from seed to seam.
+                    </p>
+<button class="w-fit px-8 py-4 rounded-full bg-gradient-to-br from-primary to-primary-container text-white font-label text-xs uppercase tracking-widest shadow-xl active:scale-95 transition-all">
+                        Explore the Collection
+                    </button>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="px-8 lg:px-24 py-20 bg-background">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline text-4xl text-primary mb-2">Sustainable Essentials</h2>
+<p class="text-outline font-body">Crafted for longevity, not cycles.</p>
+</div>
+<div class="flex gap-4">
+<span class="font-label text-[10px] uppercase tracking-tighter text-outline">Sorted by: Featured</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</div>
+</div>
+<!-- Bento-ish Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Product Card 1 -->
+<div class="group">
+<div class="relative aspect-[3/4] overflow-hidden rounded-md bg-surface-container-low mb-6">
+<img alt="Heavyweight Tee" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist white heavyweight organic cotton t-shirt on model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2tH_1o6vB8exuoPfkCCvzGURKEU4bd-qJGJ9f-ARRXXJtGM1RxCESVYBQ5moWkVSnsBGR-LVooWGWRhVt12G3Pb6ZSFDS8YEdHjBVZBtN7HSzezcIpfhxEtzBcRtVkCLfqsoCGakwKPVKncsZFvNFEDCFL-2RrQwrwZFyjB86YLXOYUc2wd5KJAqRPoBTBgjlD4RFz0dkdimLQqLLWfOs2kd2Ax0ssj6RfKwEh4FXyb9knmatPMd5V3AJMeDtHfJoyHF-9Px1Qx4b"/>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 font-label text-[10px] uppercase tracking-wider rounded-full backdrop-blur-sm">Carbon Neutral</span>
+<span class="bg-surface/80 text-primary px-3 py-1 font-label text-[10px] uppercase tracking-wider rounded-full backdrop-blur-sm">Organic</span>
+</div>
+</div>
+<div class="flex justify-between items-start leaning-margin">
+<div>
+<h3 class="font-headline text-xl text-on-surface mb-1">Heavyweight Aegean Tee</h3>
+<p class="text-outline font-body text-sm mb-4">Bone White</p>
+<span class="font-headline text-lg text-primary">$68.00</span>
+</div>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group">
+<div class="relative aspect-[3/4] overflow-hidden rounded-md bg-surface-container-low mb-6">
+<img alt="Field Jacket" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Dark olive sustainable canvas field jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgQb2nwvW1N0RyaKXQN7koS7dsQVYLYToqTQWsmzI94RXsZC-5jYVLNWCooRNarF_6Ohi4tDeVibiChTxLC8OgWdQKQxQyy1tE4O2Wyhrwf_mkQbr2B58KDfBz5AyDGsqxIT8TAsnET2WQWhUIK-bkL3X7-m0BWGbIV0Zw2BMmpHxerKDzxH-Y2cvVWOCqEj5_Hat_ZW3OzsShU1l3tyzmqACtQ1065hjDKnFoHdlGsVck5XlUgdvMfGjSgEJ60u_ZyXIiMk_87FgP"/>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 font-label text-[10px] uppercase tracking-wider rounded-full backdrop-blur-sm">Recycled Tech</span>
+</div>
+</div>
+<div class="flex justify-between items-start leaning-margin">
+<div>
+<h3 class="font-headline text-xl text-on-surface mb-1">Archival Field Jacket</h3>
+<p class="text-outline font-body text-sm mb-4">Deep Forest</p>
+<span class="font-headline text-lg text-primary">$245.00</span>
+</div>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<!-- Featured Product Card (Takes 2 rows on desktop) -->
+<div class="group lg:row-span-2">
+<div class="relative h-full flex flex-col">
+<div class="relative flex-1 overflow-hidden rounded-md bg-surface-container-low mb-6">
+<img alt="Knit Sweater" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="High-end ivory wool knit sweater detail shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCboTB778hxuR6szPL1n7792ixJlbVC8a4Jnwfv4Z_M-1a4712gjmxK2V3eRk79WLSDgpznr63wZmchOqNAxzKIc767bMAKwxU2i4p_ufGJGTaY6_d3fenZTnxp_MKdU6CtMrrft8KHwsf1qzXOS3Aqy0S24l8AIJrsXx3pS-pL7szYPyt9Uo3OTc-s2HYpbNGLqU66DwSib5F-7T4dTg6B0RNFtfsrJMkfConLFPEqxHT-JNdSwUaECnrozkKyZGUz7UUfZFP4xFEn"/>
+<div class="absolute inset-0 bg-black/5"></div>
+<div class="absolute bottom-8 left-8">
+<span class="bg-primary text-white px-4 py-2 font-label text-xs uppercase tracking-widest rounded-full">New Arrival</span>
+</div>
+</div>
+<div class="leaning-margin">
+<h3 class="font-headline text-2xl text-on-surface mb-1">Heritage Wool Oversize Knit</h3>
+<p class="text-outline font-body text-sm mb-4">Unbleached Ivory</p>
+<div class="flex items-center gap-6">
+<span class="font-headline text-xl text-primary">$180.00</span>
+<span class="font-label text-[10px] text-error uppercase tracking-widest">Low Stock</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group">
+<div class="relative aspect-[3/4] overflow-hidden rounded-md bg-surface-container-low mb-6">
+<img alt="Denim" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Straight leg raw indigo denim pants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_37EFT0lAFegLP3tIBTa81nx0E1oq7FdwR5IIUs_yYlDwOc6_5iC5uxkxldbI9TNz7J0F_9z836ccc3zPj-EfskgJvPTf5iQSZ4nMS-PF0Us56Kl4hUDSGTqOXqeacepgE6sX1yV1ug12inKU5_Y4Cgqf3C-pglLwP3KOw_xBCFCxsFBT-PFd_rm8QVa0uqzlWztbiKzvC2nBxjXuY4h3a8xL4yGqI1vbSMkhU-vwbOuuiGK7uSH4QspoQ3pzMHyV_1n1JtGtM_Ur"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 font-label text-[10px] uppercase tracking-wider rounded-full backdrop-blur-sm">Zero Waste Dye</span>
+</div>
+</div>
+<div class="flex justify-between items-start leaning-margin">
+<div>
+<h3 class="font-headline text-xl text-on-surface mb-1">Raw Selvedge Denim</h3>
+<p class="text-outline font-body text-sm mb-4">Indigo</p>
+<span class="font-headline text-lg text-primary">$165.00</span>
+</div>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group">
+<div class="relative aspect-[3/4] overflow-hidden rounded-md bg-surface-container-low mb-6">
+<img alt="Tote Bag" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Large canvas tote bag with archival print" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG1BkAszam8AjRkhQsIGwtHEurZVxfQnqH0xLasB4Ck77q-A-Zmdo5BYnM7tvYYgxoxy8bnjEbHrqS6KmvlWCzlIpK9qjmbLoIwUegRxwdK0ygtO49W9pu17I9S7pveDEk5xz-JAOnEreYqzgqBs1ZuUTlzwZGm_16zfWwMkQaB-l1Txo88ZB726xIWHURZX7qJ4ftofqUTZ4Pi_vtQ3YtBga7qmZP3VQUXey66MF7Ngl4L6NXTgVbCzk2Xl_lQBmSDtI2UWO6Z4jX"/>
+<div class="absolute top-4 left-4">
+<span class="bg-surface-container-high text-primary px-3 py-1 font-label text-[10px] uppercase tracking-wider rounded-full backdrop-blur-sm">Ltd Edition</span>
+</div>
+</div>
+<div class="flex justify-between items-start leaning-margin">
+<div>
+<h3 class="font-headline text-xl text-on-surface mb-1">Archive Utility Tote</h3>
+<p class="text-outline font-body text-sm mb-4">Natural Canvas</p>
+<span class="font-headline text-lg text-primary">$45.00</span>
+</div>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Data Pull-out -->
+<section class="mx-8 lg:mx-24 mb-20 p-12 bg-tertiary-container rounded-xl flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-md">
+<h2 class="font-headline text-3xl text-on-tertiary-container mb-4">Transparent Production</h2>
+<p class="text-on-tertiary-container/80 leading-relaxed font-body">Every garment in this collection comes with a digital passport, documenting the 14 steps of production from the Aegean soil to our warehouse.</p>
+</div>
+<div class="flex gap-16">
+<div class="text-center">
+<span class="block font-headline text-5xl text-on-tertiary-container mb-2">94%</span>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-tertiary-container/60">Biodegradable</span>
+</div>
+<div class="text-center">
+<span class="block font-headline text-5xl text-on-tertiary-container mb-2">-12kg</span>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-tertiary-container/60">Carbon Per Unit</span>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 lg:px-24 flex flex-col md:flex-row justify-between items-start gap-8 mt-20 bg-[#f3f4f0] dark:bg-[#1a1c1a] border-t border-[#c1c8c2]/20">
+<div class="max-w-xs">
+<div class="font-headline italic text-2xl text-[#012d1d] dark:text-[#f9faf6] mb-6">The Living Archive</div>
+<p class="font-body text-sm text-[#717973] leading-relaxed">
+                        A journal of planetary health and a catalog of objects designed to endure. We believe in the radical act of making things that last.
+                    </p>
+<p class="mt-8 font-label text-[10px] text-[#717973] uppercase tracking-widest">© 2024 The Living Archive. Ethically Sourced.</p>
+</div>
+<div class="grid grid-cols-2 gap-x-16 gap-y-12">
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-[10px] font-bold uppercase tracking-[0.2rem] text-primary">Philosophy</h4>
+<a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="#">Sourcing Transparency</a>
+<a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="#">Carbon Report</a>
+<a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="#">Circularity Program</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label text-[10px] font-bold uppercase tracking-[0.2rem] text-primary">Service</h4>
+<a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="#">Shipping Policy</a>
+<a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="#">Repairs</a>
+<a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="#">Contact</a>
+</div>
+</div>
+<div class="w-full md:w-auto">
+<h4 class="font-label text-[10px] font-bold uppercase tracking-[0.2rem] text-primary mb-6">The Dispatch</h4>
+<div class="relative max-w-sm">
+<input class="w-full bg-transparent border-0 border-b border-outline/40 py-3 font-body text-sm focus:ring-0 focus:border-primary transition-all placeholder:text-outline/50" placeholder="Email Address" type="email"/>
+<button class="absolute right-0 top-1/2 -translate-y-1/2">
+<span class="material-symbols-outlined text-primary">arrow_forward</span>
+</button>
+</div>
+<p class="mt-4 text-[10px] font-body text-outline/60">Weekly field notes on sustainable craft.</p>
+</div>
+</footer>
+</main>
+</div>
+<!-- Mobile Navigation (Responsive Pivot) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-surface-bright/95 backdrop-blur-md z-50 flex justify-around items-center h-16 border-t border-outline-variant/10">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label text-[8px] uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-outline" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-label text-[8px] uppercase tracking-widest">Archive</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-outline" href="#">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-label text-[8px] uppercase tracking-widest">Shop</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-outline" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label text-[8px] uppercase tracking-widest">Profile</span>
+</a>
+</nav>
+</body></html>

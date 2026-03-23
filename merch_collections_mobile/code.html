@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#181e05",
+              "on-secondary-fixed-variant": "#384b42",
+              "tertiary-fixed": "#dfe7bd",
+              "secondary": "#4f6359",
+              "surface-tint": "#3f6653",
+              "secondary-fixed-dim": "#b6cbc0",
+              "surface-container-low": "#f3f4f0",
+              "inverse-on-surface": "#f0f1ed",
+              "on-surface-variant": "#414844",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed": "#0d1f18",
+              "primary-fixed": "#c1ecd4",
+              "on-tertiary": "#ffffff",
+              "inverse-primary": "#a5d0b9",
+              "on-error": "#ffffff",
+              "surface-container-high": "#e7e9e5",
+              "on-tertiary-fixed-variant": "#434a2b",
+              "surface-variant": "#e2e3df",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#002114",
+              "surface-dim": "#d9dad7",
+              "secondary-container": "#cfe5d9",
+              "on-background": "#1a1c1a",
+              "on-primary-fixed-variant": "#274e3d",
+              "outline-variant": "#c1c8c2",
+              "on-secondary": "#ffffff",
+              "on-surface": "#1a1c1a",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#d2e7dc",
+              "background": "#f9faf6",
+              "tertiary-fixed-dim": "#c3cba3",
+              "surface-container-highest": "#e2e3df",
+              "primary-container": "#1b4332",
+              "on-secondary-container": "#54675e",
+              "error": "#ba1a1a",
+              "inverse-surface": "#2e312f",
+              "surface": "#f9faf6",
+              "tertiary": "#22290e",
+              "surface-bright": "#f9faf6",
+              "on-tertiary-container": "#a2aa85",
+              "on-primary-container": "#86af99",
+              "primary": "#012d1d",
+              "on-primary": "#ffffff",
+              "surface-container": "#edeeea",
+              "outline": "#717973",
+              "tertiary-container": "#383f22",
+              "primary-fixed-dim": "#a5d0b9"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Inter"],
+              "label": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 backdrop-blur-xl shadow-[0px_20px_40px_rgba(26,28,26,0.06)] flex justify-between items-center px-6 h-16">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[#1B4332] active:scale-95 transition-transform" data-icon="menu">menu</span>
+</div>
+<h1 class="font-['Newsreader'] italic font-medium tracking-tight text-2xl text-[#1B4332]">The Living Archive</h1>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[#1B4332] active:scale-95 transition-transform" data-icon="shopping_bag">shopping_bag</span>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6">
+<!-- Hero Section -->
+<section class="mb-10">
+<p class="font-label text-[10px] uppercase tracking-[0.15rem] text-outline mb-2">Curated Goods</p>
+<h2 class="font-headline text-4xl italic text-primary leading-tight mb-4">Conscious Wear</h2>
+<p class="text-on-surface-variant leading-relaxed max-w-[85%]">High-performance textiles engineered for the modern archivist, rooted in circular design.</p>
+</section>
+<!-- Horizontal Filter Bar -->
+<section class="mb-8 -mx-6 px-6 overflow-x-auto hide-scrollbar flex gap-3">
+<button class="flex-none bg-primary text-on-primary px-5 py-2 rounded-full font-label text-[10px] uppercase tracking-wider font-bold">All items</button>
+<button class="flex-none bg-surface-container-low text-on-surface-variant px-5 py-2 rounded-full font-label text-[10px] uppercase tracking-wider hover:bg-surface-container-high transition-colors">Organic Cotton</button>
+<button class="flex-none bg-surface-container-low text-on-surface-variant px-5 py-2 rounded-full font-label text-[10px] uppercase tracking-wider hover:bg-surface-container-high transition-colors">Recycled Tech</button>
+<button class="flex-none bg-surface-container-low text-on-surface-variant px-5 py-2 rounded-full font-label text-[10px] uppercase tracking-wider hover:bg-surface-container-high transition-colors">Bio-Leather</button>
+</section>
+<!-- Product Grid: Asymmetric Layout -->
+<section class="grid grid-cols-2 gap-x-4 gap-y-10">
+<!-- Product Card 1 -->
+<div class="col-span-2 group">
+<div class="relative aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Model wearing a minimalist organic cotton beige t-shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQu5MXx9qQsmSEQaMiLVFawRoahDdim2MbpfieHcjks-W-eYkwweJjOtjg6p85tbTBqOa0C60qRLZQNPmGAq-DBPxDcpYNxv9EoteiNCPwMFF0K9v1xidZdBALrptPlFgQn66_VpPIzxOfRj143PQ8LG0ejd9CJ9Zkksc5z7ci_9G66Puo6_fpbUiOxrRX6C1kdSJJ_2i3Wnzxxjt6Q_nHaCn-HgHJUIz49T1b4pBxVQb7mxEqAbrYr3-dpXqY7IPDqxZYnbg8nr2X"/>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="bg-[#1B4332] text-on-primary px-3 py-1 rounded-full font-label text-[8px] uppercase tracking-[0.05rem] font-bold shadow-sm">Carbon Neutral</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full font-label text-[8px] uppercase tracking-[0.05rem] font-bold shadow-sm">LTD Edition</span>
+</div>
+<button class="absolute bottom-4 right-4 bg-background/90 backdrop-blur-md p-3 rounded-full shadow-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="add_shopping_cart">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-xl italic text-primary">Archival Utility Tee</h3>
+<p class="font-label text-[10px] uppercase tracking-wider text-outline">100% Organic GOTS Cotton</p>
+</div>
+<p class="font-label text-sm font-bold text-primary">$64.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group">
+<div class="relative aspect-square bg-surface-container-low rounded-lg overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Sustainable waterproof jacket made from recycled nylon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0I_e5YDcrIPwSbh-DlZfP43NfW62dhsA5vwD_Zjnsz2uC6azj5iAZa8UMQ1oJfcuzzKXonrPOMAZ3dq6RQ2DURaudn981W2rKg0kWqeGaipssu9lBHzCgVjCP3sMfsG_FI6b_8QgaUy8G2QR3H4TBtkeMUNWGrNVwRXp-OfU3s6nFpqHFc1CqZBNzi88kvkVHdWTQOMYR35jBUULZ8weZzcHvu8L7NpY6YopzZpuSJ0OGPG6j7tohtcX_oGgNCqEBfVbyZxUGpyYz"/>
+<div class="absolute top-3 left-3">
+<span class="bg-[#1B4332] text-on-primary px-2 py-0.5 rounded-full font-label text-[7px] uppercase tracking-[0.05rem] font-bold">Carbon Neutral</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-lg italic text-primary">Terra Shell</h3>
+<p class="font-label text-[9px] uppercase tracking-wider text-outline">Recycled Tech</p>
+<p class="font-label text-xs font-bold text-primary mt-1">$210.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group mt-8">
+<div class="relative aspect-square bg-surface-container-low rounded-lg overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist eco-friendly backpack" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfWRdH_6GOZz_neFWpuLi7Lp3QiMBTgNazrHcwtPSTXU-H8V65aH3NOnQRjJwczC7__7lxdA7H6JXo8VFVMXQCXyouSVbnuTLKTAQ_Q-Wfds7YZg_6T8cRg5NYLSB53BLrbIu_WeTViZ3jpOUF4KioEfmfouh2pZh3goMOA-jTXmxD8U7PIQx4EhEuvWcIjTf8-2t2guGzCidScH2jPRs17igvT1Q9Ulm3amHi7zjmZjQWqVs8QFaGksVrOM2_ftIq0Imv2QvEDyte"/>
+<div class="absolute top-3 left-3">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-2 py-0.5 rounded-full font-label text-[7px] uppercase tracking-[0.05rem] font-bold">LTD Edition</span>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-lg italic text-primary">Field Pack 01</h3>
+<p class="font-label text-[9px] uppercase tracking-wider text-outline">Bio-Based Polymer</p>
+<p class="font-label text-xs font-bold text-primary mt-1">$145.00</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="col-span-2 group">
+<div class="relative aspect-[16/9] bg-surface-container-low rounded-lg overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Artisanal knit sweater made from recycled wool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW5MVB6g6UJ4Mh7pWZiwvb41K0uX7wU_9n46gXZJCRbWFqujYv3KkPdvqT8tb8eVx4AAILn4SemsBPL5mO8UUKrZpDxd_rrgRKirCX0BP7oSMfegADgghseVttTTiJnkaDYfBSG2uzdW4b-zgSsc3sphQ377G1-VOB4V0sXHg7TZifn2AekUgEimKsmdBp-6_2y-dwBJi8IYfF78NFrVp6ZriM5ZBvQv4EUeJJqSX-tChXaD2dG5dzvVmsQm-Sehi2h7KB6lPzag6w"/>
+<div class="absolute top-4 right-4">
+<span class="bg-[#1B4332] text-on-primary px-3 py-1 rounded-full font-label text-[8px] uppercase tracking-[0.05rem] font-bold">Carbon Neutral</span>
+</div>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<h3 class="font-headline text-xl italic text-primary">Driftwood Knit</h3>
+<p class="font-label text-[10px] uppercase tracking-wider text-outline">Regenerative Wool</p>
+</div>
+<p class="font-label text-sm font-bold text-primary">$180.00</p>
+</div>
+</div>
+</section>
+<!-- Newsletter Subscription Hook -->
+<section class="mt-20 p-8 bg-secondary-container rounded-xl text-center">
+<h4 class="font-headline text-2xl italic text-primary mb-2">Join the Registry</h4>
+<p class="text-on-secondary-container text-sm mb-6">Receive early access to limited archival releases and climate reports.</p>
+<div class="relative">
+<input class="w-full bg-transparent border-none border-b border-outline/40 py-2 font-body text-sm focus:ring-0 focus:border-primary placeholder:text-outline/60 transition-all" placeholder="Email Address" type="email"/>
+<button class="absolute right-0 bottom-2">
+<span class="material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-[#f9faf6]/90 backdrop-blur-lg flex justify-around items-center px-4 pb-6 pt-2 shadow-[0_-4px_24px_rgba(0,0,0,0.04)] bg-[#f3f4f0]">
+<div class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform hover:text-[#1B4332]">
+<span class="material-symbols-outlined text-xl mb-1" data-icon="auto_stories">auto_stories</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Archive</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform hover:text-[#1B4332]">
+<span class="material-symbols-outlined text-xl mb-1" data-icon="grid_view">grid_view</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Categories</span>
+</div>
+<!-- Active Tab: Shop -->
+<div class="flex flex-col items-center justify-center bg-[#cfe5d9] text-[#012d1d] rounded-full px-4 py-1.5 transition-all active:translate-y-0.5">
+<span class="material-symbols-outlined text-xl mb-0.5" data-icon="eco" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Shop</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform hover:text-[#1B4332]">
+<span class="material-symbols-outlined text-xl mb-1" data-icon="volunteer_activism">volunteer_activism</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Support</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform hover:text-[#1B4332]">
+<span class="material-symbols-outlined text-xl mb-1" data-icon="search">search</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Search</span>
+</div>
+</nav>
+</body></html>

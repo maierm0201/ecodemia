@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@100..900&amp;family=Public+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-highest": "#e2e3df",
+                        "on-secondary-fixed-variant": "#384b42",
+                        "on-tertiary-fixed-variant": "#434a2b",
+                        "tertiary-fixed-dim": "#c3cba3",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c1c8c2",
+                        "tertiary-fixed": "#dfe7bd",
+                        "on-primary-fixed": "#002114",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1a1c1a",
+                        "on-primary-fixed-variant": "#274e3d",
+                        "surface-dim": "#d9dad7",
+                        "on-secondary-fixed": "#0d1f18",
+                        "on-primary-container": "#86af99",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#c1ecd4",
+                        "secondary-fixed": "#d2e7dc",
+                        "secondary-container": "#cfe5d9",
+                        "surface-tint": "#3f6653",
+                        "inverse-primary": "#a5d0b9",
+                        "background": "#f9faf6",
+                        "outline": "#717973",
+                        "tertiary": "#22290e",
+                        "on-tertiary-container": "#a2aa85",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#1b4332",
+                        "surface-container-low": "#f3f4f0",
+                        "surface-container-high": "#e7e9e5",
+                        "on-tertiary-fixed": "#181e05",
+                        "on-surface-variant": "#414844",
+                        "error-container": "#ffdad6",
+                        "surface-container": "#edeeea",
+                        "primary-fixed-dim": "#a5d0b9",
+                        "secondary-fixed-dim": "#b6cbc0",
+                        "surface": "#f9faf6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f9faf6",
+                        "primary": "#012d1d",
+                        "on-surface": "#1a1c1a",
+                        "surface-variant": "#e2e3df",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#383f22",
+                        "secondary": "#4f6359",
+                        "inverse-on-surface": "#f0f1ed",
+                        "inverse-surface": "#2e312f",
+                        "on-secondary-container": "#54675e",
+                        "on-error": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader"],
+                        "body": ["Inter"],
+                        "label": ["Public Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0px 20px 40px rgba(26, 28, 26, 0.06);
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 dark:bg-[#1a1c1a]/85 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold font-headline text-[#012d1d] dark:text-[#f9faf6] tracking-tight">
+                The Living Archive
+            </div>
+<div class="hidden md:flex space-x-8 items-center font-headline tracking-tight">
+<a class="text-[#717973] dark:text-[#a1a8a2] hover:text-[#012d1d] dark:hover:text-white transition-colors" href="#">The Archive</a>
+<a class="text-[#717973] dark:text-[#a1a8a2] hover:text-[#012d1d] dark:hover:text-white transition-colors" href="#">Biodiversity</a>
+<a class="text-[#717973] dark:text-[#a1a8a2] hover:text-[#012d1d] dark:hover:text-white transition-colors" href="#">Climate</a>
+<a class="text-[#717973] dark:text-[#a1a8a2] hover:text-[#012d1d] dark:hover:text-white transition-colors" href="#">Policy</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-6 py-2 rounded-full font-label text-[12px] uppercase tracking-[0.05rem] transition-transform active:scale-95">
+                Support Us
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="px-8 md:px-16 pt-20 pb-12 max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between">
+<div class="w-full md:w-2/3">
+<span class="font-label text-[12px] uppercase tracking-[0.15rem] text-secondary mb-4 block">Institutional Support</span>
+<h1 class="font-headline text-6xl md:text-8xl text-primary leading-tight font-medium">Protect the record.<br/>Power the change.</h1>
+</div>
+<div class="w-full md:w-1/3 mt-8 md:mt-0 md:pl-12">
+<p class="text-on-surface-variant text-lg leading-relaxed border-l-2 border-primary-container pl-6 font-body">
+                    The Living Archive is an independent, permanent ledger of our planet's ecological health. Your contribution ensures that the data of our changing world remains open, verifiable, and protected for future generations.
+                </p>
+</div>
+</section>
+<!-- Visual Anchor -->
+<section class="px-8 md:px-16 py-12 max-w-7xl mx-auto">
+<div class="relative h-[400px] w-full overflow-hidden rounded-xl">
+<img alt="Deep forest landscape" class="w-full h-full object-cover" data-alt="Ancient redwood forest with misty light rays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTrSLH0PUvZFGTlOubV6wnnMzIGRN7mjluo0CGa8R5os_izkN2UkqW8zGx1Lm61B60gJqGotoFeN7REci2QDekFlhvid4jci_dGJ_TJbQs1U9mk2JK8omZZYfvcNftIdRGY7scCjrImSKL4pfyb8ebmuylq3pPWWu9tFq876uaYXqS9F8FAzf1UHDj-ufmsmQrkFKbxAzeJ3kJTi5zrnwPaQqqGFQ8OQlujnyXEYtDmU9MiB7x6jm584w6DHgY1RrTk_vCSN3Ce_VO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+</section>
+<!-- Tiered Contribution Bento Grid -->
+<section class="px-8 md:px-16 py-20 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Seed -->
+<div class="bg-surface-container-low p-10 flex flex-col justify-between group transition-all duration-300 hover:bg-surface-container-high rounded-xl">
+<div>
+<div class="flex items-center gap-2 mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="energy_savings_leaf">energy_savings_leaf</span>
+<span class="font-label text-[12px] uppercase tracking-widest text-secondary">The Entryway</span>
+</div>
+<h3 class="font-headline text-4xl mb-2 text-primary">Seed</h3>
+<div class="text-3xl font-headline mb-6 text-primary-container">$15 <span class="text-sm font-body text-on-surface-variant tracking-normal">/ month</span></div>
+<ul class="space-y-4 text-on-surface-variant font-body">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="check">check</span>
+                                Weekly Impact Digests
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="check">check</span>
+                                Member Identity Badge
+                            </li>
+</ul>
+</div>
+<button class="mt-12 text-primary font-label text-[11px] uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
+                        Select Plan <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Sapling -->
+<div class="bg-primary-container p-10 flex flex-col justify-between text-white relative overflow-hidden rounded-xl">
+<div class="absolute top-0 right-0 p-4">
+<span class="bg-white/10 text-[10px] font-label uppercase px-3 py-1 rounded-full tracking-tighter">Recommended</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-8 text-on-primary-container">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+<span class="font-label text-[12px] uppercase tracking-widest">Growth Phase</span>
+</div>
+<h3 class="font-headline text-4xl mb-2">Sapling</h3>
+<div class="text-3xl font-headline mb-6 text-secondary-fixed">$50 <span class="text-sm font-body text-secondary-fixed/70 tracking-normal">/ month</span></div>
+<ul class="space-y-4 text-secondary-fixed/90 font-body">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="check">check</span>
+                                Quarterly Hard-Copy Journal
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="check">check</span>
+                                Early Access to Field Data
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="check">check</span>
+                                Voting on Archive Priority Areas
+                            </li>
+</ul>
+</div>
+<button class="mt-12 bg-white text-primary font-label text-[11px] uppercase tracking-widest py-4 rounded-full transition-transform active:scale-95">
+                        Choose Sapling
+                    </button>
+</div>
+<!-- Old-Growth -->
+<div class="bg-surface-container-low p-10 flex flex-col justify-between group transition-all duration-300 hover:bg-surface-container-high rounded-xl">
+<div>
+<div class="flex items-center gap-2 mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="forest">forest</span>
+<span class="font-label text-[12px] uppercase tracking-widest text-secondary">Legacy Support</span>
+</div>
+<h3 class="font-headline text-4xl mb-2 text-primary">Old-Growth</h3>
+<div class="text-3xl font-headline mb-6 text-primary-container">$250 <span class="text-sm font-body text-on-surface-variant tracking-normal">/ month</span></div>
+<ul class="space-y-4 text-on-surface-variant font-body">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="check">check</span>
+                                Annual Impact Summit Invitations
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="check">check</span>
+                                Direct Access to Lead Researchers
+                            </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-xs mt-1" data-icon="check">check</span>
+                                Name inscribed in the Digital Ledger
+                            </li>
+</ul>
+</div>
+<button class="mt-12 text-primary font-label text-[11px] uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
+                        Select Plan <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Donation Form Section -->
+<section class="px-8 md:px-16 py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20">
+<div class="lg:w-1/2">
+<h2 class="font-headline text-5xl text-primary mb-8">Custom Contribution</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-12">
+                        Whether it's a one-time gift or a recurring monthly investment, every dollar is directly funneled into environmental recording, satellite tracking, and journalistic field reports. We maintain 100% transparency in our funding.
+                    </p>
+<div class="bg-surface-container-highest p-8 rounded-lg flex items-start gap-6">
+<div class="bg-primary p-3 rounded-full text-white">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+</div>
+<div>
+<h4 class="font-headline text-xl mb-1">Carbon Neutral Platform</h4>
+<p class="text-sm font-body text-on-surface-variant">Your contribution processing is powered by 100% renewable infrastructure.</p>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 bg-surface-container-lowest p-12 rounded-xl editorial-shadow">
+<form class="space-y-8">
+<div>
+<span class="font-label text-[11px] uppercase tracking-widest text-outline mb-4 block">Select Frequency</span>
+<div class="flex gap-4">
+<button class="flex-1 py-3 px-6 rounded-full border border-primary-container bg-primary-container text-white font-label text-[12px] uppercase" type="button">Monthly</button>
+<button class="flex-1 py-3 px-6 rounded-full border border-outline/30 text-on-surface-variant hover:border-primary font-label text-[12px] uppercase transition-colors" type="button">One-time</button>
+</div>
+</div>
+<div>
+<span class="font-label text-[11px] uppercase tracking-widest text-outline mb-4 block">Amount</span>
+<div class="grid grid-cols-4 gap-3 mb-6">
+<button class="py-3 bg-surface-container-low hover:bg-surface-container-high transition-colors font-headline text-xl text-primary" type="button">$25</button>
+<button class="py-3 bg-surface-container-low hover:bg-surface-container-high transition-colors font-headline text-xl text-primary" type="button">$50</button>
+<button class="py-3 bg-surface-container-low hover:bg-surface-container-high transition-colors font-headline text-xl text-primary" type="button">$100</button>
+<button class="py-3 bg-surface-container-low hover:bg-surface-container-high transition-colors font-headline text-xl text-primary" type="button">$500</button>
+</div>
+<div class="relative">
+<span class="absolute left-0 bottom-4 font-headline text-2xl text-primary">$</span>
+<input class="w-full bg-transparent border-b border-outline/40 py-4 pl-6 font-headline text-2xl text-primary focus:outline-none focus:border-primary transition-colors appearance-none" placeholder="Other amount" type="number"/>
+</div>
+</div>
+<div class="space-y-6 pt-4">
+<input class="w-full bg-transparent border-b border-outline/40 py-3 font-body text-on-surface focus:outline-none focus:border-primary transition-colors" placeholder="Full Name" type="text"/>
+<input class="w-full bg-transparent border-b border-outline/40 py-3 font-body text-on-surface focus:outline-none focus:border-primary transition-colors" placeholder="Email Address" type="email"/>
+</div>
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-white py-5 rounded-full font-label text-[13px] uppercase tracking-widest mt-6 hover:opacity-90 transition-opacity">
+                            Proceed to Payment
+                        </button>
+<p class="text-center text-[10px] font-label text-outline uppercase tracking-tight">
+                            Secure Encrypted Transaction via Stripe
+                        </p>
+</form>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="px-8 md:px-16 py-20 max-w-7xl mx-auto text-center">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div>
+<h5 class="text-6xl font-headline text-primary mb-2">124k</h5>
+<p class="font-label text-[12px] uppercase tracking-widest text-secondary">Active Data points monitored</p>
+</div>
+<div>
+<h5 class="text-6xl font-headline text-primary mb-2">182</h5>
+<p class="font-label text-[12px] uppercase tracking-widest text-secondary">Verified Field Researchers</p>
+</div>
+<div>
+<h5 class="text-6xl font-headline text-primary mb-2">100%</h5>
+<p class="font-label text-[12px] uppercase tracking-widest text-secondary">Open access for scientists</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 bg-[#1b4332] dark:bg-[#0a110d] text-[#cfe5d9]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-[#f9faf6] font-headline text-xl mb-2">The Living Archive</div>
+<p class="font-body text-[12px] opacity-70">© 2024 The Living Archive. Dedicated to the permanent record of our changing planet.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-label uppercase tracking-[0.05rem] text-[12px]">
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Ethics Policy</a>
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Editorial Team</a>
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Carbon Transparency Report</a>
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

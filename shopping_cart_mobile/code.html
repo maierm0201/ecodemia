@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@400;500;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#181e05",
+              "on-secondary-fixed-variant": "#384b42",
+              "tertiary-fixed": "#dfe7bd",
+              "secondary": "#4f6359",
+              "surface-tint": "#3f6653",
+              "secondary-fixed-dim": "#b6cbc0",
+              "surface-container-low": "#f3f4f0",
+              "inverse-on-surface": "#f0f1ed",
+              "on-surface-variant": "#414844",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed": "#0d1f18",
+              "primary-fixed": "#c1ecd4",
+              "on-tertiary": "#ffffff",
+              "inverse-primary": "#a5d0b9",
+              "on-error": "#ffffff",
+              "surface-container-high": "#e7e9e5",
+              "on-tertiary-fixed-variant": "#434a2b",
+              "surface-variant": "#e2e3df",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#002114",
+              "surface-dim": "#d9dad7",
+              "secondary-container": "#cfe5d9",
+              "on-background": "#1a1c1a",
+              "on-primary-fixed-variant": "#274e3d",
+              "outline-variant": "#c1c8c2",
+              "on-secondary": "#ffffff",
+              "on-surface": "#1a1c1a",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#d2e7dc",
+              "background": "#f9faf6",
+              "tertiary-fixed-dim": "#c3cba3",
+              "surface-container-highest": "#e2e3df",
+              "primary-container": "#1b4332",
+              "on-secondary-container": "#54675e",
+              "error": "#ba1a1a",
+              "inverse-surface": "#2e312f",
+              "surface": "#f9faf6",
+              "tertiary": "#22290e",
+              "surface-bright": "#f9faf6",
+              "on-tertiary-container": "#a2aa85",
+              "on-primary-container": "#86af99",
+              "primary": "#012d1d",
+              "on-primary": "#ffffff",
+              "surface-container": "#edeeea",
+              "outline": "#717973",
+              "tertiary-container": "#383f22",
+              "primary-fixed-dim": "#a5d0b9"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Inter"],
+              "label": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .font-label { font-family: 'Public Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface antialiased min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#f9faf6]/85 dark:bg-[#1a1c1a]/85 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center px-6 h-16 w-full shadow-[0px_20px_40px_rgba(26,28,26,0.06)]">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[#1B4332] dark:text-[#cfe5d9]">menu</span>
+</button>
+</div>
+<h1 class="text-2xl font-serif text-[#1B4332] dark:text-[#cfe5d9] font-['Newsreader'] italic font-medium tracking-tight">The Living Archive</h1>
+<div class="flex items-center">
+<button class="active:scale-95 duration-200 hover:opacity-80 transition-opacity relative">
+<span class="material-symbols-outlined text-[#1B4332] dark:text-[#cfe5d9]">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-on-primary text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+</button>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Page Header -->
+<section class="mb-10">
+<h2 class="font-headline text-4xl italic text-primary leading-tight mb-2">Your Archive Selection</h2>
+<p class="font-label text-xs uppercase tracking-widest text-outline">Items curated for a permanent wardrobe</p>
+</section>
+<!-- Cart Items -->
+<div class="space-y-8 mb-12">
+<!-- Item 1 -->
+<div class="flex flex-col gap-4">
+<div class="flex gap-4">
+<div class="w-32 h-40 bg-surface-container-low overflow-hidden rounded-md">
+<img alt="Product" class="w-full h-full object-cover" data-alt="Recycled dark green technical field jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAsHz59aXWmT1y30iO4fnnq_nTNWR_5mNIJi5EcANSRZIYWUk32HgJGVfODj4KA3JnuWOHj7AH6OcZJyrmQm2XLZyustb7SITPvdiYQpBd83Ck-sjaa7ohYneH8VtD71qtbJyyq5oy6Q1V72jhJHnQPYzfJsjwRT5FRY3_mYlzCu12mMHWSQoflPGjdf95Y3oMQSrQAZpM6tLc0QNsOY7RnT1L4ZhcIQRDMoS9jUCKuI_b7GMcxT8E6QCQdNBx5EK340zyf2T6T17u"/>
+</div>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-xl text-primary leading-tight">Recycled Tech Field Jacket</h3>
+<button class="text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<p class="font-label text-[10px] uppercase tracking-wider text-outline mt-1">Forest Green / Men's Large</p>
+</div>
+<div class="flex justify-between items-end">
+<div class="flex items-center border-b border-outline/40 pb-1">
+<button class="p-1"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="px-4 font-label text-sm font-bold">01</span>
+<button class="p-1"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<span class="font-headline text-lg italic text-primary">$345.00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col gap-4">
+<div class="flex gap-4">
+<div class="w-32 h-40 bg-surface-container-low overflow-hidden rounded-md">
+<img alt="Product" class="w-full h-full object-cover" data-alt="Minimalist off-white organic cotton t-shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp8CapJHfvA-DW1bAhpApUXCAxGeTGW2PvNiw5FlRQMS3Whk2LI9XGDEFinkR5BZBBX4DBHO6ZSZE1PoaFDkOcGJAZQS3QM3ekav1VRXaq6mTI2ZxuOHTa3u5djZVhuBnz0I-2dnq7rcZtwFvVxYtOWdVqvBExIARgdKMdLjB-nZ0yqEBsZt-NhTgfroRy2JFUb6BH-LHLhwRLkOYiOEbdg6Bdia3n7E-_DLdjor3fjSbDB5sQi1oNsags3NqKx0gTjBIIpWid3GBg"/>
+</div>
+<div class="flex-1 flex flex-col justify-between py-1">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-headline text-xl text-primary leading-tight">Organic Cotton Heirloom Tee</h3>
+<button class="text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<p class="font-label text-[10px] uppercase tracking-wider text-outline mt-1">Bone / Unisex Medium</p>
+</div>
+<div class="flex justify-between items-end">
+<div class="flex items-center border-b border-outline/40 pb-1">
+<button class="p-1"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="px-4 font-label text-sm font-bold">01</span>
+<button class="p-1"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<span class="font-headline text-lg italic text-primary">$78.00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Carbon Impact Summary -->
+<div class="bg-secondary-container rounded-xl p-6 mb-12 shadow-sm relative overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-xl">eco</span>
+<h3 class="font-label text-xs font-bold uppercase tracking-widest text-on-secondary-container">Carbon Impact Summary</h3>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<p class="text-[10px] font-label uppercase text-on-secondary-container/70 mb-1">Offset Generated</p>
+<p class="font-headline text-3xl italic text-primary">12.4<span class="text-sm italic font-sans ml-1">kg CO2e</span></p>
+</div>
+<div>
+<p class="text-[10px] font-label uppercase text-on-secondary-container/70 mb-1">Pillars Supported</p>
+<p class="font-headline text-xl italic text-primary leading-tight">Wildlife &amp; Policy</p>
+</div>
+</div>
+<div class="mt-6 pt-6 border-t border-on-secondary-container/10">
+<p class="text-xs font-body text-on-secondary-container leading-relaxed">
+                        This purchase directly supports our <span class="font-bold underline">Policy Research fund</span>, aiming to reduce microplastic leakage in industrial manufacturing by 2030.
+                    </p>
+</div>
+</div>
+<!-- Organic pattern overlay -->
+<div class="absolute top-0 right-0 w-32 h-32 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+</div>
+<!-- Summary & Totals -->
+<div class="space-y-4 mb-10">
+<div class="flex justify-between items-center text-outline">
+<span class="font-label text-xs uppercase tracking-widest">Subtotal</span>
+<span class="font-headline italic text-lg">$423.00</span>
+</div>
+<div class="flex justify-between items-center text-outline">
+<span class="font-label text-xs uppercase tracking-widest">Sustainability Levy</span>
+<span class="font-headline italic text-lg">$12.50</span>
+</div>
+<div class="flex justify-between items-center text-outline">
+<span class="font-label text-xs uppercase tracking-widest">Shipping (Carbon Neutral)</span>
+<span class="font-label text-sm uppercase tracking-widest font-bold">Complimentary</span>
+</div>
+<div class="pt-4 border-t border-outline/10 flex justify-between items-center">
+<span class="font-label text-xs font-bold uppercase tracking-widest text-primary">Total Investment</span>
+<span class="font-headline italic text-3xl text-primary">$435.50</span>
+</div>
+</div>
+<!-- Checkout Button -->
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-5 rounded-full font-label font-bold uppercase tracking-[0.2em] shadow-lg active:scale-95 transition-all mb-8 flex justify-center items-center gap-2">
+            Proceed to Checkout
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<p class="text-center font-body text-[10px] text-outline px-8 leading-relaxed">
+            By proceeding, you acknowledge our archival standards. Every item is produced on-demand to eliminate landfill waste.
+        </p>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#f9faf6]/90 dark:bg-[#1a1c1a]/90 backdrop-blur-lg z-50 rounded-t-xl bg-[#f3f4f0] dark:bg-[#252825] shadow-[0_-4px_24px_rgba(0,0,0,0.04)]">
+<a class="flex flex-col items-center justify-center text-[#717973] dark:text-[#a1a8a2] py-2 hover:text-[#1B4332] dark:hover:text-white transition-all active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-1">Archive</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#717973] dark:text-[#a1a8a2] py-2 hover:text-[#1B4332] dark:hover:text-white transition-all active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-1">Categories</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#cfe5d9] dark:bg-[#1B4332] text-[#012d1d] dark:text-[#f9faf6] rounded-full px-4 py-1.5 transition-all active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined">eco</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-1">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#717973] dark:text-[#a1a8a2] py-2 hover:text-[#1B4332] dark:hover:text-white transition-all active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined">volunteer_activism</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-1">Support</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#717973] dark:text-[#a1a8a2] py-2 hover:text-[#1B4332] dark:hover:text-white transition-all active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-1">Search</span>
+</a>
+</nav>
+</body></html>
