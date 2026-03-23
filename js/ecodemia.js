@@ -42,7 +42,7 @@ function initEcoLogo() {
   if (!document.getElementById('eco-logo-style')) {
     const s = document.createElement('style');
     s.id = 'eco-logo-style';
-    s.textContent = `.eco-logo{font-family:'Newsreader',serif!important;font-style:italic!important;font-weight:700!important;color:#1B4332!important;text-decoration:none!important;}`;
+    s.textContent = `.eco-logo{font-family:'Newsreader',serif!important;font-style:normal!important;font-weight:700!important;color:#1B4332!important;text-decoration:none!important;}`;
     document.head.appendChild(s);
   }
   // Wire all .eco-logo elements to link to homepage
@@ -80,8 +80,8 @@ function initUniversalDesktopNav() {
   container.innerHTML = NAV_ITEMS.map(item => {
     const active = (item.category && item.category === currentCat) || (isSupport && item.label === 'Support Us');
     const cls = active
-      ? "font-['Newsreader'] italic text-lg tracking-tight text-[#1B4332] border-b-2 border-[#1B4332] transition-colors duration-300"
-      : "font-['Newsreader'] italic text-lg tracking-tight text-[#717973] hover:text-[#1B4332] transition-colors duration-300";
+      ? "font-['Newsreader'] text-lg tracking-tight text-[#1B4332] border-b-2 border-[#1B4332] transition-colors duration-300"
+      : "font-['Newsreader'] text-lg tracking-tight text-[#717973] hover:text-[#1B4332] transition-colors duration-300";
     return `<a class="${cls}" href="${relPath(item.href)}">${item.label}</a>`;
   }).join('');
 }
@@ -232,7 +232,7 @@ function initMobileMenu() {
     drawer.className = 'fixed inset-y-0 left-0 w-72 bg-[#f9faf6] z-[200] transform -translate-x-full transition-transform duration-300 shadow-2xl flex flex-col';
     drawer.innerHTML = `
       <div class="flex items-center justify-between px-6 h-16 border-b border-outline-variant/20">
-        <span class="font-['Newsreader'] italic text-xl text-[#1B4332]">Ecodemia</span>
+        <span class="font-['Newsreader'] font-bold text-xl text-[#1B4332]">Ecodemia</span>
         <button id="eco-drawer-close" class="text-outline"><span class="material-symbols-outlined">close</span></button>
       </div>
       <nav class="flex flex-col p-6 gap-5 flex-1">
