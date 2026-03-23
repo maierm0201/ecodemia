@@ -29,6 +29,63 @@ const PAGES = {
 function isMobile() { return window.innerWidth < 768; }
 function page(key) { return relPath(PAGES[key]); }
 
+// ─── ECO LOGO ─────────────────────────────────────────────────────────────────
+function initEcoLogo() {
+  // Ensure bold italic Newsreader is loaded
+  if (!document.querySelector('link[href*="Newsreader"][href*="1,700"]')) {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap';
+    document.head.insertBefore(link, document.head.firstChild);
+  }
+  // Inject .eco-logo CSS
+  if (!document.getElementById('eco-logo-style')) {
+    const s = document.createElement('style');
+    s.id = 'eco-logo-style';
+    s.textContent = `.eco-logo{font-family:'Newsreader',serif!important;font-style:italic!important;font-weight:700!important;color:#1B4332!important;text-decoration:none!important;}`;
+    document.head.appendChild(s);
+  }
+  // Wire all .eco-logo elements to link to homepage
+  const homePath = isMobile() ? page('homeMobile') : page('homeDesktop');
+  document.querySelectorAll('.eco-logo').forEach(el => {
+    if (el.tagName === 'A') {
+      el.href = homePath;
+    } else {
+      el.style.cursor = 'pointer';
+      el.addEventListener('click', () => { window.location.href = homePath; });
+    }
+  });
+}
+
+// ─── UNIVERSAL DESKTOP NAV ────────────────────────────────────────────────────
+const NAV_ITEMS = [
+  { label: 'Climate',      category: 'climate',  href: 'article_detail_page/code.html?category=climate'  },
+  { label: 'Wildlife',     category: 'wildlife', href: 'article_detail_page/code.html?category=wildlife' },
+  { label: 'Energy',       category: 'energy',   href: 'article_detail_page/code.html?category=energy'   },
+  { label: 'Living',       category: 'living',   href: 'article_detail_page/code.html?category=living'   },
+  { label: 'Tech',         category: 'tech',     href: 'article_detail_page/code.html?category=tech'     },
+  { label: 'Policy',       category: 'policy',   href: 'article_detail_page/code.html?category=policy'   },
+  { label: 'Live Updates', category: 'live',     href: 'article_detail_page/code.html?category=live'     },
+  { label: 'Support Us',   category: null,       href: 'support_the_living_archive/code.html'            },
+];
+
+function initUniversalDesktopNav() {
+  if (isMobile()) return;
+  // Find the nav links container — works across all desktop nav structures
+  const container = document.querySelector('.fixed [class*="md:flex"]');
+  if (!container) return;
+  const currentCat = new URLSearchParams(window.location.search).get('category') || '';
+  const isSupport   = window.location.pathname.includes('support_the_living_archive');
+  container.className = 'hidden md:flex items-center gap-8';
+  container.innerHTML = NAV_ITEMS.map(item => {
+    const active = (item.category && item.category === currentCat) || (isSupport && item.label === 'Support Us');
+    const cls = active
+      ? "font-['Newsreader'] italic text-lg tracking-tight text-[#1B4332] border-b-2 border-[#1B4332] transition-colors duration-300"
+      : "font-['Newsreader'] italic text-lg tracking-tight text-[#717973] hover:text-[#1B4332] transition-colors duration-300";
+    return `<a class="${cls}" href="${relPath(item.href)}">${item.label}</a>`;
+  }).join('');
+}
+
 // ─── NAVIGATION WIRING ────────────────────────────────────────────────────────
 function initNavigation() {
   // Desktop top-nav links by data-nav attribute
@@ -178,12 +235,18 @@ function initMobileMenu() {
         <span class="font-['Newsreader'] italic text-xl text-[#1B4332]">Ecodemia</span>
         <button id="eco-drawer-close" class="text-outline"><span class="material-symbols-outlined">close</span></button>
       </div>
-      <nav class="flex flex-col p-6 gap-6 flex-1">
+      <nav class="flex flex-col p-6 gap-5 flex-1">
         <a href="${page('homeMobile')}" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Home</a>
-        <a href="${page('articleMobile')}" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Archive</a>
+        <a href="${page('articleMobile')}?category=climate" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Climate</a>
+        <a href="${page('articleMobile')}?category=wildlife" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Wildlife</a>
+        <a href="${page('articleMobile')}?category=energy" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Energy</a>
+        <a href="${page('articleMobile')}?category=living" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Living</a>
+        <a href="${page('articleMobile')}?category=tech" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Tech</a>
+        <a href="${page('articleMobile')}?category=policy" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Policy</a>
+        <a href="${page('articleMobile')}?category=live" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Live Updates</a>
         <a href="${page('searchMobile')}" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Search</a>
         <a href="${page('merchMobile')}" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Shop</a>
-        <a href="${page('supportMobile')}" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Support</a>
+        <a href="${page('supportMobile')}" class="font-label text-xs font-bold uppercase tracking-widest text-primary border border-primary rounded-full px-4 py-2 text-center hover:bg-primary hover:text-white transition-colors mt-2">Support Us</a>
       </nav>
       <div class="p-6 border-t border-outline-variant/20">
         <p class="font-body text-xs text-outline">© 2025 Ecodemia</p>
@@ -522,6 +585,8 @@ function initPolicyModals() {
 
 // ─── INIT ─────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
+  initEcoLogo();
+  initUniversalDesktopNav();
   initNavigation();
   updateCartBadges();
   initAddToBag();
