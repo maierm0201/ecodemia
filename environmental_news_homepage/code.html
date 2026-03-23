@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
@@ -81,6 +81,12 @@
       .glass-nav {
         backdrop-filter: blur(12px);
       }
+      .eco-logo {
+        font-family: 'Newsreader', serif;
+        font-style: italic;
+        font-weight: 700;
+        color: #1B4332;
+      }
     </style>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
@@ -88,7 +94,7 @@
 <nav class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 dark:bg-[#1a1c1a]/85 backdrop-blur-md">
 <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-12">
-<a class="font-['Newsreader'] italic font-bold text-2xl text-[#1B4332] dark:text-[#a5d0b9]" href="../environmental_news_homepage/code.html">Ecodemia</a>
+<a class="eco-logo text-2xl" href="../environmental_news_homepage/code.html">Ecodemia</a>
 <div class="hidden md:flex gap-8">
 <a class="font-['Newsreader'] italic text-lg tracking-tight text-[#1B4332] dark:text-[#cfe5d9] font-semibold border-b-2 border-[#1B4332] transition-colors duration-300" href="../article_detail_page/code.html?category=climate">Climate</a>
 <a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="../article_detail_page/code.html?category=wildlife">Wildlife</a>
@@ -224,6 +230,20 @@
 </div>
 </div>
 </section>
+<!-- Support Us Banner -->
+<section class="mb-20">
+<div class="bg-[#1B4332] rounded-md px-12 py-16 flex flex-col lg:flex-row items-center justify-between gap-8">
+<div class="max-w-xl">
+<span class="font-label text-[10px] font-bold uppercase tracking-[0.2em] text-[#a5d0b9] block mb-4">Independent Journalism</span>
+<h2 class="font-headline text-4xl font-bold text-white leading-tight mb-4">Help Us Keep the Record Alive</h2>
+<p class="font-body text-[#cfe5d9] leading-relaxed">Ecodemia is reader-funded. Your support keeps our journalism free, rigorous, and independent — no paywalls, no corporate interests.</p>
+</div>
+<div class="flex flex-col items-center gap-4 flex-shrink-0">
+<a href="../support_the_living_archive/code.html" class="bg-white text-[#1B4332] px-10 py-4 rounded-full font-label text-sm font-bold tracking-widest hover:bg-[#cfe5d9] transition-colors active:scale-95 inline-block">Support Ecodemia</a>
+<span class="font-label text-[10px] text-[#a5d0b9] uppercase tracking-widest">Starting from $10 / month</span>
+</div>
+</div>
+</section>
 <!-- Newsletter / Subscription Card -->
 <section class="mb-20">
 <div class="bg-surface-container-highest p-12 rounded-md grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
@@ -242,7 +262,7 @@
 <footer class="w-full py-16 px-8 mt-20 bg-[#f3f4f0] dark:bg-[#121412]">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto">
 <div class="md:col-span-1">
-<a class="font-['Newsreader'] italic text-xl font-bold text-[#1B4332] dark:text-[#a5d0b9] mb-4 block" href="../environmental_news_homepage/code.html">Ecodemia</a>
+<a class="eco-logo text-xl mb-4 block" href="../environmental_news_homepage/code.html">Ecodemia</a>
 <p class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] max-w-xs leading-relaxed">
                     A permanent record of our changing environment, documenting the intersection of humanity and the natural world.
                 </p>
