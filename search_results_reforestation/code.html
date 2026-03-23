@@ -87,20 +87,18 @@
 <!-- Top Navigation Bar -->
 <nav class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 backdrop-blur-xl transition-colors">
 <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
-<div class="text-2xl font-bold font-headline text-[#012d1d] tracking-tight">The Living Archive</div>
+<div class="text-2xl font-bold font-headline text-[#012d1d] tracking-tight">Ecodemia</div>
 <div class="hidden md:flex space-x-8 font-headline tracking-tight">
-<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="#">The Archive</a>
-<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="#">Biodiversity</a>
-<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="#">Climate</a>
-<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="#">Policy</a>
+<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="../environmental_news_homepage/code.html">The Archive</a>
+<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="../article_detail_page/code.html?category=wildlife">Biodiversity</a>
+<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="../article_detail_page/code.html?category=climate">Climate</a>
+<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="../article_detail_page/code.html?category=policy">Policy</a>
 </div>
 <div class="flex items-center space-x-6">
 <button class="text-on-surface-variant hover:text-primary transition-colors">
 <span class="material-symbols-outlined">search</span>
 </button>
-<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label uppercase tracking-[0.05rem] text-[12px] font-bold atmospheric-shadow">
-                    Support Us
-                </button>
+<a href="../support_the_living_archive/code.html" class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label uppercase tracking-[0.05rem] text-[12px] font-bold atmospheric-shadow">Support Us</a>
 </div>
 </div>
 </nav>
@@ -108,10 +106,10 @@
 <!-- Search Header -->
 <header class="mb-16">
 <div class="max-w-3xl">
-<div class="relative mb-6">
-<input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline/40 focus:border-primary focus:ring-0 text-3xl font-headline italic py-2 outline-none transition-all" placeholder="Search the archive..." type="text" value="reforestation"/>
+<form class="search-form"><div class="relative mb-6">
+<input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline/40 focus:border-primary focus:ring-0 text-3xl font-headline italic py-2 outline-none transition-all search-input" placeholder="Search the archive..." type="text" value="reforestation"/>
 <span class="absolute right-0 bottom-2 text-primary font-label uppercase text-[12px] tracking-widest">Searching</span>
-</div>
+</div></form>
 <p class="font-label uppercase tracking-[0.05rem] text-[12px] text-on-surface-variant">
                     12 results for <span class="text-primary font-bold">"reforestation"</span>
 </p>
@@ -124,19 +122,19 @@
 <h3 class="font-headline text-lg mb-6 border-b border-outline-variant/20 pb-2">Filter by Topic</h3>
 <div class="space-y-3">
 <label class="flex items-center group cursor-pointer">
-<input checked="" class="rounded-sm border-outline/40 text-primary focus:ring-primary/20 bg-transparent mr-3" type="checkbox"/>
+<input checked="" class="rounded-sm border-outline/40 text-primary focus:ring-primary/20 bg-transparent mr-3 topic-filter" type="checkbox" value="climate"/>
 <span class="font-label uppercase tracking-tight text-[11px] group-hover:text-primary transition-colors">Climate</span>
 </label>
 <label class="flex items-center group cursor-pointer">
-<input class="rounded-sm border-outline/40 text-primary focus:ring-primary/20 bg-transparent mr-3" type="checkbox"/>
+<input class="rounded-sm border-outline/40 text-primary focus:ring-primary/20 bg-transparent mr-3 topic-filter" type="checkbox" value="wildlife"/>
 <span class="font-label uppercase tracking-tight text-[11px] group-hover:text-primary transition-colors">Wildlife</span>
 </label>
 <label class="flex items-center group cursor-pointer">
-<input class="rounded-sm border-outline/40 text-primary focus:ring-primary/20 bg-transparent mr-3" type="checkbox"/>
+<input class="rounded-sm border-outline/40 text-primary focus:ring-primary/20 bg-transparent mr-3 topic-filter" type="checkbox" value="energy"/>
 <span class="font-label uppercase tracking-tight text-[11px] group-hover:text-primary transition-colors">Energy</span>
 </label>
 <label class="flex items-center group cursor-pointer">
-<input class="rounded-sm border-outline/40 text-primary focus:ring-primary/20 bg-transparent mr-3" type="checkbox"/>
+<input class="rounded-sm border-outline/40 text-primary focus:ring-primary/20 bg-transparent mr-3 topic-filter" type="checkbox" value="policy"/>
 <span class="font-label uppercase tracking-tight text-[11px] group-hover:text-primary transition-colors">Policy</span>
 </label>
 </div>
@@ -159,7 +157,7 @@
 <!-- Search Results Content -->
 <section class="flex-grow space-y-16">
 <!-- Result 1: Featured Result -->
-<article class="group">
+<article class="group search-result cursor-pointer" data-topic="climate" onclick="location.href='../article_detail_page/code.html'">
 <div class="flex flex-col md:flex-row gap-8 items-start">
 <div class="w-full md:w-2/5 aspect-[4/3] bg-surface-container overflow-hidden rounded-md atmospheric-shadow">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Dense young forest growing in sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAglQ7qUX5Fe_xjssdPTXR3RX-UM576AcWCdtQe74ushew0_YhpEA5JEwwgUMIwk9GhejPsgK9-z7bCrSKkEF-wBOMnUiRRrmfO-GvIo7Y1OPE9_wYgpUgIcot_So1bIBrn4XNdX0AHvFZZf62tZC8jqEdn0ixSkeWAE6uFzu4aCMrNgeZKVuWQL1AVzw9NcUetQLM8VOtKGVpZnpgxHJ0f7r1pavM_dfBkESBGOkWktqVMHZsEXqHlj9rfcClMgk0XrY4KZb4BTnWX"/>
@@ -181,7 +179,7 @@
 </div>
 </article>
 <!-- Result 2: Editorial List Item -->
-<article class="group border-t border-outline-variant/20 pt-16">
+<article class="group border-t border-outline-variant/20 pt-16 search-result cursor-pointer" data-topic="policy" onclick="location.href='../article_detail_page/code.html'">
 <div class="flex flex-col md:flex-row-reverse gap-8 items-start">
 <div class="w-full md:w-1/3 aspect-video bg-surface-container overflow-hidden rounded-md">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Vast green landscape with scattered trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_zznpNPXymjCxePbSqKFob0lcDUjCWTfacvmIb0v8vBzXIypAwzGJKJ85gAAYmI-w3wi7NYKCFxW_yhl7bmi-P9BuE_T8scr6hqiNMSZyzE8mQbepUPtVLMWXGHZQaHyCJEyPdaBqZeZ5WhU2o9H-bJsRY4MxFh1moo19ifGGthtHYZtlOcpLxsu-s6Fwcz9DCfZEm4RZ8hgf8jaMMhsGp2rTu_U8jbmOAEqGgbE7D8SNNglIENw3QoIXyYfK-8NxNXDgcD-Q0KUS"/>
@@ -198,7 +196,7 @@
 </div>
 </article>
 <!-- Result 3: Editorial List Item -->
-<article class="group border-t border-outline-variant/20 pt-16">
+<article class="group border-t border-outline-variant/20 pt-16 search-result cursor-pointer" data-topic="wildlife" onclick="location.href='../article_detail_page/code.html'">
 <div class="flex flex-col md:flex-row-reverse gap-8 items-start">
 <div class="w-full md:w-1/3 aspect-video bg-surface-container overflow-hidden rounded-md">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Person planting a small tree seedling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5ZoxgdcxfX5fHdeXKdz_vA2G-kILgud5wjEGYvwxoapctqD3Pu15ETeQboAx1xgJL7fCa523B2C2SKvFAEcsjZaI85-onRLxEgfMHyAFjX1mby20kcIDOVsl72_8bGCcJ8i9CrVg83fcy7JIW1SH0O4GGkkDEF0FCCRihslZMh5xBjS2NWZF2wTseuMeQwmkdU33s4wsJ1YV3tuYKducwdGfZD5ygsTLqFI9hdWhrfIMPxm537Z0edgGkaUg2Hull6L6mk9aCJEJU"/>
@@ -230,9 +228,7 @@
 </div>
 <!-- Load More -->
 <div class="flex justify-center pt-8">
-<button class="font-label uppercase text-[12px] tracking-[0.2em] border-b-2 border-primary pb-1 hover:opacity-60 transition-opacity">
-                        View More Archives
-                    </button>
+<a href="../search_results_reforestation/code.html" class="font-label uppercase text-[12px] tracking-[0.2em] border-b-2 border-primary pb-1 hover:opacity-60 transition-opacity">View More Archives</a>
 </div>
 </section>
 </div>
@@ -241,19 +237,20 @@
 <footer class="bg-[#1b4332] text-[#cfe5d9] w-full mt-20">
 <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
 <div class="mb-8 md:mb-0">
-<div class="text-[#f9faf6] font-headline text-2xl mb-2">The Living Archive</div>
+<div class="text-[#f9faf6] font-headline text-2xl mb-2">Ecodemia</div>
 <p class="font-body text-[12px] opacity-70 normal-case max-w-xs leading-relaxed">Dedicated to the permanent record of our changing planet. All data is verified by independent research panels.</p>
 </div>
 <div class="flex flex-col items-center md:items-end space-y-4">
 <div class="flex space-x-8 font-label uppercase tracking-[0.05rem] text-[12px]">
-<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Ethics Policy</a>
-<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Editorial Team</a>
-<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Contact</a>
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#" data-policy="privacy">Ethics Policy</a>
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="../support_the_living_archive/code.html">Editorial Team</a>
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="../support_the_living_archive/code.html">Contact</a>
 </div>
 <div class="text-[10px] opacity-50 uppercase tracking-[0.1rem]">
-                    © 2024 The Living Archive.
+                    © 2025 Ecodemia.
                 </div>
 </div>
 </div>
 </footer>
+<script src="../js/ecodemia.js"></script>
 </body></html>

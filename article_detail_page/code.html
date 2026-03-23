@@ -85,17 +85,17 @@
 <nav class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 dark:bg-[#1a1c1a]/85 backdrop-blur-md">
 <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-8">
-<a class="font-['Newsreader'] font-bold text-2xl text-[#1a1c1a] dark:text-[#f9faf6]" href="#">The Living Archive</a>
+<a class="font-['Newsreader'] font-bold text-2xl text-[#1a1c1a] dark:text-[#f9faf6]" href="../environmental_news_homepage/code.html">Ecodemia</a>
 <div class="hidden md:flex gap-6 items-center">
-<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="#">Climate</a>
-<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="#">Wildlife</a>
-<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="#">Energy</a>
-<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="#">Policy</a>
+<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="../article_detail_page/code.html?category=climate">Climate</a>
+<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="../article_detail_page/code.html?category=wildlife">Wildlife</a>
+<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="../article_detail_page/code.html?category=energy">Energy</a>
+<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="../article_detail_page/code.html?category=policy">Policy</a>
 </div>
 </div>
 <div class="flex items-center gap-4">
-<button class="material-symbols-outlined text-on-surface p-2">search</button>
-<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label text-sm uppercase tracking-wider font-semibold shadow-sm hover:opacity-90 transition-opacity">Subscribe</button>
+<button class="material-symbols-outlined text-on-surface p-2 search-trigger">search</button>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label text-sm uppercase tracking-wider font-semibold shadow-sm hover:opacity-90 transition-opacity subscribe-btn">Subscribe</button>
 </div>
 </div>
 </nav>
@@ -180,11 +180,11 @@
 <div class="bg-surface-container-low p-8 rounded-lg">
 <h4 class="font-label text-xs font-bold uppercase tracking-widest mb-6 border-b border-outline-variant/30 pb-2">The Digest</h4>
 <div class="space-y-6">
-<div class="group cursor-pointer">
+<div class="group cursor-pointer" onclick="location.href='../article_detail_page/code.html?category=energy'">
 <span class="font-label text-[10px] text-primary/60 font-bold uppercase">Topic: Energy</span>
 <h5 class="font-headline text-lg font-bold leading-tight group-hover:text-primary transition-colors">Offshore Wind: The Quiet Revolution in the North Sea</h5>
 </div>
-<div class="group cursor-pointer">
+<div class="group cursor-pointer" onclick="location.href='../article_detail_page/code.html?category=wildlife'">
 <span class="font-label text-[10px] text-primary/60 font-bold uppercase">Topic: Wildlife</span>
 <h5 class="font-headline text-lg font-bold leading-tight group-hover:text-primary transition-colors">Tracking the Great Migration: How AI is Protecting Rhinos</h5>
 </div>
@@ -205,7 +205,7 @@
 <h2 class="font-headline text-4xl font-bold mb-12">Further Reading</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
 <!-- Card 1 -->
-<div class="group cursor-pointer">
+<div class="group cursor-pointer article-link" onclick="location.href='../article_detail_page/code.html'">
 <div class="overflow-hidden rounded-md mb-6 aspect-[4/3]">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Aerial view of winding river in a dense green valley" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGp3HaD2ryFFp2g8a1M2deJdc61xrkHvJV3NWmnnHbxHqUCKBeHj7hRiX0VBePB9bjshsxyRY_U79HVnl0q2HHvGGhfANaTiQ7KspD4IsTKoKbcynP2aOri-0KFUel4_4n45D1k5eIJDbYSfcXjl9sTx9RkvTXKRqlGjd5xTSLTj4m1K_pjZiNf0e-bfHNjAEEN_Olw5eKJSHEGyefO7GPf_wjLS6r-WYJa2LZ4WE3DQ8NEiy7wjH2UGj4QHcorScfRR3mt65w8tlu"/>
 </div>
@@ -213,7 +213,7 @@
 <h3 class="font-headline text-2xl font-bold group-hover:underline decoration-1 underline-offset-4 decoration-outline-variant">The Amazon's Invisible Water Cycles</h3>
 </div>
 <!-- Card 2 -->
-<div class="group cursor-pointer">
+<div class="group cursor-pointer article-link" onclick="location.href='../article_detail_page/code.html'">
 <div class="overflow-hidden rounded-md mb-6 aspect-[4/3]">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Solar panels reflecting the orange sunset sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAaHXzaebuaqnd-9gPn2XKjj5eC6wBDYMuPzsdMXqPd-RCRnF3hlohtzAdoK6MzRI8JMv-GFsfU0ztkTZHmib1WjJU8cxbPvxRdHXLhELO7N-szcQCUU_49Pl689ZYxsKk2OngZDAO0PVcaTBj6yGg_2aovVsX5SUY3YBbmaAdDdXtmyO8Sgd2C99nSns2PROyegx0uswCZ3Kn1IzLGPv2_TT3_PZJiqtQ2adtQHSQN1O8VhujeZeVn6n5FRsISBWkImZi55Br1bVb"/>
 </div>
@@ -221,7 +221,7 @@
 <h3 class="font-headline text-2xl font-bold group-hover:underline decoration-1 underline-offset-4 decoration-outline-variant">Grid Modernization: Powering the Future City</h3>
 </div>
 <!-- Card 3 -->
-<div class="group cursor-pointer">
+<div class="group cursor-pointer article-link" onclick="location.href='../article_detail_page/code.html'">
 <div class="overflow-hidden rounded-md mb-6 aspect-[4/3]">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Dramatic mountain range reflected in a calm glacial lake" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe8BNVLPkNafI-h8NtzsKi8D4Qtv5EsgKimIlYqboNFYWooQ-B2QHd18tO7uLUABnJ7-R8B8D6bahe__i85eCmmSSzEomA8ex93XVznTeNBY37IzIdQgPok9ECx5noSDnWCwHcAVlIeFGLFK2dK2nkGjDM3MydTn75_CSxd3-pdKWnEiu7_aVbJ9AWsobRJNcMdamm98KjsTKj-9CfEB9yOd8GuFqoJWGUNokHDFqdRpdpasGOFct7lqUh3rAgzKSgE_EaZO3eYr4o"/>
 </div>
@@ -240,10 +240,10 @@
 <div class="relative z-10 max-w-2xl mx-auto space-y-8">
 <h2 class="font-headline text-4xl md:text-5xl font-bold leading-tight">Join the movement of conscious reporting.</h2>
 <p class="font-body text-lg opacity-80">Weekly deep-dives into the environmental stories that matter, delivered with depth and clarity directly to your inbox.</p>
-<div class="flex flex-col md:flex-row gap-4 mt-8">
-<input class="flex-grow bg-white/10 border-b-2 border-white/30 focus:border-white focus:outline-none focus:ring-0 text-white placeholder:text-white/50 py-3 px-4 font-body" placeholder="Email Address" type="email"/>
-<button class="bg-surface-container-lowest text-primary px-8 py-3 rounded-full font-label text-sm font-bold uppercase tracking-widest hover:bg-secondary-container transition-colors">Join The Archive</button>
-</div>
+<form class="newsletter-form flex flex-col md:flex-row gap-4 mt-8">
+<input class="flex-grow bg-white/10 border-b-2 border-white/30 focus:border-white focus:outline-none focus:ring-0 text-white placeholder:text-white/50 py-3 px-4 font-body" placeholder="Email Address" type="email" required/>
+<button type="submit" class="bg-surface-container-lowest text-primary px-8 py-3 rounded-full font-label text-sm font-bold uppercase tracking-widest hover:bg-secondary-container transition-colors">Join The Archive</button>
+</form>
 </div>
 </div>
 </section>
@@ -251,24 +251,24 @@
 <footer class="bg-[#f3f4f0] dark:bg-[#121412] w-full py-16 px-8 mt-20">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto">
 <div class="col-span-1 md:col-span-1">
-<div class="font-['Newsreader'] text-xl font-bold text-[#1a1c1a] dark:text-[#f9faf6] mb-6">The Living Archive</div>
+<div class="font-['Newsreader'] text-xl font-bold text-[#1a1c1a] dark:text-[#f9faf6] mb-6">Ecodemia</div>
 <p class="font-['Inter'] text-sm text-[#717973] leading-relaxed max-w-xs">A modern journal dedicated to documenting the changing state of our planet through rigorous journalism and evocative visual storytelling.</p>
 </div>
 <div>
 <h6 class="font-label text-xs font-bold uppercase tracking-widest text-[#1B4332] dark:text-[#cfe5d9] mb-6">Content</h6>
 <ul class="space-y-4">
-<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Climate &amp; Science</a></li>
-<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Wildlife Conservation</a></li>
-<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Sustainable Tech</a></li>
-<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Global Policy</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="../article_detail_page/code.html?category=climate">Climate &amp; Science</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="../article_detail_page/code.html?category=wildlife">Wildlife Conservation</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="../article_detail_page/code.html?category=energy">Sustainable Tech</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="../article_detail_page/code.html?category=policy">Global Policy</a></li>
 </ul>
 </div>
 <div>
 <h6 class="font-label text-xs font-bold uppercase tracking-widest text-[#1B4332] dark:text-[#cfe5d9] mb-6">Company</h6>
 <ul class="space-y-4">
-<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">About Us</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="../support_the_living_archive/code.html">About Us</a></li>
 <li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Editorial Board</a></li>
-<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Contact Support</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="../support_the_living_archive/code.html">Contact Support</a></li>
 <li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="#">Press Kit</a></li>
 </ul>
 </div>
@@ -282,11 +282,12 @@
 </div>
 </div>
 <div class="max-w-screen-2xl mx-auto mt-16 pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
-<span class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2]">© 2024 The Living Archive. All rights reserved.</span>
+<span class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2]">© 2025 Ecodemia. All rights reserved.</span>
 <div class="flex gap-8">
-<a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332]" href="#">Privacy Policy</a>
-<a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332]" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332]" href="#" data-policy="privacy">Privacy Policy</a>
+<a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332]" href="#" data-policy="terms">Terms of Service</a>
 </div>
 </div>
 </footer>
+<script src="../js/ecodemia.js"></script>
 </body></html>

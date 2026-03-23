@@ -91,20 +91,20 @@
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-[#f9faf6] dark:bg-[#1a1c1a] opacity-85 backdrop-blur-md">
 <nav class="flex justify-between items-center px-8 h-20 w-full max-w-screen-2xl mx-auto">
-<div class="text-2xl font-headline italic text-[#012d1d] dark:text-[#f9faf6]">The Living Archive</div>
+<div class="text-2xl font-headline italic text-[#012d1d] dark:text-[#f9faf6]">Ecodemia</div>
 <div class="hidden md:flex items-center gap-10">
-<a class="text-[#717973] dark:text-[#c1c8c2] hover:text-[#1B4332] font-label uppercase text-[0.65rem] tracking-[0.05rem] transition-opacity duration-300" href="#">Archive</a>
-<a class="text-[#717973] dark:text-[#c1c8c2] hover:text-[#1B4332] font-label uppercase text-[0.65rem] tracking-[0.05rem] transition-opacity duration-300" href="#">Reports</a>
-<a class="text-[#1B4332] dark:text-[#cfe5d9] font-bold border-b-2 border-[#1B4332] dark:border-[#cfe5d9] pb-1 font-label uppercase text-[0.65rem] tracking-[0.05rem] transition-opacity duration-300" href="#">Merch</a>
-<a class="text-[#717973] dark:text-[#c1c8c2] hover:text-[#1B4332] font-label uppercase text-[0.65rem] tracking-[0.05rem] transition-opacity duration-300" href="#">About</a>
+<a class="text-[#717973] dark:text-[#c1c8c2] hover:text-[#1B4332] font-label uppercase text-[0.65rem] tracking-[0.05rem] transition-opacity duration-300" href="../environmental_news_homepage/code.html">Archive</a>
+<a class="text-[#717973] dark:text-[#c1c8c2] hover:text-[#1B4332] font-label uppercase text-[0.65rem] tracking-[0.05rem] transition-opacity duration-300" href="../article_detail_page/code.html">Reports</a>
+<a class="text-[#1B4332] dark:text-[#cfe5d9] font-bold border-b-2 border-[#1B4332] dark:border-[#cfe5d9] pb-1 font-label uppercase text-[0.65rem] tracking-[0.05rem] transition-opacity duration-300" href="../merchandise_collections/code.html">Merch</a>
+<a class="text-[#717973] dark:text-[#c1c8c2] hover:text-[#1B4332] font-label uppercase text-[0.65rem] tracking-[0.05rem] transition-opacity duration-300" href="../support_the_living_archive/code.html">About</a>
 </div>
 <div class="flex items-center gap-6">
-<button class="hover:opacity-80 transition-opacity duration-300">
+<button class="hover:opacity-80 transition-opacity duration-300 search-trigger">
 <span class="material-symbols-outlined text-primary">search</span>
 </button>
-<button class="hover:opacity-80 transition-opacity duration-300 relative">
+<button class="hover:opacity-80 transition-opacity duration-300 relative cart-trigger">
 <span class="material-symbols-outlined text-primary">shopping_bag</span>
-<span class="absolute -top-1 -right-1 bg-primary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold cart-badge">2</span>
 </button>
 </div>
 </nav>
@@ -117,7 +117,7 @@
 <p class="font-label text-[0.65rem] uppercase tracking-widest text-outline">Sustainable Materials</p>
 </div>
 <nav class="flex flex-col gap-1 pr-4">
-<a class="text-[#1B4332] dark:text-[#f9faf6] font-semibold bg-[#e7e9e5] dark:bg-[#2d302d] rounded-r-full px-8 py-3 flex items-center gap-3 translate-x-1 transition-transform" href="#">
+<a class="text-[#1B4332] dark:text-[#f9faf6] font-semibold bg-[#e7e9e5] dark:bg-[#2d302d] rounded-r-full px-8 py-3 flex items-center gap-3 translate-x-1 transition-transform" href="../merchandise_collections/code.html">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">eco</span>
 <span class="font-label text-xs uppercase tracking-tight">Organic Cotton</span>
 </a>
@@ -182,7 +182,7 @@
 <!-- Bento-ish Grid -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
 <!-- Product Card 1 -->
-<div class="group">
+<div class="group cursor-pointer" onclick="location.href='../product_detail_field_jacket/code.html'">
 <div class="relative aspect-[3/4] overflow-hidden rounded-md bg-surface-container-low mb-6">
 <img alt="Heavyweight Tee" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist white heavyweight organic cotton t-shirt on model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2tH_1o6vB8exuoPfkCCvzGURKEU4bd-qJGJ9f-ARRXXJtGM1RxCESVYBQ5moWkVSnsBGR-LVooWGWRhVt12G3Pb6ZSFDS8YEdHjBVZBtN7HSzezcIpfhxEtzBcRtVkCLfqsoCGakwKPVKncsZFvNFEDCFL-2RrQwrwZFyjB86YLXOYUc2wd5KJAqRPoBTBgjlD4RFz0dkdimLQqLLWfOs2kd2Ax0ssj6RfKwEh4FXyb9knmatPMd5V3AJMeDtHfJoyHF-9Px1Qx4b"/>
 <div class="absolute top-4 left-4 flex flex-col gap-2">
@@ -196,13 +196,13 @@
 <p class="text-outline font-body text-sm mb-4">Bone White</p>
 <span class="font-headline text-lg text-primary">$68.00</span>
 </div>
-<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors add-to-bag-btn" data-id="archival-tee" data-name="Sustainable Essential" data-price="68" onclick="event.stopPropagation()">
 <span class="material-symbols-outlined text-sm">add</span>
 </button>
 </div>
 </div>
 <!-- Product Card 2 -->
-<div class="group">
+<div class="group cursor-pointer" onclick="location.href='../product_detail_field_jacket/code.html'">
 <div class="relative aspect-[3/4] overflow-hidden rounded-md bg-surface-container-low mb-6">
 <img alt="Field Jacket" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Dark olive sustainable canvas field jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgQb2nwvW1N0RyaKXQN7koS7dsQVYLYToqTQWsmzI94RXsZC-5jYVLNWCooRNarF_6Ohi4tDeVibiChTxLC8OgWdQKQxQyy1tE4O2Wyhrwf_mkQbr2B58KDfBz5AyDGsqxIT8TAsnET2WQWhUIK-bkL3X7-m0BWGbIV0Zw2BMmpHxerKDzxH-Y2cvVWOCqEj5_Hat_ZW3OzsShU1l3tyzmqACtQ1065hjDKnFoHdlGsVck5XlUgdvMfGjSgEJ60u_ZyXIiMk_87FgP"/>
 <div class="absolute top-4 left-4 flex flex-col gap-2">
@@ -215,7 +215,7 @@
 <p class="text-outline font-body text-sm mb-4">Deep Forest</p>
 <span class="font-headline text-lg text-primary">$245.00</span>
 </div>
-<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors add-to-bag-btn" data-id="archival-tee" data-name="Sustainable Essential" data-price="68" onclick="event.stopPropagation()">
 <span class="material-symbols-outlined text-sm">add</span>
 </button>
 </div>
@@ -241,7 +241,7 @@
 </div>
 </div>
 <!-- Product Card 4 -->
-<div class="group">
+<div class="group cursor-pointer" onclick="location.href='../product_detail_field_jacket/code.html'">
 <div class="relative aspect-[3/4] overflow-hidden rounded-md bg-surface-container-low mb-6">
 <img alt="Denim" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Straight leg raw indigo denim pants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_37EFT0lAFegLP3tIBTa81nx0E1oq7FdwR5IIUs_yYlDwOc6_5iC5uxkxldbI9TNz7J0F_9z836ccc3zPj-EfskgJvPTf5iQSZ4nMS-PF0Us56Kl4hUDSGTqOXqeacepgE6sX1yV1ug12inKU5_Y4Cgqf3C-pglLwP3KOw_xBCFCxsFBT-PFd_rm8QVa0uqzlWztbiKzvC2nBxjXuY4h3a8xL4yGqI1vbSMkhU-vwbOuuiGK7uSH4QspoQ3pzMHyV_1n1JtGtM_Ur"/>
 <div class="absolute top-4 left-4">
@@ -254,13 +254,13 @@
 <p class="text-outline font-body text-sm mb-4">Indigo</p>
 <span class="font-headline text-lg text-primary">$165.00</span>
 </div>
-<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors add-to-bag-btn" data-id="archival-tee" data-name="Sustainable Essential" data-price="68" onclick="event.stopPropagation()">
 <span class="material-symbols-outlined text-sm">add</span>
 </button>
 </div>
 </div>
 <!-- Product Card 5 -->
-<div class="group">
+<div class="group cursor-pointer" onclick="location.href='../product_detail_field_jacket/code.html'">
 <div class="relative aspect-[3/4] overflow-hidden rounded-md bg-surface-container-low mb-6">
 <img alt="Tote Bag" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Large canvas tote bag with archival print" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG1BkAszam8AjRkhQsIGwtHEurZVxfQnqH0xLasB4Ck77q-A-Zmdo5BYnM7tvYYgxoxy8bnjEbHrqS6KmvlWCzlIpK9qjmbLoIwUegRxwdK0ygtO49W9pu17I9S7pveDEk5xz-JAOnEreYqzgqBs1ZuUTlzwZGm_16zfWwMkQaB-l1Txo88ZB726xIWHURZX7qJ4ftofqUTZ4Pi_vtQ3YtBga7qmZP3VQUXey66MF7Ngl4L6NXTgVbCzk2Xl_lQBmSDtI2UWO6Z4jX"/>
 <div class="absolute top-4 left-4">
@@ -273,7 +273,7 @@
 <p class="text-outline font-body text-sm mb-4">Natural Canvas</p>
 <span class="font-headline text-lg text-primary">$45.00</span>
 </div>
-<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white transition-colors add-to-bag-btn" data-id="archival-tee" data-name="Sustainable Essential" data-price="68" onclick="event.stopPropagation()">
 <span class="material-symbols-outlined text-sm">add</span>
 </button>
 </div>
@@ -300,16 +300,16 @@
 <!-- Footer -->
 <footer class="w-full py-16 px-8 lg:px-24 flex flex-col md:flex-row justify-between items-start gap-8 mt-20 bg-[#f3f4f0] dark:bg-[#1a1c1a] border-t border-[#c1c8c2]/20">
 <div class="max-w-xs">
-<div class="font-headline italic text-2xl text-[#012d1d] dark:text-[#f9faf6] mb-6">The Living Archive</div>
+<div class="font-headline italic text-2xl text-[#012d1d] dark:text-[#f9faf6] mb-6">Ecodemia</div>
 <p class="font-body text-sm text-[#717973] leading-relaxed">
                         A journal of planetary health and a catalog of objects designed to endure. We believe in the radical act of making things that last.
                     </p>
-<p class="mt-8 font-label text-[10px] text-[#717973] uppercase tracking-widest">© 2024 The Living Archive. Ethically Sourced.</p>
+<p class="mt-8 font-label text-[10px] text-[#717973] uppercase tracking-widest">© 2025 Ecodemia. Ethically Sourced.</p>
 </div>
 <div class="grid grid-cols-2 gap-x-16 gap-y-12">
 <div class="flex flex-col gap-4">
 <h4 class="font-label text-[10px] font-bold uppercase tracking-[0.2rem] text-primary">Philosophy</h4>
-<a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="#">Sourcing Transparency</a>
+<a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="../support_the_living_archive/code.html">Sourcing Transparency</a>
 <a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="#">Carbon Report</a>
 <a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="#">Circularity Program</a>
 </div>
@@ -317,14 +317,14 @@
 <h4 class="font-label text-[10px] font-bold uppercase tracking-[0.2rem] text-primary">Service</h4>
 <a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="#">Shipping Policy</a>
 <a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="#">Repairs</a>
-<a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="#">Contact</a>
+<a class="text-sm font-body text-[#717973] hover:text-[#012d1d] dark:hover:text-[#f9faf6] transition-colors" href="../support_the_living_archive/code.html">Contact</a>
 </div>
 </div>
 <div class="w-full md:w-auto">
 <h4 class="font-label text-[10px] font-bold uppercase tracking-[0.2rem] text-primary mb-6">The Dispatch</h4>
 <div class="relative max-w-sm">
 <input class="w-full bg-transparent border-0 border-b border-outline/40 py-3 font-body text-sm focus:ring-0 focus:border-primary transition-all placeholder:text-outline/50" placeholder="Email Address" type="email"/>
-<button class="absolute right-0 top-1/2 -translate-y-1/2">
+<button type="button" class="absolute right-0 top-1/2 -translate-y-1/2 newsletter-submit">
 <span class="material-symbols-outlined text-primary">arrow_forward</span>
 </button>
 </div>
@@ -335,15 +335,15 @@
 </div>
 <!-- Mobile Navigation (Responsive Pivot) -->
 <nav class="md:hidden fixed bottom-0 left-0 w-full bg-surface-bright/95 backdrop-blur-md z-50 flex justify-around items-center h-16 border-t border-outline-variant/10">
-<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<a class="flex flex-col items-center gap-1 text-primary" href="../environmental_news_homepage/code.html">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
 <span class="font-label text-[8px] uppercase tracking-widest">Home</span>
 </a>
-<a class="flex flex-col items-center gap-1 text-outline" href="#">
+<a class="flex flex-col items-center gap-1 text-outline" href="../article_detail_page/code.html">
 <span class="material-symbols-outlined">menu_book</span>
 <span class="font-label text-[8px] uppercase tracking-widest">Archive</span>
 </a>
-<a class="flex flex-col items-center gap-1 text-outline" href="#">
+<a class="flex flex-col items-center gap-1 text-outline" href="../shopping_cart_mobile/code.html">
 <span class="material-symbols-outlined">shopping_cart</span>
 <span class="font-label text-[8px] uppercase tracking-widest">Shop</span>
 </a>
@@ -352,4 +352,5 @@
 <span class="font-label text-[8px] uppercase tracking-widest">Profile</span>
 </a>
 </nav>
+<script src="../js/ecodemia.js"></script>
 </body></html>

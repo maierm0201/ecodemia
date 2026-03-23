@@ -3,7 +3,7 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Search Results: Reforestation | The Living Archive</title>
+<title>Search Results: Reforestation | Ecodemia</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -96,11 +96,11 @@
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 backdrop-blur-xl shadow-[0px_20px_40px_rgba(26,28,26,0.06)] flex justify-between items-center px-6 h-16">
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-[#1B4332] active:scale-95 duration-200 cursor-pointer" data-icon="menu">menu</span>
-<h1 class="text-2xl font-serif italic font-medium tracking-tight text-[#1B4332]">The Living Archive</h1>
+<span class="material-symbols-outlined text-[#1B4332] active:scale-95 duration-200 cursor-pointer menu-trigger" data-icon="menu">menu</span>
+<h1 class="text-2xl font-serif italic font-medium tracking-tight text-[#1B4332]">Ecodemia</h1>
 </div>
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-[#1B4332] active:scale-95 duration-200 cursor-pointer" data-icon="shopping_bag">shopping_bag</span>
+<span class="material-symbols-outlined text-[#1B4332] active:scale-95 duration-200 cursor-pointer cart-trigger" data-icon="shopping_bag">shopping_bag</span>
 </div>
 </header>
 <main class="pt-24 pb-32 px-6 max-w-lg mx-auto">
@@ -114,16 +114,16 @@
 </div>
 </div>
 <!-- Minimalist Search Input -->
-<div class="mt-6 flex items-center border-b border-outline/40 focus-within:border-primary transition-colors py-2">
+<form class="search-form mt-6 flex items-center border-b border-outline/40 focus-within:border-primary transition-colors py-2">
 <span class="material-symbols-outlined text-outline text-lg mr-2" data-icon="search">search</span>
-<input class="bg-transparent border-none focus:ring-0 w-full font-body text-on-surface placeholder:text-outline/60" placeholder="Update search..." type="text" value="reforestation"/>
-<span class="material-symbols-outlined text-outline/60 text-lg ml-2 cursor-pointer" data-icon="close">close</span>
-</div>
+<input class="bg-transparent border-none focus:ring-0 w-full font-body text-on-surface placeholder:text-outline/60 search-input" placeholder="Update search..." type="text" value="reforestation"/>
+<span class="material-symbols-outlined text-outline/60 text-lg ml-2 cursor-pointer" data-icon="close" onclick="this.closest('form').querySelector('input').value=''">close</span>
+</form>
 </section>
 <!-- Editorial Results Feed -->
 <div class="space-y-12">
 <!-- Result 1: Hero Featured Style -->
-<article class="group">
+<article class="group search-result cursor-pointer" data-topic="climate" onclick="location.href='../article_detail_mobile/code.html'">
 <div class="relative overflow-hidden rounded-md mb-4 aspect-[16/10]">
 <img alt="Lush green forest being restored" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" data-alt="Young saplings growing in a sun-drenched forest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8YG_wIx4cmbC1ZqFWle4jcf6lvnyMALvDErXNP5cMHtRWYrcP0onhS4QeMbYaGfMHpe128UCPsxBTa2WLlnZ_YzRNDA8iva0C7_f_2FmESsAX71als47aIdSPys7Cpf2eo2GtifrHavK-EpoJ3wMNiR-FwOizMFnaNDwhc2_uM6j9n_hsoDlTghMxQeZ46vCrNi1PgKWHKZrumoIcJ1yaIa0igC7K2NPGOZJJxazG1MeoE0Jr5UUxHzlOgPkwuvBd8TQj7gFdZ1NW"/>
 <div class="absolute top-4 left-4">
@@ -152,7 +152,7 @@
 </div>
 </aside>
 <!-- Result 2: Tonal Layering Card -->
-<article class="bg-surface-container-low p-5 rounded-lg">
+<article class="bg-surface-container-low p-5 rounded-lg search-result cursor-pointer" data-topic="policy" onclick="location.href='../article_detail_mobile/code.html'">
 <div class="flex gap-4">
 <div class="w-2/3">
 <span class="font-label text-[10px] text-primary font-bold uppercase tracking-widest mb-1 block">Policy Review</span>
@@ -172,7 +172,7 @@
 </div>
 </article>
 <!-- Result 3: Text Dominant with Glass Detail -->
-<article class="border-l-2 border-secondary-container pl-6 py-2">
+<article class="border-l-2 border-secondary-container pl-6 py-2 search-result cursor-pointer" data-topic="wildlife" onclick="location.href='../article_detail_mobile/code.html'">
 <span class="font-label text-[10px] text-secondary font-bold uppercase tracking-[0.05rem]">Community Spotlight</span>
 <h3 class="font-headline text-2xl italic leading-tight text-primary mt-1">The Miyawaki Method: Transforming Urban Vacancies into Ancient Forests</h3>
 <p class="font-body text-sm text-on-surface-variant mt-3 leading-relaxed">How tiny, dense forests are bringing local ecosystems back to the heart of industrial cities.</p>
@@ -184,33 +184,32 @@
 </article>
 <!-- Load More Tonal Shift -->
 <div class="flex justify-center pt-8">
-<button class="bg-[#e7e9e5] text-on-surface font-label text-[10px] font-bold uppercase tracking-widest px-8 py-3 rounded-full hover:bg-secondary-container transition-colors active:scale-95">
-                    View more results
-                </button>
+<a href="../search_results_mobile/code.html" class="bg-[#e7e9e5] text-on-surface font-label text-[10px] font-bold uppercase tracking-widest px-8 py-3 rounded-full hover:bg-secondary-container transition-colors active:scale-95 inline-block">View more results</a>
 </div>
 </div>
 </main>
 <!-- BottomNavBar -->
 <nav class="fixed bottom-0 left-0 w-full z-50 bg-[#f9faf6]/90 backdrop-blur-lg flex justify-around items-center px-4 pb-6 pt-2 shadow-[0_-4px_24px_rgba(0,0,0,0.04)]">
-<div class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform">
+<a href="../article_detail_mobile/code.html" class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform">
 <span class="material-symbols-outlined mb-1" data-icon="auto_stories">auto_stories</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Archive</span>
-</div>
-<div class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform">
+</a>
+<a href="../article_detail_mobile/code.html" class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform">
 <span class="material-symbols-outlined mb-1" data-icon="grid_view">grid_view</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Categories</span>
-</div>
-<div class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform">
+</a>
+<a href="../merch_collections_mobile/code.html" class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform">
 <span class="material-symbols-outlined mb-1" data-icon="eco">eco</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Shop</span>
-</div>
-<div class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform">
+</a>
+<a href="../support_mobile/code.html" class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform">
 <span class="material-symbols-outlined mb-1" data-icon="volunteer_activism">volunteer_activism</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Support</span>
-</div>
-<div class="flex flex-col items-center justify-center bg-[#cfe5d9] text-[#012d1d] rounded-full px-4 py-1.5 transition-all active:translate-y-0.5">
+</a>
+<a href="../search_results_mobile/code.html" class="flex flex-col items-center justify-center bg-[#cfe5d9] text-[#012d1d] rounded-full px-4 py-1.5 transition-all active:translate-y-0.5">
 <span class="material-symbols-outlined" data-icon="search">search</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Search</span>
-</div>
+</a>
 </nav>
+<script src="../js/ecodemia.js"></script>
 </body></html>

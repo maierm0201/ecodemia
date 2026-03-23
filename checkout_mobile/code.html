@@ -3,7 +3,7 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Checkout | The Living Archive</title>
+<title>Checkout | Ecodemia</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@400;500;600&amp;family=Public_Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -93,9 +93,9 @@
 <!-- TopAppBar (Transactional - Modified for focus) -->
 <header class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 backdrop-blur-xl shadow-[0px_20px_40px_rgba(26,28,26,0.06)] flex justify-between items-center px-6 h-16">
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary cursor-pointer active:scale-95 duration-200" data-icon="arrow_back">arrow_back</span>
+<a href="../shopping_cart_mobile/code.html"><span class="material-symbols-outlined text-primary active:scale-95 duration-200" data-icon="arrow_back">arrow_back</span></a>
 </div>
-<h1 class="text-2xl font-headline italic font-medium tracking-tight text-[#1B4332]">The Living Archive</h1>
+<h1 class="text-2xl font-headline italic font-medium tracking-tight text-[#1B4332]">Ecodemia</h1>
 <div class="w-6"></div> <!-- Spacer for balance -->
 </header>
 <main class="pt-24 pb-32 px-6 max-w-md mx-auto">
@@ -128,7 +128,7 @@
 <section class="bg-surface-container-low p-6 rounded-xl mb-8">
 <div class="flex justify-between items-start mb-4">
 <h3 class="font-label text-xs uppercase tracking-widest text-outline font-bold">Your Selection</h3>
-<span class="text-xs text-primary font-semibold underline underline-offset-4">Edit Cart</span>
+<a href="../shopping_cart_mobile/code.html" class="text-xs text-primary font-semibold underline underline-offset-4">Edit Cart</a>
 </div>
 <div class="flex gap-4 items-center">
 <div class="w-16 h-20 bg-surface-variant rounded-md overflow-hidden flex-shrink-0">
@@ -141,7 +141,7 @@
 </div>
 </section>
 <!-- Payment Form -->
-<form class="space-y-8">
+<form class="space-y-8 checkout-form">
 <!-- Carbon Neutral Badge -->
 <div class="bg-secondary-container/50 border border-secondary-container p-4 rounded-xl flex items-start gap-3">
 <span class="material-symbols-outlined text-primary mt-0.5" data-icon="eco">eco</span>
@@ -197,9 +197,10 @@
 </button>
 </form>
 <p class="text-[10px] text-center text-outline mt-8 uppercase tracking-widest">
-            By purchasing, you agree to our <span class="underline">Terms of Curation</span>.
+            By purchasing, you agree to our <a href="#" data-policy="terms" class="underline">Terms of Curation</a>.
         </p>
 </main>
 <!-- Suppressed BottomNavBar and SideNav as per Task-Focused Page rules -->
 <!-- Suppressed FAB as per Contextual Suppression rules -->
+<script src="../js/ecodemia.js"></script>
 </body></html>

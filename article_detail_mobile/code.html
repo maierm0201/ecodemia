@@ -3,7 +3,7 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>The Living Archive | Editorial Detail</title>
+<title>Ecodemia | Editorial Detail</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@400;500;600&amp;family=Public_Sans:wght@600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -93,11 +93,11 @@
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 glass-nav shadow-[0px_20px_40px_rgba(26,28,26,0.06)] flex justify-between items-center px-6 h-16">
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+<span class="material-symbols-outlined text-primary cursor-pointer menu-trigger" data-icon="menu">menu</span>
 </div>
-<h1 class="text-2xl font-headline italic font-medium tracking-tight text-primary">The Living Archive</h1>
+<h1 class="text-2xl font-headline italic font-medium tracking-tight text-primary">Ecodemia</h1>
 <div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="shopping_bag">shopping_bag</span>
+<span class="material-symbols-outlined text-primary cursor-pointer cart-trigger" data-icon="shopping_bag">shopping_bag</span>
 </div>
 </header>
 <main class="pt-16 pb-32">
@@ -173,7 +173,7 @@
 <h4 class="font-label text-[12px] uppercase tracking-[0.2rem] font-extrabold text-primary mb-10">Further Reading</h4>
 <div class="space-y-12">
 <!-- Article Card 1 -->
-<div class="group">
+<div class="group cursor-pointer" onclick="location.href='../article_detail_mobile/code.html'">
 <p class="font-label text-[10px] uppercase tracking-widest text-secondary mb-3">Wildlife • 4 min</p>
 <h5 class="font-headline text-2xl text-on-surface group-hover:text-primary transition-colors">The Reintroduction of the Apex Predator</h5>
 <div class="mt-4 flex items-center text-primary font-label text-[11px] uppercase tracking-widest font-bold">
@@ -182,7 +182,7 @@
 </div>
 </div>
 <!-- Article Card 2 -->
-<div class="group">
+<div class="group cursor-pointer" onclick="location.href='../article_detail_mobile/code.html'">
 <p class="font-label text-[10px] uppercase tracking-widest text-secondary mb-3">Policy • 7 min</p>
 <h5 class="font-headline text-2xl text-on-surface group-hover:text-primary transition-colors">The Carbon Border Adjustment: A Global Perspective</h5>
 <div class="mt-4 flex items-center text-primary font-label text-[11px] uppercase tracking-widest font-bold">
@@ -196,25 +196,26 @@
 </main>
 <!-- BottomNavBar (The Archive is active) -->
 <nav class="fixed bottom-0 left-0 w-full bg-[#f9faf6]/90 dark:bg-[#1a1c1a]/90 backdrop-blur-lg flex justify-around items-center px-4 pb-6 pt-2 z-50">
-<a class="flex flex-col items-center justify-center bg-[#cfe5d9] text-[#012d1d] rounded-full px-4 py-1.5 transition-all" href="#">
+<a class="flex flex-col items-center justify-center bg-[#cfe5d9] text-[#012d1d] rounded-full px-4 py-1.5 transition-all" href="../article_detail_mobile/code.html">
 <span class="material-symbols-outlined text-xl" data-icon="auto_stories" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-0.5">Archive</span>
 </a>
-<a class="flex flex-col items-center justify-center text-[#717973] py-2 hover:text-[#1B4332]" href="#">
+<a class="flex flex-col items-center justify-center text-[#717973] py-2 hover:text-[#1B4332]" href="../search_results_mobile/code.html">
 <span class="material-symbols-outlined text-xl" data-icon="grid_view">grid_view</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-0.5">Categories</span>
 </a>
-<a class="flex flex-col items-center justify-center text-[#717973] py-2 hover:text-[#1B4332]" href="#">
+<a class="flex flex-col items-center justify-center text-[#717973] py-2 hover:text-[#1B4332]" href="../merch_collections_mobile/code.html">
 <span class="material-symbols-outlined text-xl" data-icon="eco">eco</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-0.5">Shop</span>
 </a>
-<a class="flex flex-col items-center justify-center text-[#717973] py-2 hover:text-[#1B4332]" href="#">
+<a class="flex flex-col items-center justify-center text-[#717973] py-2 hover:text-[#1B4332]" href="../support_mobile/code.html">
 <span class="material-symbols-outlined text-xl" data-icon="volunteer_activism">volunteer_activism</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-0.5">Support</span>
 </a>
-<a class="flex flex-col items-center justify-center text-[#717973] py-2 hover:text-[#1B4332]" href="#">
+<a class="flex flex-col items-center justify-center text-[#717973] py-2 hover:text-[#1B4332]" href="../search_results_mobile/code.html">
 <span class="material-symbols-outlined text-xl" data-icon="search">search</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-0.5">Search</span>
 </a>
 </nav>
+<script src="../js/ecodemia.js"></script>
 </body></html>

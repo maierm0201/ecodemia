@@ -3,7 +3,7 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Recycled Tech Field Jacket | The Living Archive</title>
+<title>Recycled Tech Field Jacket | Ecodemia</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Inter:wght@400;500;600&amp;family=Public_Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -89,11 +89,11 @@
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 backdrop-blur-xl shadow-[0px_20px_40px_rgba(26,28,26,0.06)] flex justify-between items-center px-6 h-16">
 <div class="flex items-center">
-<span class="material-symbols-outlined text-[#1B4332] active:scale-95 duration-200 cursor-pointer">menu</span>
+<span class="material-symbols-outlined text-[#1B4332] active:scale-95 duration-200 cursor-pointer menu-trigger">menu</span>
 </div>
-<h1 class="font-['Newsreader'] italic font-medium tracking-tight text-2xl text-[#1B4332]">The Living Archive</h1>
+<h1 class="font-['Newsreader'] italic font-medium tracking-tight text-2xl text-[#1B4332]">Ecodemia</h1>
 <div class="flex items-center">
-<span class="material-symbols-outlined text-[#1B4332] active:scale-95 duration-200 cursor-pointer">shopping_bag</span>
+<span class="material-symbols-outlined text-[#1B4332] active:scale-95 duration-200 cursor-pointer cart-trigger">shopping_bag</span>
 </div>
 </header>
 <main class="pt-16 pb-32">
@@ -138,16 +138,16 @@
 <h3 class="font-label text-xs uppercase tracking-widest font-bold text-on-surface">Select Size</h3>
 <button class="text-primary text-xs font-semibold underline underline-offset-4">Size Guide</button>
 </div>
-<div class="grid grid-cols-4 gap-3">
-<button class="py-3 text-sm font-medium rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors">XS</button>
-<button class="py-3 text-sm font-medium rounded-lg bg-primary text-on-primary">S</button>
-<button class="py-3 text-sm font-medium rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors">M</button>
-<button class="py-3 text-sm font-medium rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors">L</button>
+<div class="grid grid-cols-4 gap-3 size-group">
+<button class="py-3 text-sm font-medium rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors size-btn" data-size="XS">XS</button>
+<button class="py-3 text-sm font-medium rounded-lg bg-primary text-on-primary size-btn selected" data-size="S">S</button>
+<button class="py-3 text-sm font-medium rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors size-btn" data-size="M">M</button>
+<button class="py-3 text-sm font-medium rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors size-btn" data-size="L">L</button>
 </div>
 </section>
 <!-- CTA Section -->
 <section class="px-6 mt-8">
-<button class="w-full py-4 bg-gradient-to-r from-primary to-primary-container text-white rounded-full font-label font-bold tracking-wide shadow-lg active:scale-95 transition-all">
+<button class="w-full py-4 bg-gradient-to-r from-primary to-primary-container text-white rounded-full font-label font-bold tracking-wide shadow-lg active:scale-95 transition-all add-to-bag-btn" data-id="field-jacket-mobile" data-name="Recycled Tech Field Jacket" data-price="345">
                 ADD TO BAG
             </button>
 </section>
@@ -231,25 +231,26 @@
 </main>
 <!-- BottomNavBar -->
 <nav class="fixed bottom-0 left-0 w-full bg-[#f9faf6]/90 backdrop-blur-lg flex justify-around items-center px-4 pb-6 pt-2 z-50">
-<a class="flex flex-col items-center justify-center text-[#717973] py-2" href="#">
+<a class="flex flex-col items-center justify-center text-[#717973] py-2" href="../article_detail_mobile/code.html">
 <span class="material-symbols-outlined">auto_stories</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-1">Archive</span>
 </a>
-<a class="flex flex-col items-center justify-center text-[#717973] py-2" href="#">
+<a class="flex flex-col items-center justify-center text-[#717973] py-2" href="../search_results_mobile/code.html">
 <span class="material-symbols-outlined">grid_view</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-1">Categories</span>
 </a>
-<a class="flex flex-col items-center justify-center bg-[#cfe5d9] text-[#012d1d] rounded-full px-4 py-1.5 transition-all" href="#">
+<a class="flex flex-col items-center justify-center bg-[#cfe5d9] text-[#012d1d] rounded-full px-4 py-1.5 transition-all" href="../merch_collections_mobile/code.html">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">eco</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-0.5">Shop</span>
 </a>
-<a class="flex flex-col items-center justify-center text-[#717973] py-2" href="#">
+<a class="flex flex-col items-center justify-center text-[#717973] py-2" href="../support_mobile/code.html">
 <span class="material-symbols-outlined">volunteer_activism</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-1">Support</span>
 </a>
-<a class="flex flex-col items-center justify-center text-[#717973] py-2" href="#">
+<a class="flex flex-col items-center justify-center text-[#717973] py-2" href="../search_results_mobile/code.html">
 <span class="material-symbols-outlined">search</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold mt-1">Search</span>
 </a>
 </nav>
+<script src="../js/ecodemia.js"></script>
 </body></html>

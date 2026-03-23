@@ -89,13 +89,13 @@
 <nav class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 dark:bg-[#1a1c1a]/85 backdrop-blur-xl">
 <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
 <div class="text-2xl font-bold font-headline text-[#012d1d] dark:text-[#f9faf6] tracking-tight">
-                The Living Archive
+                Ecodemia
             </div>
 <div class="hidden md:flex space-x-8 items-center font-headline tracking-tight">
-<a class="text-[#717973] dark:text-[#a1a8a2] hover:text-[#012d1d] dark:hover:text-white transition-colors" href="#">The Archive</a>
-<a class="text-[#717973] dark:text-[#a1a8a2] hover:text-[#012d1d] dark:hover:text-white transition-colors" href="#">Biodiversity</a>
-<a class="text-[#717973] dark:text-[#a1a8a2] hover:text-[#012d1d] dark:hover:text-white transition-colors" href="#">Climate</a>
-<a class="text-[#717973] dark:text-[#a1a8a2] hover:text-[#012d1d] dark:hover:text-white transition-colors" href="#">Policy</a>
+<a class="text-[#717973] dark:text-[#a1a8a2] hover:text-[#012d1d] dark:hover:text-white transition-colors" href="../environmental_news_homepage/code.html">The Archive</a>
+<a class="text-[#717973] dark:text-[#a1a8a2] hover:text-[#012d1d] dark:hover:text-white transition-colors" href="../article_detail_page/code.html?category=wildlife">Biodiversity</a>
+<a class="text-[#717973] dark:text-[#a1a8a2] hover:text-[#012d1d] dark:hover:text-white transition-colors" href="../article_detail_page/code.html?category=climate">Climate</a>
+<a class="text-[#717973] dark:text-[#a1a8a2] hover:text-[#012d1d] dark:hover:text-white transition-colors" href="../article_detail_page/code.html?category=policy">Policy</a>
 </div>
 <button class="bg-gradient-to-br from-primary to-primary-container text-white px-6 py-2 rounded-full font-label text-[12px] uppercase tracking-[0.05rem] transition-transform active:scale-95">
                 Support Us
@@ -111,7 +111,7 @@
 </div>
 <div class="w-full md:w-1/3 mt-8 md:mt-0 md:pl-12">
 <p class="text-on-surface-variant text-lg leading-relaxed border-l-2 border-primary-container pl-6 font-body">
-                    The Living Archive is an independent, permanent ledger of our planet's ecological health. Your contribution ensures that the data of our changing world remains open, verifiable, and protected for future generations.
+                    Ecodemia is an independent, permanent ledger of our planet's ecological health. Your contribution ensures that the data of our changing world remains open, verifiable, and protected for future generations.
                 </p>
 </div>
 </section>
@@ -145,7 +145,7 @@
                             </li>
 </ul>
 </div>
-<button class="mt-12 text-primary font-label text-[11px] uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
+<button class="mt-12 text-primary font-label text-[11px] uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all tier-select-btn" data-amount="15" onclick="document.querySelector('input[type=number]').value='15'; document.querySelector('input[type=number]').scrollIntoView({behavior:'smooth', block:'center'})">
                         Select Plan <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
 </button>
 </div>
@@ -176,7 +176,7 @@
                             </li>
 </ul>
 </div>
-<button class="mt-12 bg-white text-primary font-label text-[11px] uppercase tracking-widest py-4 rounded-full transition-transform active:scale-95">
+<button class="mt-12 bg-white text-primary font-label text-[11px] uppercase tracking-widest py-4 rounded-full transition-transform active:scale-95 tier-select-btn" data-amount="50" onclick="document.querySelector('.donation-amount-input, #custom-amount, input[type=number]').value='50'; document.querySelector('.donation-amount-input, #custom-amount, input[type=number]').scrollIntoView({behavior:'smooth', block:'center'})">
                         Choose Sapling
                     </button>
 </div>
@@ -204,7 +204,7 @@
                             </li>
 </ul>
 </div>
-<button class="mt-12 text-primary font-label text-[11px] uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
+<button class="mt-12 text-primary font-label text-[11px] uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all tier-select-btn" data-amount="250" onclick="document.querySelector('input[type=number]').value='250'; document.querySelector('input[type=number]').scrollIntoView({behavior:'smooth', block:'center'})">
                         Select Plan <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
 </button>
 </div>
@@ -229,25 +229,25 @@
 </div>
 </div>
 <div class="lg:w-1/2 bg-surface-container-lowest p-12 rounded-xl editorial-shadow">
-<form class="space-y-8">
+<form class="space-y-8 support-form">
 <div>
 <span class="font-label text-[11px] uppercase tracking-widest text-outline mb-4 block">Select Frequency</span>
 <div class="flex gap-4">
-<button class="flex-1 py-3 px-6 rounded-full border border-primary-container bg-primary-container text-white font-label text-[12px] uppercase" type="button">Monthly</button>
-<button class="flex-1 py-3 px-6 rounded-full border border-outline/30 text-on-surface-variant hover:border-primary font-label text-[12px] uppercase transition-colors" type="button">One-time</button>
+<button class="flex-1 py-3 px-6 rounded-full border border-primary-container bg-primary-container text-white font-label text-[12px] uppercase freq-btn" type="button">Monthly</button>
+<button class="flex-1 py-3 px-6 rounded-full border border-outline/30 text-on-surface-variant hover:border-primary font-label text-[12px] uppercase transition-colors freq-btn" type="button">One-time</button>
 </div>
 </div>
 <div>
 <span class="font-label text-[11px] uppercase tracking-widest text-outline mb-4 block">Amount</span>
 <div class="grid grid-cols-4 gap-3 mb-6">
-<button class="py-3 bg-surface-container-low hover:bg-surface-container-high transition-colors font-headline text-xl text-primary" type="button">$25</button>
-<button class="py-3 bg-surface-container-low hover:bg-surface-container-high transition-colors font-headline text-xl text-primary" type="button">$50</button>
-<button class="py-3 bg-surface-container-low hover:bg-surface-container-high transition-colors font-headline text-xl text-primary" type="button">$100</button>
-<button class="py-3 bg-surface-container-low hover:bg-surface-container-high transition-colors font-headline text-xl text-primary" type="button">$500</button>
+<button class="py-3 bg-surface-container-low hover:bg-surface-container-high transition-colors font-headline text-xl text-primary amount-btn" type="button" data-amount="25">$25</button>
+<button class="py-3 bg-surface-container-low hover:bg-surface-container-high transition-colors font-headline text-xl text-primary amount-btn" type="button" data-amount="50">$50</button>
+<button class="py-3 bg-surface-container-low hover:bg-surface-container-high transition-colors font-headline text-xl text-primary amount-btn" type="button" data-amount="100">$100</button>
+<button class="py-3 bg-surface-container-low hover:bg-surface-container-high transition-colors font-headline text-xl text-primary amount-btn" type="button" data-amount="500">$500</button>
 </div>
 <div class="relative">
 <span class="absolute left-0 bottom-4 font-headline text-2xl text-primary">$</span>
-<input class="w-full bg-transparent border-b border-outline/40 py-4 pl-6 font-headline text-2xl text-primary focus:outline-none focus:border-primary transition-colors appearance-none" placeholder="Other amount" type="number"/>
+<input id="custom-amount" class="donation-amount-input w-full bg-transparent border-b border-outline/40 py-4 pl-6 font-headline text-2xl text-primary focus:outline-none focus:border-primary transition-colors appearance-none" placeholder="Other amount" type="number"/>
 </div>
 </div>
 <div class="space-y-6 pt-4">
@@ -286,15 +286,16 @@
 <footer class="w-full mt-20 bg-[#1b4332] dark:bg-[#0a110d] text-[#cfe5d9]">
 <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-screen-2xl mx-auto">
 <div class="mb-8 md:mb-0">
-<div class="text-[#f9faf6] font-headline text-xl mb-2">The Living Archive</div>
-<p class="font-body text-[12px] opacity-70">© 2024 The Living Archive. Dedicated to the permanent record of our changing planet.</p>
+<div class="text-[#f9faf6] font-headline text-xl mb-2">Ecodemia</div>
+<p class="font-body text-[12px] opacity-70">© 2025 Ecodemia. Dedicated to the permanent record of our changing planet.</p>
 </div>
 <div class="flex flex-wrap justify-center gap-8 font-label uppercase tracking-[0.05rem] text-[12px]">
-<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Ethics Policy</a>
-<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Editorial Team</a>
-<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Carbon Transparency Report</a>
-<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#">Contact</a>
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="#" data-policy="privacy">Ethics Policy</a>
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="../support_the_living_archive/code.html">Editorial Team</a>
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="../support_the_living_archive/code.html">Carbon Transparency Report</a>
+<a class="text-[#cfe5d9]/70 hover:text-white transition-opacity" href="../support_the_living_archive/code.html">Contact</a>
 </div>
 </div>
 </footer>
+<script src="../js/ecodemia.js"></script>
 </body></html>

@@ -88,11 +88,11 @@
 <!-- TopAppBar Shell -->
 <header class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 backdrop-blur-xl shadow-[0px_20px_40px_rgba(26,28,26,0.06)] flex justify-between items-center px-6 h-16">
 <div class="flex items-center">
-<span class="material-symbols-outlined text-[#1B4332] active:scale-95 transition-transform" data-icon="menu">menu</span>
+<span class="material-symbols-outlined text-[#1B4332] active:scale-95 transition-transform menu-trigger" data-icon="menu">menu</span>
 </div>
-<h1 class="font-['Newsreader'] italic font-medium tracking-tight text-2xl text-[#1B4332]">The Living Archive</h1>
+<h1 class="font-['Newsreader'] italic font-medium tracking-tight text-2xl text-[#1B4332]">Ecodemia</h1>
 <div class="flex items-center">
-<span class="material-symbols-outlined text-[#1B4332] active:scale-95 transition-transform" data-icon="shopping_bag">shopping_bag</span>
+<span class="material-symbols-outlined text-[#1B4332] active:scale-95 transition-transform cart-trigger" data-icon="shopping_bag">shopping_bag</span>
 </div>
 </header>
 <main class="pt-24 pb-32 px-6">
@@ -104,22 +104,22 @@
 </section>
 <!-- Horizontal Filter Bar -->
 <section class="mb-8 -mx-6 px-6 overflow-x-auto hide-scrollbar flex gap-3">
-<button class="flex-none bg-primary text-on-primary px-5 py-2 rounded-full font-label text-[10px] uppercase tracking-wider font-bold">All items</button>
-<button class="flex-none bg-surface-container-low text-on-surface-variant px-5 py-2 rounded-full font-label text-[10px] uppercase tracking-wider hover:bg-surface-container-high transition-colors">Organic Cotton</button>
-<button class="flex-none bg-surface-container-low text-on-surface-variant px-5 py-2 rounded-full font-label text-[10px] uppercase tracking-wider hover:bg-surface-container-high transition-colors">Recycled Tech</button>
-<button class="flex-none bg-surface-container-low text-on-surface-variant px-5 py-2 rounded-full font-label text-[10px] uppercase tracking-wider hover:bg-surface-container-high transition-colors">Bio-Leather</button>
+<button class="flex-none bg-primary text-on-primary px-5 py-2 rounded-full font-label text-[10px] uppercase tracking-wider font-bold filter-btn" data-category="all">All items</button>
+<button class="flex-none bg-surface-container-low text-on-surface-variant px-5 py-2 rounded-full font-label text-[10px] uppercase tracking-wider hover:bg-surface-container-high transition-colors filter-btn" data-category="organic">Organic Cotton</button>
+<button class="flex-none bg-surface-container-low text-on-surface-variant px-5 py-2 rounded-full font-label text-[10px] uppercase tracking-wider hover:bg-surface-container-high transition-colors filter-btn" data-category="recycled">Recycled Tech</button>
+<button class="flex-none bg-surface-container-low text-on-surface-variant px-5 py-2 rounded-full font-label text-[10px] uppercase tracking-wider hover:bg-surface-container-high transition-colors filter-btn" data-category="bio">Bio-Leather</button>
 </section>
 <!-- Product Grid: Asymmetric Layout -->
 <section class="grid grid-cols-2 gap-x-4 gap-y-10">
 <!-- Product Card 1 -->
-<div class="col-span-2 group">
+<div class="col-span-2 group cursor-pointer" data-category="organic" onclick="location.href='../product_detail_mobile/code.html'">
 <div class="relative aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden mb-4">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Model wearing a minimalist organic cotton beige t-shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQu5MXx9qQsmSEQaMiLVFawRoahDdim2MbpfieHcjks-W-eYkwweJjOtjg6p85tbTBqOa0C60qRLZQNPmGAq-DBPxDcpYNxv9EoteiNCPwMFF0K9v1xidZdBALrptPlFgQn66_VpPIzxOfRj143PQ8LG0ejd9CJ9Zkksc5z7ci_9G66Puo6_fpbUiOxrRX6C1kdSJJ_2i3Wnzxxjt6Q_nHaCn-HgHJUIz49T1b4pBxVQb7mxEqAbrYr3-dpXqY7IPDqxZYnbg8nr2X"/>
 <div class="absolute top-4 left-4 flex flex-col gap-2">
 <span class="bg-[#1B4332] text-on-primary px-3 py-1 rounded-full font-label text-[8px] uppercase tracking-[0.05rem] font-bold shadow-sm">Carbon Neutral</span>
 <span class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full font-label text-[8px] uppercase tracking-[0.05rem] font-bold shadow-sm">LTD Edition</span>
 </div>
-<button class="absolute bottom-4 right-4 bg-background/90 backdrop-blur-md p-3 rounded-full shadow-lg active:scale-90 transition-transform">
+<button class="absolute bottom-4 right-4 bg-background/90 backdrop-blur-md p-3 rounded-full shadow-lg active:scale-90 transition-transform add-to-bag-btn" data-id="archival-tee" data-name="Archival Utility Tee" data-price="64" onclick="event.stopPropagation()">
 <span class="material-symbols-outlined text-primary text-xl" data-icon="add_shopping_cart">add_shopping_cart</span>
 </button>
 </div>
@@ -132,7 +132,7 @@
 </div>
 </div>
 <!-- Product Card 2 -->
-<div class="group">
+<div class="group cursor-pointer" data-category="recycled" onclick="location.href='../product_detail_mobile/code.html'">
 <div class="relative aspect-square bg-surface-container-low rounded-lg overflow-hidden mb-4">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Sustainable waterproof jacket made from recycled nylon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0I_e5YDcrIPwSbh-DlZfP43NfW62dhsA5vwD_Zjnsz2uC6azj5iAZa8UMQ1oJfcuzzKXonrPOMAZ3dq6RQ2DURaudn981W2rKg0kWqeGaipssu9lBHzCgVjCP3sMfsG_FI6b_8QgaUy8G2QR3H4TBtkeMUNWGrNVwRXp-OfU3s6nFpqHFc1CqZBNzi88kvkVHdWTQOMYR35jBUULZ8weZzcHvu8L7NpY6YopzZpuSJ0OGPG6j7tohtcX_oGgNCqEBfVbyZxUGpyYz"/>
 <div class="absolute top-3 left-3">
@@ -146,7 +146,7 @@
 </div>
 </div>
 <!-- Product Card 3 -->
-<div class="group mt-8">
+<div class="group mt-8 cursor-pointer" data-category="bio" onclick="location.href='../product_detail_mobile/code.html'">
 <div class="relative aspect-square bg-surface-container-low rounded-lg overflow-hidden mb-4">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist eco-friendly backpack" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfWRdH_6GOZz_neFWpuLi7Lp3QiMBTgNazrHcwtPSTXU-H8V65aH3NOnQRjJwczC7__7lxdA7H6JXo8VFVMXQCXyouSVbnuTLKTAQ_Q-Wfds7YZg_6T8cRg5NYLSB53BLrbIu_WeTViZ3jpOUF4KioEfmfouh2pZh3goMOA-jTXmxD8U7PIQx4EhEuvWcIjTf8-2t2guGzCidScH2jPRs17igvT1Q9Ulm3amHi7zjmZjQWqVs8QFaGksVrOM2_ftIq0Imv2QvEDyte"/>
 <div class="absolute top-3 left-3">
@@ -160,7 +160,7 @@
 </div>
 </div>
 <!-- Product Card 4 -->
-<div class="col-span-2 group">
+<div class="col-span-2 group cursor-pointer" data-category="organic" onclick="location.href='../product_detail_mobile/code.html'">
 <div class="relative aspect-[16/9] bg-surface-container-low rounded-lg overflow-hidden mb-4">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Artisanal knit sweater made from recycled wool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW5MVB6g6UJ4Mh7pWZiwvb41K0uX7wU_9n46gXZJCRbWFqujYv3KkPdvqT8tb8eVx4AAILn4SemsBPL5mO8UUKrZpDxd_rrgRKirCX0BP7oSMfegADgghseVttTTiJnkaDYfBSG2uzdW4b-zgSsc3sphQ377G1-VOB4V0sXHg7TZifn2AekUgEimKsmdBp-6_2y-dwBJi8IYfF78NFrVp6ZriM5ZBvQv4EUeJJqSX-tChXaD2dG5dzvVmsQm-Sehi2h7KB6lPzag6w"/>
 <div class="absolute top-4 right-4">
@@ -182,7 +182,7 @@
 <p class="text-on-secondary-container text-sm mb-6">Receive early access to limited archival releases and climate reports.</p>
 <div class="relative">
 <input class="w-full bg-transparent border-none border-b border-outline/40 py-2 font-body text-sm focus:ring-0 focus:border-primary placeholder:text-outline/60 transition-all" placeholder="Email Address" type="email"/>
-<button class="absolute right-0 bottom-2">
+<button type="button" class="absolute right-0 bottom-2 newsletter-submit">
 <span class="material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</span>
 </button>
 </div>
@@ -190,26 +190,27 @@
 </main>
 <!-- BottomNavBar Shell -->
 <nav class="fixed bottom-0 left-0 w-full z-50 bg-[#f9faf6]/90 backdrop-blur-lg flex justify-around items-center px-4 pb-6 pt-2 shadow-[0_-4px_24px_rgba(0,0,0,0.04)] bg-[#f3f4f0]">
-<div class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform hover:text-[#1B4332]">
+<a href="../article_detail_mobile/code.html" class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform hover:text-[#1B4332]">
 <span class="material-symbols-outlined text-xl mb-1" data-icon="auto_stories">auto_stories</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Archive</span>
-</div>
-<div class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform hover:text-[#1B4332]">
+</a>
+<a href="../search_results_mobile/code.html" class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform hover:text-[#1B4332]">
 <span class="material-symbols-outlined text-xl mb-1" data-icon="grid_view">grid_view</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Categories</span>
-</div>
+</a>
 <!-- Active Tab: Shop -->
 <div class="flex flex-col items-center justify-center bg-[#cfe5d9] text-[#012d1d] rounded-full px-4 py-1.5 transition-all active:translate-y-0.5">
 <span class="material-symbols-outlined text-xl mb-0.5" data-icon="eco" style="font-variation-settings: 'FILL' 1;">eco</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Shop</span>
 </div>
-<div class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform hover:text-[#1B4332]">
+<a href="../support_mobile/code.html" class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform hover:text-[#1B4332]">
 <span class="material-symbols-outlined text-xl mb-1" data-icon="volunteer_activism">volunteer_activism</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Support</span>
-</div>
-<div class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform hover:text-[#1B4332]">
+</a>
+<a href="../search_results_mobile/code.html" class="flex flex-col items-center justify-center text-[#717973] py-2 active:translate-y-0.5 transition-transform hover:text-[#1B4332]">
 <span class="material-symbols-outlined text-xl mb-1" data-icon="search">search</span>
 <span class="font-['Public_Sans'] text-[10px] uppercase tracking-[0.05rem] font-bold">Search</span>
-</div>
+</a>
 </nav>
+<script src="../js/ecodemia.js"></script>
 </body></html>
