@@ -1,0 +1,68 @@
+paths:
+  static: ''
+  uploads: uploads/media
+timezone: Europe/Berlin
+markdown:
+  engine: commonmark
+  options: {}
+collections_config:
+  pages:
+    path: ''
+    icon: wysiwyg
+  admin:
+    path: admin
+    icon: ad
+  arbor_chronicle:
+    path: arbor_chronicle
+    icon: editor_choice
+  article_detail_mobile:
+    path: article_detail_mobile
+    icon: article_person
+  article_detail_page:
+    path: article_detail_page
+    icon: article_person
+  article_view:
+    path: article_view
+    icon: table_view
+  category_page:
+    path: category_page
+    icon: category
+  category_page_mobile:
+    path: category_page_mobile
+    icon: battery_profile
+  checkout_mobile:
+    path: checkout_mobile
+    icon: check_circle
+  environmental_news_home_mobile:
+    path: environmental_news_home_mobile
+    icon: auto_awesome_motion
+  environmental_news_homepage:
+    path: environmental_news_homepage
+    icon: component_exchange
+  merch_collections_mobile:
+    path: merch_collections_mobile
+    icon: directions_bike
+  merchandise_collections:
+    path: merchandise_collections
+    icon: pending_actions
+  product_detail_field_jacket:
+    path: product_detail_field_jacket
+    icon: account_balance_wallet
+  product_detail_mobile:
+    path: product_detail_mobile
+    icon: send_to_mobile
+  search_results_mobile:
+    path: search_results_mobile
+    icon: send_to_mobile
+  search_results_reforestation:
+    path: search_results_reforestation
+    icon: cancel_presentation
+  shopping_cart_mobile:
+    path: shopping_cart_mobile
+    icon: shopping_cart_off
+  support_mobile:
+    path: support_mobile
+    icon: send_to_mobile
+  support_the_living_archive:
+    path: support_the_living_archive
+    icon: send_and_archive
