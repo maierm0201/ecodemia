@@ -1,10 +1,9 @@
 // ecodemia.js — Shared site functionality
 
 // ─── PATH HELPERS ─────────────────────────────────────────────────────────────
-// Detect current folder depth so links work from any subfolder
+// Every HTML page sits exactly one folder deep (subfolder/code.html),
+// so one '../' always reaches the site root — works for file:// and GitHub Pages.
 function relPath(target) {
-  const depth = window.location.pathname.split('/').length - 2;
-  if (depth <= 1) return target; // already at root
   return '../' + target;
 }
 
