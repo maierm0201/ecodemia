@@ -10,20 +10,22 @@ function relPath(target) {
 
 // Page shortcuts
 const PAGES = {
-  homeDesktop:   'environmental_news_homepage/code.html',
-  homeMobile:    'environmental_news_home_mobile/code.html',
-  articleDesktop:'article_detail_page/code.html',
-  articleMobile: 'article_detail_mobile/code.html',
-  searchDesktop: 'search_results_reforestation/code.html',
-  searchMobile:  'search_results_mobile/code.html',
-  merchDesktop:  'merchandise_collections/code.html',
-  merchMobile:   'merch_collections_mobile/code.html',
-  productDesktop:'product_detail_field_jacket/code.html',
-  productMobile: 'product_detail_mobile/code.html',
-  cart:          'shopping_cart_mobile/code.html',
-  checkout:      'checkout_mobile/code.html',
-  supportDesktop:'support_the_living_archive/code.html',
-  supportMobile: 'support_mobile/code.html',
+  homeDesktop:      'environmental_news_homepage/code.html',
+  homeMobile:       'environmental_news_home_mobile/code.html',
+  articleDesktop:   'article_detail_page/code.html',
+  articleMobile:    'article_detail_mobile/code.html',
+  categoryDesktop:  'category_page/code.html',
+  categoryMobile:   'category_page_mobile/code.html',
+  searchDesktop:    'search_results_reforestation/code.html',
+  searchMobile:     'search_results_mobile/code.html',
+  merchDesktop:     'merchandise_collections/code.html',
+  merchMobile:      'merch_collections_mobile/code.html',
+  productDesktop:   'product_detail_field_jacket/code.html',
+  productMobile:    'product_detail_mobile/code.html',
+  cart:             'shopping_cart_mobile/code.html',
+  checkout:         'checkout_mobile/code.html',
+  supportDesktop:   'support_the_living_archive/code.html',
+  supportMobile:    'support_mobile/code.html',
 };
 
 function isMobile() { return window.innerWidth < 768; }
@@ -59,14 +61,14 @@ function initEcoLogo() {
 
 // ─── UNIVERSAL DESKTOP NAV ────────────────────────────────────────────────────
 const NAV_ITEMS = [
-  { label: 'Climate',      category: 'climate',  href: 'article_detail_page/code.html?category=climate'  },
-  { label: 'Wildlife',     category: 'wildlife', href: 'article_detail_page/code.html?category=wildlife' },
-  { label: 'Energy',       category: 'energy',   href: 'article_detail_page/code.html?category=energy'   },
-  { label: 'Living',       category: 'living',   href: 'article_detail_page/code.html?category=living'   },
-  { label: 'Tech',         category: 'tech',     href: 'article_detail_page/code.html?category=tech'     },
-  { label: 'Policy',       category: 'policy',   href: 'article_detail_page/code.html?category=policy'   },
-  { label: 'Live Updates', category: 'live',     href: 'article_detail_page/code.html?category=live'     },
-  { label: 'Support Us',   category: null,       href: 'support_the_living_archive/code.html'            },
+  { label: 'Climate',      category: 'climate',  href: 'category_page/code.html?category=climate'  },
+  { label: 'Wildlife',     category: 'wildlife', href: 'category_page/code.html?category=wildlife' },
+  { label: 'Energy',       category: 'energy',   href: 'category_page/code.html?category=energy'   },
+  { label: 'Living',       category: 'living',   href: 'category_page/code.html?category=living'   },
+  { label: 'Tech',         category: 'tech',     href: 'category_page/code.html?category=tech'     },
+  { label: 'Policy',       category: 'policy',   href: 'category_page/code.html?category=policy'   },
+  { label: 'Live Updates', category: 'live',     href: 'category_page/code.html?category=live'     },
+  { label: 'Support Us',   category: null,       href: 'support_the_living_archive/code.html'      },
 ];
 
 function initUniversalDesktopNav() {
@@ -237,13 +239,13 @@ function initMobileMenu() {
       </div>
       <nav class="flex flex-col p-6 gap-5 flex-1">
         <a href="${page('homeMobile')}" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Home</a>
-        <a href="${page('articleMobile')}?category=climate" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Climate</a>
-        <a href="${page('articleMobile')}?category=wildlife" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Wildlife</a>
-        <a href="${page('articleMobile')}?category=energy" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Energy</a>
-        <a href="${page('articleMobile')}?category=living" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Living</a>
-        <a href="${page('articleMobile')}?category=tech" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Tech</a>
-        <a href="${page('articleMobile')}?category=policy" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Policy</a>
-        <a href="${page('articleMobile')}?category=live" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Live Updates</a>
+        <a href="${page('categoryMobile')}?category=climate" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Climate</a>
+        <a href="${page('categoryMobile')}?category=wildlife" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Wildlife</a>
+        <a href="${page('categoryMobile')}?category=energy" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Energy</a>
+        <a href="${page('categoryMobile')}?category=living" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Living</a>
+        <a href="${page('categoryMobile')}?category=tech" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Tech</a>
+        <a href="${page('categoryMobile')}?category=policy" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Policy</a>
+        <a href="${page('categoryMobile')}?category=live" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Live Updates</a>
         <a href="${page('searchMobile')}" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Search</a>
         <a href="${page('merchMobile')}" class="font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors">Shop</a>
         <a href="${page('supportMobile')}" class="font-label text-xs font-bold uppercase tracking-widest text-primary border border-primary rounded-full px-4 py-2 text-center hover:bg-primary hover:text-white transition-colors mt-2">Support Us</a>
@@ -583,6 +585,34 @@ function initPolicyModals() {
   });
 }
 
+// ─── CATEGORY PAGE ────────────────────────────────────────────────────────────
+const CATEGORY_CONFIG = {
+  climate:  { title: 'Climate: Tracking a Warming World.',    stat: '421.5', statLabel: 'CO₂ Parts Per Million — the highest annual average ever recorded.',        coverTitle: 'The Silent Thaw: Arctic Permafrost at the Point of No Return',             coverExcerpt: 'New satellite data reveals the permafrost retreat is accelerating faster than even the most aggressive climate models predicted.',          coverAuthor: 'Julian Thorne',    coverRole: 'Environmental Lead',        coverDate: 'March 14, 2024', coverTime: '14 Min Read' },
+  wildlife: { title: 'Wildlife: Stories of the Wild.',        stat: '1.2M',  statLabel: 'Acres of Protected Wildlife Corridor Established in 2023.',                 coverTitle: 'The Invisible Monarch: Tracking the Snow Leopard\'s Alpine Migration',    coverExcerpt: 'In the thinning air of the high Himalayas, new GPS data reveals the extraordinary resilience and shifting ranges of Earth\'s most elusive feline predator.', coverAuthor: 'Dr. Elena Vos',    coverRole: 'Chief Conservation Officer', coverDate: 'March 14, 2024', coverTime: '12 Min Read' },
+  energy:   { title: 'Energy: The Transition Now.',           stat: '48%',   statLabel: 'Of global electricity will come from renewables by 2030, per IEA projections.', coverTitle: 'Grid of the Future: How Battery Storage is Reshaping Energy Policy',     coverExcerpt: 'As renewable capacity soars, the race to store that power is becoming the defining infrastructure challenge of our era.',                  coverAuthor: 'Amara Soto',       coverRole: 'Energy Correspondent',      coverDate: 'Feb 28, 2024',   coverTime: '10 Min Read' },
+  living:   { title: 'Living: Sustainable Futures.',          stat: '40%',   statLabel: 'Of global emissions come from the built environment — homes, offices, and cities.', coverTitle: 'The Carbon Kitchen: How What We Eat is Reshaping the Planet',           coverExcerpt: 'Dietary shifts, food waste, and regenerative agriculture are emerging as the most powerful tools in the consumer\'s climate toolkit.',        coverAuthor: 'Lena Bauer',       coverRole: 'Lifestyle & Sustainability', coverDate: 'March 1, 2024',  coverTime: '9 Min Read'  },
+  tech:     { title: 'Tech: Innovation for the Planet.',      stat: '2.3B',  statLabel: 'Dollars invested in climate technology startups in Q1 2024 alone.',           coverTitle: 'The Soil Algorithm: How AI is Revolutionising Carbon Farming',            coverExcerpt: 'Machine learning meets microbiology as a new wave of startups promises to turn agricultural land into verifiable carbon sinks.',             coverAuthor: 'Kai Nakamura',     coverRole: 'Technology Editor',         coverDate: 'March 10, 2024', coverTime: '11 Min Read' },
+  policy:   { title: 'Policy: Laws of the Land.',             stat: '197',   statLabel: 'Countries party to the Paris Agreement — yet fewer than 20 are on track to meet their targets.', coverTitle: 'COP29 Debrief: What the Pledges Actually Mean',                  coverExcerpt: 'A forensic look at which national commitments carry legal weight and which remain aspirational targets divorced from enforcement.',            coverAuthor: 'Elena Thorne',     coverRole: 'Policy Correspondent',      coverDate: 'Dec 5, 2023',    coverTime: '13 Min Read' },
+  live:     { title: 'Live Updates.',                         stat: '24/7',  statLabel: 'Coverage from our global network of field correspondents and data monitors.',  coverTitle: 'Breaking: Record Coral Bleaching Event Declared Across Great Barrier Reef', coverExcerpt: 'Scientists confirm the fourth mass bleaching event in seven years as ocean temperatures hit unprecedented highs off the Queensland coast.',   coverAuthor: 'Ecodemia Field Desk', coverRole: 'Live Reporting',         coverDate: 'Today',          coverTime: 'Just Now'    },
+};
+
+function initCategoryPage() {
+  if (!document.querySelector('.category-title')) return;
+  const cat = new URLSearchParams(window.location.search).get('category') || 'wildlife';
+  const cfg = CATEGORY_CONFIG[cat] || CATEGORY_CONFIG.wildlife;
+  const set = (sel, val) => { const el = document.querySelector(sel); if (el) el.textContent = val; };
+  set('.category-title',       cfg.title);
+  set('.category-cover-title', cfg.coverTitle);
+  set('.category-cover-excerpt', cfg.coverExcerpt);
+  set('.category-cover-author',  cfg.coverAuthor);
+  set('.category-cover-role',    cfg.coverRole);
+  set('.category-cover-date',    cfg.coverDate);
+  set('.category-cover-time',    cfg.coverTime);
+  set('.category-stat',          cfg.stat);
+  set('.category-stat-label',    cfg.statLabel);
+  document.title = cfg.title.split(':')[0] + ' | Ecodemia';
+}
+
 // ─── INIT ─────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   initEcoLogo();
@@ -602,4 +632,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initCheckoutPage();
   initArticleLinks();
   initPolicyModals();
+  initCategoryPage();
 });

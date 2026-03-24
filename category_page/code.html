@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Category | Ecodemia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Inter:wght@400;500;600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#012d1d", "primary-container": "#1b4332", "on-primary": "#ffffff",
+          "on-primary-container": "#86af99", "secondary": "#4f6359",
+          "secondary-container": "#cfe5d9", "on-secondary": "#ffffff",
+          "on-secondary-container": "#54675e", "surface": "#f9faf6",
+          "surface-container-low": "#f3f4f0", "surface-container": "#edeeea",
+          "surface-container-high": "#e7e9e5", "surface-container-highest": "#e2e3df",
+          "on-surface": "#1a1c1a", "on-surface-variant": "#414844",
+          "outline": "#717973", "outline-variant": "#c1c8c2",
+          "background": "#f9faf6", "on-background": "#1a1c1a",
+          "tertiary-container": "#383f22", "on-tertiary-container": "#a2aa85",
+          "inverse-surface": "#2e312f", "inverse-on-surface": "#f0f1ed",
+          "error": "#ba1a1a", "primary-fixed": "#c1ecd4", "primary-fixed-dim": "#a5d0b9",
+          "surface-tint": "#3f6653",
+        },
+        fontFamily: {
+          "headline": ["Newsreader", "serif"],
+          "body": ["Inter", "sans-serif"],
+          "label": ["Public Sans", "sans-serif"]
+        },
+        borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .eco-logo { font-family: 'Newsreader', serif; font-style: normal; font-weight: 700; color: #1B4332; text-decoration: none; }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9faf6]/90 backdrop-blur-md border-b border-outline-variant/10">
+  <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+    <div class="flex items-center gap-12">
+      <a class="eco-logo text-2xl" href="../environmental_news_homepage/code.html">Ecodemia</a>
+      <div class="hidden md:flex items-center gap-8">
+        <!-- injected by initUniversalDesktopNav() -->
+      </div>
+    </div>
+    <div class="flex items-center gap-6">
+      <span class="material-symbols-outlined text-on-surface-variant cursor-pointer search-trigger">search</span>
+      <button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label text-sm font-bold tracking-wide hover:opacity-90 transition-opacity subscribe-btn">Subscribe</button>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-24 pb-24 max-w-screen-2xl mx-auto px-8">
+
+  <!-- Category Header -->
+  <header class="border-l-4 border-primary pl-8 py-4 mb-16 mt-4">
+    <span class="font-label text-[10px] uppercase tracking-[0.25em] text-outline font-bold mb-3 block">Archive Directory</span>
+    <h1 class="font-headline text-6xl md:text-7xl font-bold text-on-surface leading-[1.05] category-title">Wildlife: Stories of the Wild.</h1>
+  </header>
+
+  <!-- Cover Story -->
+  <section class="grid grid-cols-2 gap-16 mb-16 items-center">
+    <div class="relative overflow-hidden rounded-sm group cursor-pointer" onclick="location.href='../article_detail_page/code.html'">
+      <img class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700 category-cover-img"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP6axiU3fJDm_3N6sFaQxBLV-9BFtwZJAqClTuUMGavHrPi_LafiPu50B5qZZfvzYBIlPQ2xJNNCWMKLnjdc--M4LRRL0oRenb-iEZHj7_fvEngYwDEheeLFDiSChtsqBLXNcChLWXl7yucdR-c1X_kpTUTP-izAaSi6yHgVRyPpREYOGqfQW0M9GMP5s3ESgJDaCykx-iAmGYL0I-LI3j8JJvb6dRX6YK08lrgvSBHcsuxl4p9oWl_4Px-Mcy8WJBRddIj3uh86uk"
+           alt="Cover story"/>
+      <div class="absolute top-5 left-5">
+        <span class="bg-[#1a1c1a]/85 text-white font-label text-[9px] font-bold uppercase tracking-[0.15em] px-3 py-1.5">Cover Story</span>
+      </div>
+    </div>
+    <div>
+      <div class="flex items-center gap-3 mb-6">
+        <span class="font-label text-[10px] uppercase tracking-widest text-outline category-cover-date">March 14, 2024</span>
+        <span class="text-outline/40">•</span>
+        <span class="font-label text-[10px] uppercase tracking-widest text-outline category-cover-time">12 Min Read</span>
+      </div>
+      <h2 class="font-headline text-4xl font-bold text-on-surface leading-tight mb-6 cursor-pointer hover:text-primary transition-colors category-cover-title" onclick="location.href='../article_detail_page/code.html'">The Invisible Monarch: Tracking the Snow Leopard's Alpine Migration</h2>
+      <p class="font-body text-on-surface-variant leading-relaxed mb-8 category-cover-excerpt">In the thinning air of the high Himalayas, new GPS data reveals the extraordinary resilience and shifting ranges of Earth's most elusive feline predator.</p>
+      <div class="flex items-center gap-4">
+        <div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high flex-shrink-0">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvIAw7b6T2bwN5LgfD2pfuscXTZkqF3D7ptcWRm8H7sTaQ2bLjdYdwV54BzyjEjUKQBgluwY3rZLn11dh7pASIoOyV7c31qLDbRk9_bMKHg6JeEE6mDh5MgZzEsp6qFJ4JrB1QfSs8zWBr2-DpFlF2ulH9oTMtwJXvyFfnGFo1xwPrz4ftecgIYMI6FJ5ctzW-00v9kTNyKiooDHxb2wcLY964jDssQ9zQLKNtoFtAH6--rZf33NTcUMoPKjzFfdIUymK_u_ttYeGO" alt="Author" class="w-full h-full object-cover"/>
+        </div>
+        <div>
+          <p class="font-label text-xs font-bold uppercase tracking-wider text-on-surface category-cover-author">Dr. Elena Vos</p>
+          <p class="font-label text-[10px] text-outline uppercase category-cover-role">Chief Conservation Officer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="border-outline-variant/20 mb-16"/>
+
+  <!-- Articles Grid + Sidebar -->
+  <div class="grid grid-cols-12 gap-12">
+
+    <!-- Article Cards -->
+    <div class="col-span-8">
+      <div class="grid grid-cols-2 gap-x-10 gap-y-16">
+
+        <article class="group cursor-pointer" onclick="location.href='../article_detail_page/code.html'">
+          <div class="overflow-hidden rounded-sm mb-5 aspect-square bg-surface-container">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8YG_wIx4cmbC1ZqFWle4jcf6lvnyMALvDErXNP5cMHtRWYrcP0onhS4QeMbYaGfMHpe128UCPsxBTa2WLlnZ_YzRNDA8iva0C7_f_2FmESsAX71als47aIdSPys7Cpf2eo2GtifrHavK-EpoJ3wMNiR-FwOizMFnaNDwhc2_uM6j9n_hsoDlTghMxQeZ46vCrNi1PgKWHKZrumoIcJ1yaIa0igC7K2NPGOZJJxazG1MeoE0Jr5UUxHzlOgPkwuvBd8TQj7gFdZ1NW" alt="Article"/>
+          </div>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="font-label text-[9px] uppercase tracking-[0.15em] text-on-surface font-bold">Conservation</span>
+            <span class="text-outline/40 text-xs">/</span>
+            <span class="font-label text-[9px] uppercase tracking-[0.1em] text-outline">8 Min Read</span>
+          </div>
+          <h3 class="font-headline text-xl font-bold text-on-surface leading-tight mb-3 group-hover:text-primary transition-colors">Beyond the Bamboo: The Genetic Rebirth of the Giant Panda</h3>
+          <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6">How localized breeding programs and rewilding initiatives are creating a sustainable future for China's most iconic species.</p>
+          <div class="flex items-center justify-between border-t border-outline-variant/20 pt-4">
+            <span class="font-label text-[10px] uppercase tracking-widest text-outline">By Marcus Thorne</span>
+            <span class="material-symbols-outlined text-outline text-sm group-hover:translate-x-1 group-hover:text-primary transition-all">arrow_forward</span>
+          </div>
+        </article>
+
+        <article class="group cursor-pointer" onclick="location.href='../article_detail_page/code.html'">
+          <div class="overflow-hidden rounded-sm mb-5 aspect-square bg-surface-container">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtldH1JUzEUvvokSOcYTvZOn1gW7HGcV2PZTH2lcW1RX1YM2SQbIFnlkRGaoMAgBLYCyvbWltCs1M37nBwOiHTgwHDAkX7mOIIrT8RNLnvT86KSi2L9HBCtg2I_2kuJA9wQFknGigk776bS3kS0Wha-CypqhuNCbCuDAfd8piNu5Oz_zla5kQFDDCVosKuE-7ZxOy5mbNZ7gptQJIZIkBpxjFEm2Kbixcy6Vpc1eTtuOAq8cs_b5Zdl_vi4p8xfJOnXlBm02fmxcy_" alt="Article"/>
+          </div>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="font-label text-[9px] uppercase tracking-[0.15em] text-on-surface font-bold">Predators</span>
+            <span class="text-outline/40 text-xs">/</span>
+            <span class="font-label text-[9px] uppercase tracking-[0.1em] text-outline">15 Min Read</span>
+          </div>
+          <h3 class="font-headline text-xl font-bold text-on-surface leading-tight mb-3 group-hover:text-primary transition-colors">Apex Sovereignty: The Delicate Balance of the Serengeti</h3>
+          <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6">A deep dive into the shifting dynamics of predator-prey relationships as human encroachment alters historical hunting grounds.</p>
+          <div class="flex items-center justify-between border-t border-outline-variant/20 pt-4">
+            <span class="font-label text-[10px] uppercase tracking-widest text-outline">By Julian Koda</span>
+            <span class="material-symbols-outlined text-outline text-sm group-hover:translate-x-1 group-hover:text-primary transition-all">arrow_forward</span>
+          </div>
+        </article>
+
+        <article class="group cursor-pointer" onclick="location.href='../article_detail_page/code.html'">
+          <div class="overflow-hidden rounded-sm mb-5 aspect-square bg-surface-container">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA76YSMzSu_yNCh5mcx5Z4_Ip4sjLbwRhwiUFQlPT26Hs8snBQ5DSw2rlNsKLGqw2jvanTOwsPvqt-ZVkvhd1XrmXPe35NedIr71NUwj3CIdNRyaXGWEMoB94QfIHkGvaBxC5kTQ6d6WIfdjePYwI864Iyruo4jCCu6a2jGWZlYnyfJ_-z1Ma6gAvdtfTieLUGkwwv2ITUVNOVayI44rrmOl4mT-1j9A2zOyq79XZ47Pfv0dtSFLH3hca5GcqbIPDWZhRpHh-jUk2aC" alt="Article"/>
+          </div>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="font-label text-[9px] uppercase tracking-[0.15em] text-on-surface font-bold">Biodiversity</span>
+            <span class="text-outline/40 text-xs">/</span>
+            <span class="font-label text-[9px] uppercase tracking-[0.1em] text-outline">6 Min Read</span>
+          </div>
+          <h3 class="font-headline text-xl font-bold text-on-surface leading-tight mb-3 group-hover:text-primary transition-colors">The Ghost Forests: Decoupling Climate from Habitat Loss</h3>
+          <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6">Examining the quiet migration of forest species as their ancestral homes adapt to new temperature benchmarks.</p>
+          <div class="flex items-center justify-between border-t border-outline-variant/20 pt-4">
+            <span class="font-label text-[10px] uppercase tracking-widest text-outline">By Sarah Miller</span>
+            <span class="material-symbols-outlined text-outline text-sm group-hover:translate-x-1 group-hover:text-primary transition-all">arrow_forward</span>
+          </div>
+        </article>
+
+        <article class="group cursor-pointer" onclick="location.href='../article_detail_page/code.html'">
+          <div class="overflow-hidden rounded-sm mb-5 aspect-square bg-surface-container">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9-bLJPbjF42lgNoQgMzaTh8Q4UuWxaSxkhDy8qyELeWFtyHcao5hQMOOxLtp0Sp_54OmKs8GeaLPlsvv6FArphKFaqX5Q5ih5PBz-faRS_IL575hNEvBAXF5nk-pV28TQvzi6qZ6kC51xQznnZH0U8RmcTml8GF03TLtz5Sc09GVUIF7UazzJn1kE2E9iXVBYglvqwJrsy9b4gL9PHH5eD3chgHLxSzQO5cZxlLmMDl7aN0TodcNzGF5VqBCIU1rub40ueM3onEfN" alt="Article"/>
+          </div>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="font-label text-[9px] uppercase tracking-[0.15em] text-on-surface font-bold">Arctic</span>
+            <span class="text-outline/40 text-xs">/</span>
+            <span class="font-label text-[9px] uppercase tracking-[0.1em] text-outline">10 Min Read</span>
+          </div>
+          <h3 class="font-headline text-xl font-bold text-on-surface leading-tight mb-3 group-hover:text-primary transition-colors">White Silence: The Future of the High Arctic Wolf Packs</h3>
+          <p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6">As ice floes recede, these specialized hunters are being forced into contact with southern species for the first time in millennia.</p>
+          <div class="flex items-center justify-between border-t border-outline-variant/20 pt-4">
+            <span class="font-label text-[10px] uppercase tracking-widest text-outline">By Dr. Niels Holm</span>
+            <span class="material-symbols-outlined text-outline text-sm group-hover:translate-x-1 group-hover:text-primary transition-all">arrow_forward</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="col-span-4">
+      <div class="sticky top-28 space-y-10">
+
+        <!-- Must Read -->
+        <div>
+          <h3 class="font-label text-[10px] font-bold uppercase tracking-[0.25em] text-on-surface pb-4 border-b border-outline-variant/30 mb-8">Must Read</h3>
+          <div class="space-y-0">
+            <div class="group cursor-pointer border-b border-outline-variant/15 pb-7 mb-7" onclick="location.href='../article_detail_page/code.html'">
+              <span class="font-label text-[8px] uppercase tracking-widest text-outline font-bold block mb-2">Trend 01</span>
+              <h4 class="font-headline text-[15px] font-bold text-on-surface leading-snug mb-2 group-hover:text-primary transition-colors">The Silent Wings: Owl Conservation in Suburbia</h4>
+              <span class="font-label text-[9px] uppercase tracking-widest text-outline">48.2K Readers</span>
+            </div>
+            <div class="group cursor-pointer border-b border-outline-variant/15 pb-7 mb-7" onclick="location.href='../article_detail_page/code.html'">
+              <span class="font-label text-[8px] uppercase tracking-widest text-outline font-bold block mb-2">Trend 02</span>
+              <h4 class="font-headline text-[15px] font-bold text-on-surface leading-snug mb-2 group-hover:text-primary transition-colors">Reintroducing the Red Wolf to the Smokies</h4>
+              <span class="font-label text-[9px] uppercase tracking-widest text-outline">35.9K Readers</span>
+            </div>
+            <div class="group cursor-pointer" onclick="location.href='../article_detail_page/code.html'">
+              <span class="font-label text-[8px] uppercase tracking-widest text-outline font-bold block mb-2">Trend 03</span>
+              <h4 class="font-headline text-[15px] font-bold text-on-surface leading-snug mb-2 group-hover:text-primary transition-colors">Coral Spawning: A Ray of Hope for Marine Life</h4>
+              <span class="font-label text-[9px] uppercase tracking-widest text-outline">29.1K Readers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Archive Insight -->
+        <div class="bg-tertiary-container p-8 rounded-sm">
+          <span class="font-label text-[8px] uppercase tracking-[0.2em] text-on-tertiary-container font-bold block mb-5">Archive Insight</span>
+          <h4 class="font-headline text-5xl font-bold text-white mb-3 leading-none category-stat">1.2M</h4>
+          <p class="font-label text-[9px] uppercase tracking-wider text-on-tertiary-container/80 leading-relaxed mb-8 category-stat-label">Acres of Protected Wildlife Corridor Established in 2023.</p>
+          <a href="../search_results_reforestation/code.html" class="font-label text-[9px] uppercase tracking-[0.15em] text-on-tertiary-container border border-on-tertiary-container/40 px-6 py-3 hover:bg-white/10 transition-colors inline-block">View Full Archive</a>
+        </div>
+
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-16 px-8 bg-[#f3f4f0]">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto">
+    <div class="md:col-span-1">
+      <a class="eco-logo text-xl mb-4 block" href="../environmental_news_homepage/code.html">Ecodemia</a>
+      <p class="font-['Inter'] text-sm tracking-wide text-[#717973] max-w-xs leading-relaxed">A permanent record of our changing environment, documenting the intersection of humanity and the natural world.</p>
+    </div>
+    <div>
+      <h4 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Sections</h4>
+      <ul class="space-y-4">
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="../category_page/code.html?category=climate">Climate Change</a></li>
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="../category_page/code.html?category=energy">Renewable Energy</a></li>
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="../category_page/code.html?category=wildlife">Conservation</a></li>
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="../category_page/code.html?category=policy">Policy &amp; Law</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Archive</h4>
+      <ul class="space-y-4">
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="../support_the_living_archive/code.html">Support Us</a></li>
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="../support_the_living_archive/code.html">About Us</a></li>
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="#">Annual Reports</a></li>
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="../support_the_living_archive/code.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Social</h4>
+      <div class="flex gap-6">
+        <span class="material-symbols-outlined text-[#717973] cursor-pointer hover:text-primary transition-colors">public</span>
+        <span class="material-symbols-outlined text-[#717973] cursor-pointer hover:text-primary transition-colors">rss_feed</span>
+        <span class="material-symbols-outlined text-[#717973] cursor-pointer hover:text-primary transition-colors">mail</span>
+      </div>
+      <p class="font-['Inter'] text-xs text-[#717973] mt-8">© 2025 Ecodemia. All rights reserved.</p>
+    </div>
+  </div>
+  <div class="max-w-screen-2xl mx-auto mt-16 pt-8 border-t border-outline-variant/10 flex flex-wrap gap-8">
+    <a class="font-['Inter'] text-sm text-[#717973] hover:underline" href="#" data-policy="privacy">Privacy Policy</a>
+    <a class="font-['Inter'] text-sm text-[#717973] hover:underline" href="#" data-policy="terms">Terms of Service</a>
+    <a class="font-['Inter'] text-sm text-[#717973] hover:underline" href="#">Accessibility</a>
+  </div>
+</footer>
+
+<script src="../js/ecodemia.js"></script>
+</body>
+</html>
