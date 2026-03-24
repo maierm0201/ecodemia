@@ -1,0 +1,13 @@
+[build]
+  # Scans content/articles/*.md and generates content/articles.json
+  command   = "node scripts/build.js"
+  publish   = "."
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# /admin  →  admin/index.html  (so the URL works without trailing slash)
+[[redirects]]
+  from   = "/admin"
+  to     = "/admin/index.html"
+  status = 200

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Article | Ecodemia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&family=Public+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#012d1d", "primary-container": "#1b4332", "on-primary": "#ffffff",
+            "on-primary-container": "#86af99", "secondary": "#4f6359",
+            "secondary-container": "#cfe5d9", "on-secondary-container": "#54675e",
+            "surface": "#f9faf6", "surface-container-low": "#f3f4f0",
+            "surface-container": "#edeeea", "surface-container-high": "#e7e9e5",
+            "on-surface": "#1a1c1a", "on-surface-variant": "#414844",
+            "outline": "#717973", "outline-variant": "#c1c8c2",
+            "background": "#f9faf6", "tertiary-container": "#383f22",
+            "on-tertiary-container": "#a2aa85", "error": "#ba1a1a",
+          },
+          fontFamily: {
+            "headline": ["Newsreader", "serif"],
+            "body":     ["Inter",      "sans-serif"],
+            "label":    ["Public Sans","sans-serif"],
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+    .eco-logo { font-family:'Newsreader',serif!important; font-style:normal!important; font-weight:700!important; color:#1B4332!important; text-decoration:none!important; }
+
+    /* Rendered Markdown body */
+    #article-body { font-family:'Inter',sans-serif; font-size:1.0625rem; line-height:1.85; color:#414844; }
+    #article-body h1,#article-body h2,#article-body h3,#article-body h4 {
+      font-family:'Newsreader',serif; font-weight:700; color:#1a1c1a; margin:2.5rem 0 1rem;
+    }
+    #article-body h2 { font-size:1.75rem; }
+    #article-body h3 { font-size:1.375rem; }
+    #article-body h4 { font-size:1.125rem; }
+    #article-body p  { margin-bottom:1.6rem; }
+    #article-body a  { color:#012d1d; text-decoration:underline; text-underline-offset:3px; }
+    #article-body a:hover { opacity:.75; }
+    #article-body img { width:100%; margin:2rem 0; border-radius:2px; }
+    #article-body blockquote {
+      border-left:3px solid #1b4332; padding:0.5rem 0 0.5rem 1.5rem;
+      margin:2rem 0; font-style:italic; color:#4f6359;
+    }
+    #article-body ul,#article-body ol { padding-left:1.5rem; margin-bottom:1.5rem; }
+    #article-body li  { margin-bottom:0.5rem; }
+    #article-body strong { font-weight:700; color:#1a1c1a; }
+    #article-body code { background:#edeeea; padding:0.1rem 0.35rem; border-radius:2px; font-size:0.875rem; }
+    #article-body pre  { background:#edeeea; padding:1.25rem 1.5rem; border-radius:4px; overflow-x:auto; margin-bottom:1.5rem; }
+    #article-body pre code { background:none; padding:0; }
+    #article-body hr { border:none; border-top:1px solid #c1c8c2; margin:2.5rem 0; }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body">
+
+<!-- ── NAV ─────────────────────────────────────────────────────────────────── -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 backdrop-blur-md border-b border-outline-variant/10">
+  <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+    <div class="flex items-center gap-12">
+      <a class="eco-logo text-2xl" href="../environmental_news_homepage/code.html">Ecodemia</a>
+      <div class="hidden md:flex items-center gap-8">
+        <!-- injected by initUniversalDesktopNav() -->
+      </div>
+    </div>
+    <div class="flex items-center gap-5">
+      <span class="material-symbols-outlined text-on-surface-variant cursor-pointer text-xl search-trigger">search</span>
+      <button class="hidden md:inline-flex bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label text-sm font-bold tracking-wide hover:opacity-90 transition-opacity subscribe-btn">Subscribe</button>
+      <button class="md:hidden text-on-surface menu-trigger"><span class="material-symbols-outlined">menu</span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── MAIN ─────────────────────────────────────────────────────────────────── -->
+<main class="pt-20 pb-24 min-h-screen">
+
+  <!-- Loading -->
+  <div id="article-loading" class="flex items-center justify-center min-h-[60vh]">
+    <p class="font-label text-xs uppercase tracking-[0.2em] text-outline animate-pulse">Loading article…</p>
+  </div>
+
+  <!-- Error -->
+  <div id="article-error" class="hidden flex items-center justify-center min-h-[60vh] text-center px-6">
+    <div>
+      <span class="material-symbols-outlined text-outline text-5xl mb-4 block">article</span>
+      <h2 class="font-headline text-3xl text-on-surface mb-3">Article Not Found</h2>
+      <p class="text-outline mb-8 font-body text-sm">This article may have been moved or is not yet published.</p>
+      <a href="../environmental_news_homepage/code.html"
+         class="bg-primary text-white px-8 py-3 rounded-full font-label text-xs uppercase tracking-widest hover:opacity-90 transition-opacity">
+        Return to Archive
+      </a>
+    </div>
+  </div>
+
+  <!-- Article content -->
+  <div id="article-content" class="hidden">
+
+    <!-- Header -->
+    <header class="max-w-3xl mx-auto px-8 pt-14 pb-10">
+      <a id="article-category-link" href="#"
+         class="font-label text-[10px] uppercase tracking-[0.2em] text-primary font-bold bg-primary/8 px-3 py-1 rounded-full mb-8 inline-block hover:bg-primary/15 transition-colors">
+        <span id="article-category"></span>
+      </a>
+      <h1 id="article-title"
+          class="font-headline text-5xl md:text-[3.5rem] font-bold text-on-surface leading-[1.1] mb-8">
+      </h1>
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-outline border-t border-outline-variant/20 pt-6">
+        <span id="article-date"      class="font-label text-xs uppercase tracking-widest"></span>
+        <span id="article-read-time" class="font-label text-xs uppercase tracking-widest"></span>
+      </div>
+    </header>
+
+    <!-- Cover image -->
+    <div class="max-w-5xl mx-auto px-4 mb-14">
+      <img id="article-cover"
+           class="w-full aspect-[21/9] object-cover rounded-sm hidden"
+           alt="Article cover image"/>
+    </div>
+
+    <!-- Body -->
+    <div class="max-w-3xl mx-auto px-8">
+      <div id="article-body"></div>
+
+      <!-- Back link -->
+      <div class="mt-16 pt-10 border-t border-outline-variant/20">
+        <a id="back-to-category"
+           href="../environmental_news_homepage/code.html"
+           class="inline-flex items-center gap-2 font-label text-xs uppercase tracking-widest text-primary hover:gap-3 transition-all">
+          <span class="material-symbols-outlined text-sm">arrow_back</span>
+          Back to Archive
+        </a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- ── FOOTER ───────────────────────────────────────────────────────────────── -->
+<footer class="bg-surface-container-low border-t border-outline-variant/10 py-16 px-8">
+  <div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+    <div>
+      <a class="eco-logo text-xl mb-4 block" href="../environmental_news_homepage/code.html">Ecodemia</a>
+      <p class="font-body text-sm text-outline leading-relaxed max-w-xs">
+        A permanent record of our changing environment, documenting the intersection of humanity and the natural world.
+      </p>
+    </div>
+    <div>
+      <h4 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Sections</h4>
+      <ul class="space-y-3">
+        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="../category_page/code.html?category=climate">Climate Change</a></li>
+        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="../category_page/code.html?category=energy">Renewable Energy</a></li>
+        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="../category_page/code.html?category=wildlife">Conservation</a></li>
+        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="../category_page/code.html?category=policy">Policy & Law</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Archive</h4>
+      <ul class="space-y-3">
+        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="../support_the_living_archive/code.html">Support Us</a></li>
+        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="../support_the_living_archive/code.html">About Us</a></li>
+        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="../support_the_living_archive/code.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Social</h4>
+      <div class="flex gap-5 mb-8">
+        <span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">public</span>
+        <span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">rss_feed</span>
+        <span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">mail</span>
+      </div>
+      <p class="font-body text-xs text-outline">© 2025 Ecodemia. All rights reserved.</p>
+    </div>
+  </div>
+  <div class="max-w-screen-2xl mx-auto mt-12 pt-8 border-t border-outline-variant/10 flex flex-wrap gap-8">
+    <a class="font-body text-xs text-outline hover:underline" href="#" data-policy="privacy">Privacy Policy</a>
+    <a class="font-body text-xs text-outline hover:underline" href="#" data-policy="terms">Terms of Service</a>
+  </div>
+</footer>
+
+<!-- ── SCRIPTS ──────────────────────────────────────────────────────────────── -->
+<script src="../js/ecodemia.js"></script>
+<script>
+(function () {
+  // ── Helpers ────────────────────────────────────────────────────────────────
+  function parseFrontMatter(raw) {
+    const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
+    if (!m) return { data: {}, body: raw };
+    const data = {};
+    m[1].split(/\r?\n/).forEach(line => {
+      const c = line.indexOf(':');
+      if (c === -1) return;
+      data[line.slice(0, c).trim()] = line.slice(c + 1).trim().replace(/^["']|["']$/g, '');
+    });
+    return { data, body: m[2] };
+  }
+
+  function formatDate(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    if (isNaN(d)) return iso;
+    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  }
+
+  function wordCount(text) {
+    return text.trim().split(/\s+/).filter(Boolean).length;
+  }
+
+  function show(id)  { document.getElementById(id).classList.remove('hidden'); }
+  function hide(id)  { document.getElementById(id).classList.add('hidden'); }
+
+  // ── Main ───────────────────────────────────────────────────────────────────
+  const slug = new URLSearchParams(location.search).get('slug');
+
+  if (!slug) {
+    hide('article-loading');
+    show('article-error');
+    return;
+  }
+
+  fetch('../content/articles/' + slug + '.md')
+    .then(function(res) {
+      if (!res.ok) throw new Error('not found');
+      return res.text();
+    })
+    .then(function(raw) {
+      const { data, body } = parseFrontMatter(raw);
+
+      // Page title
+      document.title = (data.title || slug) + ' | Ecodemia';
+
+      // Category
+      const cat = data.category || '';
+      document.getElementById('article-category').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
+      document.getElementById('article-category-link').href =
+        '../category_page/code.html?category=' + encodeURIComponent(cat);
+
+      // Title
+      document.getElementById('article-title').textContent = data.title || slug;
+
+      // Date + read time
+      document.getElementById('article-date').textContent = formatDate(data.date);
+      const mins = Math.max(1, Math.round(wordCount(body) / 200));
+      document.getElementById('article-read-time').textContent = mins + ' min read';
+
+      // Cover image
+      if (data.cover_image) {
+        const img = document.getElementById('article-cover');
+        img.src = data.cover_image;
+        img.classList.remove('hidden');
+      }
+
+      // Back link
+      if (cat) {
+        document.getElementById('back-to-category').href =
+          '../category_page/code.html?category=' + encodeURIComponent(cat);
+        document.getElementById('back-to-category').querySelector('span:last-child').textContent = '';
+        document.getElementById('back-to-category').innerHTML =
+          '<span class="material-symbols-outlined text-sm">arrow_back</span> Back to ' +
+          cat.charAt(0).toUpperCase() + cat.slice(1);
+      }
+
+      // Render Markdown body
+      const html = (typeof marked !== 'undefined')
+        ? (marked.parse ? marked.parse(body) : marked(body))
+        : body.replace(/\n/g, '<br>');
+      document.getElementById('article-body').innerHTML = html;
+
+      hide('article-loading');
+      show('article-content');
+    })
+    .catch(function() {
+      hide('article-loading');
+      show('article-error');
+    });
+}());
+</script>
+</body>
+</html>

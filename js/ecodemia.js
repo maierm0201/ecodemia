@@ -25,6 +25,7 @@ const PAGES = {
   checkout:         'checkout_mobile/code.html',
   supportDesktop:   'support_the_living_archive/code.html',
   supportMobile:    'support_mobile/code.html',
+  articleView:      'article_view/code.html',
 };
 
 function isMobile() { return window.innerWidth < 768; }

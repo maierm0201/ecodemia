@@ -303,5 +303,17 @@
 <a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:underline decoration-1 underline-offset-4" href="#">Accessibility</a>
 </div>
 </footer>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', function(user) {
+      if (!user) {
+        window.netlifyIdentity.on('login', function() {
+          document.location.href = '/admin/';
+        });
+      }
+    });
+  }
+</script>
 <script src="../js/ecodemia.js"></script>
 </body></html>
