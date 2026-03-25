@@ -6,6 +6,14 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Local dev / Netlify Visual Editor preview server
+[dev]
+  framework    = "#static"
+  port         = 8888
+  targetPort   = 3000
+  command      = "npx serve@14 . --listen 3000 --no-clipboard"
+  publish      = "."
+
 # /admin  →  admin/index.html  (so the URL works without trailing slash)
 [[redirects]]
   from   = "/admin"

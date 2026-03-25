@@ -2,7 +2,8 @@
   "name": "ecodemia",
   "private": true,
   "scripts": {
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "dev": "npx serve@14 . --listen 3000 --no-clipboard"
   },
   "dependencies": {
     "@stackbit/cms-git": "^0.2.0",

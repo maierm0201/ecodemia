@@ -1,10 +1,14 @@
-import { defineStackbitConfig, SiteMapEntry } from '@stackbit/types';
-import { GitContentSource } from '@stackbit/cms-git';
+// @ts-check
+const { defineStackbitConfig } = require('@stackbit/types');
+const { GitContentSource } = require('@stackbit/cms-git');
 
-export default defineStackbitConfig({
+module.exports = defineStackbitConfig({
   stackbitVersion: '~0.6.0',
   ssgName: 'custom',
   nodeVersion: '18',
+
+  // How to start the local preview server
+  devCommand: 'npx serve@14 . --listen 3000 --no-clipboard',
 
   contentSources: [
     new GitContentSource({
@@ -82,7 +86,7 @@ export default defineStackbitConfig({
     }),
   ],
 
-  siteMap: ({ documents }): SiteMapEntry[] => [
+  siteMap: ({ documents }) => [
     ...documents
       .filter((doc) => doc.modelName === 'Article')
       .map((doc) => ({
