@@ -220,6 +220,74 @@ const TEXT_REPLACE = {
     '__placeholder__Your name (optional)': 'Name (optional)',
     '__placeholder__Card number':        'Kartennummer',
     '__placeholder__Search the archive...': 'Archiv durchsuchen...',
+
+    // ── Support – desktop ─────────────────────────────────────────────────────
+    'Institutional Support':    'Institutionelle Unterstützung',
+    'Protect the record.':      'Das Archiv schützen.',
+    'Power the change.':        'Den Wandel vorantreiben.',
+    'The Entryway':             'Der Einstieg',
+    'Seed':                     'Saat',
+    'Growth Phase':             'Wachstumsphase',
+    'Sapling':                  'Setzling',
+    'Recommended':              'Empfohlen',
+    'Legacy Support':           'Vermächtnis-Unterstützung',
+    'Old-Growth':               'Urwuchs',
+    '/ month':                  '/ Monat',
+    'Weekly Impact Digests':    'Wöchentliche Wirkungsberichte',
+    'Member Identity Badge':    'Mitglieds-Badge',
+    'Quarterly Hard-Copy Journal': 'Vierteljährliches Druckmagazin',
+    'Early Access to Field Data':  'Frühzeitiger Zugang zu Felddaten',
+    'Voting on Archive Priority Areas': 'Mitsprache bei Archiv-Schwerpunkten',
+    'Annual Impact Summit Invitations': 'Einladungen zum Jahres-Gipfeltreffen',
+    'Direct Access to Lead Researchers': 'Direktzugang zu leitenden Forschern',
+    'Name inscribed in the Digital Ledger': 'Namenseintrag im digitalen Ledger',
+    'Select Plan':              'Plan auswählen',
+    'Choose Sapling':           'Setzling wählen',
+    'Select Frequency':         'Häufigkeit wählen',
+    'Proceed to Payment':       'Weiter zur Zahlung',
+    'Secure Encrypted Transaction via Stripe': 'Sichere verschlüsselte Transaktion über Stripe',
+    'Carbon Neutral Platform':  'CO₂-neutrale Plattform',
+    'Your contribution processing is powered by 100% renewable infrastructure.':
+      'Deine Beitragszahlung wird durch 100 % erneuerbare Energie betrieben.',
+    'Active Data points monitored': 'Aktive Datenpunkte überwacht',
+    'Verified Field Researchers':   'Verifizierte Feldforscher',
+    'Open access for scientists':   'Offener Zugang für Wissenschaftler',
+    'Ethics Policy':            'Ethik-Richtlinien',
+    'Editorial Team':           'Redaktionsteam',
+    'Carbon Transparency Report': 'CO₂-Transparenzbericht',
+    '© 2025 Ecodemia. Dedicated to the permanent record of our changing planet.':
+      '© 2025 Ecodemia. Für das dauerhafte Archiv unseres sich verändernden Planeten.',
+
+    // ── Support – mobile ──────────────────────────────────────────────────────
+    'Supporter Engagement':     'Unterstützer-Engagement',
+    'Protect the record':       'Das Archiv schützen',
+    'Select Your Tier':         'Tarif auswählen',
+    'Essential Support':        'Grundlegende Unterstützung',
+    'Active Growth':            'Aktives Wachstum',
+    'Most Vital':               'Am wichtigsten',
+    'Enduring Legacy':          'Bleibendes Vermächtnis',
+    'Select':                   'Auswählen',
+    'Select Tier':              'Tarif wählen',
+    'Every dollar strengthens the archive.': 'Jeder Beitrag stärkt das Archiv.',
+    'Process Contribution':     'Beitrag einreichen',
+    'Secure Encrypted Payment': 'Sicheres verschlüsseltes Payment',
+    'Current Impact':           'Aktuelle Wirkung',
+    'Offsets the carbon footprint of 1,000 digital readers per month.':
+      'Kompensiert den CO₂-Fußabdruck von 1.000 digitalen Lesern pro Monat.',
+    'Funds field reporting for one deep-dive ecological investigative piece.':
+      'Finanziert die Feldrecherche für einen tiefgreifenden ökologischen Investigativbericht.',
+    'Secures long-term archiving for our physical editorial prints in climate-safe vaults.':
+      'Sichert die Langzeitarchivierung unserer Druckerzeugnisse in klimasicheren Tresoren.',
+    'Hectares of ancient forest coverage documented and protected through investigative reporting this year.':
+      'Hektar uralter Waldfläche, die durch investigativen Journalismus dokumentiert und geschützt wurden.',
+    'Categories':               'Kategorien',
+    'Email Address':            'E-Mail-Adresse',
+    'Amount (USD)':             'Betrag (USD)',
+
+    // ── Support placeholders ──────────────────────────────────────────────────
+    '__placeholder__Other amount':  'Anderer Betrag',
+    '__placeholder__Full Name':     'Vollständiger Name',
+    '__placeholder__Email Address': 'E-Mail-Adresse',
   }
 };
 
