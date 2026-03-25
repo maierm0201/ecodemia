@@ -391,8 +391,10 @@ function initUniversalDesktopNav() {
     return `<a class="${cls}" href="${relPath(item.href)}">${t(item.labelKey)}</a>`;
   }).join('');
 
-  // Inject language toggle after Subscribe button area
-  const rightSide = document.querySelector('.fixed .flex.items-center.gap-5, .fixed .flex.items-center.gap-6');
+  // Inject language toggle — try the right-side button group first,
+  // then fall back to the nav's outer flex row (e.g. support page has no gap-5/gap-6 wrapper)
+  const rightSide = document.querySelector('.fixed .flex.items-center.gap-5, .fixed .flex.items-center.gap-6')
+    || document.querySelector('nav.fixed > div, .fixed > nav > div, header.fixed ~ nav > div');
   if (rightSide && !rightSide.querySelector('.eco-lang-toggle')) {
     const wrapper = document.createElement('div');
     wrapper.className = 'flex items-center gap-1.5 ml-2 pl-3 border-l border-[#c1c8c2]/30';
