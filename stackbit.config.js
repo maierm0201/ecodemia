@@ -10,10 +10,26 @@ module.exports = defineStackbitConfig({
   // How to start the local preview server
   devCommand: 'npx serve@14 . --listen 3000 --no-clipboard',
 
+  // Where uploaded images are stored in the repo and served from
+  assets: {
+    referenceType: 'static',
+    staticDir:     '.',
+    assetsDir:     'assets/images',
+    uploadDir:     'assets/images',
+    publicPath:    '/',
+  },
+
   contentSources: [
     new GitContentSource({
-      rootPath: __dirname,
+      rootPath:    __dirname,
       contentDirs: ['content/articles', 'content/pages'],
+      assetsConfig: {
+        referenceType: 'static',
+        staticDir:     '.',
+        assetsDir:     'assets/images',
+        uploadDir:     'assets/images',
+        publicPath:    '/',
+      },
       models: [
         {
           name: 'Article',
