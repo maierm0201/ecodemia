@@ -230,6 +230,16 @@
 </div>
 </div>
 </section>
+<!-- CMS Articles — populated from content/articles.json at runtime -->
+<section id="cms-articles-section" class="mb-20 hidden">
+<div class="flex items-baseline justify-between mb-12 border-b border-outline-variant/10 pb-4">
+<h2 class="font-headline text-3xl font-bold">From the Archive</h2>
+<a href="../search_results_reforestation/code.html" class="font-label text-xs font-bold uppercase tracking-widest text-primary hover:opacity-60 transition-opacity">View All</a>
+</div>
+<div id="cms-articles-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- cards injected by JS -->
+</div>
+</section>
 <!-- Support Us Banner -->
 <section class="mb-20">
 <div class="bg-[#1B4332] rounded-md px-12 py-16 flex flex-col lg:flex-row items-center justify-between gap-8">
@@ -316,6 +326,88 @@
   }
 </script>
 <script src="../js/ecodemia.js"></script>
+<!-- CMS article loader: reads content/articles.json and populates the Latest sidebar
+     and the "From the Archive" card grid. Falls back gracefully if the file is absent. -->
+<script>
+(function () {
+  'use strict';
+
+  function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function fmtDate(s) {
+    if (!s) return '';
+    var dm = s.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+    if (dm) {
+      return new Date(+dm[3], +dm[2]-1, +dm[1])
+        .toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'});
+    }
+    var d = new Date(s);
+    return isNaN(d) ? s : d.toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'});
+  }
+
+  function catLabel(c) { return c ? c.charAt(0).toUpperCase() + c.slice(1) : ''; }
+
+  fetch('../content/articles.json')
+    .then(function(r) { if (!r.ok) throw 0; return r.json(); })
+    .then(function(articles) {
+      if (!articles || !articles.length) return;
+
+      /* ── Latest News sidebar ─────────────────────────────────────────── */
+      var list = document.querySelector('.space-y-10');
+      if (list) {
+        var toShow = articles.slice(0, 4);
+        // Remove hardcoded sidebar articles; the "View Full Archive" link stays
+        list.querySelectorAll('article').forEach(function(el) { el.remove(); });
+        toShow.forEach(function(a) {
+          var el = document.createElement('article');
+          el.className = 'group cursor-pointer';
+          el.setAttribute('data-sb-field-path', ''); // keep editor-friendly
+          el.innerHTML =
+            '<time class="font-label text-[10px] text-outline block mb-2">' + esc(fmtDate(a.date)) + '</time>' +
+            '<h3 class="font-headline text-xl font-bold leading-tight group-hover:text-primary transition-colors">' + esc(a.title) + '</h3>';
+          el.addEventListener('click', function() {
+            location.href = '../article_view/code.html?slug=' + encodeURIComponent(a.slug);
+          });
+          list.appendChild(el);
+        });
+      }
+
+      /* ── "From the Archive" card grid ───────────────────────────────── */
+      var section = document.getElementById('cms-articles-section');
+      var grid    = document.getElementById('cms-articles-grid');
+      if (!section || !grid) return;
+
+      articles.forEach(function(a) {
+        var imgHtml = a.cover_image
+          ? '<img src="' + esc(a.cover_image) + '" alt="' + esc(a.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>'
+          : '<div class="w-full h-full bg-surface-container flex items-center justify-center"><span class="material-symbols-outlined text-4xl text-outline">article</span></div>';
+        var labelHtml = a.category
+          ? '<span class="absolute bottom-4 left-4 bg-primary text-on-primary px-3 py-1 font-label text-[10px] font-bold uppercase tracking-widest rounded-sm">' + esc(catLabel(a.category)) + '</span>'
+          : '';
+
+        var card = document.createElement('div');
+        card.className = 'bg-surface-container-low rounded-md overflow-hidden flex flex-col group cursor-pointer';
+        card.innerHTML =
+          '<div class="aspect-video relative overflow-hidden">' + imgHtml + labelHtml + '</div>' +
+          '<div class="p-8 flex-grow">' +
+            '<p class="font-label text-[10px] uppercase tracking-widest text-outline mb-3">' + esc(fmtDate(a.date)) + '</p>' +
+            '<h3 class="font-headline text-2xl font-bold mb-4 leading-tight group-hover:text-primary transition-colors">' + esc(a.title) + '</h3>' +
+            '<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6">' + esc(a.excerpt) + '</p>' +
+            '<a href="../article_view/code.html?slug=' + encodeURIComponent(a.slug) + '" ' +
+               'class="inline-flex items-center gap-2 font-label text-xs font-bold uppercase tracking-wider text-primary hover:opacity-70 transition-opacity">' +
+              'Read Article <span class="material-symbols-outlined text-sm">arrow_forward</span>' +
+            '</a>' +
+          '</div>';
+        grid.appendChild(card);
+      });
+
+      section.classList.remove('hidden');
+    })
+    .catch(function() { /* articles.json missing or empty — hardcoded content stays */ });
+}());
+</script>
 <!-- Homepage content loader: populates annotated elements from content/pages/homepage.md -->
 <script>
 (function () {

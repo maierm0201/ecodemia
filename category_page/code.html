@@ -105,7 +105,7 @@
 
     <!-- Article Cards -->
     <div class="col-span-8">
-      <div class="grid grid-cols-2 gap-x-10 gap-y-16">
+      <div id="article-cards-grid" class="grid grid-cols-2 gap-x-10 gap-y-16">
 
         <article class="group cursor-pointer" onclick="location.href='../article_detail_page/code.html'">
           <div class="overflow-hidden rounded-sm mb-5 aspect-square bg-surface-container">
@@ -265,5 +265,138 @@
 </footer>
 
 <script src="../js/ecodemia.js"></script>
+<!-- Category page: reads ?category= param, updates the header title, loads
+     content/articles.json, and renders matching CMS articles. Hardcoded cards
+     remain visible as fallback when no CMS articles exist for a category. -->
+<script>
+(function () {
+  'use strict';
+
+  var LABELS = {
+    climate:  'Climate Change',
+    wildlife: 'Wildlife',
+    energy:   'Renewable Energy',
+    living:   'Living',
+    tech:     'Technology',
+    policy:   'Policy & Law',
+    live:     'Live Updates',
+  };
+
+  function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function fmtDate(s) {
+    if (!s) return '';
+    var dm = s.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+    if (dm) {
+      return new Date(+dm[3], +dm[2]-1, +dm[1])
+        .toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'});
+    }
+    var d = new Date(s);
+    return isNaN(d) ? s : d.toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'});
+  }
+
+  function readTime(text) {
+    return Math.max(1, Math.round((text || '').trim().split(/\s+/).filter(Boolean).length / 200));
+  }
+
+  /* ── Category from URL ────────────────────────────────────────────────── */
+  var params   = new URLSearchParams(location.search);
+  var category = (params.get('category') || '').toLowerCase();
+  var label    = LABELS[category] || (category ? category.charAt(0).toUpperCase() + category.slice(1) : 'All');
+
+  // Update page <title> and the large heading
+  document.title = label + ' | Ecodemia';
+  var titleEl = document.querySelector('.category-title');
+  if (titleEl) titleEl.textContent = label + ': Stories from the Field.';
+
+  /* ── Load articles ────────────────────────────────────────────────────── */
+  fetch('../content/articles.json')
+    .then(function(r) { if (!r.ok) throw 0; return r.json(); })
+    .then(function(all) {
+      var articles = category
+        ? all.filter(function(a) { return (a.category || '').toLowerCase() === category; })
+        : all;
+
+      if (!articles.length) return; // no CMS articles → keep hardcoded fallback
+
+      /* ── Cover story ──────────────────────────────────────────────────── */
+      var first = articles[0];
+
+      var coverImg = document.querySelector('.category-cover-img');
+      if (coverImg) {
+        coverImg.src = first.cover_image || '';
+        coverImg.alt = esc(first.title);
+        // Make the image container link to the article
+        var imgWrap = coverImg.closest('[onclick]');
+        if (imgWrap) imgWrap.onclick = function() {
+          location.href = '../article_view/code.html?slug=' + encodeURIComponent(first.slug);
+        };
+      }
+
+      var coverDate = document.querySelector('.category-cover-date');
+      if (coverDate) coverDate.textContent = fmtDate(first.date);
+
+      var coverTime = document.querySelector('.category-cover-time');
+      if (coverTime) coverTime.textContent = readTime(first.excerpt) + ' Min Read';
+
+      var coverTitle = document.querySelector('.category-cover-title');
+      if (coverTitle) {
+        coverTitle.textContent = first.title;
+        coverTitle.onclick = function() {
+          location.href = '../article_view/code.html?slug=' + encodeURIComponent(first.slug);
+        };
+      }
+
+      var coverExcerpt = document.querySelector('.category-cover-excerpt');
+      if (coverExcerpt) coverExcerpt.textContent = first.excerpt;
+
+      /* ── Article grid ─────────────────────────────────────────────────── */
+      var grid = document.getElementById('article-cards-grid');
+      if (!grid) return;
+
+      // Remove hardcoded placeholder cards
+      grid.querySelectorAll('article').forEach(function(el) { el.remove(); });
+
+      // Render remaining CMS articles (first one is already the cover story)
+      articles.slice(1).forEach(function(a) {
+        var catDisplay = a.category ? a.category.charAt(0).toUpperCase() + a.category.slice(1) : '';
+        var imgHtml = a.cover_image
+          ? '<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="' + esc(a.cover_image) + '" alt="' + esc(a.title) + '"/>'
+          : '<div class="w-full h-full bg-surface-container flex items-center justify-center"><span class="material-symbols-outlined text-outline text-4xl">article</span></div>';
+
+        var art = document.createElement('article');
+        art.className = 'group cursor-pointer';
+        art.innerHTML =
+          '<div class="overflow-hidden rounded-sm mb-5 aspect-square bg-surface-container">' + imgHtml + '</div>' +
+          '<div class="flex items-center gap-2 mb-3">' +
+            '<span class="font-label text-[9px] uppercase tracking-[0.15em] text-on-surface font-bold">' + esc(catDisplay) + '</span>' +
+            '<span class="text-outline/40 text-xs">/</span>' +
+            '<span class="font-label text-[9px] uppercase tracking-[0.1em] text-outline">' + readTime(a.excerpt) + ' Min Read</span>' +
+          '</div>' +
+          '<h3 class="font-headline text-xl font-bold text-on-surface leading-tight mb-3 group-hover:text-primary transition-colors">' + esc(a.title) + '</h3>' +
+          '<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6">' + esc(a.excerpt) + '</p>' +
+          '<div class="flex items-center justify-between border-t border-outline-variant/20 pt-4">' +
+            '<span class="font-label text-[10px] uppercase tracking-widest text-outline">' + esc(fmtDate(a.date)) + '</span>' +
+            '<span class="material-symbols-outlined text-outline text-sm group-hover:translate-x-1 group-hover:text-primary transition-all">arrow_forward</span>' +
+          '</div>';
+        art.addEventListener('click', function() {
+          location.href = '../article_view/code.html?slug=' + encodeURIComponent(a.slug);
+        });
+        grid.appendChild(art);
+      });
+
+      // If only 1 article (the cover story) and no grid cards, show a message
+      if (articles.length === 1) {
+        var empty = document.createElement('p');
+        empty.className = 'font-body text-sm text-outline col-span-2';
+        empty.textContent = 'More articles in this category coming soon.';
+        grid.appendChild(empty);
+      }
+    })
+    .catch(function() { /* keep hardcoded fallback on network error */ });
+}());
+</script>
 </body>
 </html>

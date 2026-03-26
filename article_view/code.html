@@ -194,20 +194,50 @@
 <script>
 (function () {
   // ── Helpers ────────────────────────────────────────────────────────────────
+  // Parses YAML front matter including block scalars (> and |) produced by
+  // the Netlify Visual Editor when storing body content.
   function parseFrontMatter(raw) {
     const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
     if (!m) return { data: {}, body: raw };
-    const data = {};
-    m[1].split(/\r?\n/).forEach(line => {
+    const data  = {};
+    const lines = m[1].split(/\r?\n/);
+    let i = 0;
+    while (i < lines.length) {
+      const line = lines[i];
+      if (line.startsWith(' ') || line.startsWith('\t')) { i++; continue; }
       const c = line.indexOf(':');
-      if (c === -1) return;
-      data[line.slice(0, c).trim()] = line.slice(c + 1).trim().replace(/^["']|["']$/g, '');
-    });
+      if (c === -1) { i++; continue; }
+      const key  = line.slice(0, c).trim();
+      const rest = line.slice(c + 1).trim();
+      if (rest === '>' || rest === '|') {
+        // YAML block scalar — collect all indented/blank continuation lines
+        const blockLines = [];
+        i++;
+        while (i < lines.length) {
+          const bl = lines[i];
+          if (bl === '' || bl.startsWith('  ') || bl.startsWith('\t')) {
+            blockLines.push(bl.startsWith('  ') ? bl.slice(2) : (bl.startsWith('\t') ? bl.slice(1) : ''));
+            i++;
+          } else { break; }
+        }
+        while (blockLines.length && blockLines[blockLines.length - 1] === '') blockLines.pop();
+        data[key] = blockLines.join('\n');
+      } else {
+        data[key] = rest.replace(/^["']|["']$/g, '');
+        i++;
+      }
+    }
     return { data, body: m[2] };
   }
 
+  // Handles both ISO (2024-03-14) and DD.MM.YYYY (26.03.2026) date formats
   function formatDate(iso) {
     if (!iso) return '';
+    const dm = iso.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+    if (dm) {
+      const d = new Date(+dm[3], +dm[2] - 1, +dm[1]);
+      return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+    }
     const d = new Date(iso);
     if (isNaN(d)) return iso;
     return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -271,10 +301,13 @@
           cat.charAt(0).toUpperCase() + cat.slice(1);
       }
 
-      // Render Markdown body
+      // Combine YAML body field (Visual Editor) + Markdown section after ---
+      // The Visual Editor stores body as a YAML block scalar; legacy articles
+      // may store it as plain Markdown after the closing --- delimiter.
+      const fullBody = [data.body, body].filter(s => s && s.trim()).join('\n\n');
       const html = (typeof marked !== 'undefined')
-        ? (marked.parse ? marked.parse(body) : marked(body))
-        : body.replace(/\n/g, '<br>');
+        ? (marked.parse ? marked.parse(fullBody) : marked(fullBody))
+        : fullBody.replace(/\n/g, '<br>');
       document.getElementById('article-body').innerHTML = html;
 
       // Annotate for Stackbit Visual Editor
