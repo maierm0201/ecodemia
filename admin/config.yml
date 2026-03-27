@@ -6,7 +6,7 @@ backend:
   # Create a GitHub OAuth App at github.com/settings/developers
   # → Set "Authorization callback URL" to https://<your-vercel-domain>/admin
   # → Paste the Client ID below (no secret needed for PKCE)
-  app_id: YOUR_GITHUB_OAUTH_CLIENT_ID
+  app_id: Ov23li6AkXpqvY0oYJym
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
