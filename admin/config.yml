@@ -1,59 +1,75 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: maierm0201/ecodemia
   branch: main
+  auth_type: pkce
+  # Create a GitHub OAuth App at github.com/settings/developers
+  # → Set "Authorization callback URL" to https://<your-vercel-domain>/admin
+  # → Paste the Client ID below (no secret needed for PKCE)
+  app_id: YOUR_GITHUB_OAUTH_CLIENT_ID
 
-locale: de
-
-media_folder: "uploads/media"
-public_folder: "/uploads/media"
+media_folder: "assets/images"
+public_folder: "/assets/images"
 
 collections:
   - name: "articles"
-    label: "Artikel"
-    label_singular: "Artikel"
+    label: "Articles"
+    label_singular: "Article"
     folder: "content/articles"
     create: true
     delete: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    preview_path: "article_view/code.html?slug={{slug}}"
+    slug: "{{slug}}"
+    preview_path: "/article/{{slug}}"
     summary: "{{title}} ({{date}})"
     fields:
-      - label: "Titel"
+      - label: "Title"
         name: "title"
         widget: "string"
+        required: true
 
-      - label: "Datum"
+      - label: "Date"
         name: "date"
         widget: "datetime"
         format: "YYYY-MM-DD"
         date_format: "DD.MM.YYYY"
         time_format: false
+        required: false
         default: ""
 
-      - label: "Kategorie"
+      - label: "Category"
         name: "category"
         widget: "select"
+        required: false
         options:
-          - { label: "Climate",      value: "climate"  }
-          - { label: "Wildlife",     value: "wildlife" }
-          - { label: "Energy",       value: "energy"   }
-          - { label: "Living",       value: "living"   }
-          - { label: "Tech",         value: "tech"     }
-          - { label: "Policy",       value: "policy"   }
-          - { label: "Live Updates", value: "live"     }
+          - { label: "Climate",  value: "climate"  }
+          - { label: "Wildlife", value: "wildlife" }
+          - { label: "Energy",   value: "energy"   }
+          - { label: "Living",   value: "living"   }
+          - { label: "Tech",     value: "tech"     }
+          - { label: "Policy",   value: "policy"   }
 
-      - label: "Titelbild"
+      - label: "Language"
+        name: "language"
+        widget: "select"
+        required: false
+        default: "en"
+        options:
+          - { label: "English", value: "en" }
+          - { label: "German",  value: "de" }
+
+      - label: "Cover Image"
         name: "cover_image"
         widget: "image"
         required: false
-        hint: "Empfohlene Größe: 1200 × 630 px"
+        hint: "Recommended size: 1200 × 630 px"
 
-      - label: "Kurzbeschreibung"
+      - label: "Excerpt"
         name: "excerpt"
         widget: "text"
         required: false
-        hint: "Kurze Zusammenfassung – erscheint in Listen und auf der Kategorieseite"
+        hint: "Short summary shown in article lists and category pages"
 
-      - label: "Fließtext"
+      - label: "Body"
         name: "body"
         widget: "markdown"
+        required: false

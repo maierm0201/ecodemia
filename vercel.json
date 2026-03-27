@@ -11,6 +11,8 @@
     { "source": "/tech",      "destination": "/category_page/code.html" },
     { "source": "/policy",    "destination": "/category_page/code.html" },
     { "source": "/live",      "destination": "/category_page/code.html" },
-    { "source": "/article/:slug", "destination": "/article_view/code.html" }
+    { "source": "/article/:slug", "destination": "/article_view/code.html" },
+    { "source": "/admin",         "destination": "/admin/index.html" },
+    { "source": "/admin/",        "destination": "/admin/index.html" }
   ]
 }
