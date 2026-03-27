@@ -9,10 +9,10 @@ language: en
 type: Article
 excerpt_de: Das ist das Exzerpt
 body_de: >-
-  # Here is some more content
+  # Das ist der Inhalt
 
 
-  Here you have an image
+  Hier ist das Bild
 
 
   ![Nachhaltige Baumaterialien](/assets/images/Nachhaltige Baumaterialien.jpeg "Nachhaltige Baumaterialien")
