@@ -2,8 +2,8 @@ backend:
   name: github
   repo: maierm0201/ecodemia
   branch: main
-  auth_type: pkce
-  app_id: Ov23li6AkXpqvY0oYJym
+  base_url: https://www.ecodemia.org
+  auth_endpoint: api/auth
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
