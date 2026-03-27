@@ -3,9 +3,6 @@ backend:
   repo: maierm0201/ecodemia
   branch: main
   auth_type: pkce
-  # Create a GitHub OAuth App at github.com/settings/developers
-  # → Set "Authorization callback URL" to https://<your-vercel-domain>/admin
-  # → Paste the Client ID below (no secret needed for PKCE)
   app_id: Ov23li6AkXpqvY0oYJym
 
 media_folder: "assets/images"
