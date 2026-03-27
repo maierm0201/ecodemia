@@ -1,10 +1,14 @@
 // ecodemia.js — Shared site functionality
 
 // ─── PATH HELPERS ─────────────────────────────────────────────────────────────
-function relPath(target) { return '../' + target; }
+function relPath(target) {
+  // Absolute URLs (clean routes like /climate, /article/foo) pass through unchanged
+  if (target.startsWith('/') || target.startsWith('http')) return target;
+  return '../' + target;
+}
 
 const PAGES = {
-  homeDesktop:      'environmental_news_homepage/code.html',
+  homeDesktop:      '/',
   homeMobile:       'environmental_news_home_mobile/code.html',
   articleDesktop:   'article_detail_page/code.html',
   articleMobile:    'article_detail_mobile/code.html',
@@ -365,21 +369,23 @@ function initEcoLogo() {
 
 // ─── UNIVERSAL DESKTOP NAV ────────────────────────────────────────────────────
 const NAV_ITEMS = [
-  { labelKey: 'nav.climate',  category: 'climate',  href: 'category_page/code.html?category=climate'  },
-  { labelKey: 'nav.wildlife', category: 'wildlife', href: 'category_page/code.html?category=wildlife' },
-  { labelKey: 'nav.energy',   category: 'energy',   href: 'category_page/code.html?category=energy'   },
-  { labelKey: 'nav.living',   category: 'living',   href: 'category_page/code.html?category=living'   },
-  { labelKey: 'nav.tech',     category: 'tech',     href: 'category_page/code.html?category=tech'     },
-  { labelKey: 'nav.policy',   category: 'policy',   href: 'category_page/code.html?category=policy'   },
-  { labelKey: 'nav.live',     category: 'live',     href: 'category_page/code.html?category=live'     },
-  { labelKey: 'nav.support',  category: null,       href: 'support_the_living_archive/code.html'      },
+  { labelKey: 'nav.climate',  category: 'climate',  href: '/climate'  },
+  { labelKey: 'nav.wildlife', category: 'wildlife', href: '/wildlife' },
+  { labelKey: 'nav.energy',   category: 'energy',   href: '/energy'   },
+  { labelKey: 'nav.living',   category: 'living',   href: '/living'   },
+  { labelKey: 'nav.tech',     category: 'tech',     href: '/tech'     },
+  { labelKey: 'nav.policy',   category: 'policy',   href: '/policy'   },
+  { labelKey: 'nav.live',     category: 'live',     href: '/live'     },
+  { labelKey: 'nav.support',  category: null,       href: 'support_the_living_archive/code.html' },
 ];
 
 function initUniversalDesktopNav() {
   if (isMobile()) return;
   const container = document.querySelector('.fixed [class*="md:flex"]');
   if (!container) return;
-  const currentCat = new URLSearchParams(window.location.search).get('category') || '';
+  // Support clean URLs like /climate in addition to ?category=climate
+  const currentCat = new URLSearchParams(window.location.search).get('category')
+    || window.location.pathname.split('/').filter(Boolean)[0] || '';
   const isSupport   = window.location.pathname.includes('support_the_living_archive');
   const lang        = getLang();
   container.className = 'hidden md:flex items-center gap-8';
@@ -528,14 +534,14 @@ function initMobileMenu() {
         <button id="eco-drawer-close" class="text-[#717973]"><span class="material-symbols-outlined">close</span></button>
       </div>
       <nav class="flex flex-col p-6 gap-5 flex-1">
-        <a href="${page('homeMobile')}"              class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.home')}</a>
-        <a href="${page('categoryMobile')}?category=climate"  class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.climate')}</a>
-        <a href="${page('categoryMobile')}?category=wildlife" class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.wildlife')}</a>
-        <a href="${page('categoryMobile')}?category=energy"   class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.energy')}</a>
-        <a href="${page('categoryMobile')}?category=living"   class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.living')}</a>
-        <a href="${page('categoryMobile')}?category=tech"     class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4336] transition-colors">${t('nav.tech')}</a>
-        <a href="${page('categoryMobile')}?category=policy"   class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.policy')}</a>
-        <a href="${page('categoryMobile')}?category=live"     class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.live')}</a>
+        <a href="/"          class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.home')}</a>
+        <a href="/climate"  class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.climate')}</a>
+        <a href="/wildlife" class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.wildlife')}</a>
+        <a href="/energy"   class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.energy')}</a>
+        <a href="/living"   class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.living')}</a>
+        <a href="/tech"     class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4336] transition-colors">${t('nav.tech')}</a>
+        <a href="/policy"   class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.policy')}</a>
+        <a href="/live"     class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.live')}</a>
         <a href="${page('searchMobile')}"            class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.search')}</a>
         <a href="${page('merchMobile')}"             class="font-label text-sm uppercase tracking-widest text-[#1a1c1a] hover:text-[#1B4332] transition-colors">${t('nav.shop')}</a>
         <a href="${page('supportMobile')}"           class="font-label text-xs font-bold uppercase tracking-widest text-[#1B4332] border border-[#1B4332] rounded-full px-4 py-2 text-center hover:bg-[#1B4332] hover:text-white transition-colors mt-2">${t('nav.support')}</a>

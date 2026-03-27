@@ -159,10 +159,10 @@
     <div>
       <h4 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Sections</h4>
       <ul class="space-y-3">
-        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="../category_page/code.html?category=climate">Climate Change</a></li>
-        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="../category_page/code.html?category=energy">Renewable Energy</a></li>
-        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="../category_page/code.html?category=wildlife">Conservation</a></li>
-        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="../category_page/code.html?category=policy">Policy & Law</a></li>
+        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="/climate">Climate Change</a></li>
+        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="/energy">Renewable Energy</a></li>
+        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="/wildlife">Conservation</a></li>
+        <li><a class="font-body text-sm text-outline hover:text-primary transition-colors" href="/policy">Policy & Law</a></li>
       </ul>
     </div>
     <div>
@@ -251,7 +251,10 @@
   function hide(id)  { document.getElementById(id).classList.add('hidden'); }
 
   // ── Main ───────────────────────────────────────────────────────────────────
-  const slug = new URLSearchParams(location.search).get('slug');
+  // Support clean URLs: /article/slug-name in addition to ?slug=slug-name
+  const slug = new URLSearchParams(location.search).get('slug')
+    || (location.pathname.match(/^\/article\/(.+)/) || [])[1]
+    || null;
 
   if (!slug) {
     hide('article-loading');
@@ -273,8 +276,7 @@
       // Category
       const cat = data.category || '';
       document.getElementById('article-category').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
-      document.getElementById('article-category-link').href =
-        '../category_page/code.html?category=' + encodeURIComponent(cat);
+      document.getElementById('article-category-link').href = '/' + encodeURIComponent(cat);
 
       // Title
       document.getElementById('article-title').textContent = data.title || slug;
@@ -293,8 +295,7 @@
 
       // Back link
       if (cat) {
-        document.getElementById('back-to-category').href =
-          '../category_page/code.html?category=' + encodeURIComponent(cat);
+        document.getElementById('back-to-category').href = '/' + encodeURIComponent(cat);
         document.getElementById('back-to-category').querySelector('span:last-child').textContent = '';
         document.getElementById('back-to-category').innerHTML =
           '<span class="material-symbols-outlined text-sm">arrow_back</span> Back to ' +
