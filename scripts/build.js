@@ -104,16 +104,20 @@ const articles = files.map(filename => {
   const slug           = filename.replace(/\.md$/, '');
 
   // Body for auto-excerpt: prefer YAML body field, fall back to Markdown section
-  const bodyText = data.body || body;
-  const plain    = stripMarkdown(bodyText);
+  const bodyText   = data.body    || body;
+  const bodyTextDE = data.body_de || '';
+  const plain      = stripMarkdown(bodyText);
+  const plainDE    = bodyTextDE ? stripMarkdown(bodyTextDE) : '';
 
   return {
     slug,
     title:       data.title       || slug,
+    title_de:    data.title_de    || '',
     date:        data.date        || '',
     category:    (data.category   || '').toLowerCase(),
     cover_image: data.cover_image || '',
-    excerpt:     data.excerpt     || (plain.slice(0, 200) + (plain.length > 200 ? '…' : '')),
+    excerpt:     data.excerpt     || (plain.slice(0, 200)   + (plain.length   > 200 ? '…' : '')),
+    excerpt_de:  data.excerpt_de  || (plainDE.slice(0, 200) + (plainDE.length > 200 ? '…' : '')),
   };
 });
 

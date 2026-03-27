@@ -45,15 +45,6 @@ collections:
           - { label: "Tech",     value: "tech"     }
           - { label: "Policy",   value: "policy"   }
 
-      - label: "Language"
-        name: "language"
-        widget: "select"
-        required: false
-        default: "en"
-        options:
-          - { label: "English", value: "en" }
-          - { label: "German",  value: "de" }
-
       - label: "Cover Image"
         name: "cover_image"
         widget: "image"
@@ -66,7 +57,25 @@ collections:
         required: false
         hint: "Short summary shown in article lists and category pages"
 
-      - label: "Body"
+      - label: "Body (English)"
         name: "body"
         widget: "markdown"
         required: false
+
+      - label: "Title (Deutsch)"
+        name: "title_de"
+        widget: "string"
+        required: false
+        hint: "German title — leave blank to show the English title"
+
+      - label: "Excerpt (Deutsch)"
+        name: "excerpt_de"
+        widget: "text"
+        required: false
+        hint: "German excerpt — leave blank to show the English excerpt"
+
+      - label: "Body (Deutsch)"
+        name: "body_de"
+        widget: "markdown"
+        required: false
+        hint: "German body — leave blank to show the English body"

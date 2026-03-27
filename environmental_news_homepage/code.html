@@ -349,6 +349,12 @@
 
   function catLabel(c) { return c ? c.charAt(0).toUpperCase() + c.slice(1) : ''; }
 
+  var lang = localStorage.getItem('ecodemia_lang') || 'en';
+  function loc(a, field) {
+    var de = a[field + '_de'];
+    return (lang === 'de' && de) ? de : (a[field] || '');
+  }
+
   fetch('../content/articles.json')
     .then(function(r) { if (!r.ok) throw 0; return r.json(); })
     .then(function(articles) {
@@ -366,9 +372,9 @@
           el.setAttribute('data-sb-field-path', ''); // keep editor-friendly
           el.innerHTML =
             '<time class="font-label text-[10px] text-outline block mb-2">' + esc(fmtDate(a.date)) + '</time>' +
-            '<h3 class="font-headline text-xl font-bold leading-tight group-hover:text-primary transition-colors">' + esc(a.title) + '</h3>';
+            '<h3 class="font-headline text-xl font-bold leading-tight group-hover:text-primary transition-colors">' + esc(loc(a, 'title')) + '</h3>';
           el.addEventListener('click', function() {
-            location.href = '../article_view/code.html?slug=' + encodeURIComponent(a.slug);
+            location.href = '/article/' + encodeURIComponent(a.slug);
           });
           list.appendChild(el);
         });
@@ -381,7 +387,7 @@
 
       articles.forEach(function(a) {
         var imgHtml = a.cover_image
-          ? '<img src="' + esc(a.cover_image) + '" alt="' + esc(a.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>'
+          ? '<img src="' + esc(a.cover_image) + '" alt="' + esc(loc(a, 'title')) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"/>'
           : '<div class="w-full h-full bg-surface-container flex items-center justify-center"><span class="material-symbols-outlined text-4xl text-outline">article</span></div>';
         var labelHtml = a.category
           ? '<span class="absolute bottom-4 left-4 bg-primary text-on-primary px-3 py-1 font-label text-[10px] font-bold uppercase tracking-widest rounded-sm">' + esc(catLabel(a.category)) + '</span>'
@@ -393,9 +399,9 @@
           '<div class="aspect-video relative overflow-hidden">' + imgHtml + labelHtml + '</div>' +
           '<div class="p-8 flex-grow">' +
             '<p class="font-label text-[10px] uppercase tracking-widest text-outline mb-3">' + esc(fmtDate(a.date)) + '</p>' +
-            '<h3 class="font-headline text-2xl font-bold mb-4 leading-tight group-hover:text-primary transition-colors">' + esc(a.title) + '</h3>' +
-            '<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6">' + esc(a.excerpt) + '</p>' +
-            '<a href="../article_view/code.html?slug=' + encodeURIComponent(a.slug) + '" ' +
+            '<h3 class="font-headline text-2xl font-bold mb-4 leading-tight group-hover:text-primary transition-colors">' + esc(loc(a, 'title')) + '</h3>' +
+            '<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6">' + esc(loc(a, 'excerpt')) + '</p>' +
+            '<a href="/article/' + encodeURIComponent(a.slug) + '" ' +
                'class="inline-flex items-center gap-2 font-label text-xs font-bold uppercase tracking-wider text-primary hover:opacity-70 transition-opacity">' +
               'Read Article <span class="material-symbols-outlined text-sm">arrow_forward</span>' +
             '</a>' +

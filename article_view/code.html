@@ -270,8 +270,13 @@
     .then(function(raw) {
       const { data, body } = parseFrontMatter(raw);
 
+      // Language preference — falls back to English if no German content provided
+      const lang = localStorage.getItem('ecodemia_lang') || 'en';
+      const isDE = lang === 'de';
+      const title = (isDE && data.title_de) ? data.title_de : (data.title || slug);
+
       // Page title
-      document.title = (data.title || slug) + ' | Ecodemia';
+      document.title = title + ' | Ecodemia';
 
       // Category
       const cat = data.category || '';
@@ -279,12 +284,13 @@
       document.getElementById('article-category-link').href = '/' + encodeURIComponent(cat);
 
       // Title
-      document.getElementById('article-title').textContent = data.title || slug;
+      document.getElementById('article-title').textContent = title;
 
       // Date + read time
       document.getElementById('article-date').textContent = formatDate(data.date);
-      const mins = Math.max(1, Math.round(wordCount(body) / 200));
-      document.getElementById('article-read-time').textContent = mins + ' min read';
+      const activeBody = (isDE && data.body_de) ? data.body_de : (data.body || body);
+      const mins = Math.max(1, Math.round(wordCount(activeBody) / 200));
+      document.getElementById('article-read-time').textContent = mins + (isDE ? ' Min Lesen' : ' min read');
 
       // Cover image
       if (data.cover_image) {
@@ -296,16 +302,15 @@
       // Back link
       if (cat) {
         document.getElementById('back-to-category').href = '/' + encodeURIComponent(cat);
-        document.getElementById('back-to-category').querySelector('span:last-child').textContent = '';
         document.getElementById('back-to-category').innerHTML =
-          '<span class="material-symbols-outlined text-sm">arrow_back</span> Back to ' +
-          cat.charAt(0).toUpperCase() + cat.slice(1);
+          '<span class="material-symbols-outlined text-sm">arrow_back</span> ' +
+          (isDE ? 'Zurück zu ' : 'Back to ') + cat.charAt(0).toUpperCase() + cat.slice(1);
       }
 
-      // Combine YAML body field (Visual Editor) + Markdown section after ---
-      // The Visual Editor stores body as a YAML block scalar; legacy articles
-      // may store it as plain Markdown after the closing --- delimiter.
-      const fullBody = [data.body, body].filter(s => s && s.trim()).join('\n\n');
+      // Body: use German field when available, otherwise fall back to English body + raw markdown
+      const fullBody = (isDE && data.body_de)
+        ? data.body_de
+        : [data.body, body].filter(s => s && s.trim()).join('\n\n');
       const html = (typeof marked !== 'undefined')
         ? (marked.parse ? marked.parse(fullBody) : marked(fullBody))
         : fullBody.replace(/\n/g, '<br>');

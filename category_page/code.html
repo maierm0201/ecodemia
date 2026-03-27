@@ -301,6 +301,12 @@
     return Math.max(1, Math.round((text || '').trim().split(/\s+/).filter(Boolean).length / 200));
   }
 
+  var lang = localStorage.getItem('ecodemia_lang') || 'en';
+  function loc(a, field) {
+    var de = a[field + '_de'];
+    return (lang === 'de' && de) ? de : (a[field] || '');
+  }
+
   /* ── Category from URL ────────────────────────────────────────────────── */
   var params   = new URLSearchParams(location.search);
   // Support clean URLs like /wildlife in addition to ?category=wildlife
@@ -328,7 +334,7 @@
       var coverImg = document.querySelector('.category-cover-img');
       if (coverImg) {
         coverImg.src = first.cover_image || '';
-        coverImg.alt = esc(first.title);
+        coverImg.alt = esc(loc(first, 'title'));
         // Make the image container link to the article
         var imgWrap = coverImg.closest('[onclick]');
         if (imgWrap) imgWrap.onclick = function() {
@@ -340,18 +346,18 @@
       if (coverDate) coverDate.textContent = fmtDate(first.date);
 
       var coverTime = document.querySelector('.category-cover-time');
-      if (coverTime) coverTime.textContent = readTime(first.excerpt) + ' Min Read';
+      if (coverTime) coverTime.textContent = readTime(loc(first, 'excerpt')) + ' Min Read';
 
       var coverTitle = document.querySelector('.category-cover-title');
       if (coverTitle) {
-        coverTitle.textContent = first.title;
+        coverTitle.textContent = loc(first, 'title');
         coverTitle.onclick = function() {
           location.href = '/article/' + encodeURIComponent(first.slug);
         };
       }
 
       var coverExcerpt = document.querySelector('.category-cover-excerpt');
-      if (coverExcerpt) coverExcerpt.textContent = first.excerpt;
+      if (coverExcerpt) coverExcerpt.textContent = loc(first, 'excerpt');
 
       /* ── Article grid ─────────────────────────────────────────────────── */
       var grid = document.getElementById('article-cards-grid');
@@ -364,7 +370,7 @@
       articles.slice(1).forEach(function(a) {
         var catDisplay = a.category ? a.category.charAt(0).toUpperCase() + a.category.slice(1) : '';
         var imgHtml = a.cover_image
-          ? '<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="' + esc(a.cover_image) + '" alt="' + esc(a.title) + '"/>'
+          ? '<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="' + esc(a.cover_image) + '" alt="' + esc(loc(a, 'title')) + '"/>'
           : '<div class="w-full h-full bg-surface-container flex items-center justify-center"><span class="material-symbols-outlined text-outline text-4xl">article</span></div>';
 
         var art = document.createElement('article');
@@ -376,8 +382,8 @@
             '<span class="text-outline/40 text-xs">/</span>' +
             '<span class="font-label text-[9px] uppercase tracking-[0.1em] text-outline">' + readTime(a.excerpt) + ' Min Read</span>' +
           '</div>' +
-          '<h3 class="font-headline text-xl font-bold text-on-surface leading-tight mb-3 group-hover:text-primary transition-colors">' + esc(a.title) + '</h3>' +
-          '<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6">' + esc(a.excerpt) + '</p>' +
+          '<h3 class="font-headline text-xl font-bold text-on-surface leading-tight mb-3 group-hover:text-primary transition-colors">' + esc(loc(a, 'title')) + '</h3>' +
+          '<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6">' + esc(loc(a, 'excerpt')) + '</p>' +
           '<div class="flex items-center justify-between border-t border-outline-variant/20 pt-4">' +
             '<span class="font-label text-[10px] uppercase tracking-widest text-outline">' + esc(fmtDate(a.date)) + '</span>' +
             '<span class="material-symbols-outlined text-outline text-sm group-hover:translate-x-1 group-hover:text-primary transition-all">arrow_forward</span>' +
