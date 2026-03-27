@@ -2,19 +2,17 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".",
   "installCommand": "npm install",
-  "redirects": [
-    { "source": "/admin", "destination": "/admin/", "permanent": false }
-  ],
   "rewrites": [
-    { "source": "/",          "destination": "/environmental_news_homepage/code.html" },
-    { "source": "/climate",   "destination": "/category_page/code.html" },
-    { "source": "/wildlife",  "destination": "/category_page/code.html" },
-    { "source": "/energy",    "destination": "/category_page/code.html" },
-    { "source": "/living",    "destination": "/category_page/code.html" },
-    { "source": "/tech",      "destination": "/category_page/code.html" },
-    { "source": "/policy",    "destination": "/category_page/code.html" },
-    { "source": "/live",      "destination": "/category_page/code.html" },
+    { "source": "/",              "destination": "/environmental_news_homepage/code.html" },
+    { "source": "/climate",       "destination": "/category_page/code.html" },
+    { "source": "/wildlife",      "destination": "/category_page/code.html" },
+    { "source": "/energy",        "destination": "/category_page/code.html" },
+    { "source": "/living",        "destination": "/category_page/code.html" },
+    { "source": "/tech",          "destination": "/category_page/code.html" },
+    { "source": "/policy",        "destination": "/category_page/code.html" },
+    { "source": "/live",          "destination": "/category_page/code.html" },
     { "source": "/article/:slug", "destination": "/article_view/code.html" },
-    { "source": "/admin/",    "destination": "/admin/index.html" }
+    { "source": "/admin",         "destination": "/admin/index.html" },
+    { "source": "/admin/",        "destination": "/admin/index.html" }
   ]
 }
