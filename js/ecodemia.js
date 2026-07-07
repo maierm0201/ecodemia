@@ -856,7 +856,11 @@ const CATEGORY_CONFIG = {
 
 function initCategoryPage() {
   if (!document.querySelector('.category-title')) return;
-  const cat  = new URLSearchParams(window.location.search).get('category') || 'wildlife';
+  // Clean URLs (/climate) put the category in the path; ?category= still works
+  const cat  = new URLSearchParams(window.location.search).get('category')
+    || (CATEGORY_CONFIG[window.location.pathname.split('/').filter(Boolean)[0]]
+        ? window.location.pathname.split('/').filter(Boolean)[0] : '')
+    || 'wildlife';
   const lang = getLang();
   const base = CATEGORY_CONFIG[cat] || CATEGORY_CONFIG.wildlife;
   const cfg  = base[lang] || base.en;

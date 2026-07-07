@@ -286,22 +286,25 @@
     return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
+  var lang   = localStorage.getItem('ecodemia_lang') || 'en';
+  var isDE   = lang === 'de';
+  var LOCALE = isDE ? 'de-DE' : 'en-GB';
+
   function fmtDate(s) {
     if (!s) return '';
     var dm = s.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
     if (dm) {
       return new Date(+dm[3], +dm[2]-1, +dm[1])
-        .toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'});
+        .toLocaleDateString(LOCALE, {day:'numeric',month:'long',year:'numeric'});
     }
     var d = new Date(s);
-    return isNaN(d) ? s : d.toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'});
+    return isNaN(d) ? s : d.toLocaleDateString(LOCALE, {day:'numeric',month:'long',year:'numeric'});
   }
 
   function readTime(text) {
     return Math.max(1, Math.round((text || '').trim().split(/\s+/).filter(Boolean).length / 200));
   }
 
-  var lang = localStorage.getItem('ecodemia_lang') || 'en';
   function loc(a, field) {
     var de = a[field + '_de'];
     return (lang === 'de' && de) ? de : (a[field] || '');
@@ -346,7 +349,7 @@
       if (coverDate) coverDate.textContent = fmtDate(first.date);
 
       var coverTime = document.querySelector('.category-cover-time');
-      if (coverTime) coverTime.textContent = readTime(loc(first, 'excerpt')) + ' Min Read';
+      if (coverTime) coverTime.textContent = readTime(loc(first, 'excerpt')) + (isDE ? ' Min. Lesezeit' : ' Min Read');
 
       var coverTitle = document.querySelector('.category-cover-title');
       if (coverTitle) {
@@ -380,7 +383,7 @@
           '<div class="flex items-center gap-2 mb-3">' +
             '<span class="font-label text-[9px] uppercase tracking-[0.15em] text-on-surface font-bold">' + esc(catDisplay) + '</span>' +
             '<span class="text-outline/40 text-xs">/</span>' +
-            '<span class="font-label text-[9px] uppercase tracking-[0.1em] text-outline">' + readTime(a.excerpt) + ' Min Read</span>' +
+            '<span class="font-label text-[9px] uppercase tracking-[0.1em] text-outline">' + readTime(a.excerpt) + (isDE ? ' Min. Lesezeit' : ' Min Read') + '</span>' +
           '</div>' +
           '<h3 class="font-headline text-xl font-bold text-on-surface leading-tight mb-3 group-hover:text-primary transition-colors">' + esc(loc(a, 'title')) + '</h3>' +
           '<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6">' + esc(loc(a, 'excerpt')) + '</p>' +
@@ -398,7 +401,9 @@
       if (articles.length === 1) {
         var empty = document.createElement('p');
         empty.className = 'font-body text-sm text-outline col-span-2';
-        empty.textContent = 'More articles in this category coming soon.';
+        empty.textContent = isDE
+          ? 'Weitere Artikel in dieser Rubrik folgen in Kürze.'
+          : 'More articles in this category coming soon.';
         grid.appendChild(empty);
       }
     })

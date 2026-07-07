@@ -113,8 +113,10 @@
         <span id="article-category" data-sb-field-path="category"></span>
       </a>
       <h1 id="article-title" data-sb-field-path="title"
-          class="font-headline text-5xl md:text-[3.5rem] font-bold text-on-surface leading-[1.1] mb-8">
+          class="font-headline text-5xl md:text-[3.5rem] font-bold text-on-surface leading-[1.1] mb-6">
       </h1>
+      <p id="article-subtitle" data-sb-field-path="subtitle"
+         class="hidden font-body text-xl text-on-surface-variant leading-relaxed mb-8"></p>
       <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-outline border-t border-outline-variant/20 pt-6">
         <span id="article-date"      class="font-label text-xs uppercase tracking-widest" data-sb-field-path="date"></span>
         <span id="article-read-time" class="font-label text-xs uppercase tracking-widest"></span>
@@ -209,7 +211,8 @@
       if (c === -1) { i++; continue; }
       const key  = line.slice(0, c).trim();
       const rest = line.slice(c + 1).trim();
-      if (rest === '>' || rest === '|') {
+      // Block scalar indicators: > | plus optional chomping modifier (>- |- >+ |+)
+      if (/^[>|][+-]?$/.test(rest)) {
         // YAML block scalar — collect all indented/blank continuation lines
         const blockLines = [];
         i++;
@@ -231,16 +234,28 @@
   }
 
   // Handles both ISO (2024-03-14) and DD.MM.YYYY (26.03.2026) date formats
-  function formatDate(iso) {
+  function formatDate(iso, locale) {
     if (!iso) return '';
+    locale = locale || 'en-GB';
     const dm = iso.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
     if (dm) {
       const d = new Date(+dm[3], +dm[2] - 1, +dm[1]);
-      return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+      return d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
     }
     const d = new Date(iso);
     if (isNaN(d)) return iso;
-    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+    return d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
+  }
+
+  // Markdown URLs may contain literal spaces (e.g. CMS-uploaded image filenames),
+  // which breaks CommonMark parsing — encode them so marked recognises the link.
+  function encodeMdUrls(md) {
+    return md.replace(/(!?\[[^\]]*\]\()([^)]+)(\))/g, function (_, pre, inner, post) {
+      let url = inner, title = '';
+      const m = inner.match(/^([\s\S]*?)(\s+"[^"]*")\s*$/);
+      if (m) { url = m[1]; title = m[2]; }
+      return pre + url.trim().replace(/ /g, '%20') + title + post;
+    });
   }
 
   function wordCount(text) {
@@ -283,11 +298,17 @@
       document.getElementById('article-category').textContent = cat.charAt(0).toUpperCase() + cat.slice(1);
       document.getElementById('article-category-link').href = '/' + encodeURIComponent(cat);
 
-      // Title
+      // Title + optional subtitle
       document.getElementById('article-title').textContent = title;
+      const subtitle = (isDE && data.subtitle_de) ? data.subtitle_de : (data.subtitle || '');
+      if (subtitle) {
+        const subEl = document.getElementById('article-subtitle');
+        subEl.textContent = subtitle;
+        subEl.classList.remove('hidden');
+      }
 
       // Date + read time
-      document.getElementById('article-date').textContent = formatDate(data.date);
+      document.getElementById('article-date').textContent = formatDate(data.date, isDE ? 'de-DE' : 'en-GB');
       const activeBody = (isDE && data.body_de) ? data.body_de : (data.body || body);
       const mins = Math.max(1, Math.round(wordCount(activeBody) / 200));
       document.getElementById('article-read-time').textContent = mins + (isDE ? ' Min Lesen' : ' min read');
@@ -308,9 +329,9 @@
       }
 
       // Body: use German field when available, otherwise fall back to English body + raw markdown
-      const fullBody = (isDE && data.body_de)
+      const fullBody = encodeMdUrls((isDE && data.body_de)
         ? data.body_de
-        : [data.body, body].filter(s => s && s.trim()).join('\n\n');
+        : [data.body, body].filter(s => s && s.trim()).join('\n\n'));
       const html = (typeof marked !== 'undefined')
         ? (marked.parse ? marked.parse(fullBody) : marked(fullBody))
         : fullBody.replace(/\n/g, '<br>');

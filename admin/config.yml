@@ -24,6 +24,12 @@ collections:
         widget: "string"
         required: true
 
+      - label: "Subtitle"
+        name: "subtitle"
+        widget: "string"
+        required: false
+        hint: "Optional standfirst shown below the title on the article page"
+
       - label: "Date"
         name: "date"
         widget: "datetime"
@@ -67,6 +73,12 @@ collections:
         widget: "string"
         required: false
         hint: "German title — leave blank to show the English title"
+
+      - label: "Subtitle (Deutsch)"
+        name: "subtitle_de"
+        widget: "string"
+        required: false
+        hint: "German subtitle — leave blank to show the English subtitle"
 
       - label: "Excerpt (Deutsch)"
         name: "excerpt_de"

@@ -35,8 +35,9 @@ function parseFrontMatter(raw) {
     const key  = line.slice(0, colon).trim();
     const rest = line.slice(colon + 1).trim();
 
-    // YAML block scalar indicator: > (folded) or | (literal)
-    if (rest === '>' || rest === '|') {
+    // YAML block scalar indicator: > (folded) or | (literal), with optional
+    // chomping modifier (>- |- >+ |+) as produced by Decap CMS
+    if (/^[>|][+-]?$/.test(rest)) {
       const blockLines = [];
       i++;
       while (i < lines.length) {
@@ -113,6 +114,8 @@ const articles = files.map(filename => {
     slug,
     title:       data.title       || slug,
     title_de:    data.title_de    || '',
+    subtitle:    data.subtitle    || '',
+    subtitle_de: data.subtitle_de || '',
     date:        data.date        || '',
     category:    (data.category   || '').toLowerCase(),
     cover_image: data.cover_image || '',

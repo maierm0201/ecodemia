@@ -90,9 +90,9 @@
 <a class="eco-logo text-2xl" href="../environmental_news_homepage/code.html">Ecodemia</a>
 <div class="hidden md:flex space-x-8 font-headline tracking-tight">
 <a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="../environmental_news_homepage/code.html">The Archive</a>
-<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="../article_detail_page/code.html?category=wildlife">Biodiversity</a>
-<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="../article_detail_page/code.html?category=climate">Climate</a>
-<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="../article_detail_page/code.html?category=policy">Policy</a>
+<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="/wildlife">Biodiversity</a>
+<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="/climate">Climate</a>
+<a class="text-[#717973] hover:text-[#012d1d] transition-colors" href="/policy">Policy</a>
 </div>
 <div class="flex items-center space-x-6">
 <button class="text-on-surface-variant hover:text-primary transition-colors">
@@ -110,7 +110,7 @@
 <input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline/40 focus:border-primary focus:ring-0 text-3xl font-headline italic py-2 outline-none transition-all search-input" placeholder="Search the archive..." type="text" value="reforestation"/>
 <span class="absolute right-0 bottom-2 text-primary font-label uppercase text-[12px] tracking-widest">Searching</span>
 </div></form>
-<p class="font-label uppercase tracking-[0.05rem] text-[12px] text-on-surface-variant">
+<p id="search-count" class="font-label uppercase tracking-[0.05rem] text-[12px] text-on-surface-variant">
                     12 results for <span class="text-primary font-bold">"reforestation"</span>
 </p>
 </div>
@@ -155,7 +155,7 @@
 </div>
 </aside>
 <!-- Search Results Content -->
-<section class="flex-grow space-y-16">
+<section id="search-results-section" class="flex-grow space-y-16">
 <!-- Result 1: Featured Result -->
 <article class="group search-result cursor-pointer" data-topic="climate" onclick="location.href='../article_detail_page/code.html'">
 <div class="flex flex-col md:flex-row gap-8 items-start">
@@ -253,4 +253,91 @@
 </div>
 </footer>
 <script src="../js/ecodemia.js"></script>
+<!-- Live search: when ?q= is present, search real CMS articles (title/excerpt,
+     both languages) and replace the hardcoded demo results. -->
+<script>
+(function () {
+  'use strict';
+
+  var q = (new URLSearchParams(location.search).get('q') || '').trim();
+  if (!q) return; // no query → keep the designed demo results
+
+  var lang = localStorage.getItem('ecodemia_lang') || 'en';
+  var isDE = lang === 'de';
+
+  function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  function loc(a, f) {
+    var de = a[f + '_de'];
+    return (isDE && de) ? de : (a[f] || '');
+  }
+  function fmtDate(s) {
+    if (!s) return '';
+    var d = new Date(s);
+    return isNaN(d) ? s : d.toLocaleDateString(isDE ? 'de-DE' : 'en-GB', {day:'numeric', month:'short', year:'numeric'});
+  }
+  function catLabel(c) { return c ? c.charAt(0).toUpperCase() + c.slice(1) : ''; }
+
+  fetch('../content/articles.json')
+    .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+    .then(function (all) {
+      var needle  = q.toLowerCase();
+      var matches = all.filter(function (a) {
+        return ['title','title_de','subtitle','subtitle_de','excerpt','excerpt_de']
+          .some(function (f) { return (a[f] || '').toLowerCase().indexOf(needle) !== -1; });
+      });
+
+      var count = document.getElementById('search-count');
+      if (count) {
+        count.innerHTML = matches.length +
+          (isDE ? ' Ergebnisse für ' : ' results for ') +
+          '<span class="text-primary font-bold">"' + esc(q) + '"</span>';
+      }
+
+      var section = document.getElementById('search-results-section');
+      if (!section) return;
+      section.querySelectorAll('.search-result').forEach(function (el) { el.remove(); });
+
+      if (!matches.length) {
+        var none = document.createElement('p');
+        none.className = 'font-body text-sm text-outline py-8';
+        none.textContent = isDE
+          ? 'Keine Artikel gefunden. Versuche einen anderen Suchbegriff.'
+          : 'No articles found. Try a different search term.';
+        section.prepend(none);
+        return;
+      }
+
+      matches.slice().reverse().forEach(function (a) {
+        var imgHtml = a.cover_image
+          ? '<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="' + esc(a.cover_image) + '" alt="' + esc(loc(a, 'title')) + '"/>'
+          : '<div class="w-full h-full bg-surface-container flex items-center justify-center"><span class="material-symbols-outlined text-outline text-4xl">article</span></div>';
+        var art = document.createElement('article');
+        art.className = 'group border-t border-outline-variant/20 pt-16 search-result cursor-pointer';
+        art.setAttribute('data-topic', a.category || '');
+        art.innerHTML =
+          '<div class="flex flex-col md:flex-row-reverse gap-8 items-start">' +
+            '<div class="w-full md:w-1/3 aspect-video bg-surface-container overflow-hidden rounded-md">' + imgHtml + '</div>' +
+            '<div class="w-full md:w-2/3">' +
+              '<div class="flex items-center space-x-4 mb-3">' +
+                '<span class="text-on-secondary-fixed-variant font-label text-[10px] uppercase tracking-widest font-bold">' + esc(catLabel(a.category)) + '</span>' +
+                '<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">' + esc(fmtDate(a.date)) + '</span>' +
+              '</div>' +
+              '<h2 class="font-headline text-2xl mb-3 leading-snug group-hover:text-primary transition-colors">' + esc(loc(a, 'title')) + '</h2>' +
+              '<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-4 max-w-lg">' + esc(loc(a, 'excerpt')) + '</p>' +
+            '</div>' +
+          '</div>';
+        art.addEventListener('click', function () {
+          location.href = '/article/' + encodeURIComponent(a.slug);
+        });
+        section.prepend(art);
+      });
+      // First result should not have the top border
+      var firstRes = section.querySelector('.search-result');
+      if (firstRes) firstRes.classList.remove('border-t', 'pt-16');
+    })
+    .catch(function () { /* keep demo results on error */ });
+}());
+</script>
 </body></html>

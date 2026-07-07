@@ -96,11 +96,11 @@
 <div class="flex items-center gap-12">
 <a class="eco-logo text-2xl" href="../environmental_news_homepage/code.html">Ecodemia</a>
 <div class="hidden md:flex gap-8">
-<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#1B4332] dark:text-[#cfe5d9] font-semibold border-b-2 border-[#1B4332] transition-colors duration-300" href="../article_detail_page/code.html?category=climate">Climate</a>
-<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="../article_detail_page/code.html?category=wildlife">Wildlife</a>
-<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="../article_detail_page/code.html?category=energy">Energy</a>
-<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="../article_detail_page/code.html?category=policy">Policy</a>
-<a class="font-['Newsreader'] italic text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="../support_the_living_archive/code.html">Support Us</a>
+<a class="font-['Newsreader'] text-lg tracking-tight text-[#1B4332] dark:text-[#cfe5d9] font-semibold border-b-2 border-[#1B4332] transition-colors duration-300" href="/climate">Climate</a>
+<a class="font-['Newsreader'] text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="/wildlife">Wildlife</a>
+<a class="font-['Newsreader'] text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="/energy">Energy</a>
+<a class="font-['Newsreader'] text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="/policy">Policy</a>
+<a class="font-['Newsreader'] text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="../support_the_living_archive/code.html">Support Us</a>
 </div>
 </div>
 <div class="flex items-center gap-6">
@@ -280,10 +280,10 @@
 <div>
 <h4 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Sections</h4>
 <ul class="space-y-4">
-<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="../article_detail_page/code.html?category=climate">Climate Change</a></li>
-<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="../article_detail_page/code.html?category=energy">Renewable Energy</a></li>
-<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="../article_detail_page/code.html?category=wildlife">Conservation</a></li>
-<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="../article_detail_page/code.html?category=policy">Policy &amp; Law</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="/climate">Climate Change</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="/energy">Renewable Energy</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="/wildlife">Conservation</a></li>
+<li><a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6]" href="/policy">Policy &amp; Law</a></li>
 </ul>
 </div>
 <div>
@@ -313,18 +313,6 @@
 <a class="font-['Inter'] text-sm tracking-wide text-[#717973] dark:text-[#a1a8a2] hover:underline decoration-1 underline-offset-4" href="#">Accessibility</a>
 </div>
 </footer>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on('init', function(user) {
-      if (!user) {
-        window.netlifyIdentity.on('login', function() {
-          document.location.href = '/admin/';
-        });
-      }
-    });
-  }
-</script>
 <script src="../js/ecodemia.js"></script>
 <!-- CMS article loader: reads content/articles.json and populates the Latest sidebar
      and the "From the Archive" card grid. Falls back gracefully if the file is absent. -->
@@ -336,20 +324,23 @@
     return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
+  var lang   = localStorage.getItem('ecodemia_lang') || 'en';
+  var isDE   = lang === 'de';
+  var LOCALE = isDE ? 'de-DE' : 'en-GB';
+
   function fmtDate(s) {
     if (!s) return '';
     var dm = s.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
     if (dm) {
       return new Date(+dm[3], +dm[2]-1, +dm[1])
-        .toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'});
+        .toLocaleDateString(LOCALE, {day:'numeric',month:'long',year:'numeric'});
     }
     var d = new Date(s);
-    return isNaN(d) ? s : d.toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'});
+    return isNaN(d) ? s : d.toLocaleDateString(LOCALE, {day:'numeric',month:'long',year:'numeric'});
   }
 
   function catLabel(c) { return c ? c.charAt(0).toUpperCase() + c.slice(1) : ''; }
 
-  var lang = localStorage.getItem('ecodemia_lang') || 'en';
   function loc(a, field) {
     var de = a[field + '_de'];
     return (lang === 'de' && de) ? de : (a[field] || '');
@@ -403,7 +394,7 @@
             '<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6">' + esc(loc(a, 'excerpt')) + '</p>' +
             '<a href="/article/' + encodeURIComponent(a.slug) + '" ' +
                'class="inline-flex items-center gap-2 font-label text-xs font-bold uppercase tracking-wider text-primary hover:opacity-70 transition-opacity">' +
-              'Read Article <span class="material-symbols-outlined text-sm">arrow_forward</span>' +
+              (isDE ? 'Artikel lesen' : 'Read Article') + ' <span class="material-symbols-outlined text-sm">arrow_forward</span>' +
             '</a>' +
           '</div>';
         grid.appendChild(card);

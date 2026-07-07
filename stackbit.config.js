@@ -38,12 +38,17 @@ module.exports = defineStackbitConfig({
           filePath: 'content/articles/{slug}.md',
           fields: [
             { name: 'title',       type: 'string',   required: true },
+            { name: 'subtitle',    type: 'string',   required: false },
             { name: 'date',        type: 'string',   required: false },
             { name: 'category',    type: 'enum',     required: false,
               options: ['climate', 'wildlife', 'energy', 'living', 'tech', 'policy', 'live'] },
             { name: 'cover_image', type: 'image',    required: false },
             { name: 'excerpt',     type: 'text',     required: false },
             { name: 'body',        type: 'markdown', required: false },
+            { name: 'title_de',    type: 'string',   required: false },
+            { name: 'subtitle_de', type: 'string',   required: false },
+            { name: 'excerpt_de',  type: 'text',     required: false },
+            { name: 'body_de',     type: 'markdown', required: false },
           ],
         },
         {

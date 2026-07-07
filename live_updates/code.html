@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Live Updates | Ecodemia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Inter:wght@400;500;600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#012d1d", "primary-container": "#1b4332", "on-primary": "#ffffff",
+          "on-primary-container": "#86af99", "secondary": "#4f6359",
+          "secondary-container": "#cfe5d9", "on-secondary-container": "#54675e",
+          "surface": "#f9faf6", "surface-container-low": "#f3f4f0",
+          "surface-container": "#edeeea", "surface-container-high": "#e7e9e5",
+          "on-surface": "#1a1c1a", "on-surface-variant": "#414844",
+          "outline": "#717973", "outline-variant": "#c1c8c2",
+          "background": "#f9faf6", "tertiary-container": "#383f22",
+          "on-tertiary-container": "#a2aa85", "error": "#ba1a1a",
+        },
+        fontFamily: {
+          "headline": ["Newsreader", "serif"],
+          "body":     ["Inter",      "sans-serif"],
+          "label":    ["Public Sans","sans-serif"],
+        },
+        borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .eco-logo { font-family: 'Newsreader', serif; font-style: normal; font-weight: 700; color: #1B4332; text-decoration: none; }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9faf6]/90 backdrop-blur-md border-b border-outline-variant/10">
+  <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+    <div class="flex items-center gap-12">
+      <a class="eco-logo text-2xl" href="../environmental_news_homepage/code.html">Ecodemia</a>
+      <div class="hidden md:flex items-center gap-8">
+        <!-- injected by initUniversalDesktopNav() -->
+      </div>
+    </div>
+    <div class="flex items-center gap-5">
+      <span class="material-symbols-outlined text-on-surface-variant cursor-pointer search-trigger">search</span>
+      <button class="hidden md:inline-flex bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label text-sm font-bold tracking-wide hover:opacity-90 transition-opacity subscribe-btn">Subscribe</button>
+      <button class="md:hidden text-on-surface menu-trigger"><span class="material-symbols-outlined">menu</span></button>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-24 pb-24 max-w-screen-2xl mx-auto px-8">
+
+  <!-- Header -->
+  <header class="border-l-4 border-primary pl-8 py-4 mb-12 mt-4">
+    <div class="flex items-center gap-3 mb-3">
+      <span class="w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+      <span id="lu-eyebrow" class="font-label text-[10px] uppercase tracking-[0.25em] text-outline font-bold block">Continuously Updated</span>
+    </div>
+    <h1 id="lu-title" class="font-headline text-6xl md:text-7xl font-bold text-on-surface leading-[1.05]">Live Updates.</h1>
+    <p id="lu-subtitle" class="font-body text-on-surface-variant leading-relaxed mt-5 max-w-2xl">
+      The latest environmental reporting from trusted newsrooms around the world, scanned throughout the day and sorted by category. Headlines link to the original source.
+    </p>
+  </header>
+
+  <!-- Category filter chips -->
+  <div id="lu-filters" class="flex flex-wrap gap-3 mb-12">
+    <!-- injected by JS -->
+  </div>
+
+  <!-- Updates list -->
+  <div class="grid grid-cols-12 gap-12">
+    <div class="col-span-12 lg:col-span-8">
+
+      <div id="lu-loading" class="py-20 text-center">
+        <p class="font-label text-xs uppercase tracking-[0.2em] text-outline animate-pulse">Loading live updates…</p>
+      </div>
+
+      <div id="lu-error" class="hidden py-20 text-center">
+        <span class="material-symbols-outlined text-outline text-5xl mb-4 block">wifi_off</span>
+        <p id="lu-error-text" class="font-body text-sm text-outline max-w-md mx-auto">
+          Live updates are temporarily unavailable. Please try again in a few minutes.
+        </p>
+      </div>
+
+      <div id="lu-list" class="hidden divide-y divide-outline-variant/15">
+        <!-- items injected by JS -->
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="hidden lg:block col-span-4">
+      <div class="sticky top-28 space-y-10">
+        <div class="bg-tertiary-container p-8 rounded-sm">
+          <span id="lu-side-eyebrow" class="font-label text-[8px] uppercase tracking-[0.2em] text-on-tertiary-container font-bold block mb-5">How This Works</span>
+          <h4 class="font-headline text-3xl font-bold text-white mb-3 leading-tight">24/7</h4>
+          <p id="lu-side-text" class="font-label text-[9px] uppercase tracking-wider text-on-tertiary-container/80 leading-relaxed mb-8">
+            Our aggregator scans trusted environmental newsrooms throughout the day. Every headline links directly to the original publisher.
+          </p>
+          <div id="lu-sources" class="space-y-2">
+            <!-- source list injected -->
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-16 px-8 bg-[#f3f4f0]">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-screen-2xl mx-auto">
+    <div class="md:col-span-1">
+      <a class="eco-logo text-xl mb-4 block" href="../environmental_news_homepage/code.html">Ecodemia</a>
+      <p class="font-['Inter'] text-sm tracking-wide text-[#717973] max-w-xs leading-relaxed">A permanent record of our changing environment, documenting the intersection of humanity and the natural world.</p>
+    </div>
+    <div>
+      <h4 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Sections</h4>
+      <ul class="space-y-4">
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="/climate">Climate Change</a></li>
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="/energy">Renewable Energy</a></li>
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="/wildlife">Conservation</a></li>
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="/policy">Policy &amp; Law</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Archive</h4>
+      <ul class="space-y-4">
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="../support_the_living_archive/code.html">Support Us</a></li>
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="../support_the_living_archive/code.html">About Us</a></li>
+        <li><a class="font-['Inter'] text-sm text-[#717973] hover:text-[#1B4332]" href="../support_the_living_archive/code.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-label text-xs font-bold uppercase tracking-widest text-on-surface mb-6">Social</h4>
+      <div class="flex gap-6">
+        <span class="material-symbols-outlined text-[#717973] cursor-pointer hover:text-primary transition-colors">public</span>
+        <span class="material-symbols-outlined text-[#717973] cursor-pointer hover:text-primary transition-colors">rss_feed</span>
+        <span class="material-symbols-outlined text-[#717973] cursor-pointer hover:text-primary transition-colors">mail</span>
+      </div>
+      <p class="font-['Inter'] text-xs text-[#717973] mt-8">© 2025 Ecodemia. All rights reserved.</p>
+    </div>
+  </div>
+  <div class="max-w-screen-2xl mx-auto mt-16 pt-8 border-t border-outline-variant/10 flex flex-wrap gap-8">
+    <a class="font-['Inter'] text-sm text-[#717973] hover:underline" href="#" data-policy="privacy">Privacy Policy</a>
+    <a class="font-['Inter'] text-sm text-[#717973] hover:underline" href="#" data-policy="terms">Terms of Service</a>
+  </div>
+</footer>
+
+<script src="../js/ecodemia.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  var lang = localStorage.getItem('ecodemia_lang') || 'en';
+  var isDE = lang === 'de';
+
+  var STR = isDE ? {
+    eyebrow:   'Laufend aktualisiert',
+    title:     'Aktuell.',
+    subtitle:  'Die neuesten Umweltmeldungen vertrauenswürdiger Redaktionen weltweit – mehrmals täglich gescannt und nach Rubrik sortiert. Schlagzeilen führen zur Originalquelle.',
+    all:       'Alle',
+    loading:   'Aktuelle Meldungen werden geladen…',
+    error:     'Live-Updates sind vorübergehend nicht verfügbar. Bitte versuche es in ein paar Minuten erneut.',
+    empty:     'Zurzeit keine Meldungen in dieser Rubrik.',
+    sideEyebrow: 'So funktioniert es',
+    sideText:  'Unser Aggregator durchsucht mehrmals täglich vertrauenswürdige Umweltredaktionen. Jede Schlagzeile führt direkt zum Originalartikel.',
+    updated:   'Stand',
+    source:    'Quelle',
+  } : {
+    eyebrow:   'Continuously Updated',
+    title:     'Live Updates.',
+    subtitle:  'The latest environmental reporting from trusted newsrooms around the world, scanned throughout the day and sorted by category. Headlines link to the original source.',
+    all:       'All',
+    loading:   'Loading live updates…',
+    error:     'Live updates are temporarily unavailable. Please try again in a few minutes.',
+    empty:     'No updates in this category right now.',
+    sideEyebrow: 'How This Works',
+    sideText:  'Our aggregator scans trusted environmental newsrooms throughout the day. Every headline links directly to the original publisher.',
+    updated:   'Updated',
+    source:    'Source',
+  };
+
+  var CAT_LABELS = isDE
+    ? { climate: 'Klima', wildlife: 'Tierwelt', energy: 'Energie', living: 'Leben', tech: 'Technologie', policy: 'Politik' }
+    : { climate: 'Climate', wildlife: 'Wildlife', energy: 'Energy', living: 'Living', tech: 'Tech', policy: 'Policy' };
+
+  document.title = (isDE ? 'Aktuell' : 'Live Updates') + ' | Ecodemia';
+  document.getElementById('lu-eyebrow').textContent      = STR.eyebrow;
+  document.getElementById('lu-title').textContent        = STR.title;
+  document.getElementById('lu-subtitle').textContent     = STR.subtitle;
+  document.getElementById('lu-side-eyebrow').textContent = STR.sideEyebrow;
+  document.getElementById('lu-side-text').textContent    = STR.sideText;
+  document.getElementById('lu-error-text').textContent   = STR.error;
+  document.querySelector('#lu-loading p').textContent    = STR.loading;
+
+  function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function relTime(iso) {
+    if (!iso) return '';
+    var diff = (Date.now() - new Date(iso).getTime()) / 1000;
+    if (diff < 3600)   return Math.max(1, Math.round(diff / 60))   + (isDE ? ' Min.'  : ' min ago');
+    if (diff < 86400)  return Math.round(diff / 3600)              + (isDE ? ' Std.'  : ' h ago');
+    return new Date(iso).toLocaleDateString(isDE ? 'de-DE' : 'en-GB', { day: 'numeric', month: 'short' });
+  }
+
+  var allItems = [];
+  var activeCat = 'all';
+
+  function renderFilters() {
+    var cats = ['all', 'climate', 'wildlife', 'energy', 'living', 'tech', 'policy'];
+    var wrap = document.getElementById('lu-filters');
+    wrap.innerHTML = cats.map(function (c) {
+      var label  = c === 'all' ? STR.all : CAT_LABELS[c];
+      var active = c === activeCat;
+      var cls = active
+        ? 'bg-primary text-white'
+        : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high';
+      return '<button data-cat="' + c + '" class="' + cls + ' font-label text-[10px] font-bold uppercase tracking-[0.15em] px-5 py-2.5 rounded-full transition-colors">' + esc(label) + '</button>';
+    }).join('');
+    wrap.querySelectorAll('button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        activeCat = btn.dataset.cat;
+        renderFilters();
+        renderList();
+      });
+    });
+  }
+
+  function renderList() {
+    var list  = document.getElementById('lu-list');
+    var items = activeCat === 'all'
+      ? allItems
+      : allItems.filter(function (i) { return i.category === activeCat; });
+
+    if (!items.length) {
+      list.innerHTML = '<p class="font-body text-sm text-outline py-12">' + esc(STR.empty) + '</p>';
+      return;
+    }
+
+    list.innerHTML = items.map(function (i) {
+      var catLabel = i.category && CAT_LABELS[i.category]
+        ? '<span class="font-label text-[9px] uppercase tracking-[0.15em] text-primary font-bold">' + esc(CAT_LABELS[i.category]) + '</span><span class="text-outline/40 text-xs">/</span>'
+        : '';
+      return '' +
+        '<a href="' + esc(i.link) + '" target="_blank" rel="noopener" class="group block py-7 hover:bg-surface-container-low/60 transition-colors px-2 -mx-2">' +
+          '<div class="flex items-center gap-2 mb-2.5">' +
+            catLabel +
+            '<span class="font-label text-[9px] uppercase tracking-[0.1em] text-outline">' + esc(i.source) + '</span>' +
+            '<span class="text-outline/40 text-xs">•</span>' +
+            '<span class="font-label text-[9px] uppercase tracking-[0.1em] text-outline">' + esc(relTime(i.date)) + '</span>' +
+          '</div>' +
+          '<h3 class="font-headline text-2xl font-bold text-on-surface leading-tight mb-2 group-hover:text-primary transition-colors">' + esc(i.title) +
+            ' <span class="material-symbols-outlined text-sm text-outline align-middle group-hover:translate-x-0.5 group-hover:text-primary transition-all">north_east</span>' +
+          '</h3>' +
+          (i.description ? '<p class="font-body text-sm text-on-surface-variant leading-relaxed max-w-3xl">' + esc(i.description) + '</p>' : '') +
+        '</a>';
+    }).join('');
+  }
+
+  renderFilters();
+
+  fetch('/api/live-updates')
+    .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+    .then(function (data) {
+      allItems = (data.items || []).filter(function (i) { return i.title && i.link; });
+      if (!allItems.length) throw 0;
+
+      // Source list in sidebar
+      var sources = {};
+      allItems.forEach(function (i) { sources[i.source] = true; });
+      document.getElementById('lu-sources').innerHTML = Object.keys(sources).sort().map(function (s) {
+        return '<p class="font-label text-[9px] uppercase tracking-[0.15em] text-on-tertiary-container border-t border-on-tertiary-container/10 pt-2">' + esc(s) + '</p>';
+      }).join('');
+
+      document.getElementById('lu-loading').classList.add('hidden');
+      document.getElementById('lu-list').classList.remove('hidden');
+      renderList();
+    })
+    .catch(function () {
+      document.getElementById('lu-loading').classList.add('hidden');
+      document.getElementById('lu-error').classList.remove('hidden');
+    });
+}());
+</script>
+</body>
+</html>
