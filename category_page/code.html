@@ -305,6 +305,12 @@
     return Math.max(1, Math.round((text || '').trim().split(/\s+/).filter(Boolean).length / 200));
   }
 
+  // Prefer the reading time computed from the full body at build time
+  function articleReadTime(a) {
+    var t = (lang === 'de' && a.read_time_de) ? a.read_time_de : a.read_time;
+    return t || readTime(a.excerpt);
+  }
+
   function loc(a, field) {
     var de = a[field + '_de'];
     return (lang === 'de' && de) ? de : (a[field] || '');
@@ -349,7 +355,16 @@
       if (coverDate) coverDate.textContent = fmtDate(first.date);
 
       var coverTime = document.querySelector('.category-cover-time');
-      if (coverTime) coverTime.textContent = readTime(loc(first, 'excerpt')) + (isDE ? ' Min. Lesezeit' : ' Min Read');
+      if (coverTime) coverTime.textContent = articleReadTime(first) + (isDE ? ' Min. Lesezeit' : ' Min Read');
+
+      // Real articles have no individual byline yet: credit the newsroom
+      // instead of the placeholder author from the page template.
+      var coverAuthor = document.querySelector('.category-cover-author');
+      if (coverAuthor) coverAuthor.textContent = 'Ecodemia';
+      var coverRole = document.querySelector('.category-cover-role');
+      if (coverRole) coverRole.textContent = isDE ? 'Redaktion' : 'Editorial Team';
+      var avatar = coverAuthor && coverAuthor.closest('.flex') && coverAuthor.closest('.flex').querySelector('img');
+      if (avatar && avatar.parentElement) avatar.parentElement.style.display = 'none';
 
       var coverTitle = document.querySelector('.category-cover-title');
       if (coverTitle) {
@@ -383,7 +398,7 @@
           '<div class="flex items-center gap-2 mb-3">' +
             '<span class="font-label text-[9px] uppercase tracking-[0.15em] text-on-surface font-bold">' + esc(catDisplay) + '</span>' +
             '<span class="text-outline/40 text-xs">/</span>' +
-            '<span class="font-label text-[9px] uppercase tracking-[0.1em] text-outline">' + readTime(a.excerpt) + (isDE ? ' Min. Lesezeit' : ' Min Read') + '</span>' +
+            '<span class="font-label text-[9px] uppercase tracking-[0.1em] text-outline">' + articleReadTime(a) + (isDE ? ' Min. Lesezeit' : ' Min Read') + '</span>' +
           '</div>' +
           '<h3 class="font-headline text-xl font-bold text-on-surface leading-tight mb-3 group-hover:text-primary transition-colors">' + esc(loc(a, 'title')) + '</h3>' +
           '<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-6">' + esc(loc(a, 'excerpt')) + '</p>' +

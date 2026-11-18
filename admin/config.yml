@@ -57,6 +57,18 @@ collections:
         required: false
         hint: "Recommended size: 1200 × 630 px"
 
+      - label: "Cover Image Credit"
+        name: "cover_credit"
+        widget: "string"
+        required: false
+        hint: "Photographer, source and licence, e.g. Photo: Jane Doe / Wikimedia Commons, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Required for CC-licensed images."
+
+      - label: "Cover Image Alt Text"
+        name: "cover_alt"
+        widget: "string"
+        required: false
+        hint: "Short description of the image for screen readers"
+
       - label: "Excerpt"
         name: "excerpt"
         widget: "text"

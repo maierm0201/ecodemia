@@ -1,5 +1,75 @@
 [
   {
+    "slug": "cop31-antalya-final-days",
+    "title": "COP31 Endgame: What's on the Table in Antalya",
+    "title_de": "COP31 auf der Zielgeraden: Worum es in Antalya geht",
+    "subtitle": "The first draft of the summit's cover decision contains some of the strongest fossil-fuel language a COP has seen, and a bloc that includes Saudi Arabia, China and India is pushing back hard. The talks are due to end on Friday.",
+    "subtitle_de": "Der erste Entwurf der Abschlusserklärung enthält einige der schärfsten Formulierungen zu fossilen Brennstoffen, die eine COP je gesehen hat, und ein Block mit Saudi-Arabien, China und Indien stemmt sich dagegen. Am Freitag soll der Gipfel enden.",
+    "date": "2026-11-18",
+    "category": "policy",
+    "cover_image": "/assets/images/antalya-harbour-kozlenko.jpg",
+    "excerpt": "A fossil-fuel phase-out, net zero for rich countries by 2030, the 35-by-35 electrification goal and 120 billion dollars for adaptation: what the draft says, who is blocking it, and what to watch before the gavel falls.",
+    "excerpt_de": "Ausstieg aus fossilen Brennstoffen, Netto-Null für reiche Länder bis 2030, das Elektrifizierungsziel 35 bis 35 und 120 Milliarden Dollar für Anpassung: Was im Entwurf steht, wer blockiert und worauf es bis zum Schluss ankommt.",
+    "read_time": 4,
+    "read_time_de": 3
+  },
+  {
+    "slug": "el-nino-2026-record-winter",
+    "title": "The Wrecking-Ball El Niño: What a Possibly Record Event Means for the Months Ahead",
+    "title_de": "Die Abrissbirne El Niño: Was ein möglicherweise rekordstarkes Ereignis für die kommenden Monate bedeutet",
+    "subtitle": "The Pacific is heating up faster than in any event on record. Forecasters disagree on exactly how strong it will get, but they agree on the risks: drought, floods, hunger and higher food prices well into 2027.",
+    "subtitle_de": "Der Pazifik erwärmt sich stärker als bei jedem bisher gemessenen Ereignis. Wie stark genau, ist unter Prognostikern umstritten, bei den Risiken sind sie sich einig: Dürre, Fluten, Hunger und steigende Lebensmittelpreise bis weit ins Jahr 2027.",
+    "date": "2026-11-18",
+    "category": "climate",
+    "cover_image": "/assets/images/el-nino-tao-buoy-noaa.jpg",
+    "excerpt": "NOAA puts the odds of a historic El Niño at about 60 percent. The UN calls it a wrecking ball. Here is what the forecasts say, where the impacts will hit, and why Europe will feel it at the supermarket.",
+    "excerpt_de": "Die NOAA beziffert die Wahrscheinlichkeit eines historischen El Niño auf rund 60 Prozent, die UN spricht von einer Abrissbirne. Was die Prognosen sagen, wo die Folgen einschlagen und warum Europa sie im Supermarkt spüren wird.",
+    "read_time": 3,
+    "read_time_de": 3
+  },
+  {
+    "slug": "eu-2035-car-co2-rules-vote",
+    "title": "Combustion Phase-Out Lite: The EU Is About to Water Down Its 2035 Car Rules",
+    "title_de": "Verbrenner-Aus light: Die EU will ihre Autoregeln für 2035 aufweichen",
+    "subtitle": "The European Parliament's environment committee wants a 2035 target below 100 percent, credits for green steel and a zero-emission label for cars running on e-fuels. The full Parliament votes in December.",
+    "subtitle_de": "Der Umweltausschuss des EU-Parlaments will für 2035 ein Ziel unter 100 Prozent, Gutschriften für grünen Stahl und ein Null-Emissions-Label für E-Fuel-Autos. Im Dezember stimmt das Plenum ab.",
+    "date": "2026-11-18",
+    "category": "policy",
+    "cover_image": "/assets/images/electric-car-charging-ivan-radic.jpg",
+    "excerpt": "An 87.5 percent cut instead of 100, steel credits, and e-fuel cars counted as zero-emission: what the committee decided, who benefits, and what it means for the electric-car transition.",
+    "excerpt_de": "87,5 statt 100 Prozent, Stahl-Gutschriften und E-Fuel-Autos als Null-Emissions-Fahrzeuge: Was der Ausschuss beschlossen hat, wem es nützt und was das für die E-Auto-Wende bedeutet.",
+    "read_time": 3,
+    "read_time_de": 3
+  },
+  {
+    "slug": "eudr-deforestation-law-december-2026",
+    "title": "Deforestation-Free From 30 December: The EU's Forest Law Finally Applies",
+    "title_de": "Entwaldungsfrei ab 30. Dezember: Das EU-Waldgesetz gilt endlich",
+    "subtitle": "After two delays, the EU Deforestation Regulation takes effect for large companies at the end of the year. What it requires, what was simplified, and what changes for coffee, chocolate and furniture.",
+    "subtitle_de": "Nach zwei Verschiebungen greift die EU-Entwaldungsverordnung zum Jahresende für große Unternehmen. Was sie verlangt, was vereinfacht wurde und was sich für Kaffee, Schokolade und Möbel ändert.",
+    "date": "2026-11-18",
+    "category": "policy",
+    "cover_image": "/assets/images/rondonia-fire-aerial-bruno-kelly.jpg",
+    "excerpt": "Coffee, cocoa, soy, palm oil, beef, rubber and wood may only enter the EU market if they did not come from land deforested after 2020. A guide to the rules that apply from 30 December.",
+    "excerpt_de": "Kaffee, Kakao, Soja, Palmöl, Rindfleisch, Kautschuk und Holz dürfen nur noch in die EU, wenn dafür nach 2020 kein Wald gerodet wurde. Ein Überblick über die Regeln, die ab 30. Dezember gelten.",
+    "read_time": 3,
+    "read_time_de": 3
+  },
+  {
+    "slug": "us-deep-sea-mining-decision",
+    "title": "The US Goes It Alone on the Seabed",
+    "title_de": "Die USA gehen am Meeresboden ihren eigenen Weg",
+    "subtitle": "By mid-December, Washington wants to decide whether The Metals Company can move toward mining the Pacific deep sea, bypassing the UN body that has governed the international seabed for three decades.",
+    "subtitle_de": "Bis Mitte Dezember will Washington entscheiden, ob The Metals Company dem Tiefseebergbau im Pazifik näherkommt, vorbei an der UN-Behörde, die seit drei Jahrzehnten über den internationalen Meeresboden wacht.",
+    "date": "2026-11-18",
+    "category": "wildlife",
+    "cover_image": "/assets/images/deep-sea-ccz-nodules-geomar.jpg",
+    "excerpt": "NOAA's decision on The Metals Company's application is the first real test of a US shortcut around international seabed law. What is at stake for the deep sea, and what happens next.",
+    "excerpt_de": "Die Entscheidung der NOAA über den Antrag von The Metals Company ist der erste echte Test für eine US-Abkürzung am internationalen Meeresbodenrecht vorbei. Was für die Tiefsee auf dem Spiel steht und wie es weitergeht.",
+    "read_time": 4,
+    "read_time_de": 4
+  },
+  {
     "slug": "offshore-wind-baltic",
     "title": "Steel Forests at Sea: The Baltic's Offshore Wind Build-Out Enters Its Decisive Decade",
     "title_de": "Stahlwälder im Meer: Der Ostsee-Offshore-Ausbau geht in sein entscheidendes Jahrzehnt",
@@ -9,7 +79,9 @@
     "category": "energy",
     "cover_image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1600&q=80",
     "excerpt": "The Baltic Sea combines shallow water, strong winds and eight electricity-hungry coastal states. What's missing is not ambition — it's transmission lines, installation vessels and trained crews.",
-    "excerpt_de": "Die Ostsee vereint flaches Wasser, starken Wind und acht stromhungrige Anrainerstaaten. Was fehlt, ist nicht Ehrgeiz – sondern Leitungen, Errichterschiffe und ausgebildete Fachkräfte."
+    "excerpt_de": "Die Ostsee vereint flaches Wasser, starken Wind und acht stromhungrige Anrainerstaaten. Was fehlt, ist nicht Ehrgeiz – sondern Leitungen, Errichterschiffe und ausgebildete Fachkräfte.",
+    "read_time": 1,
+    "read_time_de": 1
   },
   {
     "slug": "eu-nature-restoration-law",
@@ -21,7 +93,9 @@
     "category": "policy",
     "cover_image": "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1600&q=80",
     "excerpt": "Rewetted peatlands, free-flowing rivers, urban greening targets: the restoration regulation shifts European environmental policy from conservation to active repair — with binding deadlines.",
-    "excerpt_de": "Wiedervernässte Moore, frei fließende Flüsse, Stadtbegrünungsziele: Die Renaturierungsverordnung verschiebt Europas Umweltpolitik vom Bewahren zum aktiven Reparieren – mit verbindlichen Fristen."
+    "excerpt_de": "Wiedervernässte Moore, frei fließende Flüsse, Stadtbegrünungsziele: Die Renaturierungsverordnung verschiebt Europas Umweltpolitik vom Bewahren zum aktiven Reparieren – mit verbindlichen Fristen.",
+    "read_time": 1,
+    "read_time_de": 1
   },
   {
     "slug": "arctic-sea-ice-tipping-point",
@@ -33,7 +107,9 @@
     "category": "climate",
     "cover_image": "https://images.unsplash.com/photo-1476610182048-b716b8518aae?auto=format&fit=crop&w=1600&q=80",
     "excerpt": "Multi-year ice once made up the majority of the Arctic ice cap. Today it is a shrinking remnant — and scientists warn the feedback loops it held in check are beginning to accelerate.",
-    "excerpt_de": "Mehrjähriges Eis machte einst den Großteil der arktischen Eiskappe aus. Heute ist es ein schrumpfender Rest – und Forscher warnen, dass sich die Rückkopplungsschleifen beschleunigen."
+    "excerpt_de": "Mehrjähriges Eis machte einst den Großteil der arktischen Eiskappe aus. Heute ist es ein schrumpfender Rest – und Forscher warnen, dass sich die Rückkopplungsschleifen beschleunigen.",
+    "read_time": 1,
+    "read_time_de": 1
   },
   {
     "slug": "ai-precision-agriculture",
@@ -45,7 +121,9 @@
     "category": "tech",
     "cover_image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80",
     "excerpt": "Instead of spraying whole fields, machines now recognise individual plants and treat only what needs treating. The efficiency gains are real — and so are the new dependencies.",
-    "excerpt_de": "Statt ganze Felder zu spritzen, erkennen Maschinen heute einzelne Pflanzen und behandeln nur, was Behandlung braucht. Die Effizienzgewinne sind real – die neuen Abhängigkeiten auch."
+    "excerpt_de": "Statt ganze Felder zu spritzen, erkennen Maschinen heute einzelne Pflanzen und behandeln nur, was Behandlung braucht. Die Effizienzgewinne sind real – die neuen Abhängigkeiten auch.",
+    "read_time": 1,
+    "read_time_de": 1
   },
   {
     "slug": "wolves-return-central-europe",
@@ -57,7 +135,9 @@
     "category": "wildlife",
     "cover_image": "https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&w=1600&q=80",
     "excerpt": "Once eradicated, the wolf is again an established resident of Central Europe. Ecologists celebrate; livestock owners worry. Between the two lies one of conservation's hardest questions.",
-    "excerpt_de": "Einst ausgerottet, ist der Wolf wieder fester Bewohner Mitteleuropas. Ökologen jubeln, Weidetierhalter sorgen sich. Dazwischen liegt eine der schwierigsten Fragen des Artenschutzes."
+    "excerpt_de": "Einst ausgerottet, ist der Wolf wieder fester Bewohner Mitteleuropas. Ökologen jubeln, Weidetierhalter sorgen sich. Dazwischen liegt eine der schwierigsten Fragen des Artenschutzes.",
+    "read_time": 1,
+    "read_time_de": 1
   },
   {
     "slug": "urban-heat-islands-europe",
@@ -69,7 +149,9 @@
     "category": "climate",
     "cover_image": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1600&q=80",
     "excerpt": "Heatwaves are Europe's deadliest weather events, and cities amplify them. From Paris to Vienna, a quiet redesign of streets, roofs and squares is underway.",
-    "excerpt_de": "Hitzewellen sind Europas tödlichste Wetterereignisse – und Städte verstärken sie. Von Paris bis Wien läuft ein stiller Umbau von Straßen, Dächern und Plätzen."
+    "excerpt_de": "Hitzewellen sind Europas tödlichste Wetterereignisse – und Städte verstärken sie. Von Paris bis Wien läuft ein stiller Umbau von Straßen, Dächern und Plätzen.",
+    "read_time": 1,
+    "read_time_de": 1
   },
   {
     "slug": "balcony-solar-revolution",
@@ -81,7 +163,9 @@
     "category": "energy",
     "cover_image": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80",
     "excerpt": "No roof, no problem: simplified rules and falling prices have made balcony photovoltaics the fastest-growing segment of solar. The kilowatts are small; the cultural shift is not.",
-    "excerpt_de": "Kein Dach? Kein Problem: Vereinfachte Regeln und fallende Preise machten Balkon-Photovoltaik zum am schnellsten wachsenden Solarsegment. Die Kilowatt sind klein – der Kulturwandel nicht."
+    "excerpt_de": "Kein Dach? Kein Problem: Vereinfachte Regeln und fallende Preise machten Balkon-Photovoltaik zum am schnellsten wachsenden Solarsegment. Die Kilowatt sind klein – der Kulturwandel nicht.",
+    "read_time": 1,
+    "read_time_de": 1
   },
   {
     "slug": "battery-recycling-breakthrough",
@@ -93,7 +177,9 @@
     "category": "tech",
     "cover_image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80",
     "excerpt": "Lithium, nickel and cobalt don't wear out — they just end up in the wrong place. New hydrometallurgical plants are proving that yesterday's battery is tomorrow's mine.",
-    "excerpt_de": "Lithium, Nickel und Kobalt nutzen sich nicht ab – sie landen nur am falschen Ort. Neue Hydrometallurgie-Anlagen beweisen: Die Batterie von gestern ist die Mine von morgen."
+    "excerpt_de": "Lithium, Nickel und Kobalt nutzen sich nicht ab – sie landen nur am falschen Ort. Neue Hydrometallurgie-Anlagen beweisen: Die Batterie von gestern ist die Mine von morgen.",
+    "read_time": 1,
+    "read_time_de": 1
   },
   {
     "slug": "north-sea-whale-corridors",
@@ -105,7 +191,9 @@
     "category": "wildlife",
     "cover_image": "https://images.unsplash.com/photo-1518877593221-1f28583780b4?auto=format&fit=crop&w=1600&q=80",
     "excerpt": "Underwater microphones and satellite tags are producing the first detailed map of cetacean movement through one of the world's busiest seas — with direct consequences for how we build and ship.",
-    "excerpt_de": "Unterwassermikrofone und Satellitensender liefern die erste detaillierte Karte der Walwanderungen durch eines der verkehrsreichsten Meere der Welt – mit direkten Folgen für Schifffahrt und Bauprojekte."
+    "excerpt_de": "Unterwassermikrofone und Satellitensender liefern die erste detaillierte Karte der Walwanderungen durch eines der verkehrsreichsten Meere der Welt – mit direkten Folgen für Schifffahrt und Bauprojekte.",
+    "read_time": 1,
+    "read_time_de": 1
   },
   {
     "slug": "carbon-border-tax-explained",
@@ -117,7 +205,9 @@
     "category": "policy",
     "cover_image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80",
     "excerpt": "Steel, cement, aluminium, fertiliser: importers must now account for the carbon embedded in their goods. The mechanism closes a loophole — and exports climate policy in the process.",
-    "excerpt_de": "Stahl, Zement, Aluminium, Dünger: Importeure müssen jetzt den CO₂-Gehalt ihrer Waren bilanzieren. Der Mechanismus schließt ein Schlupfloch – und exportiert nebenbei Klimapolitik."
+    "excerpt_de": "Stahl, Zement, Aluminium, Dünger: Importeure müssen jetzt den CO₂-Gehalt ihrer Waren bilanzieren. Der Mechanismus schließt ein Schlupfloch – und exportiert nebenbei Klimapolitik.",
+    "read_time": 1,
+    "read_time_de": 1
   },
   {
     "slug": "regenerative-city-gardens",
@@ -129,19 +219,9 @@
     "category": "living",
     "cover_image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1600&q=80",
     "excerpt": "Between raised beds and compost heaps, cities are rediscovering skills that industrial food systems made invisible. The harvest is measured in more than vegetables.",
-    "excerpt_de": "Zwischen Hochbeeten und Komposthaufen entdecken Städte Fähigkeiten wieder, die das industrielle Ernährungssystem unsichtbar gemacht hat. Die Ernte misst sich nicht nur in Gemüse."
-  },
-  {
-    "slug": "pleasant-sycamore",
-    "title": "Test post",
-    "title_de": "Testartikel",
-    "subtitle": "",
-    "subtitle_de": "",
-    "date": "2026-03-27",
-    "category": "living",
-    "cover_image": "/assets/images/sustainablebuilding.jpg",
-    "excerpt": "This is the excerpt",
-    "excerpt_de": "Das ist das Exzerpt"
+    "excerpt_de": "Zwischen Hochbeeten und Komposthaufen entdecken Städte Fähigkeiten wieder, die das industrielle Ernährungssystem unsichtbar gemacht hat. Die Ernte misst sich nicht nur in Gemüse.",
+    "read_time": 1,
+    "read_time_de": 1
   },
   {
     "slug": "timber-construction-boom",
@@ -153,6 +233,8 @@
     "category": "living",
     "cover_image": "/assets/images/sustainablebuilding.jpg",
     "excerpt": "Concrete and steel account for a massive share of global emissions. Engineered wood offers a way to build tall while turning buildings into carbon stores — if sourcing is done right.",
-    "excerpt_de": "Beton und Stahl verursachen einen gewaltigen Anteil der globalen Emissionen. Ingenieurholz erlaubt es, hoch zu bauen und Gebäude in Kohlenstoffspeicher zu verwandeln – wenn die Herkunft stimmt."
+    "excerpt_de": "Beton und Stahl verursachen einen gewaltigen Anteil der globalen Emissionen. Ingenieurholz erlaubt es, hoch zu bauen und Gebäude in Kohlenstoffspeicher zu verwandeln – wenn die Herkunft stimmt.",
+    "read_time": 1,
+    "read_time_de": 1
   }
 ]

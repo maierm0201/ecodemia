@@ -121,6 +121,9 @@ const articles = files.map(filename => {
     cover_image: data.cover_image || '',
     excerpt:     data.excerpt     || (plain.slice(0, 200)   + (plain.length   > 200 ? '…' : '')),
     excerpt_de:  data.excerpt_de  || (plainDE.slice(0, 200) + (plainDE.length > 200 ? '…' : '')),
+    // Reading time in minutes (≈200 words/min), from the full body
+    read_time:    Math.max(1, Math.round(plain.split(/\s+/).filter(Boolean).length / 200)),
+    read_time_de: plainDE ? Math.max(1, Math.round(plainDE.split(/\s+/).filter(Boolean).length / 200)) : 0,
   };
 });
 

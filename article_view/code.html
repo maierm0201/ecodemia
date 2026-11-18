@@ -129,6 +129,9 @@
            class="w-full aspect-[21/9] object-cover rounded-sm hidden"
            data-sb-field-path="cover_image"
            alt="Article cover image"/>
+      <p id="article-cover-credit"
+         class="hidden mt-2 font-label text-[11px] text-outline leading-snug [&_a]:underline [&_a:hover]:text-primary"
+         data-sb-field-path="cover_credit"></p>
     </div>
 
     <!-- Body -->
@@ -317,7 +320,18 @@
       if (data.cover_image) {
         const img = document.getElementById('article-cover');
         img.src = data.cover_image;
+        img.alt = (isDE && data.cover_alt_de) ? data.cover_alt_de : (data.cover_alt || title);
         img.classList.remove('hidden');
+
+        // Photo credit / licence line (inline Markdown allowed for links)
+        const credit = (isDE && data.cover_credit_de) ? data.cover_credit_de : (data.cover_credit || '');
+        if (credit) {
+          const cEl = document.getElementById('article-cover-credit');
+          cEl.innerHTML = (typeof marked !== 'undefined' && marked.parseInline)
+            ? marked.parseInline(credit)
+            : credit.replace(/</g, '&lt;');
+          cEl.classList.remove('hidden');
+        }
       }
 
       // Back link
