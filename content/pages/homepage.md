@@ -5,8 +5,8 @@ title: "Homepage"
 hero_image: "https://lh3.googleusercontent.com/aida-public/AB6AXuC9-bLJPbjF42lgNoQgMzaTh8Q4UuWxaSxkhDy8qyELeWFtyHcao5hQMOOxLtp0Sp_54OmKs8GeaLPlsvv6FArphKFaqX5Q5ih5PBz-faRS_IL575hNEvBAXF5nk-pV28TQvzi6qZ6kC51xQznnZH0U8RmcTml8GF03TLtz5Sc09GVUIF7UazzJn1kE2E9iXVBYglvqwJrsy9b4gL9PHH5eD3chgHLxSzQO5cZxlLmMDl7aN0TodcNzGF5VqBCIU1rub40ueM3onEfN"
 hero_title: "The Silent Thaw: Tracking the Decades-Long Retreat of Arctic Permafrost"
 hero_excerpt: "New satellite data reveals a shift in the northern landscape that is moving faster than even the most aggressive models predicted. Our field team reports from the edge of the world."
-hero_author: "By Julian Thorne"
-hero_author_role: "Environmental Lead • 14 Min Read"
+hero_author: "By Ecodemia"
+hero_author_role: "Editorial Team"
 
 # Latest News sidebar
 latest_heading: "The Latest"
