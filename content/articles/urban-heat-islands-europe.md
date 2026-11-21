@@ -1,53 +1,71 @@
 ---
 type: Article
-title: "Cities in the Furnace: How Europe's Urban Heat Islands Are Rewriting Summer"
-title_de: "Städte im Backofen: Wie Europas urbane Hitzeinseln den Sommer neu definieren"
-subtitle: "Asphalt, glass and a lack of shade can push city temperatures 10°C above the surrounding countryside. Planners are finally fighting back."
-subtitle_de: "Asphalt, Glas und fehlender Schatten treiben Stadttemperaturen bis zu 10 °C über das Umland. Stadtplaner beginnen endlich gegenzusteuern."
-date: 2026-05-30
+title: "Cities in the Furnace: What Europe's Deadliest Summer Teaches About Urban Heat"
+title_de: "Städte im Glutofen: Was Europas tödlichster Sommer über städtische Hitze lehrt"
+subtitle: "A rapid study estimates more than 50,000 heat-related deaths in European cities in summer 2026. Cities trap heat, but research shows that trees and unsealed ground can measurably reduce the toll."
+subtitle_de: "Eine Schnellstudie schätzt für den Sommer 2026 mehr als 50.000 hitzebedingte Todesfälle in europäischen Städten. Städte speichern Hitze, doch Forschung zeigt: Bäume und entsiegelte Flächen können die Opferzahl messbar senken."
+date: 2026-11-21
 category: climate
-cover_image: https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1600&q=80
-excerpt: "Heatwaves are Europe's deadliest weather events, and cities amplify them. From Paris to Vienna, a quiet redesign of streets, roofs and squares is underway."
-excerpt_de: "Hitzewellen sind Europas tödlichste Wetterereignisse – und Städte verstärken sie. Von Paris bis Wien läuft ein stiller Umbau von Straßen, Dächern und Plätzen."
+cover_image: /assets/images/plane-tree-avenue-tuebingen.jpg
+cover_alt: "People sit on benches in the shade of tall plane trees along a gravel avenue"
+cover_alt_de: "Menschen sitzen auf Bänken im Schatten hoher Platanen an einer Allee"
+cover_credit: "Shade under the plane trees of the Platanenallee in Tübingen. Photo: Dktue / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Platanenallee-5.jpg), public domain ([CC0](https://creativecommons.org/publicdomain/zero/1.0/))"
+cover_credit_de: "Schatten unter den Platanen der Platanenallee in Tübingen. Foto: Dktue / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Platanenallee-5.jpg), gemeinfrei ([CC0](https://creativecommons.org/publicdomain/zero/1.0/))"
+excerpt: "Asphalt and concrete store heat by day and release it at night, when bodies need to recover. What the 2026 summer cost, why cities make heat worse, and which measures have evidence behind them."
+excerpt_de: "Asphalt und Beton speichern tagsüber Hitze und geben sie nachts ab, wenn der Körper Erholung braucht. Was der Sommer 2026 gekostet hat, warum Städte Hitze verschärfen und welche Maßnahmen belegt wirken."
 body_de: |
-  In einer Sommernacht kann der Unterschied zwischen einem Stadtzentrum und dem Umland mehr als zehn Grad betragen. Beton und Asphalt speichern tagsüber Wärme und geben sie nachts wieder ab – genau dann, wenn der menschliche Körper Erholung braucht.
+  Der Sommer 2026 war in Europa der tödlichste, den solche Auswertungen bisher erfasst haben. Eine Schnellstudie von Forschenden des Imperial College London und der London School of Hygiene & Tropical Medicine schätzt für Juni bis August **50.391 hitzebedingte zusätzliche Todesfälle** in 854 europäischen Städten. Rund **65 Prozent** davon führen sie auf den Klimawandel zurück. Der bisherige Höchstwert aus dem Jahr 2022 lag bei rund 29.500.
 
-  ## Die unsichtbare Gefahr
+  Die Zahlen sind Modellschätzungen, keine Zählung von Totenscheinen. Weil die Studie nur Städte mit rund 40 Prozent der Bevölkerung erfasst, halten die Autorinnen und Autoren sie für eine Untergrenze.
 
-  Hitze ist in Europa die mit Abstand tödlichste Wetterfolge, verantwortlich für zehntausende vorzeitige Todesfälle in extremen Sommern. Am stärksten betroffen: ältere Menschen, Kleinkinder und Bewohner dicht bebauter Viertel ohne Grünflächen.
+  ## Warum Städte Hitze verschärfen
 
-  ## Was Städte jetzt tun
+  Asphalt, Beton und Glas nehmen tagsüber Wärme auf und geben sie nachts wieder ab, genau dann, wenn sich der Körper erholen müsste. Dieser Wärmeinseleffekt macht Städte heißer als ihr Umland. Die Europäische Umweltagentur (EEA) hat für 820 europäische Städte ermittelt, dass es zwischen 2003 und 2020 im Schnitt 7,7 Tage pro Jahr gab, an denen die Stadt mehr als 1,5 Grad wärmer war als das Umland. Fast die Hälfte der Schulen und Krankenhäuser in europäischen Städten liegt laut EEA in solchen Wärmeinseln.
 
-  Die Gegenmaßnahmen sind bekannt – und erstaunlich wirksam:
+  Besonders gefährdet sind ältere Menschen, Kleinkinder, Menschen mit Vorerkrankungen und Bewohner dicht bebauter Viertel ohne Grün.
 
-  - **Entsiegelung:** Wo Asphalt Erde und Bepflanzung weicht, sinkt die Oberflächentemperatur messbar.
-  - **Stadtbäume:** Eine ausgewachsene Platane kühlt ihre Umgebung wie mehrere Klimaanlagen – ohne Stromverbrauch.
-  - **Helle Oberflächen:** Reflektierende Dächer und Fassaden senken die Aufheizung ganzer Straßenzüge.
-  - **Wasser in der Stadt:** Brunnen, Verdunstungsbeete und offene Wasserläufe wirken als natürliche Kühlelemente.
+  ## Was nachweislich hilft
 
-  > „Wir haben unsere Städte hundert Jahre lang für Autos optimiert. Jetzt müssen wir sie für Überleben bei 40 Grad optimieren", sagt ein Stadtklimatologe.
+  Die bekannteste Untersuchung dazu erschien 2023 in der Fachzeitschrift *The Lancet*. Das Team um Tamara Iungman modellierte 93 europäische Städte und berechnete: Würde der Baumbestand auf **30 Prozent** der Stadtfläche steigen, wären die Städte im Sommer im Schnitt **0,4 Grad** kühler. Von den 6.700 vorzeitigen Todesfällen, die 2015 auf höhere Stadttemperaturen zurückgingen, hätten sich so **2.644** verhindern lassen, also rund 39 Prozent. Heute liegt der durchschnittliche Baumbestand europäischer Städte bei 14,9 Prozent.
 
-  ## Der Wettlauf mit dem Thermometer
+  Weitere Maßnahmen, die Städte umsetzen:
 
-  Klimaprojektionen zeigen, dass Hitzewellen häufiger, länger und intensiver werden. Städte, die heute in Schatten, Grün und Wasser investieren, kaufen sich damit die Bewohnbarkeit von morgen. Die Frage ist nicht mehr ob, sondern wie schnell der Umbau gelingt.
+  - **Entsiegeln:** Wo Asphalt Boden und Pflanzen weicht, sinken die Oberflächentemperaturen, und Regenwasser kann versickern.
+  - **Schulhöfe als Kühlinseln:** Paris baut im Programm „Oasis“ Schulhöfe mit Pflanzen, Brunnen und offenen Böden um. Bis 2022 waren es 75 Höfe. Messungen von Météo-France sollen den Effekt belegen, Ergebnisse für das ganze Programm liegen noch nicht vor.
+  - **Hitzeaktionspläne:** Viele Städte setzen auf Frühwarnungen, kühle Räume und Hilfe für allein lebende ältere Menschen, um Todesfälle bei Hitzewellen zu verhindern.
+
+  ## Ein Wettlauf mit dem Thermometer
+
+  Hitzewellen werden mit dem Klimawandel häufiger, länger und intensiver. Bäume brauchen Jahrzehnte, um Schatten zu spenden. Städte, die heute pflanzen und entsiegeln, entscheiden damit über ihre Bewohnbarkeit in den 2040er-Jahren.
+
+  ---
+
+  **Quellen:** [AP via WUNC: 50.000 Hitzetote im Sommer 2026](https://www.wunc.org/2026-10-23/europes-heat-claims-50-000-lives-climate-change-blamed-for-two-thirds-of-deaths) · [Grist: Europas tödlichster Sommer](https://grist.org/extreme-heat/europes-hottest-summer-ever-was-also-its-deadliest-by-far/) · [EEA: Indikator städtische Wärmeinseln](https://climate-adapt.eea.europa.eu/en/metadata/indicators/urban-heat-island-intensity) · [Reuters via Yahoo: Schulen und Krankenhäuser in Wärmeinseln](https://news.yahoo.com/europes-city-schools-hospitals-risk-220444865.html) · [EU-Kommission zur Lancet-Studie (Iungman et al. 2023)](https://environment.ec.europa.eu/news/increasing-tree-coverage-30-european-cities-could-reduce-deaths-linked-urban-heat-island-effect-2023-06-21_en) · [LSHTM zur Lancet-Studie](https://www.lshtm.ac.uk/newsevents/news/2023/planting-more-trees-could-decrease-deaths-higher-summer-temperatures-cities-3) · [Climate-ADAPT: Pariser Oasis-Schulhöfe](https://climate-adapt.eea.europa.eu/en/metadata/case-studies/paris-oasis-schoolyard-programme-france)
 ---
-On a summer night, the temperature difference between a city centre and the surrounding countryside can exceed ten degrees. Concrete and asphalt soak up heat all day and release it after dark — precisely when the human body needs to recover.
+Summer 2026 was the deadliest that such analyses have recorded in Europe. A rapid study by researchers at Imperial College London and the London School of Hygiene & Tropical Medicine estimates **50,391 heat-related excess deaths** in 854 European cities between June and August. They attribute about **65 percent** of them to climate change. The previous record, from 2022, was about 29,500.
 
-## The Invisible Killer
+The figures are model estimates, not a count of death certificates. Because the study covers only cities home to about 40 percent of the population, the authors consider it an underestimate.
 
-Heat is by far Europe's deadliest weather-related hazard, responsible for tens of thousands of premature deaths in extreme summers. Those most at risk: the elderly, young children, and residents of densely built districts without green space.
+## Why Cities Make Heat Worse
 
-## What Cities Are Doing
+Asphalt, concrete and glass absorb heat during the day and release it at night, exactly when the body needs to recover. This heat-island effect makes cities hotter than the surrounding countryside. For 820 European cities, the European Environment Agency (EEA) found that between 2003 and 2020 there were on average 7.7 days a year on which the city was more than 1.5 degrees warmer than its surroundings. Almost half of the schools and hospitals in European cities are located in such heat islands, according to the EEA.
 
-The countermeasures are well understood — and remarkably effective:
+Those most at risk are older people, young children, people with pre-existing conditions and residents of densely built neighbourhoods without green space.
 
-- **De-sealing:** Where asphalt gives way to soil and planting, surface temperatures drop measurably.
-- **Urban trees:** A mature plane tree cools its surroundings like several air-conditioning units — with zero electricity.
-- **Light surfaces:** Reflective roofs and facades reduce the heat load of entire streets.
-- **Water in the city:** Fountains, evaporation beds and open watercourses act as natural cooling elements.
+## What Has Evidence Behind It
 
-> "We spent a hundred years optimising our cities for cars. Now we have to optimise them for survival at 40 degrees," says one urban climatologist.
+The best-known study on this appeared in *The Lancet* in 2023. A team led by Tamara Iungman modelled 93 European cities and calculated that raising tree cover to **30 percent** of city area would make cities on average **0.4 degrees** cooler in summer. Of the 6,700 premature deaths attributed to higher urban temperatures in 2015, **2,644** could have been prevented that way, about 39 percent. Average tree cover in European cities today is 14.9 percent.
+
+Other measures cities are using:
+
+- **De-sealing:** Where asphalt gives way to soil and plants, surface temperatures drop and rainwater can soak away.
+- **Schoolyards as cool islands:** Paris is converting schoolyards with plants, fountains and unsealed ground under its "Oasis" programme; 75 had been transformed by 2022. Météo-France measurements are meant to document the effect; results for the whole programme have not yet been published.
+- **Heat action plans:** Many cities rely on early warnings, cool rooms and help for older people living alone to prevent deaths during heatwaves.
 
 ## Racing the Thermometer
 
-Climate projections show heatwaves becoming more frequent, longer and more intense. Cities that invest in shade, greenery and water today are buying tomorrow's habitability. The question is no longer whether the redesign happens — but whether it happens fast enough.
+Climate change is making heatwaves more frequent, longer and more intense. Trees take decades to provide shade. Cities that plant and de-seal today are deciding how liveable they will be in the 2040s.
+
+---
+
+**Sources:** [AP via WUNC: 50,000 heat deaths in summer 2026](https://www.wunc.org/2026-10-23/europes-heat-claims-50-000-lives-climate-change-blamed-for-two-thirds-of-deaths) · [Grist: Europe's deadliest summer](https://grist.org/extreme-heat/europes-hottest-summer-ever-was-also-its-deadliest-by-far/) · [EEA: urban heat island indicator](https://climate-adapt.eea.europa.eu/en/metadata/indicators/urban-heat-island-intensity) · [Reuters via Yahoo: schools and hospitals in heat islands](https://news.yahoo.com/europes-city-schools-hospitals-risk-220444865.html) · [European Commission on the Lancet study (Iungman et al. 2023)](https://environment.ec.europa.eu/news/increasing-tree-coverage-30-european-cities-could-reduce-deaths-linked-urban-heat-island-effect-2023-06-21_en) · [LSHTM on the Lancet study](https://www.lshtm.ac.uk/newsevents/news/2023/planting-more-trees-could-decrease-deaths-higher-summer-temperatures-cities-3) · [Climate-ADAPT: Paris Oasis schoolyards](https://climate-adapt.eea.europa.eu/en/metadata/case-studies/paris-oasis-schoolyard-programme-france)

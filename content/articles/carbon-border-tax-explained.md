@@ -1,51 +1,81 @@
 ---
 type: Article
-title: "The Carbon Border: How CBAM Is Changing Global Trade"
-title_de: "Die CO₂-Grenze: Wie CBAM den Welthandel verändert"
-subtitle: "Europe's carbon border adjustment mechanism puts a price on imported emissions. Trading partners are responding — some with protest, others with carbon prices of their own."
-subtitle_de: "Europas CO₂-Grenzausgleich bepreist importierte Emissionen. Die Handelspartner reagieren – manche mit Protest, andere mit eigenen CO₂-Preisen."
-date: 2026-04-15
+title: "The Carbon Border, Year One: How CBAM Works, and Why the First Bill Comes in 2027"
+title_de: "Die CO₂-Grenze im ersten Jahr: Wie CBAM funktioniert und warum die erste Rechnung 2027 kommt"
+subtitle: "Since January, importers of steel, cement, aluminium, fertiliser, hydrogen and electricity must account for the emissions in their goods. Payment starts next year, a WTO case is under way, and most small importers are exempt."
+subtitle_de: "Seit Januar müssen Importeure von Stahl, Zement, Aluminium, Dünger, Wasserstoff und Strom die Emissionen ihrer Waren erfassen. Gezahlt wird ab nächstem Jahr, ein WTO-Verfahren läuft, und die meisten kleinen Importeure sind ausgenommen."
+date: 2026-11-21
 category: policy
-cover_image: https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80
-excerpt: "Steel, cement, aluminium, fertiliser: importers must now account for the carbon embedded in their goods. The mechanism closes a loophole — and exports climate policy in the process."
-excerpt_de: "Stahl, Zement, Aluminium, Dünger: Importeure müssen jetzt den CO₂-Gehalt ihrer Waren bilanzieren. Der Mechanismus schließt ein Schlupfloch – und exportiert nebenbei Klimapolitik."
+cover_image: /assets/images/hamburg-container-terminal.jpg
+cover_alt: "Container ships and gantry cranes at a container terminal in the port of Hamburg"
+cover_alt_de: "Containerschiffe und Containerbrücken an einem Terminal im Hamburger Hafen"
+cover_credit: "The Tollerort container terminal in the port of Hamburg. Photo: Raimond Spekking / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hamburg_Hafen_Containerterminal.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
+cover_credit_de: "Das Containerterminal Tollerort im Hamburger Hafen. Foto: Raimond Spekking / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hamburg_Hafen_Containerterminal.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
+excerpt: "The EU's carbon border adjustment mechanism entered its definitive phase on 1 January 2026. A guide to what importers must do, when money starts to flow, and why Russia, China and India object."
+excerpt_de: "Der CO₂-Grenzausgleich der EU ist am 1. Januar 2026 in seine endgültige Phase gestartet. Was Importeure tun müssen, wann Geld fließt und warum Russland, China und Indien Einspruch erheben."
 body_de: |
-  Jahrelang hatte die europäische Klimapolitik eine offene Flanke: Wer CO₂-Preise nur im Inland erhebt, verlagert emissionsintensive Produktion ins Ausland – das Klima gewinnt nichts, die Industrie wandert ab. Der CO₂-Grenzausgleichsmechanismus (CBAM) soll genau das verhindern.
+  Europas Klimapolitik hatte lange eine offene Flanke. Wer Emissionen nur im Inland bepreist, riskiert, dass emissionsintensive Produktion ins Ausland abwandert: Fachleute sprechen von „Carbon Leakage“. Dem Klima wäre damit nicht geholfen, der Industrie in Europa geschadet. Der CO₂-Grenzausgleichsmechanismus (Carbon Border Adjustment Mechanism, CBAM) soll das verhindern.
 
-  ## So funktioniert der Mechanismus
+  ## Was seit Januar gilt
 
-  Importeure bestimmter Güter – zunächst Stahl, Zement, Aluminium, Düngemittel, Wasserstoff und Strom – müssen die bei der Herstellung entstandenen Emissionen deklarieren und dafür Zertifikate erwerben, deren Preis dem EU-Emissionshandel folgt. Wer im Herkunftsland bereits einen CO₂-Preis gezahlt hat, bekommt ihn angerechnet.
+  Am **1. Januar 2026** endete die Übergangsphase, in der Importeure nur berichten mussten. Seitdem gilt das endgültige System. Erfasst sind sechs Warengruppen: **Eisen und Stahl, Zement, Aluminium, Düngemittel, Wasserstoff und Strom**.
 
-  ## Die Wirkung über Europa hinaus
+  Die wichtigsten Regeln:
 
-  Genau diese Anrechnung entfaltet die interessanteste Wirkung: Sie schafft für Drittstaaten einen Anreiz, eigene CO₂-Preise einzuführen – die Einnahmen bleiben dann im eigenen Haushalt statt in Brüssel.
+  - **Nur zugelassene Anmelder** dürfen diese Waren oberhalb der Schwelle noch in die EU einführen.
+  - **Die 50-Tonnen-Schwelle:** Seit einer Vereinfachung im Herbst 2025 sind Importeure ausgenommen, die weniger als 50 Tonnen CBAM-Waren pro Jahr einführen. Wer die Schwelle überschreitet, fällt mit allen Importen unter CBAM, nicht nur mit dem Teil oberhalb der 50 Tonnen.
+  - **Gezahlt wird ab 2027:** Für 2026 fließt noch kein Geld. CBAM-Zertifikate für die Importe dieses Jahres können ab dem **1. Februar 2027** gekauft werden. Die erste Jahreserklärung und die Abgabe der Zertifikate sind bis zum **30. September 2027** fällig.
+  - **Preis:** Ein Zertifikat kostet so viel wie eine Tonne CO₂ im EU-Emissionshandel, 2026 berechnet als Quartalsdurchschnitt der Versteigerungspreise, ab 2027 als Wochendurchschnitt.
 
-  > „CBAM ist weniger ein Zoll als ein Exportprodukt: Europa exportiert seinen CO₂-Preis", formuliert es ein Handelsökonom.
+  ## Warum die Belastung langsam steigt
 
-  ## Die Kritikpunkte
+  CBAM ersetzt schrittweise die kostenlosen Emissionszertifikate, die europäische Hersteller derselben Branchen bisher erhalten. Die Abgabe wächst daher mit dem Abbau dieser Gratiszuteilung: 2026 sind es 2,5 Prozent der eingebetteten Emissionen, 2030 knapp die Hälfte und ab 2034 der volle Betrag. Wer im Herkunftsland bereits einen CO₂-Preis gezahlt hat, kann ihn anrechnen lassen.
 
-  - **Bürokratie:** Die Emissionsbilanzierung überfordert kleine Importeure.
-  - **Gerechtigkeit:** Entwicklungsländer fordern Unterstützung statt Grenzabgaben.
-  - **Umgehung:** Handelsströme könnten sich verlagern, Vorprodukte den Mechanismus umgehen.
+  Diese Anrechnung ist der eigentliche Hebel des Instruments. Sie gibt Exportländern einen Anreiz, eigene CO₂-Preise einzuführen: Die Einnahmen bleiben dann im eigenen Haushalt, statt in die EU zu fließen.
 
-  Wie scharf das Instrument wirklich schneidet, zeigen die kommenden Berichtsjahre. Sicher ist: Der CO₂-Gehalt einer Ware ist ab jetzt eine handelspolitische Größe.
+  ## Der Streit vor der WTO
+
+  Nicht alle Handelspartner sehen darin einen Anreiz. **Russland** hat vor der Welthandelsorganisation (WTO) ein Verfahren gegen die EU angestrengt. Das Streitschlichtungsgremium hat ein Panel eingesetzt. Russland kritisiert unter anderem, dass nationale Klimamaßnahmen zu wenig berücksichtigt und EU-Standardwerte verwendet werden.
+
+  **18 Staaten**, darunter China, Indien, die USA und Großbritannien, haben sich als Drittparteien gemeldet. Sie sind damit keine Mitkläger, verfolgen das Verfahren aber mit eigenen Stellungnahmen. China hält CBAM für unvereinbar mit den Grundprinzipien der WTO und argumentiert, Entwicklungsländer seien von den Folgen stärker betroffen. Indiens Finanzministerin hat CBAM eine Handelsbarriere genannt. Gleichzeitig baut Indien eigene Prüfkapazitäten auf, damit indische Emissionsnachweise in der EU anerkannt werden.
+
+  ## Was offen ist
+
+  Wie stark CBAM wirkt, zeigt sich erst ab 2027, wenn Zertifikate gekauft werden müssen. Offen sind drei Fragen: ob die WTO das Instrument billigt, ob Handelsströme ausweichen, etwa über weiterverarbeitete Produkte, die nicht erfasst sind, und ob das Gesetzgebungsverfahren zur Ausweitung abgeschlossen wird: Die Kommission hat im Dezember 2025 vorgeschlagen, CBAM ab 2028 auf rund 180 nachgelagerte Produkte mit hohem Stahl- und Aluminiumanteil auszudehnen.
+
+  ---
+
+  **Quellen:** [EY: EU verabschiedet CBAM-Omnibus-Verordnung (Okt. 2025)](https://www.ey.com/en_gl/technical/tax-alerts/eu-adopts-cbam-omnibus-regulation) · [ICAP: CBAM startet in die Umsetzungsphase](https://icapcarbonaction.com/en/news/eu-cbam-enters-compliance-phase-and-outlines-path-ahead) · [Irische Umweltbehörde EPA: CBAM-Zertifikate](https://www.epa.ie/our-services/licensing/climate-change/eu-carbon-border-adjustment-mechanism/cbam-certificates/) · [EU-Kommission: CBAM-Leitfaden](https://taxation-customs.ec.europa.eu/document/download/031abf60-21a9-4822-b258-ac8b111d8358_en?filename=Guidance+No.+1+-+Introduction+to+CBAM+concepts.pdf) · [Business Standard: Indien als Drittpartei im WTO-Streit](https://www.business-standard.com/amp/world-news/india-reserves-third-party-rights-in-russia-eu-cbam-trade-dispute-in-wto-126092501118_1.html) · [Squire Patton Boggs: Russlands WTO-Klage](https://www.squirepattonboggs.com/insights/publications/russia-brings-wto-claims-against-cbam-and-other-countries-express-serious-concerns/) · [EST: Reaktionen aus Indien und China](https://esthinktank.com/2026/10/23/the-eu-cbam-responses-from-india-and-china/) · [EPRS: Ausweitung auf nachgelagerte Produkte](https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/07/EPRS_BRI(2026)789314.html)
 ---
-For years, European climate policy had an open flank: pricing carbon only at home pushes emission-intensive production abroad — the climate gains nothing, and industry migrates. The Carbon Border Adjustment Mechanism (CBAM) is designed to prevent exactly that.
+European climate policy long had an open flank. Pricing emissions only at home risks pushing emission-intensive production abroad, a problem experts call "carbon leakage." The climate would gain nothing, and European industry would lose out. The Carbon Border Adjustment Mechanism (CBAM) is designed to prevent that.
 
-## How the Mechanism Works
+## What Has Applied Since January
 
-Importers of certain goods — initially steel, cement, aluminium, fertiliser, hydrogen and electricity — must declare the emissions embedded in their products and purchase certificates whose price tracks the EU emissions trading system. Anyone who has already paid a carbon price in the country of origin gets it credited.
+On **1 January 2026**, the transitional phase, in which importers only had to report, came to an end. The definitive system now applies. It covers six groups of goods: **iron and steel, cement, aluminium, fertilisers, hydrogen and electricity**.
 
-## The Effect Beyond Europe
+The key rules:
 
-That crediting rule produces the most interesting effect: it gives third countries an incentive to introduce carbon prices of their own — the revenue then stays in their national budget instead of flowing to Brussels.
+- **Only authorised declarants** may still import these goods into the EU above the threshold.
+- **The 50-tonne threshold:** Since a simplification adopted in autumn 2025, importers bringing in less than 50 tonnes of CBAM goods a year are exempt. Anyone who exceeds the threshold falls under CBAM for all their imports, not just the part above 50 tonnes.
+- **Payment starts in 2027:** No money changes hands for 2026. CBAM certificates covering this year's imports can be bought from **1 February 2027**. The first annual declaration and the surrender of certificates are due by **30 September 2027**.
+- **Price:** A certificate costs the same as a tonne of CO₂ in the EU Emissions Trading System, calculated as a quarterly average of auction prices in 2026 and as a weekly average from 2027.
 
-> "CBAM is less a tariff than an export product: Europe is exporting its carbon price," as one trade economist puts it.
+## Why the Charge Rises Slowly
 
-## The Criticisms
+CBAM gradually replaces the free emission allowances that European producers in the same sectors have received so far. The charge therefore grows as that free allocation is phased out: 2.5 percent of embedded emissions in 2026, almost half by 2030, and the full amount from 2034. Anyone who has already paid a carbon price in the country of origin can have it deducted.
 
-- **Bureaucracy:** Emissions accounting overwhelms small importers.
-- **Fairness:** Developing countries demand support rather than border levies.
-- **Circumvention:** Trade flows may shift, and intermediate products may dodge the mechanism.
+That deduction is the instrument's real lever. It gives exporting countries an incentive to introduce carbon prices of their own: the revenue then stays in their own budget instead of flowing to the EU.
 
-How sharply the instrument really cuts will become clear over the coming reporting years. One thing is certain: the carbon content of a good is now a trade-policy variable.
+## The Dispute at the WTO
+
+Not every trading partner sees an incentive. **Russia** has brought a case against the EU at the World Trade Organization (WTO), and the Dispute Settlement Body has set up a panel. Russia's complaints include insufficient recognition of national climate measures and the use of EU default values.
+
+**Eighteen countries**, including China, India, the United States and the United Kingdom, have reserved third-party rights. That makes them observers with the right to make submissions, not co-complainants. China argues that CBAM is inconsistent with fundamental WTO principles and that developing countries bear more of its spillover effects. India's finance minister has called CBAM a trade barrier. At the same time, India is building domestic verification capacity so that Indian emissions data can be recognised in the EU.
+
+## What Remains Open
+
+How strongly CBAM bites will only become clear from 2027, when certificates have to be bought. Three questions are open: whether the WTO accepts the instrument, whether trade flows shift, for example towards processed products that are not covered, and whether the legislation to widen the scope is adopted: in December 2025, the Commission proposed extending CBAM from 2028 to about 180 downstream products with a high steel or aluminium content.
+
+---
+
+**Sources:** [EY: EU adopts CBAM Omnibus Regulation (Oct 2025)](https://www.ey.com/en_gl/technical/tax-alerts/eu-adopts-cbam-omnibus-regulation) · [ICAP: CBAM enters compliance phase](https://icapcarbonaction.com/en/news/eu-cbam-enters-compliance-phase-and-outlines-path-ahead) · [Irish EPA: CBAM certificates](https://www.epa.ie/our-services/licensing/climate-change/eu-carbon-border-adjustment-mechanism/cbam-certificates/) · [European Commission: CBAM guidance](https://taxation-customs.ec.europa.eu/document/download/031abf60-21a9-4822-b258-ac8b111d8358_en?filename=Guidance+No.+1+-+Introduction+to+CBAM+concepts.pdf) · [Business Standard: India reserves third-party rights at the WTO](https://www.business-standard.com/amp/world-news/india-reserves-third-party-rights-in-russia-eu-cbam-trade-dispute-in-wto-126092501118_1.html) · [Squire Patton Boggs: Russia's WTO claims](https://www.squirepattonboggs.com/insights/publications/russia-brings-wto-claims-against-cbam-and-other-countries-express-serious-concerns/) · [EST: responses from India and China](https://esthinktank.com/2026/10/23/the-eu-cbam-responses-from-india-and-china/) · [EPRS: extension to downstream goods](https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/07/EPRS_BRI(2026)789314.html)
