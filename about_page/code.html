@@ -1,136 +1,71 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>About Ecodemia | Ecodemia</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Inter:wght@400;500;600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: {
-          "primary": "#012d1d", "primary-container": "#1b4332", "on-primary": "#ffffff",
-          "on-primary-container": "#86af99", "secondary": "#4f6359",
-          "secondary-container": "#cfe5d9", "on-secondary-container": "#54675e",
-          "surface": "#f9faf6", "surface-container-low": "#f3f4f0",
-          "surface-container": "#edeeea", "surface-container-high": "#e7e9e5",
-          "on-surface": "#1a1c1a", "on-surface-variant": "#414844",
-          "outline": "#717973", "outline-variant": "#c1c8c2",
-          "background": "#f9faf6", "tertiary-container": "#383f22",
-          "on-tertiary-container": "#a2aa85", "error": "#ba1a1a",
-        },
-        fontFamily: {
-          "headline": ["Newsreader", "serif"],
-          "body":     ["Inter",      "sans-serif"],
-          "label":    ["Public Sans","sans-serif"],
-        },
-        borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
-      },
-    },
-  }
-</script>
-<style>
-  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-  .eco-logo { font-family: 'Newsreader', serif; font-style: normal; font-weight: 700; color: #1B4332; text-decoration: none; }
-</style>
+<meta name="description" content="What Ecodemia is, our editorial standards and our corrections policy.">
+<link rel="stylesheet" href="/css/ecodemia.css">
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<body data-page="about">
+<div id="site-header"></div>
 
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#f9faf6]/90 backdrop-blur-md border-b border-outline-variant/10">
-  <div class="flex justify-between items-center px-6 md:px-8 py-4 max-w-screen-2xl mx-auto">
-    <div class="flex items-center gap-12">
-      <a class="eco-logo text-2xl" href="../environmental_news_homepage/code.html">Ecodemia</a>
-      <div class="hidden md:flex items-center gap-8">
-        <!-- injected by initUniversalDesktopNav() -->
-      </div>
-    </div>
-    <div class="flex items-center gap-5">
-      <span class="material-symbols-outlined text-on-surface-variant cursor-pointer search-trigger">search</span>
-      <button class="hidden md:inline-flex bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label text-sm font-bold tracking-wide hover:opacity-90 transition-opacity subscribe-btn">Subscribe</button>
-      <button class="md:hidden text-on-surface menu-trigger"><span class="material-symbols-outlined">menu</span></button>
-    </div>
-  </div>
-</nav>
-
-<main class="pt-24 pb-24 max-w-3xl mx-auto px-6 md:px-8">
-
-  <header class="border-l-4 border-primary pl-6 md:pl-8 py-4 mb-14 mt-4">
-    <span class="font-label text-[10px] uppercase tracking-[0.25em] text-outline font-bold mb-3 block" data-en="About" data-de="Über uns">About</span>
-    <h1 class="font-headline text-4xl md:text-6xl font-bold text-on-surface leading-[1.05]" data-en="About Ecodemia." data-de="Über Ecodemia.">About Ecodemia.</h1>
+<main class="wrap">
+  <header class="page-head">
+    <span class="label" data-en="About" data-de="Über uns">About</span>
+    <h1 data-en="About Ecodemia" data-de="Über Ecodemia">About Ecodemia</h1>
   </header>
 
-  <div class="about-body font-body text-on-surface-variant leading-relaxed space-y-6 text-[17px]">
-
+  <div class="page-body prose">
     <div data-lang-block="en">
       <p>Ecodemia is an independent environmental news site in English and German. We report on climate science, wildlife and biodiversity, the energy transition, sustainable living, technology and environmental policy, with a particular eye on Europe and the German-speaking countries.</p>
 
       <h2 id="standards">Editorial standards</h2>
       <ul>
-        <li><strong>Every article shows its sources.</strong> Each piece ends with links to the documents it is based on. We prefer primary sources: scientific bodies, official reports, legal texts and the studies themselves.</li>
+        <li><strong>Every article shows its sources.</strong> Each piece ends with a numbered list of the documents it is based on, and numbered markers in the text show which claim rests on which source. We prefer primary sources: scientific bodies, official reports, legal texts and the studies themselves.</li>
         <li><strong>Only real people, only real quotes.</strong> We quote named people from published statements or from our own interviews, and we say which. We never invent people, quotes or anecdotes.</li>
         <li><strong>Forecasts are labelled as forecasts.</strong> When a figure is a projection or a model estimate, we say so, and we report the range when sources disagree.</li>
         <li><strong>Photos are licensed.</strong> We only use images that are in the public domain or licensed for commercial use, and we credit photographer, source and licence below each image.</li>
-        <li><strong>Articles are dated.</strong> When a story develops, we update it and say what changed.</li>
+        <li><strong>Articles are dated.</strong> Each article shows when it was published and, where applicable, when it was last checked or updated.</li>
       </ul>
 
       <h2 id="corrections">Corrections</h2>
-      <p>If we get something wrong, we correct it and add a dated note at the end of the article saying what was changed.</p>
+      <p>If we get something wrong, we correct it and add a dated note at the top of the article saying what was changed.</p>
 
       <h2>Live updates</h2>
-      <p>The <a href="/live">Live Updates</a> page is an automated feed of headlines from other newsrooms (the Guardian, BBC, Mongabay, Grist and CleanTechnica). These headlines are not Ecodemia reporting; each one links to the original publisher.</p>
+      <p>The <a href="/live">Live</a> page is an automated feed of headlines from other newsrooms (the Guardian, BBC, Mongabay, Grist and CleanTechnica). These headlines are not Ecodemia reporting; each one links to the original publisher.</p>
     </div>
 
-    <div data-lang-block="de">
+    <div data-lang-block="de" hidden>
       <p>Ecodemia ist eine unabhängige Umwelt-Nachrichtenseite auf Englisch und Deutsch. Wir berichten über Klimawissenschaft, Tierwelt und Artenvielfalt, die Energiewende, nachhaltiges Leben, Technologie und Umweltpolitik, mit besonderem Blick auf Europa und den deutschsprachigen Raum.</p>
 
       <h2 id="standards-de">Redaktionelle Standards</h2>
       <ul>
-        <li><strong>Jeder Artikel nennt seine Quellen.</strong> Am Ende jedes Beitrags stehen Links zu den Dokumenten, auf denen er beruht. Wir bevorzugen Primärquellen: wissenschaftliche Institutionen, offizielle Berichte, Gesetzestexte und die Studien selbst.</li>
+        <li><strong>Jeder Artikel nennt seine Quellen.</strong> Am Ende jedes Beitrags steht eine nummerierte Liste der Dokumente, auf denen er beruht, und nummerierte Markierungen im Text zeigen, welche Aussage sich auf welche Quelle stützt. Wir bevorzugen Primärquellen: wissenschaftliche Institutionen, offizielle Berichte, Gesetzestexte und die Studien selbst.</li>
         <li><strong>Nur echte Menschen, nur echte Zitate.</strong> Wir zitieren namentlich genannte Personen aus veröffentlichten Aussagen oder eigenen Interviews und sagen, woher das Zitat stammt. Wir erfinden niemals Personen, Zitate oder Anekdoten.</li>
         <li><strong>Prognosen sind als Prognosen gekennzeichnet.</strong> Ist eine Zahl eine Projektion oder Modellschätzung, sagen wir das, und wir nennen die Spannbreite, wenn Quellen voneinander abweichen.</li>
         <li><strong>Fotos sind lizenziert.</strong> Wir verwenden nur gemeinfreie oder für die kommerzielle Nutzung lizenzierte Bilder und nennen unter jedem Bild Urheber, Quelle und Lizenz.</li>
-        <li><strong>Artikel sind datiert.</strong> Entwickelt sich eine Geschichte weiter, aktualisieren wir sie und vermerken, was sich geändert hat.</li>
+        <li><strong>Artikel sind datiert.</strong> Jeder Artikel zeigt, wann er veröffentlicht und gegebenenfalls zuletzt geprüft oder aktualisiert wurde.</li>
       </ul>
 
       <h2 id="corrections-de">Korrekturen</h2>
-      <p>Wenn uns ein Fehler unterläuft, korrigieren wir ihn und ergänzen am Ende des Artikels einen datierten Hinweis, was geändert wurde.</p>
+      <p>Wenn uns ein Fehler unterläuft, korrigieren wir ihn und ergänzen oben im Artikel einen datierten Hinweis, was geändert wurde.</p>
 
-      <h2>Live-Updates</h2>
+      <h2>Aktuell</h2>
       <p>Die Seite <a href="/live">Aktuell</a> ist ein automatischer Feed mit Schlagzeilen anderer Redaktionen (Guardian, BBC, Mongabay, Grist und CleanTechnica). Diese Schlagzeilen sind keine Ecodemia-Berichterstattung; jede verlinkt auf den ursprünglichen Herausgeber.</p>
     </div>
-
   </div>
 </main>
 
-<footer></footer>
+<div id="site-footer"></div>
 
-<style>
-  .about-body h2 { font-family: 'Newsreader', serif; font-size: 1.75rem; font-weight: 700; color: #1a1c1a; margin-top: 2.5rem; margin-bottom: 0.75rem; scroll-margin-top: 6rem; }
-  .about-body ul { list-style: disc; padding-left: 1.25rem; }
-  .about-body li { margin-bottom: 0.75rem; }
-  .about-body a { color: #012d1d; text-decoration: underline; }
-  .about-body p + p { margin-top: 1rem; }
-</style>
-
-<script src="../js/ecodemia.js"></script>
+<script src="/js/ecodemia.js"></script>
 <script>
 (function () {
-  var lang;
-  try { lang = localStorage.getItem('ecodemia_lang') || 'en'; } catch (e) { lang = 'en'; }
-  var isDE = lang === 'de';
-  document.querySelectorAll('[data-lang-block]').forEach(function (el) {
-    el.style.display = (el.getAttribute('data-lang-block') === (isDE ? 'de' : 'en')) ? '' : 'none';
-  });
-  document.querySelectorAll('[data-en]').forEach(function (el) {
-    el.textContent = el.getAttribute(isDE ? 'data-de' : 'data-en');
-  });
+  var isDE = window.Eco.isDE;
+  document.querySelectorAll('[data-lang-block]').forEach(function (el) { el.hidden = el.getAttribute('data-lang-block') !== (isDE ? 'de' : 'en'); });
+  document.querySelectorAll('[data-en]').forEach(function (el) { el.textContent = el.getAttribute(isDE ? 'data-de' : 'data-en'); });
   document.title = (isDE ? 'Über Ecodemia' : 'About Ecodemia') + ' | Ecodemia';
-  // Footer links point to #standards / #corrections; map to the German anchors
   if (isDE && (location.hash === '#standards' || location.hash === '#corrections')) {
     var t = document.getElementById(location.hash.slice(1) + '-de');
     if (t) setTimeout(function () { t.scrollIntoView(); }, 50);

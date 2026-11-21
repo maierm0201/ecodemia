@@ -85,6 +85,18 @@ function stripMarkdown(md) {
     .trim();
 }
 
+// The article body ends with "---" and a "**Sources:** [label](url) · …" line
+const SOURCES_RE = /\n-{3,}\s*\n+\s*\*\*(Sources|Quellen):\*\*([\s\S]*)$/;
+function withoutSources(md) {
+  const m = (md || '').match(SOURCES_RE);
+  return m ? md.slice(0, m.index) : (md || '');
+}
+function countSources(md) {
+  const m = (md || '').match(SOURCES_RE);
+  if (!m) return 0;
+  return (m[2].match(/\]\(https?:\/\//g) || []).length;
+}
+
 // ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
@@ -121,9 +133,15 @@ const articles = files.map(filename => {
     cover_image: data.cover_image || '',
     excerpt:     data.excerpt     || (plain.slice(0, 200)   + (plain.length   > 200 ? '…' : '')),
     excerpt_de:  data.excerpt_de  || (plainDE.slice(0, 200) + (plainDE.length > 200 ? '…' : '')),
-    // Reading time in minutes (≈200 words/min), from the full body
-    read_time:    Math.max(1, Math.round(plain.split(/\s+/).filter(Boolean).length / 200)),
-    read_time_de: plainDE ? Math.max(1, Math.round(plainDE.split(/\s+/).filter(Boolean).length / 200)) : 0,
+    // Reading time in minutes (≈200 words/min), from the article text without the source list
+    read_time:    Math.max(1, Math.round(stripMarkdown(withoutSources(bodyText)).split(/\s+/).filter(Boolean).length / 200)),
+    read_time_de: bodyTextDE ? Math.max(1, Math.round(stripMarkdown(withoutSources(bodyTextDE)).split(/\s+/).filter(Boolean).length / 200)) : 0,
+    // Number of linked sources in the trailing "**Sources:**" block
+    source_count: countSources(bodyText),
+    checked:      data.checked     || '',
+    updated:      data.updated     || '',
+    cover_alt:    data.cover_alt    || '',
+    cover_alt_de: data.cover_alt_de || '',
   };
 });
 

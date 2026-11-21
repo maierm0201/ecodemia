@@ -75,10 +75,41 @@ collections:
         required: false
         hint: "Short summary shown in article lists and category pages"
 
+      - label: "Key facts"
+        name: "key_facts"
+        widget: "text"
+        required: false
+        hint: "Optional. 2–4 short facts shown in a box at the top of the article. One per line, each starting with '- '."
+
+      - label: "Last checked"
+        name: "checked"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "DD.MM.YYYY"
+        time_format: false
+        required: false
+        hint: "Date on which all facts and links were last verified"
+
+      - label: "Updated"
+        name: "updated"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "DD.MM.YYYY"
+        time_format: false
+        required: false
+        hint: "Only if the article was changed after publication"
+
+      - label: "Update / correction note"
+        name: "update_note"
+        widget: "text"
+        required: false
+        hint: "Shown at the top of the article. Say what changed, e.g. 'Updated with the final COP31 decision.'"
+
       - label: "Body (English)"
         name: "body"
         widget: "markdown"
         required: false
+        hint: "End with a line '---' and then '**Sources:** [Name](https://…) · [Name](https://…)'. Mark claims in the text with [^1], [^2] … matching the order of the sources."
 
       - label: "Title (Deutsch)"
         name: "title_de"
@@ -97,6 +128,17 @@ collections:
         widget: "text"
         required: false
         hint: "German excerpt — leave blank to show the English excerpt"
+
+      - label: "Key facts (Deutsch)"
+        name: "key_facts_de"
+        widget: "text"
+        required: false
+        hint: "German key facts, one per line starting with '- '"
+
+      - label: "Update note (Deutsch)"
+        name: "update_note_de"
+        widget: "text"
+        required: false
 
       - label: "Body (Deutsch)"
         name: "body_de"

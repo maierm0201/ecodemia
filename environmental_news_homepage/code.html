@@ -1,259 +1,113 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ecodemia | Climate, nature and energy news in English and German</title>
-<meta name="description" content="Ecodemia: independent, bilingual reporting on climate, wildlife, energy and environmental policy, with every article linked to its sources."/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&amp;family=Inter:wght@400;500;600&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "inverse-on-surface": "#f0f1ed",
-              "surface-bright": "#f9faf6",
-              "secondary-fixed-dim": "#b6cbc0",
-              "on-background": "#1a1c1a",
-              "surface-tint": "#3f6653",
-              "on-error": "#ffffff",
-              "primary-fixed": "#c1ecd4",
-              "primary-container": "#1b4332",
-              "on-tertiary-fixed-variant": "#434a2b",
-              "primary": "#012d1d",
-              "error": "#ba1a1a",
-              "surface-container-high": "#e7e9e5",
-              "on-secondary-fixed-variant": "#384b42",
-              "surface-container-highest": "#e2e3df",
-              "secondary-container": "#cfe5d9",
-              "surface-dim": "#d9dad7",
-              "tertiary": "#22290e",
-              "tertiary-fixed": "#dfe7bd",
-              "inverse-surface": "#2e312f",
-              "surface-container-lowest": "#ffffff",
-              "outline": "#717973",
-              "surface-container": "#edeeea",
-              "on-primary": "#ffffff",
-              "inverse-primary": "#a5d0b9",
-              "on-tertiary-container": "#a2aa85",
-              "on-tertiary-fixed": "#181e05",
-              "tertiary-container": "#383f22",
-              "on-secondary-fixed": "#0d1f18",
-              "surface-container-low": "#f3f4f0",
-              "on-secondary": "#ffffff",
-              "surface-variant": "#e2e3df",
-              "on-surface-variant": "#414844",
-              "on-primary-fixed": "#002114",
-              "on-surface": "#1a1c1a",
-              "background": "#f9faf6",
-              "outline-variant": "#c1c8c2",
-              "on-secondary-container": "#54675e",
-              "secondary-fixed": "#d2e7dc",
-              "error-container": "#ffdad6",
-              "on-primary-container": "#86af99",
-              "on-tertiary": "#ffffff",
-              "on-primary-fixed-variant": "#274e3d",
-              "primary-fixed-dim": "#a5d0b9",
-              "secondary": "#4f6359",
-              "surface": "#f9faf6",
-              "on-error-container": "#93000a",
-              "tertiary-fixed-dim": "#c3cba3"
-            },
-            fontFamily: {
-              "headline": ["Newsreader"],
-              "body": ["Inter"],
-              "label": ["Public Sans"]
-            },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
-          },
-        },
-      }
-    </script>
-<style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      }
-      .leaning-margin {
-        margin-left: 8.333333%;
-      }
-      .glass-nav {
-        backdrop-filter: blur(12px);
-      }
-      .eco-logo {
-        font-family: 'Newsreader', serif;
-        font-style: normal;
-        font-weight: 700;
-        color: #1B4332;
-      }
-    </style>
+<meta name="description" content="Ecodemia: independent, bilingual reporting on climate, wildlife, energy and environmental policy. Every article lists its sources.">
+<link rel="preload" href="/assets/fonts/schibsted-grotesk-normal-400-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/newsreader-normal-400-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/ecodemia.css">
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#f9faf6]/85 dark:bg-[#1a1c1a]/85 backdrop-blur-md">
-<div class="flex justify-between items-center px-6 md:px-8 py-4 max-w-screen-2xl mx-auto">
-<div class="flex items-center gap-12">
-<a class="eco-logo text-2xl" href="../environmental_news_homepage/code.html">Ecodemia</a>
-<div class="hidden md:flex gap-8">
-<a class="font-['Newsreader'] text-lg tracking-tight text-[#1B4332] dark:text-[#cfe5d9] font-semibold border-b-2 border-[#1B4332] transition-colors duration-300" href="/climate">Climate</a>
-<a class="font-['Newsreader'] text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="/wildlife">Wildlife</a>
-<a class="font-['Newsreader'] text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="/energy">Energy</a>
-<a class="font-['Newsreader'] text-lg tracking-tight text-[#717973] dark:text-[#a1a8a2] hover:text-[#1B4332] dark:hover:text-[#f9faf6] transition-colors duration-300" href="/policy">Policy</a>
-</div>
-</div>
-<div class="flex items-center gap-6">
-<span class="material-symbols-outlined text-on-surface-variant cursor-pointer search-trigger">search</span>
-<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label text-sm font-bold tracking-wide transition-opacity hover:opacity-90 subscribe-btn">Subscribe</button>
-</div>
-</div>
-</nav>
-<main class="pt-24 max-w-screen-2xl mx-auto px-6 md:px-8">
+<body data-page="home">
+<div id="site-header"></div>
 
-<!-- Lead story: the newest published article -->
-<section class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 mb-20">
-  <div class="lg:col-span-8">
-    <a id="hp-hero-link" class="block relative group overflow-hidden rounded-sm mb-8 bg-surface-container" href="#">
-      <img id="hp-hero-image" alt="" class="w-full h-[280px] sm:h-[420px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-105"/>
-      <span class="absolute top-5 left-5 bg-[#1a1c1a]/85 text-white font-label text-[9px] font-bold uppercase tracking-[0.15em] px-3 py-1.5">Latest Story</span>
-    </a>
-    <div class="flex items-center gap-3 mb-4">
-      <span id="hp-hero-category" class="font-label text-[10px] uppercase tracking-[0.2em] text-primary font-bold"></span>
-      <span class="text-outline/40">•</span>
-      <span id="hp-hero-date" class="font-label text-[10px] uppercase tracking-widest text-outline"></span>
-      <span class="text-outline/40">•</span>
-      <span id="hp-hero-time" class="font-label text-[10px] uppercase tracking-widest text-outline"></span>
+<main class="wrap">
+  <h1 class="visually-hidden">Ecodemia</h1>
+
+  <section class="home-top" aria-label="Top stories">
+    <div id="lead" class="lead"><p class="status">Loading…</p></div>
+    <aside class="latest" aria-labelledby="latest-h">
+      <h2 id="latest-h" class="label">Latest</h2>
+      <div id="latest-list"></div>
+    </aside>
+  </section>
+
+  <section id="figures" class="figures" aria-label="By the numbers"></section>
+
+  <div id="sections"></div>
+
+  <section class="wire" aria-labelledby="wire-h">
+    <div class="wire-head">
+      <h2 id="wire-h"><i></i><span id="wire-title">Live from other newsrooms</span></h2>
+      <p id="wire-note">Guardian · BBC · Mongabay · Grist · CleanTechnica</p>
     </div>
-    <h1 class="font-headline text-4xl md:text-5xl lg:text-6xl font-extrabold text-on-surface leading-[1.1] mb-6 tracking-tight">
-      <a id="hp-hero-title" class="hover:text-primary transition-colors" href="#">Loading…</a>
-    </h1>
-    <p id="hp-hero-excerpt" class="font-body text-lg text-on-surface-variant leading-relaxed max-w-2xl mb-6"></p>
-    <p class="font-label text-xs font-bold uppercase tracking-wider text-on-surface">Ecodemia</p>
-  </div>
-
-  <aside class="lg:col-span-4 lg:border-l lg:border-outline-variant/20 lg:pl-10">
-    <h2 class="font-label text-sm font-bold uppercase tracking-[0.2em] text-on-surface mb-8 pb-4 border-b border-outline-variant/30">Latest</h2>
-    <div id="hp-latest-list" class="space-y-8"></div>
-  </aside>
-</section>
-
-<!-- By the numbers: sourced figures only -->
-<section class="mb-20">
-  <h2 class="font-headline text-3xl font-bold mb-8">By the Numbers</h2>
-  <div id="hp-stats" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
-</section>
-
-<!-- All articles -->
-<section id="hp-all-section" class="mb-20 hidden">
-  <h2 class="font-headline text-3xl font-bold mb-8">All Articles</h2>
-  <div id="hp-all-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12"></div>
-</section>
-
-<!-- Live updates teaser -->
-<section class="mb-20">
-  <div class="bg-primary-container rounded-sm p-8 md:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-    <div class="max-w-2xl">
-      <h2 class="font-headline text-3xl font-bold text-white mb-3">Live Updates from Trusted Newsrooms</h2>
-      <p class="font-body text-[#cfe5d9] leading-relaxed">Headlines from the Guardian, BBC, Mongabay, Grist and CleanTechnica, refreshed throughout the day. Every headline links to the original source.</p>
-    </div>
-    <a href="/live" class="self-start md:self-auto bg-white text-[#1B4332] px-8 py-3 rounded-full font-label text-sm font-bold tracking-wide hover:opacity-90 transition-opacity whitespace-nowrap">Open live updates</a>
-  </div>
-</section>
-
+    <ul id="wire-list"></ul>
+    <a class="more" href="/live" id="wire-more">All live updates →</a>
+  </section>
 </main>
 
-<footer></footer>
+<div id="site-footer"></div>
 
-<script src="../js/ecodemia.js"></script>
+<script src="/js/ecodemia.js"></script>
 <script>
 (function () {
   'use strict';
-  function esc(s) {
-    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-  }
-  var lang;
-  try { lang = localStorage.getItem('ecodemia_lang') || 'en'; } catch (e) { lang = 'en'; }
-  var isDE = lang === 'de';
-  var LOCALE = isDE ? 'de-DE' : 'en-GB';
-  var LABELS = isDE
-    ? { climate:'Klima', wildlife:'Tierwelt', energy:'Energie', living:'Leben', tech:'Technologie', policy:'Politik' }
-    : { climate:'Climate', wildlife:'Wildlife', energy:'Energy', living:'Living', tech:'Tech', policy:'Policy' };
+  var E = window.Eco, isDE = E.isDE, esc = E.esc;
 
-  function loc(a, f) { var de = a[f + '_de']; return (isDE && de) ? de : (a[f] || ''); }
-  function url(a) { return '/article/' + encodeURIComponent(a.slug); }
-  function fmtDate(s) {
-    if (!s) return '';
-    var dm = s.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
-    var d = dm ? new Date(+dm[3], +dm[2]-1, +dm[1]) : new Date(s);
-    return isNaN(d) ? s : d.toLocaleDateString(LOCALE, {day:'numeric',month:'long',year:'numeric'});
-  }
-  function readTime(a) {
-    var t = (isDE && a.read_time_de) ? a.read_time_de : a.read_time;
-    return (t || 1) + (isDE ? ' Min. Lesezeit' : ' min read');
+  if (isDE) {
+    document.getElementById('latest-h').textContent = 'Neueste Artikel';
+    document.getElementById('wire-title').textContent = 'Aktuell aus anderen Redaktionen';
+    document.getElementById('wire-more').textContent = 'Alle Meldungen →';
   }
 
-  // Sourced figures. Keep current; every number must link to its source.
-  var STATS = [
-    { n: isDE ? '1,47 °C' : '1.47 °C',
-      l: isDE ? 'Globale Oberflächentemperatur über vorindustriellem Niveau, Januar–September 2026' : 'Global surface temperature above pre-industrial levels, January–September 2026',
-      s: 'WMO', u: 'https://wmo.int/resources/publication-series/state-of-climate-update-cop/state-of-climate-update-cop31' },
-    { n: '73 %',
-      l: isDE ? 'Durchschnittlicher Rückgang beobachteter Wildtierbestände seit 1970' : 'Average decline in monitored wildlife populations since 1970',
-      s: 'WWF/ZSL Living Planet Report 2026', u: 'https://www.worldwildlife.org/news/press-releases/wildlife-population-sizes-decline-73-on-average-but-tiger-elephant-turtle-and-tuna-recoveries-offer-hope/' },
-    { n: '50 %',
-      l: isDE ? 'Erwarteter Anteil emissionsarmer Quellen am weltweiten Strom bis 2030 (2025: 42 %)' : 'Expected share of low-emission sources in global electricity by 2030 (2025: 42 %)',
-      s: 'IEA Electricity 2026', u: 'https://www.iea.org/reports/electricity-2026/executive-summary' },
-  ];
-  document.getElementById('hp-stats').innerHTML = STATS.map(function (x) {
-    return '<div class="bg-tertiary-container rounded-sm p-8">' +
-      '<p class="font-headline text-5xl font-bold text-white mb-4 leading-none">' + esc(x.n) + '</p>' +
-      '<p class="font-label text-[11px] uppercase tracking-wider text-on-tertiary-container leading-relaxed mb-5">' + esc(x.l) + '</p>' +
-      '<a class="font-label text-[10px] text-on-tertiary-container underline hover:text-white" href="' + esc(x.u) + '" target="_blank" rel="noopener">' + (isDE ? 'Quelle: ' : 'Source: ') + esc(x.s) + '</a>' +
-    '</div>';
+  // Figures: one per core section, each with its source
+  document.getElementById('figures').innerHTML = ['climate', 'wildlife', 'energy'].map(function (c) {
+    return E.figureHTML(E.sectionInfo(c), c);
   }).join('');
 
-  fetch('../content/articles.json')
-    .then(function (r) { if (!r.ok) throw 0; return r.json(); })
-    .then(function (all) {
-      if (!all.length) return;
-      var a = all[0];
-      document.getElementById('hp-hero-link').href = url(a);
-      document.getElementById('hp-hero-image').src = a.cover_image || '';
-      document.getElementById('hp-hero-image').alt = loc(a, 'title');
-      document.getElementById('hp-hero-title').href = url(a);
-      document.getElementById('hp-hero-title').textContent = loc(a, 'title');
-      document.getElementById('hp-hero-excerpt').textContent = loc(a, 'excerpt');
-      document.getElementById('hp-hero-category').textContent = LABELS[a.category] || a.category;
-      document.getElementById('hp-hero-date').textContent = fmtDate(a.date);
-      document.getElementById('hp-hero-time').textContent = readTime(a);
+  function photo(a, eager) {
+    return '<div class="photo">' + (a.cover_image ? '<img src="' + esc(a.cover_image) + '" alt="' + esc((E.loc(a, 'cover_alt')) || '') + '"' + (eager ? '' : ' loading="lazy"') + '>' : '') + '</div>';
+  }
 
-      document.getElementById('hp-latest-list').innerHTML = all.slice(1, 5).map(function (x) {
-        return '<a class="group block" href="' + url(x) + '">' +
-          '<span class="font-label text-[10px] uppercase tracking-widest text-outline block mb-2">' + esc(LABELS[x.category] || x.category) + ' • ' + esc(fmtDate(x.date)) + '</span>' +
-          '<h3 class="font-headline text-xl font-bold leading-tight group-hover:text-primary transition-colors">' + esc(loc(x, 'title')) + '</h3>' +
-        '</a>';
-      }).join('');
+  E.articles().then(function (all) {
+    if (!all.length) { document.getElementById('lead').innerHTML = ''; return; }
+    var a = all[0];
+    document.getElementById('lead').innerHTML =
+      '<a href="' + E.articleUrl(a) + '" style="display:grid;gap:14px">' + photo(a, true) +
+        E.kickerHTML(a) + '<h2 class="hl">' + esc(E.loc(a, 'title')) + '</h2>' +
+        '<p class="stand">' + esc(E.loc(a, 'subtitle') || E.loc(a, 'excerpt')) + '</p></a>' + E.metaHTML(a);
 
-      var rest = all.slice(5);
-      if (rest.length) {
-        document.getElementById('hp-all-grid').innerHTML = rest.map(function (x) {
-          return '<a class="group block" href="' + url(x) + '">' +
-            '<div class="overflow-hidden rounded-sm mb-5 aspect-[4/3] bg-surface-container">' +
-              (x.cover_image ? '<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="' + esc(x.cover_image) + '" alt="' + esc(loc(x, 'title')) + '"/>' : '') +
-            '</div>' +
-            '<span class="font-label text-[10px] uppercase tracking-widest text-outline block mb-2">' + esc(LABELS[x.category] || x.category) + ' • ' + esc(fmtDate(x.date)) + '</span>' +
-            '<h3 class="font-headline text-xl font-bold leading-tight mb-3 group-hover:text-primary transition-colors">' + esc(loc(x, 'title')) + '</h3>' +
-            '<p class="font-body text-sm text-on-surface-variant leading-relaxed">' + esc(loc(x, 'excerpt')) + '</p>' +
-          '</a>';
-        }).join('');
-        document.getElementById('hp-all-section').classList.remove('hidden');
-      }
-    })
-    .catch(function () {
-      document.getElementById('hp-hero-title').textContent = isDE ? 'Artikel konnten nicht geladen werden.' : 'Articles could not be loaded.';
-    });
+    document.getElementById('latest-list').innerHTML = all.slice(1, 6).map(function (x) {
+      return '<a class="latest-item" href="' + E.articleUrl(x) + '">' + E.kickerHTML(x) +
+        '<h3 class="hl">' + esc(E.loc(x, 'title')) + '</h3>' + E.metaHTML(x, { time: false }) + '</a>';
+    }).join('');
+
+    // One row per section that has articles (newest section first)
+    var shown = {}; shown[a.slug] = true;
+    var order = [];
+    all.forEach(function (x) { if (order.indexOf(x.category) === -1 && E.SECTIONS.indexOf(x.category) !== -1) order.push(x.category); });
+    document.getElementById('sections').innerHTML = order.map(function (cat) {
+      var items = all.filter(function (x) { return x.category === cat && !shown[x.slug]; }).slice(0, 3);
+      if (!items.length) return '';
+      return '<section class="sec-row" data-cat="' + cat + '">' +
+        '<div class="sec-row-head"><h2><i></i>' + esc(E.t(cat)) + '</h2><a href="/' + cat + '">' + (isDE ? 'Alle Artikel' : 'All articles') + ' →</a></div>' +
+        '<div class="cards">' + items.map(function (x) {
+          return '<a class="card" href="' + E.articleUrl(x) + '">' + photo(x) +
+            '<h3 class="hl">' + esc(E.loc(x, 'title')) + '</h3>' +
+            '<p class="stand">' + esc(E.loc(x, 'excerpt')) + '</p>' + E.metaHTML(x) + '</a>';
+        }).join('') + '</div></section>';
+    }).join('');
+  }).catch(function () {
+    document.getElementById('lead').innerHTML = '<p class="status">' + (isDE ? 'Artikel konnten nicht geladen werden.' : 'Articles could not be loaded.') + '</p>';
+  });
+
+  // Live wire: newest headlines from partner newsrooms
+  function relTime(iso) {
+    var diff = (Date.now() - new Date(iso).getTime()) / 1000;
+    if (diff < 3600) return Math.max(1, Math.round(diff / 60)) + (isDE ? ' Min.' : ' min ago');
+    if (diff < 86400) return Math.round(diff / 3600) + (isDE ? ' Std.' : ' h ago');
+    return E.fmtDate(iso, { day: 'numeric', month: 'short' });
+  }
+  fetch('/api/live-updates').then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (data) {
+    var items = (data.items || []).filter(function (i) { return i.title && i.link; }).slice(0, 5);
+    if (!items.length) throw 0;
+    document.getElementById('wire-list').innerHTML = items.map(function (i) {
+      return '<li><a href="' + esc(i.link) + '" target="_blank" rel="noopener"><span>' + esc(i.source) + ' · ' + esc(relTime(i.date)) + '</span><span>' + esc(i.title) + ' ↗</span></a></li>';
+    }).join('');
+  }).catch(function () {
+    document.getElementById('wire-list').innerHTML = '<li style="font-family:var(--f-body);color:#b9c6bf;padding:10px 0">' + (isDE ? 'Gerade nicht verfügbar.' : 'Not available right now.') + '</li>';
+  });
 }());
 </script>
 </body>

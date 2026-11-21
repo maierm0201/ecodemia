@@ -11,7 +11,12 @@
     "excerpt": "A panel on the railing, a plug in the socket: plug-in solar has the lowest entry barrier of any climate technology. Since 2024, German law has made it much easier. A guide to the rules in 2026.",
     "excerpt_de": "Ein Modul ans Geländer, ein Stecker in die Steckdose: Keine Klimatechnik ist so niedrigschwellig wie Steckersolar. Seit 2024 hat das deutsche Recht vieles vereinfacht. Die Regeln im Jahr 2026.",
     "read_time": 2,
-    "read_time_de": 2
+    "read_time_de": 2,
+    "source_count": 6,
+    "checked": "2026-11-21",
+    "updated": "",
+    "cover_alt": "Two solar panels mounted on the railing of a residential balcony",
+    "cover_alt_de": "Zwei Solarmodule am Geländer eines Wohnhausbalkons"
   },
   {
     "slug": "carbon-border-tax-explained",
@@ -25,7 +30,12 @@
     "excerpt": "The EU's carbon border adjustment mechanism entered its definitive phase on 1 January 2026. A guide to what importers must do, when money starts to flow, and why Russia, China and India object.",
     "excerpt_de": "Der CO₂-Grenzausgleich der EU ist am 1. Januar 2026 in seine endgültige Phase gestartet. Was Importeure tun müssen, wann Geld fließt und warum Russland, China und Indien Einspruch erheben.",
     "read_time": 3,
-    "read_time_de": 2
+    "read_time_de": 2,
+    "source_count": 8,
+    "checked": "2026-11-21",
+    "updated": "",
+    "cover_alt": "Container ships and gantry cranes at a container terminal in the port of Hamburg",
+    "cover_alt_de": "Containerschiffe und Containerbrücken an einem Terminal im Hamburger Hafen"
   },
   {
     "slug": "eu-nature-restoration-law",
@@ -39,7 +49,12 @@
     "excerpt": "Rewetted peatlands, 25,000 kilometres of free-flowing rivers, no net loss of urban green: the EU's restoration law sets binding targets. Its first test, the national plans, is not going smoothly.",
     "excerpt_de": "Wiedervernässte Moore, 25.000 Kilometer frei fließende Flüsse, kein Verlust an Stadtgrün: Das EU-Renaturierungsgesetz setzt verbindliche Ziele. Sein erster Test, die nationalen Pläne, läuft holprig.",
     "read_time": 2,
-    "read_time_de": 2
+    "read_time_de": 2,
+    "source_count": 7,
+    "checked": "2026-11-21",
+    "updated": "",
+    "cover_alt": "Shallow water stands between dead birch trees in a rewetted bog in Lower Saxony",
+    "cover_alt_de": "Flaches Wasser steht zwischen abgestorbenen Birken in einem wiedervernässten Moor in Niedersachsen"
   },
   {
     "slug": "offshore-wind-baltic",
@@ -53,7 +68,12 @@
     "excerpt": "The Marienborg Declaration set a goal of at least 19.6 gigawatts of Baltic offshore wind by 2030. Where the build-out stands, what is holding it back, and why cross-border grids matter.",
     "excerpt_de": "Die Marienborg-Erklärung setzte ein Ziel von mindestens 19,6 Gigawatt Offshore-Wind in der Ostsee bis 2030. Wo der Ausbau steht, was ihn bremst und warum grenzüberschreitende Netze wichtig sind.",
     "read_time": 2,
-    "read_time_de": 2
+    "read_time_de": 2,
+    "source_count": 7,
+    "checked": "2026-11-21",
+    "updated": "",
+    "cover_alt": "A line of offshore wind turbines on the horizon of the Baltic Sea at dusk",
+    "cover_alt_de": "Eine Reihe von Offshore-Windrädern am Horizont der Ostsee in der Abenddämmerung"
   },
   {
     "slug": "urban-heat-islands-europe",
@@ -67,7 +87,12 @@
     "excerpt": "Asphalt and concrete store heat by day and release it at night, when bodies need to recover. What the 2026 summer cost, why cities make heat worse, and which measures have evidence behind them.",
     "excerpt_de": "Asphalt und Beton speichern tagsüber Hitze und geben sie nachts ab, wenn der Körper Erholung braucht. Was der Sommer 2026 gekostet hat, warum Städte Hitze verschärfen und welche Maßnahmen belegt wirken.",
     "read_time": 2,
-    "read_time_de": 2
+    "read_time_de": 2,
+    "source_count": 7,
+    "checked": "2026-11-21",
+    "updated": "",
+    "cover_alt": "People sit on benches in the shade of tall plane trees along a gravel avenue",
+    "cover_alt_de": "Menschen sitzen auf Bänken im Schatten hoher Platanen an einer Allee"
   },
   {
     "slug": "wolves-return-central-europe",
@@ -81,7 +106,12 @@
     "excerpt": "Since 2 April 2026, culling wolves in Germany is governed by hunting law. The wolf remains protected under EU law, but federal states can now manage populations. A look at the rules, the numbers and the evidence.",
     "excerpt_de": "Seit dem 2. April 2026 regelt das Jagdrecht, wann in Deutschland Wölfe getötet werden dürfen. Nach EU-Recht bleibt der Wolf geschützt, doch die Länder können Bestände nun regulieren. Regeln, Zahlen und Forschungsstand.",
     "read_time": 2,
-    "read_time_de": 2
+    "read_time_de": 2,
+    "source_count": 8,
+    "checked": "2026-11-21",
+    "updated": "",
+    "cover_alt": "Head and shoulders of a grey wolf in profile",
+    "cover_alt_de": "Kopf und Schultern eines Grauwolfs im Profil"
   },
   {
     "slug": "cop31-antalya-final-days",
@@ -94,8 +124,13 @@
     "cover_image": "/assets/images/antalya-harbour-kozlenko.jpg",
     "excerpt": "A fossil-fuel phase-out, net zero for rich countries by 2030, the 35-by-35 electrification goal and 120 billion dollars for adaptation: what the draft says, who is blocking it, and what to watch before the gavel falls.",
     "excerpt_de": "Ausstieg aus fossilen Brennstoffen, Netto-Null für reiche Länder bis 2030, das Elektrifizierungsziel 35 bis 35 und 120 Milliarden Dollar für Anpassung: Was im Entwurf steht, wer blockiert und worauf es bis zum Schluss ankommt.",
-    "read_time": 4,
-    "read_time_de": 3
+    "read_time": 3,
+    "read_time_de": 3,
+    "source_count": 6,
+    "checked": "2026-11-18",
+    "updated": "",
+    "cover_alt": "Panoramic view over the old town and harbour of Antalya, Türkiye, on the Mediterranean",
+    "cover_alt_de": "Panoramablick über Altstadt und Hafen von Antalya, Türkei, am Mittelmeer"
   },
   {
     "slug": "el-nino-2026-record-winter",
@@ -109,7 +144,12 @@
     "excerpt": "NOAA puts the odds of a historic El Niño at about 60 percent. The UN calls it a wrecking ball. Here is what the forecasts say, where the impacts will hit, and why Europe will feel it at the supermarket.",
     "excerpt_de": "Die NOAA beziffert die Wahrscheinlichkeit eines historischen El Niño auf rund 60 Prozent, die UN spricht von einer Abrissbirne. Was die Prognosen sagen, wo die Folgen einschlagen und warum Europa sie im Supermarkt spüren wird.",
     "read_time": 3,
-    "read_time_de": 3
+    "read_time_de": 3,
+    "source_count": 7,
+    "checked": "2026-11-21",
+    "updated": "",
+    "cover_alt": "Technicians in an inflatable boat service a NOAA ocean buoy on the open Pacific",
+    "cover_alt_de": "Techniker in einem Schlauchboot warten eine NOAA-Messboje auf dem offenen Pazifik"
   },
   {
     "slug": "eu-2035-car-co2-rules-vote",
@@ -123,7 +163,12 @@
     "excerpt": "An 87.5 percent cut instead of 100, steel credits, and e-fuel cars counted as zero-emission: what the committee decided, who benefits, and what it means for the electric-car transition.",
     "excerpt_de": "87,5 statt 100 Prozent, Stahl-Gutschriften und E-Fuel-Autos als Null-Emissions-Fahrzeuge: Was der Ausschuss beschlossen hat, wem es nützt und was das für die E-Auto-Wende bedeutet.",
     "read_time": 3,
-    "read_time_de": 3
+    "read_time_de": 3,
+    "source_count": 4,
+    "checked": "2026-11-21",
+    "updated": "",
+    "cover_alt": "A white electric car charges at a public charging station on a rainy city street at night",
+    "cover_alt_de": "Ein weißes Elektroauto lädt nachts an einer öffentlichen Ladesäule in einer regennassen Stadtstraße"
   },
   {
     "slug": "eudr-deforestation-law-december-2026",
@@ -137,7 +182,12 @@
     "excerpt": "Coffee, cocoa, soy, palm oil, beef, rubber and wood may only enter the EU market if they did not come from land deforested after 2020. A guide to the rules that apply from 30 December.",
     "excerpt_de": "Kaffee, Kakao, Soja, Palmöl, Rindfleisch, Kautschuk und Holz dürfen nur noch in die EU, wenn dafür nach 2020 kein Wald gerodet wurde. Ein Überblick über die Regeln, die ab 30. Dezember gelten.",
     "read_time": 3,
-    "read_time_de": 3
+    "read_time_de": 3,
+    "source_count": 5,
+    "checked": "2026-11-21",
+    "updated": "",
+    "cover_alt": "Aerial view of a fire burning at the edge of rainforest next to pasture in Rondônia, Brazil",
+    "cover_alt_de": "Luftaufnahme eines Feuers am Rand des Regenwalds neben Weideland in Rondônia, Brasilien"
   },
   {
     "slug": "us-deep-sea-mining-decision",
@@ -151,6 +201,11 @@
     "excerpt": "NOAA's decision on The Metals Company's application is the first real test of a US shortcut around international seabed law. What is at stake for the deep sea, and what happens next.",
     "excerpt_de": "Die Entscheidung der NOAA über den Antrag von The Metals Company ist der erste echte Test für eine US-Abkürzung am internationalen Meeresbodenrecht vorbei. Was für die Tiefsee auf dem Spiel steht und wie es weitergeht.",
     "read_time": 4,
-    "read_time_de": 4
+    "read_time_de": 4,
+    "source_count": 8,
+    "checked": "2026-11-21",
+    "updated": "",
+    "cover_alt": "A white branching coral grows on dark manganese nodules on the sandy floor of the deep Pacific",
+    "cover_alt_de": "Eine weiße, verzweigte Koralle wächst auf dunklen Manganknollen am sandigen Boden der pazifischen Tiefsee"
   }
 ]

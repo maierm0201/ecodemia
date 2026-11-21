@@ -1,221 +1,113 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Category | Ecodemia</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Inter:wght@400;500;600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: {
-          "primary": "#012d1d", "primary-container": "#1b4332", "on-primary": "#ffffff",
-          "on-primary-container": "#86af99", "secondary": "#4f6359",
-          "secondary-container": "#cfe5d9", "on-secondary": "#ffffff",
-          "on-secondary-container": "#54675e", "surface": "#f9faf6",
-          "surface-container-low": "#f3f4f0", "surface-container": "#edeeea",
-          "surface-container-high": "#e7e9e5", "surface-container-highest": "#e2e3df",
-          "on-surface": "#1a1c1a", "on-surface-variant": "#414844",
-          "outline": "#717973", "outline-variant": "#c1c8c2",
-          "background": "#f9faf6", "on-background": "#1a1c1a",
-          "tertiary-container": "#383f22", "on-tertiary-container": "#a2aa85",
-          "inverse-surface": "#2e312f", "inverse-on-surface": "#f0f1ed",
-          "error": "#ba1a1a", "primary-fixed": "#c1ecd4", "primary-fixed-dim": "#a5d0b9",
-          "surface-tint": "#3f6653",
-        },
-        fontFamily: {
-          "headline": ["Newsreader", "serif"],
-          "body": ["Inter", "sans-serif"],
-          "label": ["Public Sans", "sans-serif"]
-        },
-        borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
-      },
-    },
-  }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ecodemia</title>
+<meta name="description" content="Independent, bilingual environmental reporting. Every article lists its sources.">
+<link rel="preload" href="/assets/fonts/schibsted-grotesk-normal-400-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/ecodemia.css">
+<script>
+  // Section comes from the clean URL (/climate) or ?category=
+  (function () {
+    var seg = location.pathname.split('/').filter(Boolean)[0] || '';
+    var c = (new URLSearchParams(location.search).get('category') || seg).toLowerCase();
+    document.documentElement.dataset.section = c;
+  })();
 </script>
-<style>
-  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-  .eco-logo { font-family: 'Newsreader', serif; font-style: normal; font-weight: 700; color: #1B4332; text-decoration: none; }
-</style>
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<body data-page="section">
+<div id="site-header"></div>
 
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#f9faf6]/90 backdrop-blur-md border-b border-outline-variant/10">
-  <div class="flex justify-between items-center px-6 md:px-8 py-4 max-w-screen-2xl mx-auto">
-    <div class="flex items-center gap-12">
-      <a class="eco-logo text-2xl" href="../environmental_news_homepage/code.html">Ecodemia</a>
-      <div class="hidden md:flex items-center gap-8">
-        <!-- injected by initUniversalDesktopNav() -->
-      </div>
+<main class="wrap" id="sec-main">
+  <header class="sec-head">
+    <div>
+      <h1><i></i><span id="sec-title">&nbsp;</span></h1>
+      <p id="sec-desc" class="stand"></p>
+      <p id="sec-count" class="meta count"></p>
     </div>
-    <div class="flex items-center gap-6">
-      <span class="material-symbols-outlined text-on-surface-variant cursor-pointer search-trigger">search</span>
-      <button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-label text-sm font-bold tracking-wide hover:opacity-90 transition-opacity subscribe-btn">Subscribe</button>
-    </div>
-  </div>
-</nav>
-
-<main class="pt-24 pb-24 max-w-screen-2xl mx-auto px-6 md:px-8">
-
-  <!-- Category Header -->
-  <header class="border-l-4 border-primary pl-6 md:pl-8 py-4 mb-12 md:mb-16 mt-4">
-    <span class="font-label text-[10px] uppercase tracking-[0.25em] text-outline font-bold mb-3 block">Archive Directory</span>
-    <h1 class="font-headline text-4xl md:text-6xl lg:text-7xl font-bold text-on-surface leading-[1.05] category-title">&nbsp;</h1>
+    <div id="sec-fig"></div>
   </header>
 
-  <!-- Lead article (newest in this section) -->
-  <section id="category-lead" class="hidden grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 mb-16 items-center">
-    <a id="lead-img-link" class="block relative overflow-hidden rounded-sm group" href="#">
-      <img id="lead-img" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-700 bg-surface-container" alt=""/>
-      <span class="absolute top-5 left-5 bg-[#1a1c1a]/85 text-white font-label text-[9px] font-bold uppercase tracking-[0.15em] px-3 py-1.5">Latest Story</span>
-    </a>
+  <div class="sec-body">
     <div>
-      <div class="flex items-center gap-3 mb-6">
-        <span id="lead-date" class="font-label text-[10px] uppercase tracking-widest text-outline"></span>
-        <span class="text-outline/40">•</span>
-        <span id="lead-time" class="font-label text-[10px] uppercase tracking-widest text-outline"></span>
+      <div id="sec-lead"></div>
+      <div id="sec-list"></div>
+      <div id="sec-empty" class="empty" hidden>
+        <h2 id="empty-h">No articles in this section yet.</h2>
+        <p id="empty-p">We only publish researched, sourced reporting. New articles for this section are in preparation.</p>
+        <a href="/" id="empty-a">Browse all articles →</a>
       </div>
-      <h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface leading-tight mb-6"><a id="lead-title" class="hover:text-primary transition-colors" href="#"></a></h2>
-      <p id="lead-excerpt" class="font-body text-on-surface-variant leading-relaxed mb-8"></p>
-      <p class="font-label text-xs font-bold uppercase tracking-wider text-on-surface">Ecodemia</p>
     </div>
-  </section>
-
-  <!-- Empty state (no articles in this section yet) -->
-  <section id="category-empty" class="hidden max-w-2xl mb-16 border border-outline-variant/30 rounded-sm p-8 md:p-10">
-    <h2 class="font-headline text-2xl md:text-3xl font-bold text-on-surface mb-4">No articles in this section yet.</h2>
-    <p class="font-body text-on-surface-variant leading-relaxed mb-6">We only publish researched, sourced reporting. New articles for this section are in preparation.</p>
-    <a href="/" class="font-label text-xs uppercase tracking-widest text-primary font-bold hover:underline">Browse all articles</a>
-  </section>
-
-  <hr class="border-outline-variant/20 mb-16"/>
-
-  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-
-    <!-- More articles in this section -->
-    <div class="lg:col-span-8">
-      <div id="article-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-14"></div>
-    </div>
-
-    <!-- Sidebar -->
-    <aside class="lg:col-span-4">
-      <div class="lg:sticky lg:top-28 space-y-10">
-
-        <div id="more-from" class="hidden">
-          <h3 class="font-label text-[10px] font-bold uppercase tracking-[0.25em] text-on-surface pb-4 border-b border-outline-variant/30 mb-8">More from Ecodemia</h3>
-          <div id="more-from-list"></div>
-        </div>
-
-        <!-- Sourced figure for this section -->
-        <div class="bg-tertiary-container p-8 rounded-sm">
-          <span class="font-label text-[8px] uppercase tracking-[0.2em] text-on-tertiary-container font-bold block mb-5">By the Numbers</span>
-          <p class="font-headline text-5xl font-bold text-white mb-3 leading-none category-stat"></p>
-          <p class="font-label text-[10px] uppercase tracking-wider text-on-tertiary-container leading-relaxed mb-6 category-stat-label"></p>
-          <a class="category-stat-source font-label text-[10px] text-on-tertiary-container underline hover:text-white" href="#" target="_blank" rel="noopener"></a>
-        </div>
-
-      </div>
+    <aside class="side-box" id="side" hidden>
+      <span class="label" id="side-h">More from Ecodemia</span>
+      <div id="side-list"></div>
     </aside>
-
   </div>
 </main>
 
-<footer></footer>
+<div id="site-footer"></div>
 
-<script src="../js/ecodemia.js"></script>
+<script src="/js/ecodemia.js"></script>
 <script>
 (function () {
   'use strict';
+  var E = window.Eco, isDE = E.isDE, esc = E.esc;
+  var cat = document.documentElement.dataset.section;
+  if (E.SECTIONS.indexOf(cat) === -1) cat = 'climate';
+  document.body.dataset.cat = cat;
+  document.getElementById('sec-main').dataset.cat = cat;
 
-  function esc(s) {
-    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  var info = E.sectionInfo(cat);
+  document.title = E.t(cat) + ' | Ecodemia';
+  document.querySelector('meta[name="description"]').setAttribute('content', info.desc);
+  document.getElementById('sec-title').textContent = E.t(cat);
+  document.getElementById('sec-desc').textContent = info.desc;
+  document.getElementById('sec-fig').innerHTML = E.figureHTML(info, cat);
+
+  if (isDE) {
+    document.getElementById('empty-h').textContent = 'In dieser Rubrik gibt es noch keine Artikel.';
+    document.getElementById('empty-p').textContent = 'Wir veröffentlichen nur recherchierte Artikel mit Quellen. Neue Beiträge für diese Rubrik sind in Vorbereitung.';
+    document.getElementById('empty-a').textContent = 'Alle Artikel ansehen →';
+    document.getElementById('side-h').textContent = 'Mehr von Ecodemia';
   }
-  var lang;
-  try { lang = localStorage.getItem('ecodemia_lang') || 'en'; } catch (e) { lang = 'en'; }
-  var isDE   = lang === 'de';
-  var LOCALE = isDE ? 'de-DE' : 'en-GB';
-  var LABELS = isDE
-    ? { climate:'Klima', wildlife:'Tierwelt', energy:'Energie', living:'Leben', tech:'Technologie', policy:'Politik' }
-    : { climate:'Climate', wildlife:'Wildlife', energy:'Energy', living:'Living', tech:'Tech', policy:'Policy' };
 
-  function fmtDate(s) {
-    if (!s) return '';
-    var dm = s.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
-    var d = dm ? new Date(+dm[3], +dm[2]-1, +dm[1]) : new Date(s);
-    return isNaN(d) ? s : d.toLocaleDateString(LOCALE, {day:'numeric',month:'long',year:'numeric'});
+  function photo(a, eager) {
+    return '<div class="photo">' + (a.cover_image ? '<img src="' + esc(a.cover_image) + '" alt=""' + (eager ? '' : ' loading="lazy"') + '>' : '') + '</div>';
   }
-  function readTime(a) {
-    var t = (isDE && a.read_time_de) ? a.read_time_de : a.read_time;
-    return (t || 1) + (isDE ? ' Min. Lesezeit' : ' min read');
-  }
-  function loc(a, field) {
-    var de = a[field + '_de'];
-    return (isDE && de) ? de : (a[field] || '');
-  }
-  function url(a) { return '/article/' + encodeURIComponent(a.slug); }
 
-  var seg = window.location.pathname.split('/').filter(Boolean)[0] || '';
-  var category = (new URLSearchParams(location.search).get('category') || seg).toLowerCase();
+  E.articles().then(function (all) {
+    var list = all.filter(function (a) { return a.category === cat; });
+    var n = list.length;
+    document.getElementById('sec-count').textContent = isDE
+      ? (n === 1 ? '1 Artikel' : n + ' Artikel')
+      : (n === 1 ? '1 article' : n + ' articles');
 
-  fetch('../content/articles.json')
-    .then(function (r) { if (!r.ok) throw 0; return r.json(); })
-    .then(function (all) {
-      var articles = all.filter(function (a) { return (a.category || '').toLowerCase() === category; });
+    if (!n) {
+      document.getElementById('sec-empty').hidden = false;
+    } else {
+      var a = list[0];
+      document.getElementById('sec-lead').innerHTML =
+        '<a class="sec-lead" href="' + E.articleUrl(a) + '">' + photo(a, true) +
+          '<div class="txt"><h2 class="hl">' + esc(E.loc(a, 'title')) + '</h2>' +
+          '<p class="stand">' + esc(E.loc(a, 'excerpt')) + '</p>' + E.metaHTML(a) + '</div></a>';
+      document.getElementById('sec-list').innerHTML = list.slice(1).map(function (x) {
+        return '<a class="list-item" href="' + E.articleUrl(x) + '"><div class="txt">' +
+          '<h2 class="hl">' + esc(E.loc(x, 'title')) + '</h2>' +
+          '<p class="stand">' + esc(E.loc(x, 'excerpt')) + '</p>' + E.metaHTML(x) + '</div>' + photo(x) + '</a>';
+      }).join('');
+    }
 
-      if (!articles.length) {
-        document.getElementById('category-empty').classList.remove('hidden');
-      } else {
-        var first = articles[0];
-        document.getElementById('category-lead').classList.remove('hidden');
-        document.getElementById('lead-img').src = first.cover_image || '';
-        document.getElementById('lead-img').alt = loc(first, 'title');
-        document.getElementById('lead-img-link').href = url(first);
-        document.getElementById('lead-title').href = url(first);
-        document.getElementById('lead-title').textContent = loc(first, 'title');
-        document.getElementById('lead-excerpt').textContent = loc(first, 'excerpt');
-        document.getElementById('lead-date').textContent = fmtDate(first.date);
-        document.getElementById('lead-time').textContent = readTime(first);
-
-        var grid = document.getElementById('article-cards-grid');
-        articles.slice(1).forEach(function (a) {
-          var art = document.createElement('a');
-          art.className = 'group block';
-          art.href = url(a);
-          art.innerHTML =
-            '<div class="overflow-hidden rounded-sm mb-5 aspect-[4/3] bg-surface-container">' +
-              (a.cover_image ? '<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="' + esc(a.cover_image) + '" alt="' + esc(loc(a, 'title')) + '"/>' : '') +
-            '</div>' +
-            '<div class="font-label text-[9px] uppercase tracking-[0.1em] text-outline mb-3">' + esc(fmtDate(a.date)) + ' / ' + esc(readTime(a)) + '</div>' +
-            '<h3 class="font-headline text-xl font-bold text-on-surface leading-tight mb-3 group-hover:text-primary transition-colors">' + esc(loc(a, 'title')) + '</h3>' +
-            '<p class="font-body text-sm text-on-surface-variant leading-relaxed">' + esc(loc(a, 'excerpt')) + '</p>';
-          grid.appendChild(art);
-        });
-      }
-
-      // Sidebar: newest articles from other sections
-      var others = all.filter(function (a) { return (a.category || '').toLowerCase() !== category; }).slice(0, 4);
-      if (others.length) {
-        var list = document.getElementById('more-from-list');
-        others.forEach(function (a, i) {
-          var el = document.createElement('a');
-          el.href = url(a);
-          el.className = 'group block ' + (i < others.length - 1 ? 'border-b border-outline-variant/15 pb-6 mb-6' : '');
-          el.innerHTML =
-            '<span class="font-label text-[9px] uppercase tracking-widest text-outline font-bold block mb-2">' + esc(LABELS[a.category] || a.category) + '</span>' +
-            '<h4 class="font-headline text-[15px] font-bold text-on-surface leading-snug group-hover:text-primary transition-colors">' + esc(loc(a, 'title')) + '</h4>';
-          list.appendChild(el);
-        });
-        document.getElementById('more-from').classList.remove('hidden');
-      }
-    })
-    .catch(function () {
-      document.getElementById('category-empty').classList.remove('hidden');
-    });
+    var others = all.filter(function (a) { return a.category !== cat; }).slice(0, 5);
+    if (others.length) {
+      document.getElementById('side-list').innerHTML = others.map(function (x) {
+        return '<a class="side-item" href="' + E.articleUrl(x) + '">' + E.kickerHTML(x) + '<h3 class="hl">' + esc(E.loc(x, 'title')) + '</h3></a>';
+      }).join('');
+      document.getElementById('side').hidden = false;
+    }
+  }).catch(function () {
+    document.getElementById('sec-empty').hidden = false;
+  });
 }());
 </script>
 </body>
