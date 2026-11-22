@@ -253,6 +253,11 @@ a:hover .photo img { transform: scale(1.03); }
 .prose em { font-style: italic; }
 .prose blockquote { margin: 1.4em 0; padding-left: 20px; border-left: 3px solid var(--cat, var(--forest)); font-style: italic; color: var(--sub); }
 .prose hr { display: none; }
+.prose table { width: 100%; border-collapse: collapse; font-family: var(--f-head); font-size: 16px; line-height: 1.4; margin-top: 1.4em; }
+.prose th { text-align: left; font-weight: 600; font-size: 13px; letter-spacing: .02em; color: var(--sub); border-bottom: 2px solid var(--rule-strong); padding: 0 12px 8px 0; }
+.prose td { border-bottom: 1px solid var(--rule); padding: 9px 12px 9px 0; }
+.prose th:last-child, .prose td:last-child { text-align: right; padding-right: 0; font-family: var(--f-data); font-variant-numeric: tabular-nums; }
+.prose tbody tr:first-child td { color: var(--cat, var(--forest)); font-weight: 600; }
 .cite {
   display: inline-block; vertical-align: super; font: 500 11px/1 var(--f-data);
   color: var(--forest) !important; background: var(--forest-soft); text-decoration: none !important;
