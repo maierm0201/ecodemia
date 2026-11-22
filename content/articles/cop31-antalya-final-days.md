@@ -96,7 +96,7 @@ The process drew criticism too. Antwi-Boasiako Amoah of Ghana, chair of the Afri
 
 "This Cop sought to confront hard truths – that global warming is set to overshoot 1.5C," said UK energy secretary Miatta Fahnbulleh. "It is immensely disappointing we have been unable to do so."[^6] Bill Hare, CEO of Climate Analytics, took aim at the electrification goal: "Electrification that runs on coal and gas does not limit warming." Harjeet Singh of the Satat Sampada Climate Foundation said: "Rich countries are offering a conversation instead of cash."[^3]
 
-"The hollow outcome at COP31 was a failure of political leadership, not a failure of the Paris Agreement," said Ani Dasgupta, president of the World Resources Institute. Since no consensus was reached, the draft and all its elements have no formal standing.[^8]
+"The hollow outcome at COP31 was a failure of political leadership, not a failure of the Paris Agreement," said Ani Dasgupta, president of the World Resources Institute.[^8] Since no consensus was reached, the draft and all its elements have no formal standing.[^8]
 
 ## What Remains
 
