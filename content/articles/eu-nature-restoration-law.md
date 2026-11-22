@@ -2,88 +2,90 @@
 type: Article
 title: "Repairing a Continent: The Nature Restoration Law Meets Its First Deadline"
 title_de: "Einen Kontinent reparieren: Das Renaturierungsgesetz an seiner ersten Frist"
-subtitle: "Member states had until 1 September 2026 to submit draft plans for restoring degraded ecosystems. Many missed it. What the law actually requires, and where Germany stands."
-subtitle_de: "Bis zum 1. September 2026 sollten die Mitgliedstaaten Entwürfe vorlegen, wie sie geschädigte Ökosysteme wiederherstellen. Viele verpassten die Frist. Was das Gesetz tatsächlich verlangt und wo Deutschland steht."
+subtitle: "By 1 September 2026, member states were supposed to submit draft plans for restoring damaged ecosystems. Many did not make it. What the law really demands, and where Germany stands."
+subtitle_de: "Am 1. September 2026 lief die Frist ab, bis zu der die Mitgliedstaaten Entwürfe für die Wiederherstellung geschädigter Ökosysteme einreichen sollten. Viele schafften das nicht. Was das Gesetz wirklich fordert und wie weit Deutschland ist."
 date: 2026-11-21
 checked: 2026-11-21
 key_facts: |
-  - The law requires restoration measures on at least 20 % of EU land and sea by 2030
-  - Draft national restoration plans were due on 1 September 2026; about 20 countries missed the deadline
-  - Final plans are due in September 2027
+  - Under the law, restoration measures must cover at least 20 % of EU land and sea by 2030
+  - Draft national restoration plans had a deadline of 1 September 2026, which about 20 countries missed
+  - The deadline for final plans is September 2027
 key_facts_de: |
-  - Das Gesetz verlangt bis 2030 Wiederherstellungsmaßnahmen auf mindestens 20 % der Land- und Meeresflächen der EU
-  - Die Entwürfe der nationalen Pläne waren am 1. September 2026 fällig; rund 20 Staaten verpassten die Frist
-  - Die endgültigen Pläne sind bis September 2027 fällig
+  - Nach dem Gesetz müssen bis 2030 auf mindestens 20 % der Land- und Meeresflächen der EU Wiederherstellungsmaßnahmen laufen
+  - Für die Entwürfe der nationalen Pläne galt der 1. September 2026 als Frist, die rund 20 Staaten verpassten
+  - Die endgültigen Pläne müssen bis September 2027 vorliegen
 category: policy
 cover_image: /assets/images/rewetted-moor-altwarmbuechen.jpg
 cover_alt: "Shallow water stands between dead birch trees in a rewetted bog in Lower Saxony"
 cover_alt_de: "Flaches Wasser steht zwischen abgestorbenen Birken in einem wiedervernässten Moor in Niedersachsen"
 cover_credit: "Rewetting in the Altwarmbüchener Moor near Hanover. Photo: Puusterke / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wiedervern%C3%A4ssung_im_Altwarmb%C3%BCchener_Moor_%28LSG_H-S_00011%29.JPG), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)"
 cover_credit_de: "Wiedervernässung im Altwarmbüchener Moor bei Hannover. Foto: Puusterke / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wiedervern%C3%A4ssung_im_Altwarmb%C3%BCchener_Moor_%28LSG_H-S_00011%29.JPG), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)"
-excerpt: "Rewetted peatlands, 25,000 kilometres of free-flowing rivers, no net loss of urban green: the EU's restoration law sets binding targets. Its first test, the national plans, is not going smoothly."
-excerpt_de: "Wiedervernässte Moore, 25.000 Kilometer frei fließende Flüsse, kein Verlust an Stadtgrün: Das EU-Renaturierungsgesetz setzt verbindliche Ziele. Sein erster Test, die nationalen Pläne, läuft holprig."
+excerpt: "Peatlands rewetted, 25,000 kilometres of rivers flowing freely, urban green space with no net loss: the EU restoration law sets binding targets. The national plans are its first test, and that test is proving bumpy."
+excerpt_de: "Moore, die wieder nass werden, 25.000 Kilometer frei fließende Flüsse, keine Verluste beim Stadtgrün: Das EU-Renaturierungsgesetz macht verbindliche Vorgaben. Bei seinem ersten Test, den nationalen Plänen, hakt es."
 body_de: |
-  Naturschutzrecht war lange defensiv: Es verbot, einen schlechten Zustand noch schlechter zu machen. Die EU-Verordnung zur Wiederherstellung der Natur (Verordnung (EU) 2024/1991) dreht diese Logik um. Sie verpflichtet die Mitgliedstaaten, geschädigte Ökosysteme aktiv zu reparieren, mit messbaren Zielen und festen Fristen. In Kraft ist sie seit dem 18. August 2024.[^2]
+  Lange Zeit war Naturschutzrecht auf Abwehr ausgerichtet: Untersagt war, einen schlechten Zustand weiter zu verschlechtern. Mit der EU-Verordnung zur Wiederherstellung der Natur (Verordnung (EU) 2024/1991) kehrt sich diese Logik um. Die Mitgliedstaaten müssen geschädigte Ökosysteme nun aktiv reparieren, und zwar nach messbaren Zielen und mit festen Fristen. Seit dem 18. August 2024 ist die Verordnung in Kraft.[^2]
 
   ## Was das Gesetz verlangt
 
-  - **Gesamtziel:** Bis 2030 sollen Wiederherstellungsmaßnahmen auf mindestens **20 Prozent** der Land- und Meeresflächen der EU laufen, bis 2050 in allen Ökosystemen, die sie benötigen.[^2]
-  - **Moore:** Für trockengelegte, landwirtschaftlich genutzte Moorböden müssen bis 2030 auf **30 Prozent** der Fläche Maßnahmen laufen, davon mindestens ein Viertel als Wiedervernässung. Bis 2040 steigt der Anteil auf 40 Prozent, bis 2050 auf 50 Prozent, jeweils zu mindestens einem Drittel wiedervernässt.[^1] Entwässerte Moore setzen große Mengen CO₂ frei.
-  - **Flüsse:** EU-weit sollen bis 2030 mindestens **25.000 Kilometer** Flüsse wieder frei fließen, etwa durch den Rückbau überflüssiger Barrieren.[^2]
-  - **Städte:** Bis Ende 2030 darf die Fläche an Stadtgrün und Baumkronen im Landesdurchschnitt nicht unter den Stand von 2024 fallen, danach soll sie wachsen.[^1]
-  - **Bestäuber:** Der Rückgang von Wildbienen, Schmetterlingen und anderen Bestäubern soll bis 2030 gestoppt und umgekehrt werden.[^2]
-  - **Bäume:** Die Staaten sollen zum EU-Ziel von drei Milliarden zusätzlich gepflanzten Bäumen bis 2030 beitragen.[^1]
+  - **Gesamtziel:** Auf mindestens **20 Prozent** der Land- und Meeresflächen der EU sollen bis 2030 Wiederherstellungsmaßnahmen laufen, bis 2050 dann in allen Ökosystemen, die das brauchen.[^2]
+  - **Moore:** Auf **30 Prozent** der trockengelegten, landwirtschaftlich genutzten Moorböden müssen bis 2030 Maßnahmen laufen, mindestens ein Viertel davon als Wiedervernässung. 2040 sind es 40 Prozent, 2050 dann 50 Prozent, jeweils mindestens zu einem Drittel wiedervernässt.[^1] Aus entwässerten Mooren entweichen große Mengen CO₂.
+  - **Flüsse:** In der gesamten EU sollen bis 2030 mindestens **25.000 Kilometer** Flüsse wieder ungehindert fließen, zum Beispiel, indem nicht mehr benötigte Barrieren entfernt werden.[^2]
+  - **Städte:** Im Landesdurchschnitt darf die Fläche an Stadtgrün und Baumkronen bis Ende 2030 nicht hinter den Stand von 2024 zurückfallen; danach soll sie zunehmen.[^1]
+  - **Bestäuber:** Bis 2030 soll der Rückgang von Wildbienen, Schmetterlingen und anderen Bestäubern aufgehalten und umgekehrt werden.[^2]
+  - **Bäume:** Zum EU-Ziel, bis 2030 drei Milliarden zusätzliche Bäume zu pflanzen, sollen die Staaten beitragen.[^1]
 
-  Kaum ein Umweltgesetz war umstrittener. Bauernverbände fürchteten den Verlust von Ackerflächen, im Parlament war die Mehrheit knapp. Der Endtext enthält deshalb Flexibilitäten, etwa für die Wiedervernässung.
+  Um kaum ein Umweltgesetz wurde so heftig gestritten. Bauernverbände sorgten sich um verlorene Ackerflächen, und im Parlament gab es nur eine knappe Mehrheit. Darum enthält der Endtext Spielräume, zum Beispiel bei der Wiedervernässung.
 
   ## Die erste Frist
 
-  Wie die Ziele umgesetzt werden, legen nationale Wiederherstellungspläne fest. Die Entwürfe mussten bis zum **1. September 2026** in Brüssel sein. Nach einer Zählung des Portals Eunews hatten zum Stichtag **20 Mitgliedstaaten** noch keinen Entwurf eingereicht, darunter Italien. Spanien reichte seinen Plan am 31. August ein.[^3]
+  Auf welchem Weg die Ziele erreicht werden, regeln nationale Wiederherstellungspläne. Bis zum **1. September 2026** mussten die Entwürfe in Brüssel vorliegen. Das Portal Eunews zählte zum Stichtag **20 Mitgliedstaaten**, die noch keinen Entwurf eingereicht hatten, Italien eingeschlossen. Spanien gab seinen Plan am 31. August ab.[^3]
 
-  Auch das Geld ist knapp. Laut Euronews fehlen für die Umsetzung jährlich rund **65 Milliarden Euro**.[^4]
+  Knapp ist auch das Geld. Euronews zufolge fehlen für die Umsetzung pro Jahr rund **65 Milliarden Euro**.[^4]
 
   ## Und Deutschland?
 
-  Das Bundesumweltministerium hat den Entwurf des Nationalen Wiederherstellungsplans vom 25. April bis zum 25. Juni 2026 online zur Beteiligung gestellt.[^5] Ob er fristgerecht in Brüssel ankam, ist unklar: Ein Bericht vom September stellte fest, dass Deutschlands Eintrag im öffentlichen EU-Register Anfang des Monats noch als „ausstehend“ geführt wurde.[^6] Das Ministerium selbst nennt den September als Abgabetermin und das Jahr 2027 für den endgültigen Plan.[^5]
+  Vom 25. April bis zum 25. Juni 2026 konnte sich die Öffentlichkeit online zum Entwurf des Nationalen Wiederherstellungsplans äußern, den das Bundesumweltministerium vorgelegt hatte.[^5] Unklar ist, ob er rechtzeitig in Brüssel einging: Laut einem Bericht vom September war Deutschland im öffentlichen EU-Register zu Monatsbeginn noch als „ausstehend“ verzeichnet.[^6] Als Abgabetermin nennt das Ministerium selbst den September, für den endgültigen Plan das Jahr 2027.[^5]
 
-  Politisch steht das Gesetz weiter unter Druck: Die Agrarminister der Union in den Ländern haben die EU-Kommission in einem Schreiben aufgefordert, die Verordnung ganz abzuschaffen.[^7]
+  Der politische Druck auf das Gesetz hält an: In einem Schreiben haben die Agrarminister der Union in den Ländern die EU-Kommission dazu aufgefordert, die Verordnung komplett abzuschaffen.[^7]
 
   ## Wie es weitergeht
 
-  Die Kommission prüft die Entwürfe bis voraussichtlich März 2027 und gibt den Staaten Rückmeldung. Die endgültigen Pläne sind bis September 2027 fällig. Danach entscheidet sich, ob aus Zielen konkrete Flächen, Budgets und Zuständigkeiten werden. Ein Plan vernässt noch kein Moor, aber er macht Untätigkeit überprüfbar.
+  Voraussichtlich bis März 2027 prüft die Kommission die Entwürfe und meldet sich bei den Staaten zurück. Bis September 2027 müssen die endgültigen Pläne vorliegen. Dann zeigt sich, ob aus den Zielen konkrete Flächen, Budgets und Zuständigkeiten werden. Durch einen Plan wird noch kein Moor nass, doch er macht Untätigkeit überprüfbar.
+
 
   ---
 
   **Quellen:** [Verordnung (EU) 2024/1991 auf EUR-Lex](https://eur-lex.europa.eu/eli/reg/2024/1991/oj) · [EU-Kommission: Nature Restoration Regulation](https://environment.ec.europa.eu/topics/nature-and-biodiversity/nature-restoration-regulation_en) · [Eunews: 20 Staaten im Verzug (2. Sept. 2026)](https://www.eunews.it/en/2026/09/02/twenty-eu-countries-including-italy-are-behind-schedule-with-their-national-nature-restoration-plans/) · [Euronews: 65 Mrd. Euro Finanzierungslücke](https://www.euronews.com/2026/08/27/eu-countries-urged-to-invest-in-nature-restoration-plans-and-close-65bn-annual-shortfall) · [BMUKN: Nationaler Wiederherstellungsplan](https://www.bundesumweltministerium.de/themen/naturschutz/wiederherstellung-von-oekosystemen/die-eu-verordnung-zur-wiederherstellung-der-natur/nationaler-wiederherstellungsplan-fuer-die-natur-in-deutschland) · [Techzeitgeist: Deutschland und die Frist](https://www.techzeitgeist.de/deutschland-naturplan-frist-verpasst-wiederherstellung/) · [Neue Landschaft: Agrarminister fordern Abschaffung](https://neuelandschaft.de/artikel/bundesumweltministerium-arbeitet-an-deutschem-wiederherstellungsplan-unions-agrarminister-wollen-nature-restoration-law-abschaffen-14006)
 ---
-Conservation law was long defensive: it prohibited making a bad situation worse. The EU Nature Restoration Regulation (Regulation (EU) 2024/1991) reverses that logic. It obliges member states to actively repair damaged ecosystems, with measurable targets and fixed deadlines. It has been in force since 18 August 2024.[^2]
+For a long time, conservation law played defence: it banned making a bad situation worse. The EU Nature Restoration Regulation (Regulation (EU) 2024/1991) turns that logic around. Member states now have a duty to actively repair damaged ecosystems, against measurable targets and to fixed deadlines. The regulation has applied since 18 August 2024.[^2]
 
 ## What the Law Requires
 
-- **Overall target:** By 2030, restoration measures must cover at least **20 percent** of the EU's land and sea areas, and by 2050 all ecosystems that need restoring.[^2]
-- **Peatlands:** For drained peat soils in agricultural use, measures must be in place on **30 percent** of the area by 2030, at least a quarter of it rewetted. The share rises to 40 percent by 2040 and 50 percent by 2050, at least a third rewetted in each case.[^1] Drained peatlands release large amounts of CO₂.
-- **Rivers:** Across the EU, at least **25,000 kilometres** of rivers are to flow freely again by 2030, for example by removing obsolete barriers.[^2]
-- **Cities:** By the end of 2030, the national area of urban green space and tree canopy must not fall below its 2024 level, and it should grow after that.[^1]
-- **Pollinators:** The decline of wild bees, butterflies and other pollinators is to be halted and reversed by 2030.[^2]
-- **Trees:** Countries are to contribute to the EU goal of planting three billion additional trees by 2030.[^1]
+- **Overall target:** At least **20 percent** of the EU's land and sea areas must be covered by restoration measures by 2030, and every ecosystem in need of restoration by 2050.[^2]
+- **Peatlands:** On drained peat soils used for farming, measures must be under way on **30 percent** of the area by 2030, with at least a quarter of that rewetted. By 2040 the share goes up to 40 percent and by 2050 to 50 percent, with at least a third rewetted each time.[^1] When peatlands are drained, they give off large amounts of CO₂.
+- **Rivers:** At least **25,000 kilometres** of rivers across the EU should be free-flowing again by 2030, for instance through the removal of barriers that are no longer needed.[^2]
+- **Cities:** Until the end of 2030, the national area of urban green space and tree canopy may not drop below where it stood in 2024, and after that it is meant to increase.[^1]
+- **Pollinators:** By 2030, the decline in wild bees, butterflies and other pollinators should be stopped and turned around.[^2]
+- **Trees:** Countries are expected to help reach the EU aim of three billion additional trees planted by 2030.[^1]
 
-Few environmental laws have been more contested. Farming associations feared losing productive land, and the majority in Parliament was narrow. The final text therefore contains flexibilities, for example on rewetting.
+Hardly any environmental law has drawn more opposition. Farm groups were worried about losing productive land, and the law passed Parliament by a narrow margin. As a result, the final text includes some flexibility, on rewetting for example.
 
 ## The First Deadline
 
-National restoration plans set out how the targets will be met. The drafts had to reach Brussels by **1 September 2026**. According to a count by the news site Eunews, **20 member states** had not submitted a draft by the deadline, Italy among them. Spain submitted its plan on 31 August.[^3]
+How each country will meet the targets is laid down in national restoration plans. Brussels needed the drafts by **1 September 2026**. When the deadline passed, **20 member states** had still not submitted a draft, Italy included, according to a tally by the news site Eunews. Spain handed in its plan on 31 August.[^3]
 
-Money is tight too. According to Euronews, implementation faces an annual funding gap of around **65 billion euros**.[^4]
+Funding is also short. Euronews reports a yearly gap of around **65 billion euros** for implementation.[^4]
 
 ## And Germany?
 
-The Federal Environment Ministry put its draft National Restoration Plan out for public consultation from 25 April to 25 June 2026.[^5] Whether it reached Brussels on time is unclear: a September report found that Germany's entry in the public EU register still showed "pending" at the start of the month.[^6] The ministry itself names September as the submission date and 2027 for the final plan.[^5]
+From 25 April to 25 June 2026, the Federal Environment Ministry held a public online consultation on its draft National Restoration Plan.[^5] It is unclear whether the plan arrived in Brussels in time: according to a report from September, Germany's entry in the public EU register was still listed as "pending" early that month.[^6] For its part, the ministry gives September as the submission date and 2027 for the final plan.[^5]
 
-Politically, the law remains under pressure: the conservative CDU/CSU agriculture ministers of several German states have written to the European Commission demanding that the regulation be repealed altogether.[^7]
+The law is still under political pressure. In a letter to the European Commission, the conservative CDU/CSU agriculture ministers of several German states have called for the regulation to be scrapped entirely.[^7]
 
 ## What Happens Next
 
-The Commission is expected to assess the drafts by around March 2027 and give countries feedback. Final plans are due by September 2027. That is when it will become clear whether targets turn into concrete areas, budgets and responsibilities. A plan does not rewet a single bog, but it makes inaction measurable.
+The Commission is expected to finish reviewing the drafts around March 2027 and then send countries its feedback. The final plans have to be in by September 2027. Only then will it be clear whether the targets become concrete areas, budgets and responsibilities. No bog gets wetter because of a plan, but a plan does make inaction measurable.
+
 
 ---
 

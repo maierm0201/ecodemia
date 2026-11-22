@@ -2,86 +2,90 @@
 type: Article
 title: "From Protected to Hunted: Germany's Wolves After the Law Changed"
 title_de: "Vom Schutz zur Jagd: Deutschlands Wölfe nach der Gesetzesänderung"
-subtitle: "A quarter of a century after the first pack settled in Lusatia, the wolf is part of German hunting law. What changed in 2026, what the numbers say, and what science knows about the wolf's effect on forests."
-subtitle_de: "Ein Vierteljahrhundert nach dem ersten Rudel in der Lausitz unterliegt der Wolf dem deutschen Jagdrecht. Was sich 2026 geändert hat, was die Zahlen sagen und was die Forschung über den Einfluss des Wolfs auf Wälder weiß."
+subtitle: "Twenty-five years after the first pack made Lusatia its home, the wolf now falls under German hunting law. What 2026 changed, what the figures show, and what researchers know about how wolves affect forests."
+subtitle_de: "Ein Vierteljahrhundert, nachdem sich das erste Rudel in der Lausitz niedergelassen hat, fällt der Wolf unter das deutsche Jagdrecht. Was 2026 anders geworden ist, was die Zahlen zeigen und was die Wissenschaft über die Wirkung des Wolfs auf den Wald weiß."
 date: 2026-11-21
 checked: 2026-11-21
 key_facts: |
-  - Since 2 April 2026, culling wolves in Germany is governed by hunting law; the wolf remains protected under EU law
-  - DBBW count for 2024/25: 219 packs, 43 pairs and 14 territorial single wolves
-  - Evidence that wolves help forests regrow comes mainly from Poland; for Germany it is largely missing
+  - Hunting law has governed wolf culls in Germany since 2 April 2026, while EU law keeps the wolf protected
+  - The DBBW count for 2024/25 found 219 packs, 43 pairs and 14 territorial single wolves
+  - Evidence that wolves help forests regenerate comes mostly from Poland and is largely lacking for Germany
 key_facts_de: |
-  - Seit 2. April 2026 regelt das Jagdrecht, wann in Deutschland Wölfe getötet werden dürfen; nach EU-Recht bleibt der Wolf geschützt
-  - DBBW-Zählung 2024/25: 219 Rudel, 43 Paare und 14 sesshafte Einzeltiere
-  - Belege, dass Wölfe Wäldern beim Nachwachsen helfen, stammen vor allem aus Polen; für Deutschland fehlen sie weitgehend
+  - Wann in Deutschland Wölfe getötet werden dürfen, regelt seit 2. April 2026 das Jagdrecht; das EU-Recht schützt den Wolf weiterhin
+  - Die DBBW zählte 2024/25 insgesamt 219 Rudel, 43 Paare und 14 sesshafte Einzeltiere
+  - Hinweise, dass Wölfe das Nachwachsen von Wäldern fördern, kommen überwiegend aus Polen; für Deutschland gibt es sie kaum
 category: wildlife
 cover_image: /assets/images/grey-wolf-quartl.jpg
 cover_alt: "Head and shoulders of a grey wolf in profile"
 cover_alt_de: "Kopf und Schultern eines Grauwolfs im Profil"
 cover_credit: "A European grey wolf in the Lüneburg Heath wildlife park. Photo: Quartl / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Canis_lupus_lupus_qtl2.jpg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)"
 cover_credit_de: "Ein Europäischer Grauwolf im Wildpark Lüneburger Heide. Foto: Quartl / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Canis_lupus_lupus_qtl2.jpg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)"
-excerpt: "Since 2 April 2026, culling wolves in Germany is governed by hunting law. The wolf remains protected under EU law, but federal states can now manage populations. A look at the rules, the numbers and the evidence."
-excerpt_de: "Seit dem 2. April 2026 regelt das Jagdrecht, wann in Deutschland Wölfe getötet werden dürfen. Nach EU-Recht bleibt der Wolf geschützt, doch die Länder können Bestände nun regulieren. Regeln, Zahlen und Forschungsstand."
+excerpt: "Hunting law has governed the culling of wolves in Germany since 2 April 2026. EU law still protects the wolf, but the federal states may now manage its numbers. An overview of the rules, the figures and the evidence."
+excerpt_de: "Wann in Deutschland Wölfe getötet werden dürfen, bestimmt seit dem 2. April 2026 das Jagdrecht. Das EU-Recht schützt den Wolf weiterhin, doch die Länder dürfen die Bestände jetzt regulieren. Regeln, Zahlen und der Stand der Forschung."
 body_de: |
-  Im Jahr 2000 zog in der Muskauer Heide in der Lausitz erstmals seit über 150 Jahren wieder ein Wolfsrudel in Deutschland Junge groß. Seitdem hat sich der Wolf über weite Teile des Landes ausgebreitet. 2026 hat die Politik darauf reagiert, und zwar grundlegend.
+  In der Muskauer Heide in der Lausitz zog im Jahr 2000 ein Wolfsrudel Junge auf, zum ersten Mal seit mehr als 150 Jahren in Deutschland. Inzwischen lebt der Wolf in weiten Teilen des Landes. Darauf hat die Politik 2026 reagiert, und das von Grund auf.
 
   ## Was sich geändert hat
 
-  Die Änderung kam in drei Schritten:
+  Drei Schritte führten zu der Änderung:
 
-  1. **Berner Konvention:** Der Schutzstatus des Wolfs wurde von „streng geschützt“ auf „geschützt“ gesenkt. Die Änderung trat am 7. März 2025 in Kraft.[^4]
-  2. **EU-Recht:** Die EU passte im Mai 2025 die Fauna-Flora-Habitat-Richtlinie entsprechend an.[^4]
-  3. **Deutschland:** Bundestag und Bundesrat beschlossen im März 2026, den Wolf ins Bundesjagdgesetz aufzunehmen. Das Gesetz ist laut Bundesumweltministerium am **2. April 2026** in Kraft getreten.[^1]
+  1. **Berner Konvention:** Statt „streng geschützt“ gilt der Wolf hier nur noch als „geschützt“. In Kraft trat das am 7. März 2025.[^4]
+  2. **EU-Recht:** Im Mai 2025 änderte die EU die Fauna-Flora-Habitat-Richtlinie entsprechend.[^4]
+  3. **Deutschland:** Im März 2026 stimmten Bundestag und Bundesrat dafür, den Wolf in das Bundesjagdgesetz aufzunehmen. Nach Angaben des Bundesumweltministeriums gilt das Gesetz seit dem **2. April 2026**.[^1]
 
-  Seitdem richtet sich die Entnahme von Wölfen nach eigenen Paragrafen im Jagdrecht (§§ 22b bis 22f BJagdG). Die Länder können in Regionen mit günstigem Erhaltungszustand und hoher Wolfsdichte Managementpläne aufstellen und Bestände regulieren. Bayern hat bereits ein eigenes Jagdgesetz mit Quoten beschlossen.
+  Wann Wölfe entnommen werden dürfen, regeln seither eigene Paragrafen des Jagdrechts (§§ 22b bis 22f BJagdG). In Regionen mit günstigem Erhaltungszustand und vielen Wölfen dürfen die Länder Managementpläne erstellen und die Bestände regulieren. Bayern hat schon ein eigenes Jagdgesetz mit Quoten verabschiedet.
 
-  Wichtig: Der Wolf bleibt nach der FFH-Richtlinie eine geschützte Art. Deutschland muss einen günstigen Erhaltungszustand weiterhin sichern.[^1] Naturschutzverbände halten das Gesetz für rechtlich angreifbar, weil es eine unabhängige gerichtliche Prüfung vor Abschüssen nicht vorsehe. Das Bundesumweltministerium betont, eine unbeschränkte Bejagung werde es nicht geben.
+  Entscheidend bleibt: Nach der FFH-Richtlinie ist der Wolf weiter eine geschützte Art, und Deutschland ist nach wie vor verpflichtet, einen günstigen Erhaltungszustand zu gewährleisten.[^1] Aus Sicht von Naturschutzverbänden ist das Gesetz rechtlich angreifbar, da es vor Abschüssen keine unabhängige gerichtliche Kontrolle vorsehe. Nach Darstellung des Bundesumweltministeriums wird es keine unbeschränkte Jagd auf den Wolf geben.
 
   ## Die Zahlen
 
-  Für das Monitoringjahr 2024/25 meldete die Dokumentations- und Beratungsstelle des Bundes zum Thema Wolf (DBBW) **219 Rudel, 43 Paare und 14 sesshafte Einzeltiere**.[^3] Die meisten Territorien liegen in Brandenburg, Sachsen und Niedersachsen. Gezählt werden Territorien, nicht einzelne Tiere: Wo ein Rudel lebt, siedelt sich kein zweites an. Die Ausbreitung führt deshalb laut Bundesumweltministerium nicht zu höheren Dichten, sondern zu neuen Gebieten.[^1]
+  Im Monitoringjahr 2024/25 kam die Dokumentations- und Beratungsstelle des Bundes zum Thema Wolf (DBBW) auf **219 Rudel, 43 Paare und 14 sesshafte Einzeltiere**.[^3] Die meisten Territorien gibt es in Brandenburg, Sachsen und Niedersachsen. Erfasst werden Territorien und nicht einzelne Tiere: Wo schon ein Rudel lebt, lässt sich kein weiteres nieder. Laut Bundesumweltministerium steigt durch die Ausbreitung deshalb nicht die Dichte, vielmehr werden neue Gebiete besiedelt.[^1]
 
   ## Der Konflikt auf der Weide
 
-  Für Schäfer und Weidetierhalter bedeutet der Wolf Mehrarbeit und Kosten: Elektrozäune, Herdenschutzhunde, Nachtpferche. Die Länder fördern solche Maßnahmen und zahlen Entschädigungen für gerissene Tiere. Naturschutzverbände wie der BUND fordern deshalb, den Herdenschutz besser zu finanzieren: Abschüsse allein lösten den Konflikt nicht.[^8]
+  Schäfer und andere Weidetierhalter haben durch den Wolf mehr Arbeit und höhere Kosten, etwa für Elektrozäune, Herdenschutzhunde und Nachtpferche. Die Länder bezuschussen solche Maßnahmen und entschädigen für Tiere, die gerissen wurden. Verbände wie der BUND verlangen deshalb mehr Geld für den Herdenschutz, weil Abschüsse allein den Konflikt nicht lösten.[^8]
 
   ## Was der Wolf im Wald bewirkt
 
-  Oft heißt es, Wölfe würden Wälder heilen, weil Rehe und Hirsche aus Angst weniger Jungbäume verbeißen. Die Forschung in Europa ist vorsichtiger. Studien im polnischen Białowieża-Urwald zeigen, dass Rothirsche in Wolfsterritorien ihr Verhalten ändern:[^6] Sie meiden etwa umgestürzte Baumstämme und sind dort wachsamer, und rund um solche Stämme werden junge Bäume weniger verbissen.[^7] Für die stark vom Menschen geprägten Landschaften Deutschlands fehlen solche Belege bislang weitgehend.
+  Häufig ist zu hören, Wölfe heilten Wälder, weil verängstigte Rehe und Hirsche weniger junge Bäume anknabbern. Die europäische Forschung ist da zurückhaltender. Aus Studien im polnischen Białowieża-Urwald geht hervor, dass Rothirsche sich in Wolfsterritorien anders verhalten:[^6] Umgestürzte Baumstämme meiden sie zum Beispiel und sind dort aufmerksamer, und in der Umgebung solcher Stämme werden Jungbäume seltener verbissen.[^7] Für Deutschlands stark vom Menschen geformte Landschaften gibt es vergleichbare Belege bisher kaum.
 
-  Ob der Wolf also den Wald verändert, ist offen. Sicher ist: Wie viel Wildnis eine Kulturlandschaft verträgt, ist keine rein biologische Frage. Es ist eine politische.
+  Ob der Wolf den Wald verändert, ist also nicht geklärt. Fest steht: Wie viel Wildnis in eine Kulturlandschaft passt, lässt sich nicht allein biologisch beantworten. Die Frage ist eine politische.
+
+
 
   ---
 
   **Quellen:** [Bundesumweltministerium: Der Wolf in Deutschland](https://www.bundesumweltministerium.de/themen/natur-biologische-vielfalt-arten/artenschutz/nationaler-artenschutz/der-wolf-in-deutschland/) · [DBBW: Wolfsterritorien in Deutschland](https://dbb-wolf.de/wolf-occurrence/confirmed-territories/summary) · [Nordkurier: DBBW-Zahlen 2024/25](https://www.nordkurier.de/regional/brandenburg/brandenburg-zaehlt-rueckgang-bei-wolfsfamilien-und-territorien-4095196) · [EuroNatur: Europa schwächt den Wolfsschutz](https://www.euronatur.org/en/what-we-do/bear-wolf-lynx/news/europe-weakens-wolf-protection) · [LTO: Änderung des Bundesjagdgesetzes](https://www.lto.de/recht/nachrichten/n/bundestag-aenderung-bjagdg-wolf-jagd-landwirte-gruene-linke-afd) · [Kuijper et al.: Landscape of fear in Białowieża](https://research.wur.nl/en/publications/landscape-of-fear-in-europe-wolves-affect-spatial-patterns-of-ung) · [van Ginkel et al. 2018, Ecosystems](https://link.springer.com/article/10.1007/s10021-018-0263-z) · [BUND: Forderungen zum Herdenschutz (2025)](https://www.bund.net/fileadmin/user_upload_bund/publikationen/tiere_und_pflanzen/forderungen-appell-herdenschutz-massnahmen-weidetiere-wolf-bund-2025.pdf)
 ---
-In 2000, a wolf pack raised pups in Germany for the first time in more than 150 years, in the Muskau Heath in Lusatia. Since then, the wolf has spread across large parts of the country. In 2026, politics responded, and fundamentally.
+In the Muskau Heath in Lusatia, a wolf pack raised pups in 2000, the first time in more than 150 years that this had happened in Germany. Wolves now live across much of the country. In 2026, politicians responded to that, and from the ground up.
 
 ## What Has Changed
 
-The change came in three steps:
+Three steps led to the change:
 
-1. **Bern Convention:** The wolf's protection status was lowered from "strictly protected" to "protected." The change took effect on 7 March 2025.[^4]
-2. **EU law:** In May 2025, the EU amended the Habitats Directive accordingly.[^4]
-3. **Germany:** In March 2026, the Bundestag and Bundesrat voted to add the wolf to the Federal Hunting Act. According to the Federal Environment Ministry, the law entered into force on **2 April 2026**.[^1]
+1. **Bern Convention:** The wolf's status was downgraded from "strictly protected" to merely "protected." That came into effect on 7 March 2025.[^4]
+2. **EU law:** The EU changed the Habitats Directive to match in May 2025.[^4]
+3. **Germany:** In March 2026, the Bundestag and Bundesrat voted to bring the wolf under the Federal Hunting Act. The Federal Environment Ministry says the law has applied since **2 April 2026**.[^1]
 
-Since then, the removal of wolves has been governed by dedicated sections of hunting law (sections 22b to 22f of the Federal Hunting Act). Federal states can draw up management plans and regulate populations in regions where the species has a favourable conservation status and wolf density is high. Bavaria has already passed its own hunting law with quotas.
+The circumstances in which wolves may be removed have since been set out in dedicated sections of hunting law (sections 22b to 22f of the Federal Hunting Act). In regions where the species has a favourable conservation status and there are many wolves, the federal states may draw up management plans and regulate numbers. Bavaria has already adopted a hunting law of its own that includes quotas.
 
-Importantly, the wolf remains a protected species under the EU Habitats Directive, and Germany must still ensure a favourable conservation status.[^1] Conservation groups consider the law legally vulnerable because, they argue, it provides no independent judicial review before culls. The Federal Environment Ministry stresses that there will be no unrestricted hunting.
+What matters is that the wolf is still a protected species under the EU Habitats Directive, and Germany is still obliged to maintain a favourable conservation status.[^1] In the view of conservation groups, the law is open to legal challenge, as they say it allows culls without independent judicial review beforehand. The Federal Environment Ministry insists that hunting will not be unrestricted.
 
 ## The Numbers
 
-For the 2024/25 monitoring year, the Federal Documentation and Advice Centre on Wolves (DBBW) reported **219 packs, 43 pairs and 14 territorial single wolves**.[^3] Most territories are in Brandenburg, Saxony and Lower Saxony. What is counted are territories, not individual animals: where one pack lives, no second pack settles. According to the Federal Environment Ministry, the spread therefore leads to new areas being occupied rather than to higher densities.[^1]
+In the 2024/25 monitoring year, the Federal Documentation and Advice Centre on Wolves (DBBW) recorded **219 packs, 43 pairs and 14 territorial single wolves**.[^3] Brandenburg, Saxony and Lower Saxony have the most territories. The count is of territories rather than individual animals: a second pack does not settle where one already lives. The Federal Environment Ministry says that is why the spread results in new areas being settled, not in higher densities.[^1]
 
 ## Conflict in the Pasture
 
-For shepherds and livestock keepers, wolves mean extra work and cost: electric fences, guardian dogs, night pens. The federal states subsidise such measures and compensate farmers for animals killed. Conservation groups such as BUND therefore call for better funding of herd protection, arguing that culls alone will not solve the conflict.[^8]
+Wolves bring shepherds and other livestock keepers more work and higher costs, such as for electric fences, guardian dogs and night pens. The federal states help pay for these measures and compensate owners for animals that are killed. Groups such as BUND therefore want more money for herd protection, arguing that culls on their own will not end the conflict.[^8]
 
 ## What Wolves Do to Forests
 
-It is often said that wolves heal forests because fearful deer browse fewer young trees. European research is more cautious. Studies in Poland's Białowieża Forest show that red deer change their behaviour in wolf territories:[^6] they avoid fallen logs and are more vigilant near them, and saplings around such logs are browsed less.[^7] For Germany's heavily human-shaped landscapes, comparable evidence is still largely missing.
+A common claim is that wolves heal forests because frightened deer nibble fewer young trees. Researchers in Europe are more careful. Studies in Poland's Białowieża Forest find that red deer behave differently in wolf territories:[^6] they keep away from fallen logs, for example, and are more watchful near them, and saplings around those logs suffer less browsing.[^7] Similar evidence for Germany's heavily human-shaped landscapes is still largely absent.
 
-Whether wolves change German forests is therefore an open question. What is certain is that how much wildness a cultural landscape can hold is not a purely biological question. It is a political one.
+So whether wolves change German forests is not settled. One thing is clear: how much wildness fits into a cultural landscape cannot be answered by biology alone. It is a political question.
+
+
 
 ---
 
