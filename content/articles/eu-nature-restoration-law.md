@@ -2,10 +2,13 @@
 type: Article
 title: "Repairing a Continent: The Nature Restoration Law Meets Its First Deadline"
 title_de: "Einen Kontinent reparieren: Das Renaturierungsgesetz an seiner ersten Frist"
-subtitle: "By 1 September 2026, member states were supposed to submit draft plans for restoring damaged ecosystems. Many did not make it. What the law really demands, and where Germany stands."
-subtitle_de: "Am 1. September 2026 lief die Frist ab, bis zu der die Mitgliedstaaten Entwürfe für die Wiederherstellung geschädigter Ökosysteme einreichen sollten. Viele schafften das nicht. Was das Gesetz wirklich fordert und wie weit Deutschland ist."
+subtitle: "By 1 September 2026, member states were supposed to submit draft plans for restoring damaged ecosystems. Many did not make it. What the law really demands, and where Germany and Austria stand."
+subtitle_de: "Am 1. September 2026 lief die Frist ab, bis zu der die Mitgliedstaaten Entwürfe für die Wiederherstellung geschädigter Ökosysteme einreichen sollten. Viele schafften das nicht. Was das Gesetz wirklich fordert und wie weit Deutschland und Österreich sind."
 date: 2026-11-21
-checked: 2026-11-21
+checked: 2026-11-22
+updated: 2026-11-22
+update_note: "Added a section on the draft plans in Germany and Austria."
+update_note_de: "Abschnitt zu den Planentwürfen in Deutschland und Österreich ergänzt."
 key_facts: |
   - Under the law, restoration measures must cover at least 20 % of EU land and sea by 2030
   - Draft national restoration plans had a deadline of 1 September 2026, which about 20 countries missed
@@ -42,11 +45,36 @@ body_de: |
 
   Knapp ist auch das Geld. Euronews zufolge fehlen für die Umsetzung pro Jahr rund **65 Milliarden Euro**.[^4]
 
-  ## Und Deutschland?
+  ## Deutschland und Österreich
+
+  Beide Länder haben Entwürfe vorgelegt, und in beiden werfen Kritiker den Plänen vor, vor allem auf Freiwilligkeit und bestehende Programme zu setzen. Die Schweiz ist kein EU-Mitglied, für sie gilt die Verordnung nicht.
+
+  ### Deutschland
 
   Vom 25. April bis zum 25. Juni 2026 konnte sich die Öffentlichkeit online zum Entwurf des Nationalen Wiederherstellungsplans äußern, den das Bundesumweltministerium vorgelegt hatte.[^5] Unklar ist, ob er rechtzeitig in Brüssel einging: Laut einem Bericht vom September war Deutschland im öffentlichen EU-Register zu Monatsbeginn noch als „ausstehend“ verzeichnet.[^6] Als Abgabetermin nennt das Ministerium selbst den September, für den endgültigen Plan das Jahr 2027.[^5]
 
+  Vorgelegt haben den Entwurf Ende April das Bundesumweltministerium und das Bundesamt für Naturschutz.[^9] Erarbeitet wurde er in bestehenden Arbeitsgruppen von Bund und Ländern, denn beim Naturschutz gibt der Bund den Rahmen vor und die Länder füllen ihn aus.[^8]
+
+  Der NABU begrüßt, dass es den Plan gibt, hält ihn aber für zu wenig verbindlich. „Es ist gut, dass der Plan endlich vorliegt. Aber Papier allein renaturiert noch keine Moore und bringt keine Arten zurück“, sagte NABU-Präsident Jörg-Andreas Krüger.[^9] Der Verband kritisiert außerdem, dass bei Bestäubern und Stadtökosystemen nur Maßnahmen des Bundes aufgeführt sind, weil die Länder ihre eigenen Programme nicht eingebracht haben, und dass zentrale Dokumente, etwa die deutsche Definition frei fließender Flüsse, nicht öffentlich sind.[^8]
+
+  Von der anderen Seite kommt ebenfalls Widerstand. Der Deutsche Bauernverband kritisiert geplante Vorkaufsrechte für den Naturschutz, neue Schutzgebietskategorien und zusätzliche Planungsinstrumente.[^9] Die Unionsfraktion im Bundestag fordert, die Verordnung ganz aufzuheben, während Kanzleramtsminister Thorsten Frei (CDU) sie wiederholt „richtig und wichtig“ nannte.[^9]
+
   Der politische Druck auf das Gesetz hält an: In einem Schreiben haben die Agrarminister der Union in den Ländern die EU-Kommission dazu aufgefordert, die Verordnung komplett abzuschaffen.[^7]
+
+  ### Österreich
+
+  Österreich hat seinen Entwurf am 1. September fristgerecht nach Brüssel geschickt; Stellungnahmen waren bis 15. Oktober möglich.[^10] Erarbeitet haben ihn Bund und alle neun Bundesländer in einer gemeinsamen Steuerungsgruppe. Der Plan setzt auf Freiwilligkeit und auf bestehende Förderungen wie den GAP-Strategieplan, den Biodiversitätsfonds und den Waldresilienzfonds.[^11]
+
+  Einige Ziele sind konkret:[^11]
+
+  - **Flüsse:** Die Länge frei fließender Flüsse soll gegenüber 3.985 Kilometern im Jahr 2020 bis 2030 um 300 und bis 2050 um 2.000 Kilometer wachsen. Rund 27.000 Querbauwerke sind derzeit für Fische nicht passierbar.
+  - **Auen:** 25 Quadratkilometer sollen bis 2030 wiederhergestellt werden, 100 Quadratkilometer bis 2050.
+  - **Moore:** Auf 37,3 der 124,4 Quadratkilometer entwässerter, landwirtschaftlich genutzter Moorböden sind bis 2030 Maßnahmen geplant, 9,3 davon als Wiedervernässung. Nach eigenen Angaben sieht der Plan einen geringeren Wiedervernässungsanteil vor, als die Verordnung eigentlich vorsähe, und begründet das mit Zielkonflikten, etwa mit Überschwemmungsrisiken in der Stadt Salzburg und im Vorarlberger Rheintal.
+  - **Bäume:** Bis Ende 2029 sollen rund 3,08 Millionen Bäume hinzukommen, die meisten durch Wiederbewaldung nach Schadereignissen.
+
+  Die Kosten bis 2050 schätzt das Ministerium auf rund 12,2 Milliarden Euro. Gesichert sind nationale Mittel aber nur bis 2028, EU-Mittel nur bis 2027.[^11] Umwelt- und Landwirtschaftsminister Norbert Totschnig (ÖVP) bemängelt, dass von der EU-Kommission Angaben zur Finanzierung fehlen: „Ich lasse nicht zu, dass jene, die unsere Natur- und Kulturlandschaft seit Generationen bewirtschaften und pflegen, am Ende die Rechnung für dieses EU-Gesetz bezahlen müssen.“[^10] Der Bauernbund lobt, der Entwurf bringe „keine einzige zusätzliche verpflichtende Maßnahme“.[^10]
+
+  Genau das kritisieren Umweltverbände und Grüne. „Totschnig macht aus der Renaturierung ein Programm nach dem Prinzip Hoffnung“, sagte Grünen-Klubobfrau Leonore Gewessler.[^10] Der WWF hat den Städte-Teil ausgewertet, der erst einige Tage nach dem Entwurf nachgereicht wurde: Er listet 330 Städte und Gemeinden, aber nur in 26 sollen Grünflächenverluste bis 2030 ausgeglichen werden, insgesamt mit 13 Hektar. In Kärnten, Salzburg, Tirol, Vorarlberg und Wien sind alle städtischen Gebiete aus der Bilanz ausgenommen, Niederösterreich fehlt in der Liste ganz.[^12] BirdLife, Naturschutzbund und Umweltdachverband bemängeln, dass das zentrale Kapitel zur Wiederherstellung geschützter Lebensräume und Arten weitgehend fehlt und die Ergebnisse von fast zwei Jahren Arbeit in Fachgruppen nur teilweise eingeflossen sind.[^13]
 
   ## Wie es weitergeht
 
@@ -55,7 +83,7 @@ body_de: |
 
   ---
 
-  **Quellen:** [Verordnung (EU) 2024/1991 auf EUR-Lex](https://eur-lex.europa.eu/eli/reg/2024/1991/oj) · [EU-Kommission: Nature Restoration Regulation](https://environment.ec.europa.eu/topics/nature-and-biodiversity/nature-restoration-regulation_en) · [Eunews: 20 Staaten im Verzug (2. Sept. 2026)](https://www.eunews.it/en/2026/09/02/twenty-eu-countries-including-italy-are-behind-schedule-with-their-national-nature-restoration-plans/) · [Euronews: 65 Mrd. Euro Finanzierungslücke](https://www.euronews.com/2026/08/27/eu-countries-urged-to-invest-in-nature-restoration-plans-and-close-65bn-annual-shortfall) · [BMUKN: Nationaler Wiederherstellungsplan](https://www.bundesumweltministerium.de/themen/naturschutz/wiederherstellung-von-oekosystemen/die-eu-verordnung-zur-wiederherstellung-der-natur/nationaler-wiederherstellungsplan-fuer-die-natur-in-deutschland) · [Techzeitgeist: Deutschland und die Frist](https://www.techzeitgeist.de/deutschland-naturplan-frist-verpasst-wiederherstellung/) · [Neue Landschaft: Agrarminister fordern Abschaffung](https://neuelandschaft.de/artikel/bundesumweltministerium-arbeitet-an-deutschem-wiederherstellungsplan-unions-agrarminister-wollen-nature-restoration-law-abschaffen-14006)
+  **Quellen:** [Verordnung (EU) 2024/1991 auf EUR-Lex](https://eur-lex.europa.eu/eli/reg/2024/1991/oj) · [EU-Kommission: Nature Restoration Regulation](https://environment.ec.europa.eu/topics/nature-and-biodiversity/nature-restoration-regulation_en) · [Eunews: 20 Staaten im Verzug (2. Sept. 2026)](https://www.eunews.it/en/2026/09/02/twenty-eu-countries-including-italy-are-behind-schedule-with-their-national-nature-restoration-plans/) · [Euronews: 65 Mrd. Euro Finanzierungslücke](https://www.euronews.com/2026/08/27/eu-countries-urged-to-invest-in-nature-restoration-plans-and-close-65bn-annual-shortfall) · [BMUKN: Nationaler Wiederherstellungsplan](https://www.bundesumweltministerium.de/themen/naturschutz/wiederherstellung-von-oekosystemen/die-eu-verordnung-zur-wiederherstellung-der-natur/nationaler-wiederherstellungsplan-fuer-die-natur-in-deutschland) · [Techzeitgeist: Deutschland und die Frist](https://www.techzeitgeist.de/deutschland-naturplan-frist-verpasst-wiederherstellung/) · [Neue Landschaft: Agrarminister fordern Abschaffung](https://neuelandschaft.de/artikel/bundesumweltministerium-arbeitet-an-deutschem-wiederherstellungsplan-unions-agrarminister-wollen-nature-restoration-law-abschaffen-14006) · [NABU: Zwischenbilanz zum Nationalen Wiederherstellungsplan (8. Juli 2026)](https://blogs.nabu.de/naturschaetze-retten/nwp-entwurf/) · [Klimareporter: Was aus Deutschlands beschädigten Landschaften werden soll (11. Mai 2026)](https://klimareporter.de/deutschland/was-aus-deutschlands-beschaedigten-landschaften-werden-soll) · [MeinBezirk: Österreich übermittelt Entwurf (1. Sept. 2026)](https://www.meinbezirk.at/c-politik/entwurf-des-oesterreichischen-wiederherstellungsplans-uebermittelt_a8875898) · [Kommunal: Was Gemeinden erwartet (2. Sept. 2026)](https://kommunal.at/nationaler-wiederherstellungsplan-was-gemeinden-erwartet) · [WWF Österreich: Städte-Teil des Plans (12. Sept. 2026)](https://www.ots.at/presseaussendung/OTM_20260912_OTM0001/wwf-auswertung-renaturierungsplan-vernachlaessigt-gruenflaechenschutz-in-staedten) · [BirdLife, Naturschutzbund, Umweltdachverband: Mut zur Natur (15. Sept. 2026)](https://www.ots.at/presseaussendung/OTS_20260915_OTS0033/mut-zur-natur-statt-mut-zur-luecke)
 ---
 For a long time, conservation law played defence: it banned making a bad situation worse. The EU Nature Restoration Regulation (Regulation (EU) 2024/1991) turns that logic around. Member states now have a duty to actively repair damaged ecosystems, against measurable targets and to fixed deadlines. The regulation has applied since 18 August 2024.[^2]
 
@@ -76,11 +104,36 @@ How each country will meet the targets is laid down in national restoration plan
 
 Funding is also short. Euronews reports a yearly gap of around **65 billion euros** for implementation.[^4]
 
-## And Germany?
+## Germany and Austria
+
+Both countries have draft plans, and in both, critics say the drafts lean mainly on voluntary measures and existing programmes. Switzerland is not an EU member, so the regulation does not apply there.
+
+### Germany
 
 From 25 April to 25 June 2026, the Federal Environment Ministry held a public online consultation on its draft National Restoration Plan.[^5] It is unclear whether the plan arrived in Brussels in time: according to a report from September, Germany's entry in the public EU register was still listed as "pending" early that month.[^6] For its part, the ministry gives September as the submission date and 2027 for the final plan.[^5]
 
+The draft was presented at the end of April by the Federal Environment Ministry and the Federal Agency for Nature Conservation.[^9] It was drawn up in existing working groups of the federal and state governments, because in nature conservation the federal government sets the framework and the states fill it in.[^8]
+
+The conservation group NABU welcomes the fact that a plan exists but finds it too vague. "It is good that the plan is finally here. But paper alone restores no bogs and brings back no species," said NABU president Jörg-Andreas Krüger.[^9] NABU also criticises that for pollinators and urban ecosystems the draft lists only federal measures, because the states did not contribute their own programmes, and that key documents, such as Germany's definition of a free-flowing river, have not been made public.[^8]
+
+There is resistance from the other side as well. The German Farmers' Association objects to planned pre-emption rights for nature conservation, new categories of protected area and additional planning tools.[^9] The CDU/CSU group in the Bundestag wants the regulation repealed altogether, while Chancellery Minister Thorsten Frei (CDU) has repeatedly called it "right and important".[^9]
+
 The law is still under political pressure. In a letter to the European Commission, the conservative CDU/CSU agriculture ministers of several German states have called for the regulation to be scrapped entirely.[^7]
+
+### Austria
+
+Austria sent its draft to Brussels on time on 1 September, and the public could comment until 15 October.[^10] The federal government and all nine Länder prepared it together in a joint steering group. The plan relies on voluntary measures and on existing funding, such as the national plan for EU farm subsidies, the Biodiversity Fund and the Forest Resilience Fund.[^11]
+
+Some of the targets are concrete:[^11]
+
+- **Rivers:** Compared with 3,985 kilometres in 2020, the length of free-flowing rivers is to grow by 300 kilometres by 2030 and by 2,000 kilometres by 2050. Around 27,000 weirs and other barriers currently block fish.
+- **Floodplains:** 25 square kilometres are to be restored by 2030 and 100 square kilometres by 2050.
+- **Peatlands:** Measures are planned on 37.3 of the 124.4 square kilometres of drained peat soils used for farming by 2030, 9.3 of them as rewetting. The plan itself says it uses a lower rewetting share than the regulation foresees, citing conflicts such as flood risks in the city of Salzburg and in Vorarlberg's Rhine valley.
+- **Trees:** About 3.08 million trees are to be added by the end of 2029, most of them through replanting after storms and other damage.
+
+The ministry puts the cost up to 2050 at around 12.2 billion euros, but national funding is secured only until 2028 and EU funding only until 2027.[^11] Environment and Agriculture Minister Norbert Totschnig (ÖVP) complains that the European Commission has not said how this is to be financed: "I will not allow those who have farmed and cared for our natural and cultural landscape for generations to end up paying the bill for this EU law."[^10] The farmers' union Bauernbund praises the draft for containing "not a single additional mandatory measure".[^10]
+
+That is exactly what environmental groups and the Greens criticise. "Totschnig is turning restoration into a programme built on hope," said Leonore Gewessler, who leads the Green group in parliament.[^10] WWF Austria analysed the chapter on cities, which was submitted a few days after the rest of the draft. It lists 330 towns and municipalities, but only 26 of them are to make up for losses of green space by 2030, with a total of 13 hectares. In Carinthia, Salzburg, Tyrol, Vorarlberg and Vienna, all urban areas are left out of the count, and Lower Austria is missing from the list entirely.[^12] BirdLife, Naturschutzbund and the Umweltdachverband, an umbrella group of environmental organisations, say the central chapter on restoring protected habitats and species is largely missing, and that the results of almost two years of work in expert groups were only partly taken on board.[^13]
 
 ## What Happens Next
 
@@ -89,4 +142,4 @@ The Commission is expected to finish reviewing the drafts around March 2027 and 
 
 ---
 
-**Sources:** [Regulation (EU) 2024/1991 on EUR-Lex](https://eur-lex.europa.eu/eli/reg/2024/1991/oj) · [European Commission: Nature Restoration Regulation](https://environment.ec.europa.eu/topics/nature-and-biodiversity/nature-restoration-regulation_en) · [Eunews: 20 countries behind schedule (2 Sept 2026)](https://www.eunews.it/en/2026/09/02/twenty-eu-countries-including-italy-are-behind-schedule-with-their-national-nature-restoration-plans/) · [Euronews: €65bn funding gap](https://www.euronews.com/2026/08/27/eu-countries-urged-to-invest-in-nature-restoration-plans-and-close-65bn-annual-shortfall) · [German Environment Ministry: national restoration plan](https://www.bundesumweltministerium.de/themen/naturschutz/wiederherstellung-von-oekosystemen/die-eu-verordnung-zur-wiederherstellung-der-natur/nationaler-wiederherstellungsplan-fuer-die-natur-in-deutschland) · [Techzeitgeist: Germany and the deadline](https://www.techzeitgeist.de/deutschland-naturplan-frist-verpasst-wiederherstellung/) · [Neue Landschaft: agriculture ministers demand repeal](https://neuelandschaft.de/artikel/bundesumweltministerium-arbeitet-an-deutschem-wiederherstellungsplan-unions-agrarminister-wollen-nature-restoration-law-abschaffen-14006)
+**Sources:** [Regulation (EU) 2024/1991 on EUR-Lex](https://eur-lex.europa.eu/eli/reg/2024/1991/oj) · [European Commission: Nature Restoration Regulation](https://environment.ec.europa.eu/topics/nature-and-biodiversity/nature-restoration-regulation_en) · [Eunews: 20 countries behind schedule (2 Sept 2026)](https://www.eunews.it/en/2026/09/02/twenty-eu-countries-including-italy-are-behind-schedule-with-their-national-nature-restoration-plans/) · [Euronews: €65bn funding gap](https://www.euronews.com/2026/08/27/eu-countries-urged-to-invest-in-nature-restoration-plans-and-close-65bn-annual-shortfall) · [German Environment Ministry: national restoration plan](https://www.bundesumweltministerium.de/themen/naturschutz/wiederherstellung-von-oekosystemen/die-eu-verordnung-zur-wiederherstellung-der-natur/nationaler-wiederherstellungsplan-fuer-die-natur-in-deutschland) · [Techzeitgeist: Germany and the deadline](https://www.techzeitgeist.de/deutschland-naturplan-frist-verpasst-wiederherstellung/) · [Neue Landschaft: agriculture ministers demand repeal](https://neuelandschaft.de/artikel/bundesumweltministerium-arbeitet-an-deutschem-wiederherstellungsplan-unions-agrarminister-wollen-nature-restoration-law-abschaffen-14006) · [NABU: interim review of the national restoration plan (8 July 2026)](https://blogs.nabu.de/naturschaetze-retten/nwp-entwurf/) · [Klimareporter: what will become of Germany's damaged landscapes (11 May 2026)](https://klimareporter.de/deutschland/was-aus-deutschlands-beschaedigten-landschaften-werden-soll) · [MeinBezirk: Austria submits its draft (1 Sept 2026)](https://www.meinbezirk.at/c-politik/entwurf-des-oesterreichischen-wiederherstellungsplans-uebermittelt_a8875898) · [Kommunal: what municipalities can expect (2 Sept 2026)](https://kommunal.at/nationaler-wiederherstellungsplan-was-gemeinden-erwartet) · [WWF Austria: the cities chapter (12 Sept 2026)](https://www.ots.at/presseaussendung/OTM_20260912_OTM0001/wwf-auswertung-renaturierungsplan-vernachlaessigt-gruenflaechenschutz-in-staedten) · [BirdLife, Naturschutzbund, Umweltdachverband: gaps in the draft (15 Sept 2026)](https://www.ots.at/presseaussendung/OTS_20260915_OTS0033/mut-zur-natur-statt-mut-zur-luecke)
