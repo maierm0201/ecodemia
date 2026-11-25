@@ -5,7 +5,7 @@ title_de: "CO₂ aus der Luft saugen: der Realitätscheck"
 subtitle: "Machines that pull carbon dioxide out of the air are supposed to help the world reach net zero. In six months, the largest plant now running removed 675 tonnes, and the largest project has slipped once more. Switzerland is relying on the technology."
 subtitle_de: "Maschinen, die Kohlendioxid aus der Luft holen, sollen der Welt helfen, Netto-Null zu erreichen. Die größte derzeit laufende Anlage entnahm in sechs Monaten 675 Tonnen, und das größte Projekt verschiebt sich erneut. Die Schweiz baut auf die Technologie."
 date: 2026-11-23
-checked: 2026-11-23
+checked: 2026-11-25
 key_facts: |
   - Removing a tonne of CO₂ by direct air capture currently costs an estimated 500 to 1,900 US dollars (IEA)
   - Climeworks' Mammoth plant in Iceland, built for up to 36,000 tonnes a year, removed 675 tonnes in the first half of 2026
@@ -37,7 +37,7 @@ body_de: |
 
   Jan Wurzbacher, Mitgründer und Co-Chef, spricht von einer Kurskorrektur. Als Mammoth geplant wurde, hätten Investoren Tempo und Menge gewollt, „zu fast jedem Preis“, sagte er Bloomberg. „Es ging wirklich nur um Volumen.“ Heute habe die Leistung Vorrang.[^2]
 
-  Der übrige Sektor steht unter demselben Druck. BloombergNEF zählt mehr als 100 in den vergangenen Jahren gegründete Start-ups für direkte Luftabscheidung, deren Projekte bis 2035 zusammen bis zu 4,5 Millionen Tonnen Jahreskapazität erreichen könnten. Viele davon würden wohl nie gebaut, so das Analysehaus.[^2]
+  Der übrige Sektor steht unter demselben Druck. BloombergNEF zählt mehr als 100 in den vergangenen Jahren gegründete Start-ups für direkte Luftabscheidung, deren Projekte bis 2035 zusammen auf 4,5 Millionen Tonnen Jahreskapazität kommen könnten. Viele davon würden wohl nie gebaut, so das Analysehaus.[^2]
 
   ## Stratos: erneut verschoben
 
@@ -45,7 +45,7 @@ body_de: |
 
   ## Warum Netto-Null-Pläne trotzdem darauf setzen
 
-  Angesichts der Größe der Aufgabe wirken die heutigen Anlagen winzig. Laut Global Carbon Project erreichten die Emissionen aus fossilen Brennstoffen im vergangenen Jahr 38,1 Milliarden Tonnen CO₂, und Forschende schätzen, dass bis zur Mitte des Jahrhunderts jährlich mehrere Milliarden Tonnen CO₂-Entnahme nötig sein könnten, um die Erwärmung unter 2 Grad zu halten.[^2]
+  Angesichts der Größe der Aufgabe wirken die heutigen Anlagen winzig. Laut Global Carbon Project erreichten die Emissionen aus fossilen Brennstoffen im vergangenen Jahr 38,1 Milliarden Tonnen CO₂. Forschende um Matthew Gidden vom IIASA schätzten 2024, dass bis zur Mitte des Jahrhunderts jährlich mehrere Milliarden Tonnen CO₂-Entnahme nötig sein könnten, um die Erwärmung unter 2 Grad zu halten.[^2]
 
   Die Schweiz, in der Climeworks seinen Sitz hat, gehört zu den Ländern, die damit rechnen. Ihre langfristige Klimastrategie sieht vor, dass bis 2050 jährlich rund 12 Millionen Tonnen CO₂ an der Quelle abgeschieden oder der Luft entnommen und anschließend gespeichert werden müssen, fast 30 Prozent dessen, was das Land heute ausstößt. Hinzu kommen nach Erwartung des Bundesrats bis zu 2 Millionen Tonnen Negativemissionen pro Jahr für die internationale Luftfahrt. Da das Land selbst nur begrenzt CO₂ speichern kann, will es CO₂ zur Speicherung ins Ausland bringen oder Negativemissionen im Ausland einkaufen.[^5]
 
@@ -54,7 +54,7 @@ body_de: |
 
   ---
 
-  **Quellen:** [IEA: Driving down the cost of carbon removal (27. Okt. 2025)](https://www.iea.org/commentaries/driving-down-the-cost-of-carbon-removal-why-innovation-matters) · [Bloomberg: Climeworks steigert CO₂-Entnahme (10. Sept. 2026)](https://www.energyconnects.com/news/renewables/2026/september/carbon-removal-pioneer-climeworks-increases-co2-capture-sixfold/) · [E&E News: Eröffnung der größten CO₂-Entnahmeanlage verzögert (7. Mai 2026)](https://www.eenews.net/articles/opening-of-worlds-largest-carbon-removal-plant-delayed/) · [E&E News: Größte CO₂-Entnahmeanlage soll Ende 2026 öffnen (7. Aug. 2026)](https://www.eenews.net/articles/worlds-largest-carbon-removal-plant-to-open-at-the-end-of-2026/) · [Bundesamt für Umwelt: CO₂-Entnahme und -Speicherung](https://www.bafu.admin.ch/de/co2-entnahme-und-speicherung)
+  **Quellen:** [IEA: Driving down the cost of carbon removal (27. Okt. 2025)](https://www.iea.org/commentaries/driving-down-the-cost-of-carbon-removal-why-innovation-matters) · [Bloomberg via Energy Connects: Climeworks steigert CO₂-Entnahme (10. Sept. 2026)](https://www.energyconnects.com/news/renewables/2026/september/carbon-removal-pioneer-climeworks-increases-co2-capture-sixfold/) · [E&E News: Eröffnung der größten CO₂-Entnahmeanlage verzögert (7. Mai 2026)](https://www.eenews.net/articles/opening-of-worlds-largest-carbon-removal-plant-delayed/) · [E&E News: Größte CO₂-Entnahmeanlage soll Ende 2026 öffnen (7. Aug. 2026)](https://www.eenews.net/articles/worlds-largest-carbon-removal-plant-to-open-at-the-end-of-2026/) · [Bundesamt für Umwelt: CO₂-Entnahme und -Speicherung](https://www.bafu.admin.ch/de/co2-entnahme-und-speicherung)
 ---
 On paper, it is straightforward. Fans pull in air, a filter material captures the carbon dioxide, and the CO₂ is then locked away for good, deep underground or in minerals. The International Energy Agency (IEA) counts direct air capture (DAC) as one of the two main carbon removal methods in operation today, the other being bioenergy with carbon capture and storage.[^1] In reality, scaling the technology up is turning out to be harder than its supporters expected.
 
@@ -70,7 +70,7 @@ The largest direct air capture plant in operation anywhere, Mammoth in Iceland, 
 
 Jan Wurzbacher, co-founder and co-CEO, speaks of a change of course. Back when Mammoth was being planned, investors wanted speed and volume "at almost any cost", he told Bloomberg. "It was really a volume game." Performance, he said, is now the priority.[^2]
 
-The rest of the sector is under the same pressure. BloombergNEF counts more than 100 direct air capture start-ups founded in recent years, with projects that might together reach up to 4.5 million tonnes of annual capacity by 2035. The research firm says many of them are unlikely ever to be built.[^2]
+The rest of the sector is under the same pressure. BloombergNEF counts more than 100 direct air capture start-ups founded in recent years, with projects that could together total 4.5 million tonnes of annual capacity by 2035. The research firm says many of them are unlikely ever to be built.[^2]
 
 ## Stratos: delayed again
 
@@ -78,7 +78,7 @@ The biggest project of all, Stratos in West Texas, is meant to remove up to 500,
 
 ## Why net-zero plans still count on it
 
-The size of the challenge makes today's plants look tiny. According to the Global Carbon Project, emissions from fossil fuels reached 38.1 billion tonnes of CO₂ last year, and researchers estimate that keeping warming below 2 degrees could require several billion tonnes of carbon removal a year by the middle of the century.[^2]
+The size of the challenge makes today's plants look tiny. According to the Global Carbon Project, emissions from fossil fuels reached 38.1 billion tonnes of CO₂ last year. Researchers led by Matthew Gidden of IIASA estimated in 2024 that keeping warming below 2 degrees could require several billion tonnes of carbon removal a year by the middle of the century.[^2]
 
 Switzerland, where Climeworks is based, is among the countries planning on that basis. Its long-term climate strategy foresees that by 2050 around 12 million tonnes of CO₂ a year will have to be captured at the source or taken from the air and then stored, almost 30 percent of what the country emits today. On top of that, the Federal Council expects international aviation to need up to 2 million tonnes of negative emissions a year. As the country's own storage capacity is limited, it intends to send CO₂ abroad for storage or to purchase negative emissions from other countries.[^5]
 
@@ -87,4 +87,4 @@ The Swiss government is clear that removal is meant to add to emission cuts, not
 
 ---
 
-**Sources:** [IEA: Driving down the cost of carbon removal (27 Oct 2025)](https://www.iea.org/commentaries/driving-down-the-cost-of-carbon-removal-why-innovation-matters) · [Bloomberg: Climeworks increases CO₂ capture sixfold (10 Sep 2026)](https://www.energyconnects.com/news/renewables/2026/september/carbon-removal-pioneer-climeworks-increases-co2-capture-sixfold/) · [E&E News: Opening of world's largest carbon removal plant delayed (7 May 2026)](https://www.eenews.net/articles/opening-of-worlds-largest-carbon-removal-plant-delayed/) · [E&E News: World's largest carbon removal plant to open at the end of 2026 (7 Aug 2026)](https://www.eenews.net/articles/worlds-largest-carbon-removal-plant-to-open-at-the-end-of-2026/) · [Swiss Federal Office for the Environment: CO₂ capture and storage](https://www.bafu.admin.ch/de/co2-entnahme-und-speicherung)
+**Sources:** [IEA: Driving down the cost of carbon removal (27 Oct 2025)](https://www.iea.org/commentaries/driving-down-the-cost-of-carbon-removal-why-innovation-matters) · [Bloomberg via Energy Connects: Climeworks increases CO₂ capture sixfold (10 Sep 2026)](https://www.energyconnects.com/news/renewables/2026/september/carbon-removal-pioneer-climeworks-increases-co2-capture-sixfold/) · [E&E News: Opening of world's largest carbon removal plant delayed (7 May 2026)](https://www.eenews.net/articles/opening-of-worlds-largest-carbon-removal-plant-delayed/) · [E&E News: World's largest carbon removal plant to open at the end of 2026 (7 Aug 2026)](https://www.eenews.net/articles/worlds-largest-carbon-removal-plant-to-open-at-the-end-of-2026/) · [Swiss Federal Office for the Environment: CO₂ capture and storage](https://www.bafu.admin.ch/de/co2-entnahme-und-speicherung)

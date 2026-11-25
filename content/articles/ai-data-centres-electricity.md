@@ -5,7 +5,7 @@ title_de: "Der Stromhunger der KI: Was Rechenzentren wirklich verbrauchen und au
 subtitle: "Around 1.5 percent of the world's electricity goes to data centres, and that demand could more than double by 2030. A new study traces where the emissions come from; German and Swiss figures show how the two countries compare."
 subtitle_de: "Rund 1,5 Prozent des weltweiten Stroms fließen in Rechenzentren, und dieser Bedarf könnte sich bis 2030 mehr als verdoppeln. Eine neue Studie zeigt, woher die Emissionen stammen; Zahlen aus Deutschland und der Schweiz zeigen, wo beide Länder stehen."
 date: 2026-11-23
-checked: 2026-11-23
+checked: 2026-11-25
 key_facts: |
   - In 2024, data centres consumed about 415 TWh, or 1.5 % of the world's electricity; the IEA projects around 945 TWh by 2030
   - Over one year, 403 US hyperscale data centres used 68 to 99 TWh, more than half of it generated from fossil fuels
@@ -37,7 +37,7 @@ body_de: |
 
   ## Warum die Schätzungen auseinandergehen
 
-  Jede Prognose hängt davon ab, wie rasch KI genutzt wird, wie viel effizienter Chips und Modelle werden und ob Kraftwerke und Netze mithalten. Deshalb arbeitet die IEA mit mehreren Szenarien. Sie schätzt zudem, dass Engpässe im Netz rund 20 Prozent der derzeit geplanten Rechenzentrumsprojekte verzögern könnten.[^1]
+  Jede Prognose hängt davon ab, wie rasch KI genutzt wird, wie viel effizienter Chips und Modelle werden und ob Kraftwerke und Netze mithalten. Deshalb arbeitet die IEA mit mehreren Szenarien. Sie schätzt zudem, dass sich rund 20 Prozent der derzeit geplanten Rechenzentrumsprojekte verzögern könnten, wenn die Engpässe im Netz nicht behoben werden.[^1]
 
   Verlässliche Daten sind außerdem rar. „Obwohl es viele öffentliche und wissenschaftliche Aussagen über die Umweltfolgen von Rechenzentren gab, stellten wir zu Beginn unserer Forschung fest, dass es praktisch kaum, wenn nicht gar keine begutachteten Daten gab“, sagt Francesca Dominici, die die Harvard Data Science Initiative leitet.[^3]
 
@@ -53,7 +53,7 @@ body_de: |
 
   Das deutsche Energieeffizienzgesetz verlangt von Rechenzentren bestimmte Standards bei Energieeffizienz, Abwärme und erneuerbarem Strom. Eine Reform, die das Bundeskabinett im Juni 2026 beschloss, würde einige davon abschwächen. So müssten bestehende Rechenzentren ab Juli 2027 unter anderem eine Energieverbrauchseffektivität von 1,6 statt 1,5 erreichen. Als die Kanzlei CMS ihre Analyse veröffentlichte, hatte der Bundestag noch nicht über die Änderungen abgestimmt.[^6]
 
-  Schweizer Rechenzentren verbrauchten 2024 2,1 Terawattstunden Strom, etwa 3,6 Prozent des Landesverbrauchs, wie eine Studie im Auftrag des Bundesamts für Energie ergab. Bis 2030 soll der Verbrauch auf 2,5 bis 3,2 Terawattstunden steigen. Das ungenutzte Effizienzpotenzial schätzt die Studie auf rund 0,8 Terawattstunden, fast 38 Prozent des Verbrauchs. KI spielt bislang nur eine kleine Rolle: Rechenzentren, die für das Training großer Sprachmodelle gebaut wurden, gibt es in der Schweiz nicht.[^5]
+  Schweizer Rechenzentren verbrauchten 2024 2,1 Terawattstunden Strom, etwa 3,6 Prozent des Landesverbrauchs, wie eine Studie im Auftrag von EnergieSchweiz, einem Programm des Bundesamts für Energie, ergab. Bis 2030 soll der Verbrauch auf 2,5 bis 3,2 Terawattstunden steigen. Das ungenutzte Effizienzpotenzial schätzt die Studie auf rund 0,8 Terawattstunden, fast 38 Prozent des Verbrauchs. KI spielt bislang nur eine kleine Rolle: Rechenzentren, die für das Training großer Sprachmodelle gebaut wurden, gibt es in der Schweiz nicht.[^5]
 
   ## Eine physische Technologie
 
@@ -62,7 +62,7 @@ body_de: |
 
   ---
 
-  **Quellen:** [IEA: Energy and AI, Zusammenfassung](https://www.iea.org/reports/energy-and-ai/executive-summary) · [IEA: Global Energy Review 2026, Stromnachfrage](https://www.iea.org/reports/global-energy-review-2026/electricity-demand) · [TIME zu Guidi et al., Nature Sustainability (16. Nov. 2026)](https://time.com/article/2026/11/16/ai-data-centers-electricity-carbon-emissions-study/) · [Bitkom: Rechenzentren in Deutschland 2026 (3. Nov. 2026)](https://www.bitkom.org/Presse/Presseinformation/KI-Boom-treibt-Rechenzentren-in-Deutschland) · [Bundesamt für Energie: Rechenzentren in der Schweiz (7. Mai 2026)](https://www.admin.ch/de/newnsb/GV-_d7OgIlqjfQDGZqbkN) · [CMS: EnEfG-Novelle bringt Entlastung für Rechenzentren (1. Juli 2026)](https://cms.law/de/deu/legal-updates/enefg-novelle-bringt-entlastung-fuer-rechenzentren)
+  **Quellen:** [IEA: Energy and AI, Zusammenfassung](https://www.iea.org/reports/energy-and-ai/executive-summary) · [IEA: Global Energy Review 2026, Stromnachfrage](https://www.iea.org/reports/global-energy-review-2026/electricity-demand) · [TIME zu Guidi et al., Nature Sustainability (16. Nov. 2026)](https://time.com/article/2026/11/16/ai-data-centers-electricity-carbon-emissions-study/) · [Bitkom: Rechenzentren in Deutschland 2026 (3. Nov. 2026)](https://www.bitkom.org/Presse/Presseinformation/KI-Boom-treibt-Rechenzentren-in-Deutschland) · [Bundesrat / EnergieSchweiz: Rechenzentren in der Schweiz (7. Mai 2026)](https://www.admin.ch/de/newnsb/GV-_d7OgIlqjfQDGZqbkN) · [CMS: EnEfG-Novelle bringt Entlastung für Rechenzentren (1. Juli 2026)](https://cms.law/de/deu/legal-updates/enefg-novelle-bringt-entlastung-fuer-rechenzentren)
 ---
 Whenever a chatbot answers a question, an image is generated or a new AI model is trained, the work ends up as electricity drawn by a data centre. How large that load really is has become one of the most contested questions in energy policy, and the estimates are far apart.
 
@@ -78,7 +78,7 @@ Across the world, the IEA attributes around one-tenth of electricity demand grow
 
 ## Why the estimates differ
 
-Any forecast hinges on how fast AI is taken up, how much more efficient chips and models get, and whether power plants and grids can keep pace. For that reason, the IEA works with several scenarios. It also estimates that grid bottlenecks could hold up around 20 percent of the data centre projects now planned.[^1]
+Any forecast hinges on how fast AI is taken up, how much more efficient chips and models get, and whether power plants and grids can keep pace. For that reason, the IEA works with several scenarios. It also estimates that around 20 percent of the data centre projects now planned could face delays unless grid bottlenecks are addressed.[^1]
 
 Reliable data are also scarce. "Even though there were a lot of [public and scientific] statements about the environmental impact of data centers, when we started this research, we realized that there was basically very little, if none, peer-reviewed data," says Francesca Dominici, who directs the Harvard Data Science Initiative.[^3]
 
@@ -94,7 +94,7 @@ According to the digital industry association Bitkom, data centres and smaller I
 
 Under Germany's Energy Efficiency Act, data centres must meet requirements on energy efficiency, waste heat and renewable electricity. A reform approved by the federal cabinet in June 2026 would relax some of these. Among other things, existing data centres would need a power usage effectiveness of 1.6 rather than 1.5 from July 2027. When the law firm CMS published its analysis, the Bundestag had not yet voted on the changes.[^6]
 
-Swiss data centres consumed 2.1 terawatt hours of electricity in 2024, about 3.6 percent of the country's total, a study commissioned by the Federal Office of Energy found. Consumption is projected to grow to between 2.5 and 3.2 terawatt hours by 2030. The study estimates the untapped efficiency potential at about 0.8 terawatt hours, close to 38 percent of consumption. So far, AI plays only a small part: Switzerland has no data centres built to train large language models.[^5]
+Swiss data centres consumed 2.1 terawatt hours of electricity in 2024, about 3.6 percent of the country's total, a study commissioned by EnergieSchweiz, a programme of the Swiss Federal Office of Energy, found. Consumption is projected to grow to between 2.5 and 3.2 terawatt hours by 2030. The study estimates the untapped efficiency potential at about 0.8 terawatt hours, close to 38 percent of consumption. So far, AI plays only a small part: Switzerland has no data centres built to train large language models.[^5]
 
 ## A physical technology
 
@@ -103,4 +103,4 @@ As a share of global electricity use, data centres are small, but they cluster i
 
 ---
 
-**Sources:** [IEA: Energy and AI, executive summary](https://www.iea.org/reports/energy-and-ai/executive-summary) · [IEA: Global Energy Review 2026, electricity demand](https://www.iea.org/reports/global-energy-review-2026/electricity-demand) · [TIME on Guidi et al., Nature Sustainability (16 Nov 2026)](https://time.com/article/2026/11/16/ai-data-centers-electricity-carbon-emissions-study/) · [Bitkom: data centres in Germany 2026 (3 Nov 2026)](https://www.bitkom.org/Presse/Presseinformation/KI-Boom-treibt-Rechenzentren-in-Deutschland) · [Swiss Federal Office of Energy: data centres in Switzerland (7 May 2026)](https://www.admin.ch/de/newnsb/GV-_d7OgIlqjfQDGZqbkN) · [CMS: reform of Germany's Energy Efficiency Act (1 July 2026)](https://cms.law/de/deu/legal-updates/enefg-novelle-bringt-entlastung-fuer-rechenzentren)
+**Sources:** [IEA: Energy and AI, executive summary](https://www.iea.org/reports/energy-and-ai/executive-summary) · [IEA: Global Energy Review 2026, electricity demand](https://www.iea.org/reports/global-energy-review-2026/electricity-demand) · [TIME on Guidi et al., Nature Sustainability (16 Nov 2026)](https://time.com/article/2026/11/16/ai-data-centers-electricity-carbon-emissions-study/) · [Bitkom: data centres in Germany 2026 (3 Nov 2026)](https://www.bitkom.org/Presse/Presseinformation/KI-Boom-treibt-Rechenzentren-in-Deutschland) · [Swiss Federal Council / EnergieSchweiz: data centres in Switzerland (7 May 2026)](https://www.admin.ch/de/newnsb/GV-_d7OgIlqjfQDGZqbkN) · [CMS: reform of Germany's Energy Efficiency Act (1 July 2026)](https://cms.law/de/deu/legal-updates/enefg-novelle-bringt-entlastung-fuer-rechenzentren)

@@ -5,7 +5,7 @@ title_de: "Salz statt Lithium: Natrium-Ionen-Akkus gehen in Serie"
 subtitle: "By the end of 2026, CATL, the biggest battery maker in the world, wants to be producing sodium-ion cells at full scale. They perform well in the cold and contain no lithium, but they hold less energy and are made almost entirely in China."
 subtitle_de: "Bis Ende 2026 will CATL, der weltgrößte Batteriehersteller, Natrium-Ionen-Zellen in vollem Umfang fertigen. Sie arbeiten zuverlässig in der Kälte und enthalten kein Lithium, speichern aber weniger Energie und stammen fast ausschließlich aus China."
 date: 2026-11-23
-checked: 2026-11-23
+checked: 2026-11-25
 key_facts: |
   - Sodium-ion battery output in 2025 amounted to less than 1 % of lithium-ion output (IEA)
   - The newest cells achieve up to 175 Wh/kg, against up to 205 Wh/kg for LFP and 255 Wh/kg for NMC batteries

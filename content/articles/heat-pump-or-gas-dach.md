@@ -5,7 +5,7 @@ title_de: "Wärmepumpe oder Gas? Was die neuen Regeln für Hausbesitzer in Deuts
 subtitle: "Germany has scrapped its 65 percent rule, Austria no longer allows gas heating in new buildings, and in Switzerland it is up to the cantons. Which rules apply where, what each system costs to run, and what to weigh up before replacing a boiler."
 subtitle_de: "Deutschland hat die 65-Prozent-Regel abgeschafft, Österreich erlaubt im Neubau keine Gasheizungen mehr, und in der Schweiz liegt es bei den Kantonen. Welche Regeln wo gelten, was der Betrieb jeweils kostet und was vor dem Heizungstausch abzuwägen ist."
 date: 2026-11-23
-checked: 2026-11-23
+checked: 2026-11-25
 key_facts: |
   - On 29 July 2026, Germany abolished its 65 % renewable requirement for new heating systems; from 2029, new gas boilers need a rising share of green fuel
   - Heat pumps outsold gas boilers in Germany for the first time in 2025 (IEA)
@@ -27,9 +27,9 @@ body_de: |
 
   ## Deutschland: Gas ist wieder erlaubt, mit Auflagen
 
-  Am 29. Juli 2026 trat das Gebäudemodernisierungsgesetz an die Stelle des alten Gebäudeenergiegesetzes, das oft Heizungsgesetz genannt wird. Weggefallen ist die Vorgabe, dass neue Heizungen zu mindestens 65 Prozent mit erneuerbaren Energien laufen müssen. Neue Gas- und Ölheizungen dürfen wieder eingebaut werden, müssen ab 2029 aber einen wachsenden Anteil klimafreundlicher Brennstoffe wie Biomethan oder Bioheizöl verfeuern: 10 Prozent ab 2029, 15 Prozent ab 2030, 30 Prozent ab 2035 und 60 Prozent ab 2040. Bis 2045 müssen alle Heizbrennstoffe klimaneutral sein.[^1] Ein eigenes Gesetz zu einer Grüngasquote für Brennstoffanbieter muss die Bundesregierung bis zum 1. Dezember 2026 vorlegen.[^2]
+  Am 29. Juli 2026 trat das Gebäudemodernisierungsgesetz an die Stelle des alten Gebäudeenergiegesetzes, das oft Heizungsgesetz genannt wird. Weggefallen ist die Vorgabe, dass neue Heizungen zu mindestens 65 Prozent mit erneuerbaren Energien laufen müssen. Neue Gas- und Ölheizungen dürfen wieder eingebaut werden, müssen ab 2029 aber einen wachsenden Anteil klimafreundlicher Brennstoffe wie Biomethan oder Bioheizöl verfeuern: 10 Prozent ab 2029, 15 Prozent ab 2030, 30 Prozent ab 2035 und 60 Prozent ab 2040. Bis 2045 müssen alle Heizbrennstoffe klimaneutral sein.[^1] Ein eigenes Gesetz zu einer Grüngas- bzw. Grünheizölquote für Brennstoffanbieter muss die Bundesregierung bis zum 1. Dezember 2026 vorlegen.[^2]
 
-  Vermieter, die eine neue fossile Heizung einbauen lassen, zahlen ab 2028 die Hälfte der Netzentgelte und des CO₂-Preises, ab 2029 zusätzlich die Hälfte der Mehrkosten für biogene Brennstoffe. Eine funktionierende Heizung muss niemand ersetzen. Die KfW-Förderung für klimafreundliche Heizungen bleibt bestehen: Seit dem 21. Juli 2026 übernimmt sie 30 bis 80 Prozent der förderfähigen Kosten, die für die erste Wohneinheit bei 28.000 Euro gedeckelt sind. Ab dem 1. Februar 2027 soll diese Obergrenze Schritt für Schritt sinken.[^1]
+  Vermieter, die eine neue fossile Heizung einbauen lassen, zahlen ab 2028 die Hälfte der Netzentgelte und des CO₂-Preises, ab 2029 zusätzlich die Hälfte der Mehrkosten für biogene Brennstoffe, wobei es eine Reihe von Ausnahmen gibt.[^2] Eine funktionierende Heizung muss niemand ersetzen. Die KfW-Förderung für klimafreundliche Heizungen bleibt bestehen: Seit dem 21. Juli 2026 übernimmt sie 30 bis 80 Prozent der förderfähigen Kosten, die für die erste Wohneinheit bei 28.000 Euro gedeckelt sind. Ab dem 1. Februar 2027 soll diese Obergrenze Schritt für Schritt sinken.[^1]
 
   Die Reform stößt auf Kritik. Gegner sagen, sie rücke die vom Grundgesetz verlangte Klimaneutralität bis 2045 in deutlich weitere Ferne, und die Deutsche Umwelthilfe hat Verfassungsbeschwerde erhoben.[^1]
 
@@ -37,7 +37,7 @@ body_de: |
 
   ## Funktionieren Wärmepumpen im Altbau?
 
-  Das Fraunhofer-Institut für Solare Energiesysteme hat Wärmepumpen in Einfamilienhäusern der Baujahre 1826 bis 2001 im Feld getestet. Die 22 ausgewerteten Außenluft-Wärmepumpen kamen im Mittel auf eine Jahresarbeitszahl von 3,3, mit einer Spanne von 2,4 bis 4,0. Vereinfacht gesagt lieferte jede Kilowattstunde Strom im Schnitt 3,3 Kilowattstunden Wärme. Erdreich-Wärmepumpen erreichten zwischen 3,6 und 5,2. Gegenüber einem Gaskessel verringerten die Anlagen die Treibhausgasemissionen um 18 bis 62 Prozent.[^4]
+  Das Fraunhofer-Institut für Solare Energiesysteme hat Wärmepumpen in Einfamilienhäusern der Baujahre 1826 bis 2001 im Feld getestet. Die 22 ausgewerteten Außenluft-Wärmepumpen kamen im Mittel auf eine Jahresarbeitszahl von 3,3, mit einer Spanne von 2,4 bis 4,0. Vereinfacht gesagt lieferte jede Kilowattstunde Strom im Schnitt 3,3 Kilowattstunden Wärme. Erdreich-Wärmepumpen erreichten zwischen 3,6 und 5,2. Gegenüber einem Gaskessel würden die Anlagen die Treibhausgasemissionen um 18 bis 62 Prozent verringern.[^4]
 
   ## Was der Betrieb kostet
 
@@ -72,9 +72,9 @@ A new heating system is one of the costliest and longest-lasting choices a house
 
 ## Germany: gas is allowed again, with conditions
 
-Germany's Building Modernisation Act took the place of the old Buildings Energy Act, widely known as the heating law, on 29 July 2026. Gone is the rule that new heating systems must run on at least 65 percent renewable energy. New gas and oil boilers may be installed again, but from 2029 they have to burn a growing share of climate-friendly fuels such as biomethane or bio heating oil: 10 percent from 2029, 15 percent from 2030, 30 percent from 2035 and 60 percent from 2040. By 2045, all heating fuels have to be climate-neutral.[^1] A separate law introducing a green gas quota for fuel suppliers is due from the government by 1 December 2026.[^2]
+Germany's Building Modernisation Act took the place of the old Buildings Energy Act, widely known as the heating law, on 29 July 2026. Gone is the rule that new heating systems must run on at least 65 percent renewable energy. New gas and oil boilers may be installed again, but from 2029 they have to burn a growing share of climate-friendly fuels such as biomethane or bio heating oil: 10 percent from 2029, 15 percent from 2030, 30 percent from 2035 and 60 percent from 2040. By 2045, all heating fuels have to be climate-neutral.[^1] A separate law introducing a green gas and green heating oil quota for fuel suppliers is due from the government by 1 December 2026.[^2]
 
-Landlords who put in new fossil heating will pay half of the grid fees and the CO₂ price from 2028, and half of the additional cost of bio-based fuels from 2029. There is no obligation to replace a heating system that still works. KfW funding for climate-friendly heating remains in place: since 21 July 2026 it covers 30 to 80 percent of eligible costs, which are capped at 28,000 euros for the first housing unit. That cap is due to fall step by step from 1 February 2027.[^1]
+Landlords who put in new fossil heating will pay half of the grid fees and the CO₂ price from 2028, and half of the additional cost of bio-based fuels from 2029, with a number of exceptions.[^2] There is no obligation to replace a heating system that still works. KfW funding for climate-friendly heating remains in place: since 21 July 2026 it covers 30 to 80 percent of eligible costs, which are capped at 28,000 euros for the first housing unit. That cap is due to fall step by step from 1 February 2027.[^1]
 
 The reform has drawn criticism. Opponents say it puts the climate neutrality by 2045 that the constitution requires much further out of reach, and the environmental group Deutsche Umwelthilfe has lodged a constitutional complaint.[^1]
 
@@ -82,7 +82,7 @@ Buyers had already started to change course. For the first time, more heat pumps
 
 ## Do heat pumps work in old houses?
 
-The Fraunhofer Institute for Solar Energy Systems tested heat pumps in the field in single-family homes built between 1826 and 2001. The 22 air-source heat pumps it evaluated achieved a seasonal performance factor of 3.3 on average, ranging from 2.4 to 4.0. Put simply, each kilowatt hour of electricity yielded an average of 3.3 kilowatt hours of heat. Ground-source heat pumps came in between 3.6 and 5.2. Measured against a gas boiler, the systems cut greenhouse gas emissions by 18 to 62 percent.[^4]
+The Fraunhofer Institute for Solar Energy Systems tested heat pumps in the field in single-family homes built between 1826 and 2001. The 22 air-source heat pumps it evaluated achieved a seasonal performance factor of 3.3 on average, ranging from 2.4 to 4.0. Put simply, each kilowatt hour of electricity yielded an average of 3.3 kilowatt hours of heat. Ground-source heat pumps came in between 3.6 and 5.2. Measured against a gas boiler, the systems would cut greenhouse gas emissions by 18 to 62 percent.[^4]
 
 ## What it costs to run
 

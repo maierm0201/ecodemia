@@ -5,7 +5,7 @@ title_de: "Billig erzeugt, teuer bezahlt: Warum die Stromrechnung hoch bleibt"
 subtitle: "Household electricity in the EU has become more expensive faster than incomes have grown since 2019. Grid fees, taxes and the price of gas are the reasons. A look at Germany, Austria and Switzerland."
 subtitle_de: "Haushaltsstrom in der EU ist seit 2019 schneller teurer geworden, als die Einkommen gewachsen sind. Die Gründe: Netzentgelte, Steuern und der Gaspreis. Ein Blick nach Deutschland, Österreich und in die Schweiz."
 date: 2026-11-23
-checked: 2026-11-23
+checked: 2026-11-25
 key_facts: |
   - From 2019 to 2024, EU household electricity prices went up by 36 %, while net earnings grew by 25 % (IEA)
   - More than half of Germany's average price of 37.3 cents per kWh consists of grid fees, taxes and levies
@@ -43,7 +43,7 @@ body_de: |
 
   Nach Eurostat-Zahlen für das erste Halbjahr 2026 zahlten Haushalte in der EU durchschnittlich 28,3 Euro pro 100 Kilowattstunden, inklusive Steuern. Deutschland lag mit 36,2 Euro nur hinter Irland mit 38,7 Euro. In Österreich betrug der Preis 32,6 Euro. Am günstigsten war Strom in der EU mit 11,4 Euro in Ungarn.[^2] Gegenüber dem Vorjahr lagen die deutschen Preise um 5,7 Prozent niedriger.[^2]
 
-  Österreichs Haushalte können 2027 mit um durchschnittlich 3,6 Prozent niedrigeren Netzentgelten rechnen, wie aus einem Entwurf der Regulierungsbehörde E-Control hervorgeht. Ein Haushalt mit 3.500 Kilowattstunden Jahresverbrauch spart dadurch rund 15 Euro. Die bisherige Pauschale soll spätestens Mitte 2028 einem Leistungspreis weichen, der sich nach den Verbrauchsspitzen richtet. Regional gibt es große Unterschiede: Im bisherigen System sinken die Entgelte in Niederösterreich um 12 Prozent, in Kärnten steigen sie um 9,6 Prozent.[^4]
+  Österreichs Haushalte können 2027 im bisherigen Abrechnungssystem mit um durchschnittlich 3,6 Prozent niedrigeren Netzentgelten rechnen, wie aus einem Entwurf der Regulierungsbehörde E-Control hervorgeht. Ein Haushalt mit 3.500 Kilowattstunden Jahresverbrauch spart dadurch rund 15 Euro, mit dem neuen Leistungspreis wären es im Schnitt 5,7 Prozent oder rund 24 Euro. Die bisherige Pauschale soll spätestens Mitte 2028 einem Leistungspreis weichen, der sich nach den Verbrauchsspitzen richtet. Regional gibt es große Unterschiede: Im bisherigen System sinken die Entgelte in Niederösterreich um 12 Prozent, in Kärnten steigen sie um 9,6 Prozent.[^4]
 
   In der Schweiz werden die Tarife einmal pro Jahr festgelegt. Laut der Regulierungsbehörde ElCom zahlt ein typischer Haushalt mit 4.500 Kilowattstunden Verbrauch 2027 im Median 26,5 Rappen pro Kilowattstunde, 1,2 Rappen weniger als 2026. Das entspricht einem Minus von rund 4 Prozent oder 1.194 Franken im Jahr. Der Energieteil des Tarifs geht von 12,11 auf 11,35 Rappen zurück, der Netztarif klettert dagegen von 10,73 auf 10,94 Rappen.[^5] Der starke Anstieg der Großhandelspreise nach Beginn des Iran-Kriegs im März 2026 sei in den Tarifen 2027 kaum zu sehen und könnte sich erst in späteren Jahren bemerkbar machen, so die ElCom.[^5]
 
@@ -81,7 +81,7 @@ Taken together, grid fees, taxes and levies are more than half of what household
 
 Eurostat figures for the first half of 2026 show EU households paying 28.3 euros per 100 kilowatt hours on average, taxes included. Germany, at 36.2 euros, was beaten only by Ireland, at 38.7 euros. The Austrian price was 32.6 euros. Hungary, at 11.4 euros, was the cheapest in the EU.[^2] Compared with a year earlier, prices in Germany were down 5.7 percent.[^2]
 
-Austria's households can expect grid fees to drop by an average of 3.6 percent in 2027, according to a draft from the regulator E-Control. A household that uses 3,500 kilowatt hours a year would save around 15 euros. The current flat charge is to give way, by mid-2028 at the latest, to a capacity charge linked to peak use. Regional differences are large: under the existing system, Lower Austria's fees drop by 12 percent, while Carinthia's go up by 9.6 percent.[^4]
+Under the current billing system, Austria's households can expect grid fees to drop by an average of 3.6 percent in 2027, according to a draft from the regulator E-Control. A household that uses 3,500 kilowatt hours a year would save around 15 euros; under the new capacity-based tariff, the average saving would be 5.7 percent, or about 24 euros. The current flat charge is to give way, by mid-2028 at the latest, to a capacity charge linked to peak use. Regional differences are large: under the existing system, Lower Austria's fees drop by 12 percent, while Carinthia's go up by 9.6 percent.[^4]
 
 In Switzerland, tariffs are set once a year. The regulator ElCom says a typical household consuming 4,500 kilowatt hours will pay a median of 26.5 Rappen per kilowatt hour in 2027, which is 1.2 Rappen less than in 2026. That works out to a fall of about 4 percent, or 1,194 francs a year. The energy part of the tariff drops from 12.11 to 11.35 Rappen, but the grid tariff goes up from 10.73 to 10.94 Rappen.[^5] According to ElCom, the steep rise in wholesale prices that followed the start of the Iran war in March 2026 barely shows up in the 2027 tariffs and may only be felt in the years after.[^5]
 

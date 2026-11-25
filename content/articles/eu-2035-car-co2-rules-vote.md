@@ -5,7 +5,7 @@ title_de: "Verbrenner-Aus light: Die EU will ihre Autoregeln für 2035 aufweiche
 subtitle: "The environment committee of the European Parliament is pushing for a 2035 target below 100 percent, credits for green steel and zero-emission status for cars that run on e-fuels. A vote of the full Parliament follows in December."
 subtitle_de: "Der Umweltausschuss des Europaparlaments setzt auf ein Ziel unter 100 Prozent für 2035, auf Gutschriften für grünen Stahl und auf den Null-Emissions-Status für Autos mit E-Fuels. Das Plenum entscheidet im Dezember."
 date: 2026-11-18
-checked: 2026-11-21
+checked: 2026-11-25
 key_facts: |
   - By 48 votes to 30, the European Parliament's environment committee backed lowering the binding 2035 car target to 87.5 %
   - Cars that run solely on renewable or low-carbon fuels would be treated as zero-emission
@@ -50,7 +50,7 @@ body_de: |
 
   ## Wie es weitergeht
 
-  Beschlossen ist noch nichts. Der Ausschusstext bildet das Verhandlungsmandat, über das das **Plenum im Dezember 2026** abstimmen soll. Anschließend brauchen die Mitgliedstaaten im Rat eine gemeinsame Position mit qualifizierter Mehrheit: mindestens 15 Staaten, die zusammen mindestens 65 Prozent der EU-Bevölkerung stellen. Erst danach starten die Trilog-Verhandlungen. Solange gilt weiter das bestehende Recht mit dem 100-Prozent-Ziel für 2035.[^2]
+  Beschlossen ist noch nichts. Der Ausschusstext bildet das Verhandlungsmandat, über das das **Plenum im Dezember 2026** abstimmen soll. Anschließend brauchen die Mitgliedstaaten im Rat eine gemeinsame Position mit qualifizierter Mehrheit: mindestens 15 Staaten, die zusammen mindestens 65 Prozent der EU-Bevölkerung stellen.[^2] Erst danach starten die Trilog-Verhandlungen.[^3] Solange gilt weiter das bestehende Recht mit dem 100-Prozent-Ziel für 2035.[^1]
 
   Industrie- und Verkehrsausschuss haben dem Text schon im Oktober zugestimmt (49:27:5 und 27:18:1). Dass das Plenum zustimmt, gilt deshalb als wahrscheinlich.[^2] Unklar ist, wie weit die Regierungen gehen werden. In Berlin und Paris ist eine Minderung um 90 Prozent ohne Ausgleichspflicht im Gespräch, was noch über den Parlamentstext hinausginge.[^2]
 
@@ -90,7 +90,7 @@ Critics mainly make three arguments:
 
 ## What Happens Next
 
-None of this is law yet. The committee text serves as the negotiating mandate that the **full Parliament is expected to vote on in December 2026**. After that, member states in the Council have to reach a common position by qualified majority: at least 15 countries that together represent at least 65 percent of the EU population. Only at that point do the three-way trilogue talks begin. In the meantime, the current law with its 100 percent target for 2035 continues to apply.[^2]
+None of this is law yet. The committee text serves as the negotiating mandate that the **full Parliament is expected to vote on in December 2026**. After that, member states in the Council have to reach a common position by qualified majority: at least 15 countries that together represent at least 65 percent of the EU population.[^2] Only at that point do the three-way trilogue talks begin.[^3] In the meantime, the current law with its 100 percent target for 2035 continues to apply.[^1]
 
 The industry and transport committees already voted for the text in October (49–27–5 and 27–18–1), which is why a majority in plenary is seen as likely.[^2] How far governments will go is still unclear. Berlin and Paris have floated a 90 percent cut with no compensation requirement at all, which would go even further than the Parliament text.[^2]
 

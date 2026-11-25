@@ -5,7 +5,7 @@ title_de: "Die Kohlenstofftresore der Erde: Warum Moore und Feuchtgebiete zähle
 subtitle: "Peatlands take up only a few percent of the land, yet store twice the carbon of all the world's forests. Once drained, they stop storing carbon and start releasing it. Germany is a textbook example."
 subtitle_de: "Moore nehmen nur wenige Prozent der Landfläche ein, speichern aber doppelt so viel Kohlenstoff wie alle Wälder der Welt. Trockengelegt geben sie ihn wieder ab. Deutschland ist ein Lehrbuchbeispiel."
 date: 2026-11-22
-checked: 2026-11-22
+checked: 2026-11-25
 key_facts: |
   - Peatlands hold up to a third of the world's soil carbon on about 3–4 % of the land surface
   - Around 22 % of the world's wetlands have disappeared since 1970, faster than any other ecosystem
@@ -49,7 +49,7 @@ body_de: |
 
   Bei der Wiedervernässung wird der Wasserstand so weit angehoben, dass der Torf sich nicht mehr zersetzt. Für Kartoffeln, Getreide, Mais oder herkömmliche Weidehaltung ist dann kein Platz mehr.[^4] Eine Gefahr für die Ernährungssicherheit sieht das Umweltbundesamt darin nicht: Ackerland auf Moorböden macht nur einen kleinen Teil aus, während auf fast dreimal so viel Ackerfläche Energiepflanzen für Biokraftstoffe wachsen.[^4]
 
-  Die Alternative nennt sich Paludikultur, also Landwirtschaft auf nassen Flächen. Schilf, Rohrkolben und Seggen liefern Dämmstoffe und Baumaterial, Schwarzerlen Holz, und auf wiedervernässten Wiesen können Wasserbüffel grasen.[^4] Weil die meisten Moorflächen Privatleuten gehören, fordert das Amt stärkere finanzielle Anreize, um die Eigentümer zu gewinnen.[^4]
+  Die Alternative nennt sich Paludikultur, also Landwirtschaft auf nassen Flächen. Schilf, Rohrkolben und Seggen liefern Dämmstoffe und Baumaterial, Schwarzerlen lassen sich forstlich nutzen, und auf wiedervernässten Wiesen können Wasserbüffel grasen.[^4] Weil die meisten Moorflächen Privatleuten gehören, fordert das Amt stärkere finanzielle Anreize, um die Eigentümer zu gewinnen.[^4]
 
   Zusätzlichen Druck macht das EU-Recht. Die Verordnung zur Wiederherstellung der Natur verpflichtet die Mitgliedstaaten, bis 2030 auf 30 Prozent der entwässerten landwirtschaftlich genutzten Moorböden Maßnahmen umzusetzen, mindestens ein Viertel davon als Wiedervernässung. Bis 2040 steigt der Anteil auf 40 Prozent, bis 2050 auf 50 Prozent, wovon jeweils mindestens ein Drittel wiedervernässt sein muss.[^6]
 
@@ -86,7 +86,7 @@ Intact peatlands, on the other hand, hold as much carbon on 5 percent of Germany
 
 Rewetting means lifting the water table high enough that the peat no longer breaks down, which leaves no room for potatoes, grain, maize or conventional grazing.[^4] In the view of the German Environment Agency, this does not endanger food security: farmed peat soils are a small share, whereas almost three times as much cropland grows energy crops for biofuels.[^4]
 
-The alternative is called paludiculture, or wet farming. Reeds, reedmace and sedges can be harvested for insulation and building materials, black alder for timber, and water buffalo can graze rewetted meadows.[^4] Because most peatland is in private hands, the agency wants stronger financial incentives to win over landowners.[^4]
+The alternative is called paludiculture, or wet farming. Reeds, reedmace and sedges can be harvested for insulation and building materials, black alder can be grown for forestry, and water buffalo can graze rewetted meadows.[^4] Because most peatland is in private hands, the agency wants stronger financial incentives to win over landowners.[^4]
 
 EU law is adding pressure. The Nature Restoration Regulation requires member states to take measures on 30 percent of drained agricultural peatland by 2030, with at least a quarter of that rewetted. By 2040 the share rises to 40 percent and by 2050 to 50 percent, at least a third of it rewetted each time.[^6]
 

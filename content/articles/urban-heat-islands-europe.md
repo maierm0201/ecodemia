@@ -2,16 +2,16 @@
 type: Article
 title: "Cities in the Furnace: What Europe's Deadliest Summer Teaches About Urban Heat"
 title_de: "Städte im Glutofen: Was Europas tödlichster Sommer über städtische Hitze lehrt"
-subtitle: "According to a rapid study, more than 50,000 people died from heat in European cities in summer 2026. Cities hold on to heat, yet research shows that trees and unsealed ground can bring the death toll down measurably."
-subtitle_de: "Mehr als 50.000 Menschen sind laut einer Schnellstudie im Sommer 2026 in europäischen Städten an den Folgen der Hitze gestorben. Städte halten die Hitze fest, doch Bäume und entsiegelte Flächen können die Zahl der Opfer nachweislich verringern."
+subtitle: "According to a new study, more than 50,000 people died from heat in European cities in summer 2026. Cities hold on to heat, yet research shows that trees and unsealed ground can bring the death toll down measurably."
+subtitle_de: "Mehr als 50.000 Menschen sind laut einer neuen Studie im Sommer 2026 in europäischen Städten an den Folgen der Hitze gestorben. Städte halten die Hitze fest, doch Bäume und entsiegelte Flächen können die Zahl der Opfer nachweislich verringern."
 date: 2026-11-21
-checked: 2026-11-21
+checked: 2026-11-25
 key_facts: |
-  - In summer 2026, 854 European cities saw an estimated 50,391 heat-related excess deaths, according to a rapid study
+  - In summer 2026, 854 European cities saw an estimated 50,391 heat-related excess deaths, according to a new study
   - Increasing urban tree cover to 30 % could lower city temperatures by 0.4 °C and avert about 39 % of heat-island deaths (Lancet, 2023)
   - On average, European cities have 14.9 % tree cover
 key_facts_de: |
-  - Für den Sommer 2026 schätzt eine Schnellstudie 50.391 hitzebedingte zusätzliche Todesfälle in 854 europäischen Städten
+  - Für den Sommer 2026 schätzt eine neue Studie 50.391 hitzebedingte zusätzliche Todesfälle in 854 europäischen Städten
   - Ein Baumbestand von 30 % könnte Städte um 0,4 °C abkühlen und etwa 39 % der Wärmeinsel-Todesfälle vermeiden (Lancet, 2023)
   - Im Schnitt haben europäische Städte einen Baumbestand von 14,9 %
 category: climate
@@ -23,7 +23,7 @@ cover_credit_de: "Schatten unter den Platanen der Platanenallee in Tübingen. Fo
 excerpt: "By day, asphalt and concrete soak up heat; at night, when bodies need to recover, they give it off again. The toll of summer 2026, why cities intensify heat, and which measures are backed by evidence."
 excerpt_de: "Tagsüber nehmen Asphalt und Beton Hitze auf, nachts geben sie sie wieder ab, wenn der Körper sich erholen muss. Die Bilanz des Sommers 2026, warum Städte Hitze verstärken und welche Maßnahmen nachweislich helfen."
 body_de: |
-  Kein Sommer in Europa forderte nach solchen Auswertungen bislang so viele Todesopfer wie der von 2026. Forschende des Imperial College London und der London School of Hygiene & Tropical Medicine kommen in einer Schnellstudie für 854 europäische Städte zwischen Juni und August auf geschätzt **50.391 hitzebedingte zusätzliche Todesfälle**.[^1] Etwa **65 Prozent** davon gehen nach ihrer Analyse auf den Klimawandel zurück. Den bisherigen Höchstwert gab es 2022 mit rund 29.500.[^2]
+  Kein Sommer in Europa forderte nach solchen Auswertungen bislang so viele Todesopfer wie der von 2026. Forschende des Imperial College London kommen in einer Studie für die Fachzeitschrift Nature Health für 854 europäische Städte zwischen Juni und August auf geschätzt **50.391 hitzebedingte zusätzliche Todesfälle**.[^1] Etwa **65 Prozent** davon gehen nach ihrer Analyse auf den Klimawandel zurück. Den bisherigen Höchstwert gab es 2022 mit rund 29.500.[^1][^2]
 
   Es handelt sich um Schätzungen aus Modellen, nicht um ausgezählte Totenscheine. Da nur Städte mit zusammen rund 40 Prozent der Bevölkerung einbezogen sind, sehen die Autorinnen und Autoren in den Zahlen eine Untergrenze.[^1]
 
@@ -50,9 +50,9 @@ body_de: |
 
   ---
 
-  **Quellen:** [AP via WUNC: 50.000 Hitzetote im Sommer 2026](https://www.wunc.org/2026-10-23/europes-heat-claims-50-000-lives-climate-change-blamed-for-two-thirds-of-deaths) · [Grist: Europas tödlichster Sommer](https://grist.org/extreme-heat/europes-hottest-summer-ever-was-also-its-deadliest-by-far/) · [EEA: Indikator städtische Wärmeinseln](https://climate-adapt.eea.europa.eu/en/metadata/indicators/urban-heat-island-intensity) · [Reuters via Yahoo: Schulen und Krankenhäuser in Wärmeinseln](https://news.yahoo.com/europes-city-schools-hospitals-risk-220444865.html) · [EU-Kommission zur Lancet-Studie (Iungman et al. 2023)](https://environment.ec.europa.eu/news/increasing-tree-coverage-30-european-cities-could-reduce-deaths-linked-urban-heat-island-effect-2023-06-21_en) · [LSHTM zur Lancet-Studie](https://www.lshtm.ac.uk/newsevents/news/2023/planting-more-trees-could-decrease-deaths-higher-summer-temperatures-cities-3) · [Climate-ADAPT: Pariser Oasis-Schulhöfe](https://climate-adapt.eea.europa.eu/en/metadata/case-studies/paris-oasis-schoolyard-programme-france)
+  **Quellen:** [AP via WUNC: 50.000 Hitzetote im Sommer 2026](https://www.wunc.org/2026-10-23/europes-heat-claims-50-000-lives-climate-change-blamed-for-two-thirds-of-deaths) · [Grist: Europas tödlichster Sommer](https://grist.org/extreme-heat/europes-hottest-summer-ever-was-also-its-deadliest-by-far/) · [EEA: Indikator städtische Wärmeinseln](https://climate-adapt.eea.europa.eu/en/metadata/indicators/urban-heat-island-intensity) · [Reuters via Yahoo: Schulen und Krankenhäuser in Wärmeinseln](https://www.yahoo.com/news/europes-city-schools-hospitals-risk-220444865.html) · [EU-Kommission zur Lancet-Studie (Iungman et al. 2023)](https://environment.ec.europa.eu/news/increasing-tree-coverage-30-european-cities-could-reduce-deaths-linked-urban-heat-island-effect-2023-06-21_en) · [LSHTM zur Lancet-Studie](https://www.lshtm.ac.uk/newsevents/news/2023/planting-more-trees-could-decrease-deaths-higher-summer-temperatures-cities-3) · [Climate-ADAPT: Pariser Oasis-Schulhöfe](https://climate-adapt.eea.europa.eu/en/metadata/case-studies/paris-oasis-schoolyard-programme-france)
 ---
-No European summer on record in such analyses has been as deadly as the summer of 2026. Researchers at Imperial College London and the London School of Hygiene & Tropical Medicine put the figure at an estimated **50,391 heat-related excess deaths** across 854 European cities from June to August, in a rapid study.[^1] By their analysis, climate change accounts for about **65 percent** of these. The highest figure before that came in 2022, at about 29,500.[^2]
+No European summer on record in such analyses has been as deadly as the summer of 2026. Researchers at Imperial College London put the figure at an estimated **50,391 heat-related excess deaths** across 854 European cities from June to August, in a study for the journal Nature Health.[^1] By their analysis, climate change accounts for about **65 percent** of these. The highest figure before that came in 2022, at about 29,500.[^1][^2]
 
 These are estimates from models rather than tallies of death certificates. As the study only includes cities holding about 40 percent of the population, its authors regard the numbers as a lower bound.[^1]
 
@@ -79,4 +79,4 @@ With climate change, heatwaves come more often, last longer and hit harder. It t
 
 ---
 
-**Sources:** [AP via WUNC: 50,000 heat deaths in summer 2026](https://www.wunc.org/2026-10-23/europes-heat-claims-50-000-lives-climate-change-blamed-for-two-thirds-of-deaths) · [Grist: Europe's deadliest summer](https://grist.org/extreme-heat/europes-hottest-summer-ever-was-also-its-deadliest-by-far/) · [EEA: urban heat island indicator](https://climate-adapt.eea.europa.eu/en/metadata/indicators/urban-heat-island-intensity) · [Reuters via Yahoo: schools and hospitals in heat islands](https://news.yahoo.com/europes-city-schools-hospitals-risk-220444865.html) · [European Commission on the Lancet study (Iungman et al. 2023)](https://environment.ec.europa.eu/news/increasing-tree-coverage-30-european-cities-could-reduce-deaths-linked-urban-heat-island-effect-2023-06-21_en) · [LSHTM on the Lancet study](https://www.lshtm.ac.uk/newsevents/news/2023/planting-more-trees-could-decrease-deaths-higher-summer-temperatures-cities-3) · [Climate-ADAPT: Paris Oasis schoolyards](https://climate-adapt.eea.europa.eu/en/metadata/case-studies/paris-oasis-schoolyard-programme-france)
+**Sources:** [AP via WUNC: 50,000 heat deaths in summer 2026](https://www.wunc.org/2026-10-23/europes-heat-claims-50-000-lives-climate-change-blamed-for-two-thirds-of-deaths) · [Grist: Europe's deadliest summer](https://grist.org/extreme-heat/europes-hottest-summer-ever-was-also-its-deadliest-by-far/) · [EEA: urban heat island indicator](https://climate-adapt.eea.europa.eu/en/metadata/indicators/urban-heat-island-intensity) · [Reuters via Yahoo: schools and hospitals in heat islands](https://www.yahoo.com/news/europes-city-schools-hospitals-risk-220444865.html) · [European Commission on the Lancet study (Iungman et al. 2023)](https://environment.ec.europa.eu/news/increasing-tree-coverage-30-european-cities-could-reduce-deaths-linked-urban-heat-island-effect-2023-06-21_en) · [LSHTM on the Lancet study](https://www.lshtm.ac.uk/newsevents/news/2023/planting-more-trees-could-decrease-deaths-higher-summer-temperatures-cities-3) · [Climate-ADAPT: Paris Oasis schoolyards](https://climate-adapt.eea.europa.eu/en/metadata/case-studies/paris-oasis-schoolyard-programme-france)

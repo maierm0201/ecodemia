@@ -5,7 +5,7 @@ title_de: "Strom aus der Steckdose: Deutschland zählt mehr als 1,4 Millionen Ba
 subtitle: "Plug-in solar has become a mass-market product, thanks to looser rules, a new product standard and legal protection for tenants. Here is what you may install, what you can expect from it and what to look out for before you buy."
 subtitle_de: "Lockerere Vorschriften, eine neue Produktnorm und gesetzliche Rechte für Mieter haben Steckersolar zur Massenware gemacht. Was zulässig ist, welchen Nutzen es hat und was man vor dem Kauf prüfen sollte."
 date: 2026-11-21
-checked: 2026-11-21
+checked: 2026-11-25
 key_facts: |
   - By September 2026, Germany had about 1.49 million registered plug-in solar devices
   - The household circuit may receive up to 800 W, fed by panels with a combined rating of up to 2,000 W
@@ -27,7 +27,7 @@ body_de: |
 
   ## Die Zahlen
 
-  Eine Auswertung von Strom-Report zählte Mitte April 2026 im Marktstammdatenregister der Bundesnetzagentur **rund 1,31 Millionen** gemeldete Steckersolargeräte.[^1] Anfang September waren es nach Angaben des Anbieters kleines kraftwerk bereits **rund 1,49 Millionen**.[^2] Vermutlich sind es in Wirklichkeit mehr, denn trotz Meldepflicht bleiben viele Geräte unregistriert.
+  Eine Auswertung von Strom-Report zählte Mitte April 2026 im Marktstammdatenregister der Bundesnetzagentur **rund 1,31 Millionen** gemeldete Steckersolargeräte.[^1] Anfang September waren es nach Angaben des Anbieters kleines kraftwerk bereits **rund 1,49 Millionen**.[^2] Vermutlich sind es in Wirklichkeit mehr: Die Anmeldung ist Pflicht,[^6] Modellschätzungen zufolge bleiben aber viele Geräte unregistriert.[^1]
 
   Die Anlagen werden größer: Derselben Auswertung zufolge besteht fast die Hälfte der 2026 neu angemeldeten Geräte aus vier statt zwei Modulen.[^2]
 
@@ -37,16 +37,16 @@ body_de: |
 
   - **Leistung:** Ins Hausnetz darf der Wechselrichter bis zu **800 Watt** abgeben, während die angeschlossenen Module zusammen auf bis zu **2.000 Watt** kommen dürfen.[^3]
   - **Anmeldung:** Ausreichend ist ein vereinfachter Eintrag ins Marktstammdatenregister, spätestens einen Monat nach der Inbetriebnahme.[^6]
-  - **Mieter und Eigentümer:** Seit 2024 zählen Steckersolargeräte zu den privilegierten baulichen Veränderungen. Ein pauschales Nein von Vermietern und Eigentümergemeinschaften ist damit ausgeschlossen, über die Befestigung dürfen sie jedoch mitentscheiden.[^5]
+  - **Mieter und Eigentümer:** Seit 2024 zählen Steckersolargeräte zu den privilegierten baulichen Veränderungen. Ein pauschales Nein von Vermietern und Eigentümergemeinschaften ist damit ausgeschlossen, über die Befestigung dürfen sie jedoch mitentscheiden.[^5][^6]
   - **Norm und Stecker:** Für Geräte ohne Speicher gilt seit dem **1. Dezember 2025** die Produktnorm DIN VDE V 0126-95. Sie sieht den gewöhnlichen Schuko-Stecker bis zu einer Modulleistung von 960 Watt vor. Liegt die Modulleistung darüber, ist ein spezieller Energiestecker Pflicht.[^4]
 
   ## Was ein Balkonkraftwerk leistet und was nicht
 
-  Mit einem einzelnen Gerät lässt sich ein Teil der Grundlast eines Haushalts abdecken, etwa Kühlschrank, Router und Geräte im Standby. Die Ersparnis hängt von der Ausrichtung, von Schatten und vom Stromverbrauch tagsüber ab. Was nicht im Haushalt verbraucht wird, geht unvergütet ins Netz. Eine Dachanlage kann ein Balkonkraftwerk deshalb nicht ersetzen. Mietern bietet es aber häufig die einzige Chance, eigenen Solarstrom zu produzieren.
+  Mit einem einzelnen Gerät lässt sich ein Teil der Grundlast eines Haushalts abdecken, etwa Kühlschrank, Router und Geräte im Standby. Die Ersparnis hängt von der Ausrichtung, von Schatten und vom Stromverbrauch tagsüber ab. Was nicht im Haushalt verbraucht wird, fließt in aller Regel unvergütet ins Netz; eine Einspeisevergütung erhält in der Praxis kaum ein Steckersolargerät.[^3][^5] Eine Dachanlage kann ein Balkonkraftwerk deshalb nicht ersetzen. Mietern bietet es aber häufig die einzige Chance, eigenen Solarstrom zu produzieren.
 
   ## Worauf man achten sollte
 
-  Beim Kauf empfehlen die Verbraucherzentralen, auf die Übereinstimmung mit der neuen Norm zu achten und die Befestigung vorab mit dem Vermieter zu klären.[^3] Rechtlich maßgeblich ist laut Bundesnetzagentur nicht die tatsächlich genutzte, sondern die höchste am Wechselrichter einstellbare Leistung. Geräte mit Batteriespeicher erfasst die neue Norm bislang nicht.[^3]
+  Die Verbraucherzentralen raten, die Zustimmung von Vermieter oder Eigentümergemeinschaft vorab einzuholen.[^3] Das Berliner SolarZentrum empfiehlt, beim Kauf auf CE-Kennzeichnung und Konformität mit der Anschlussnorm VDE-AR-N 4105 zu achten.[^5] Für die Anmeldung zählt die Nennleistung des Wechselrichters.[^6] Geräte mit Batteriespeicher erfasst die neue Norm bislang nicht.[^3]
 
 
   ---
@@ -57,7 +57,7 @@ Clip a panel to the balcony railing, push the plug into a socket, and you are ge
 
 ## The Numbers
 
-In mid-April 2026, the Federal Network Agency's market master data register listed about **1.31 million** plug-in solar devices, an analysis by Strom-Report found.[^1] The supplier kleines kraftwerk put the count at about **1.49 million** by early September in its own analysis.[^2] The true total is likely higher: registration is compulsory, yet plenty of devices never get recorded.
+In mid-April 2026, the Federal Network Agency's market master data register listed about **1.31 million** plug-in solar devices, an analysis by Strom-Report found.[^1] The supplier kleines kraftwerk put the count at about **1.49 million** by early September in its own analysis.[^2] The true total is likely higher: registration is compulsory,[^6] yet model estimates suggest plenty of devices never get recorded.[^1]
 
 The systems themselves are growing. The same analysis shows that close to half of the devices registered in 2026 use four panels rather than two.[^2]
 
@@ -67,16 +67,16 @@ A series of legal changes has made getting started easier:
 
 - **Output:** Up to **800 watts** may flow from the inverter into the household circuit, while the panels attached to it may add up to as much as **2,000 watts**.[^3]
 - **Registration:** All that is needed is a simplified entry in the market master data register, made within a month of switching the device on.[^6]
-- **Tenants and owners:** Plug-in solar devices have been classed as a privileged structural change since 2024. That rules out a blanket refusal by landlords or owners' associations, although they can still have a say on how the panels are fixed.[^5]
+- **Tenants and owners:** Plug-in solar devices have been classed as a privileged structural change since 2024. That rules out a blanket refusal by landlords or owners' associations, although they can still have a say on how the panels are fixed.[^5][^6]
 - **Standard and plug:** For devices without storage, the product standard DIN VDE V 0126-95 has applied since **1 December 2025**. It allows an ordinary household (Schuko) plug as long as panel output does not exceed 960 watts. Anything above that requires a special energy plug.[^4]
 
 ## What a Balcony System Delivers, and What It Doesn't
 
-One device can cover a share of a household's base load, such as the fridge, the router and appliances on standby. The savings depend on which way the panels face, on shading and on how much power the household uses during daylight hours. Any electricity that is not used goes into the grid unpaid. That is why a balcony system cannot replace a rooftop array. For many tenants, however, it is the only realistic way to produce solar power of their own.
+One device can cover a share of a household's base load, such as the fridge, the router and appliances on standby. The savings depend on which way the panels face, on shading and on how much power the household uses during daylight hours. Electricity that is not used usually goes into the grid unpaid; in practice, almost no plug-in device receives a feed-in payment.[^3][^5] That is why a balcony system cannot replace a rooftop array. For many tenants, however, it is the only realistic way to produce solar power of their own.
 
 ## What to Check
 
-When buying, Germany's consumer advice centres suggest making sure the device meets the new standard and settling the mounting with the landlord in advance.[^3] In legal terms, the Federal Network Agency goes by the maximum output the inverter can technically be set to, not by the output it actually delivers. The new standard does not yet cover devices that come with battery storage.[^3]
+Germany's consumer advice centres recommend getting the landlord's or owners' association's consent in advance.[^3] Berlin's SolarZentrum advises checking that the device has a CE mark and complies with the grid connection standard VDE-AR-N 4105.[^5] For registration, what counts is the inverter's rated output.[^6] The new standard does not yet cover devices that come with battery storage.[^3]
 
 
 ---

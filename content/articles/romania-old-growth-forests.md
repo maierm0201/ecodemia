@@ -5,7 +5,7 @@ title_de: "Europas letzte wilde Wälder: Rumäniens alte Wälder und der Kampf g
 subtitle: "No EU country outside Scandinavia has more primary and old-growth forest than Romania. More than six years after Brussels opened legal proceedings, the logging goes on, but checks and timber tracking are getting better."
 subtitle_de: "Kein EU-Land außerhalb Skandinaviens hat mehr Ur- und Altwälder als Rumänien. Mehr als sechs Jahre nachdem Brüssel ein Verfahren eröffnet hat, wird weiter geschlagen, doch Kontrollen und Holzrückverfolgung werden besser."
 date: 2026-11-22
-checked: 2026-11-22
+checked: 2026-11-25
 key_facts: |
   - An estimated 525,000 hectares of potential primary and old-growth forest remain in Romania, about 300,000 of them in Natura 2000 sites
   - Between 2021 and 2024, more than 4.7 million cubic metres of wood were cut from such forests, according to NGOs
@@ -23,7 +23,7 @@ cover_credit_de: "Buchenwald bei Bușteni in den rumänischen Karpaten. Foto: Ti
 excerpt: "4.7 million cubic metres taken from old forests in four years, an EU case that stalled, and a minister who says the problem was played down: where Romania's ancient forests stand today."
 excerpt_de: "4,7 Millionen Kubikmeter aus alten Wäldern in vier Jahren, ein EU-Verfahren, das stockt, und eine Ministerin, die sagt, das Problem sei kleingeredet worden: Wie es um Rumäniens alte Wälder steht."
 body_de: |
-  In den Karpaten wachsen noch Wälder, die stärker von der Natur als von der Forstwirtschaft geprägt sind. Bären, Wölfe, Schwarzstörche, Eulen, Spechte, Fledermäuse und seltene Käfer leben dort.[^1] Ein Teil dieser Wälder gehört zum UNESCO-Welterbe „Alte Buchenwälder und Buchenurwälder der Karpaten und anderer Regionen Europas“, das mittlerweile 93 Teilgebiete in 18 Ländern umfasst.[^6] Seit Jahren stehen dieselben Wälder zugleich im Mittelpunkt des größten europäischen Konflikts um illegalen Holzeinschlag.
+  In den Karpaten wachsen noch Wälder, die stärker von der Natur als von der Forstwirtschaft geprägt sind. Bären, Wölfe, Schwarzstörche, Eulen, Spechte, Fledermäuse und Käfer leben dort.[^1] Ein Teil dieser Wälder gehört zum UNESCO-Welterbe „Alte Buchenwälder und Buchenurwälder der Karpaten und anderer Regionen Europas“, das mittlerweile 93 Teilgebiete in 18 Ländern umfasst.[^6] Seit Jahren stehen dieselben Wälder zugleich im Mittelpunkt des größten europäischen Konflikts um illegalen Holzeinschlag.
 
   ## Ein europäischer Schatz
 
@@ -35,7 +35,7 @@ body_de: |
 
   Agent Green, ClientEarth und EuroNatur reichten im September 2019 Beschwerde ein, im Februar 2020 eröffnete die EU-Kommission ein Vertragsverletzungsverfahren gegen Rumänien. Brüssel bemängelte, dass die EU-Holzhandelsverordnung und die Naturschutzrichtlinien, die Natura-2000-Gebiete schützen, nicht richtig angewandt würden. Im Juli 2020 folgte eine begründete Stellungnahme, der letzte Schritt vor einer Klage, mit einer Frist von einem Monat.[^2] Rumänien wies die Vorwürfe als übertrieben zurück und verwies auf geplante Gesetzesänderungen.[^2]
 
-  Im Dezember 2024 erklärten die Umweltverbände, die Kommission habe den Fall nicht an den Europäischen Gerichtshof verwiesen, und die Zerstörung gehe weiter.[^1] Inzwischen hat die Kommission Rumänien eine weitere begründete Stellungnahme übermittelt, weil das Land die FFH-Richtlinie nicht vollständig umsetzt.[^1]
+  Im Dezember 2024 erklärten die Umweltverbände, die Kommission habe den Fall nicht an den Europäischen Gerichtshof verwiesen, und die Zerstörung gehe weiter.[^1] Zudem hat die Kommission Rumänien eine begründete Stellungnahme übermittelt, weil das Land die FFH-Richtlinie nicht vollständig umsetzt.[^1]
 
   ## Eine Ministerin ändert den Ton
 
@@ -45,7 +45,7 @@ body_de: |
 
   ## Jeder Lkw wird erfasst
 
-  Rumäniens wichtigstes Mittel gegen illegales Holz ist SUMAL, ein digitales System, das jeden Holztransport erfasst. Jede Ladung muss mit einem Transportdokument und Fotos registriert werden, und auf der Plattform Inspectorul Pădurii (Waldinspektor) kann jeder die Daten einsehen.[^4] Laut WWF Rumänien hat das System herkömmlichen Betrug eingedämmt, schlägt aber noch nicht automatisch Alarm.[^4]
+  Rumäniens wichtigstes Mittel gegen illegales Holz ist SUMAL, ein digitales System, das Holztransporte erfasst. Jede Ladung muss mit einem Transportdokument und Fotos registriert werden, und auf der Plattform Inspectorul Pădurii (Waldinspektor) kann jeder die Daten einsehen.[^4] Laut WWF Rumänien hat das System herkömmlichen Betrug eingedämmt, schlägt aber noch nicht automatisch Alarm.[^4]
 
   Von Dezember 2025 bis März 2026 erfassten WWF-Beobachter 325 Holztransporte von 97 Betrieben in 13 Forstbezirken. Von den Ladungen, deren Menge sich überprüfen ließ, hatte etwa jede sechste deutlich mehr Holz an Bord als angegeben. Eine Prüfung von 4.300 Transportdokumenten im Februar 2026 bestätigte die Überladung als größte Schwachstelle.[^4] „Die Ergebnisse des Berichts zeigen, dass das Problem nicht mehr fehlende Daten sind, sondern dass sie zu wenig genutzt werden, um Verstöße zu verhindern und automatisch zu erkennen“, sagte Cătălin Vasile, Forstexperte beim WWF Rumänien.[^4]
 
@@ -65,7 +65,7 @@ body_de: |
 
   **Quellen:** [EuroNatur: Neuer Bericht zum Holzeinschlag in Rumäniens Altwäldern (Dez. 2024)](https://www.euronatur.org/en/what-we-do/news/report-shows-again-massive-destruction-of-romanian-forests) · [Fern: EU-Durchsetzung überfällig (2022)](https://www.fern.org/publications-insight/article/eu-enforcement-is-overdue-destruction-of-romanias-natura-2000-primary-and-old-growth-forests-continues-2465/) · [Romania Insider: 5.000 Bäume illegal gefällt im Kreis Brașov (11. Aug. 2026)](https://www.romania-insider.com/society/5000-trees-cut-down-illegally-brasov-aug-2026) · [WWF Rumänien: Monitoringbericht zur Holzrückverfolgung (Juni 2026)](https://wwf.ro/paduri/wwf-report-sumal-sees-but-doesnt-alert/) · [EU-Kommission: Rumänische Beihilferegelung über 200 Mio. Euro für Waldbesitzer (Aug. 2023)](https://romania.representation.ec.europa.eu/news/ajutoare-de-stat-comisia-aproba-o-schema-romaniei-valoare-de-200-milioane-eur-avand-ca-scop-2023-08-10_ro) · [UNESCO: Alte Buchenwälder und Buchenurwälder der Karpaten und anderer Regionen Europas](https://whc.unesco.org/en/list/1133/) · [Foundation Conservation Carpathia](https://carpathia.org/en/) · [Verordnung (EU) 2023/1115 über entwaldungsfreie Produkte (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2023/1115/oj)
 ---
-The Carpathian Mountains still hold forests shaped more by nature than by forestry. Bears, wolves, black storks, owls, woodpeckers, bats and rare beetles live there.[^1] Some of these woods belong to a UNESCO World Heritage site, the Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe, which now takes in 93 component parts in 18 countries.[^6] For years, the same forests have also been at the heart of Europe's biggest row over illegal logging.
+The Carpathian Mountains still hold forests shaped more by nature than by forestry. Bears, wolves, black storks, owls, woodpeckers, bats and beetles live there.[^1] Some of these woods belong to a UNESCO World Heritage site, the Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe, which now takes in 93 component parts in 18 countries.[^6] For years, the same forests have also been at the heart of Europe's biggest row over illegal logging.
 
 ## A European treasure
 
@@ -77,7 +77,7 @@ That protection has not stopped the saws. A report by EuroNatur, the Romanian gr
 
 Agent Green, ClientEarth and EuroNatur filed a complaint in September 2019, and in February 2020 the European Commission opened infringement proceedings against Romania. Brussels pointed to failures in applying the EU Timber Regulation and the nature directives that protect Natura 2000 sites. A reasoned opinion followed in July 2020, the last stage before a court case, giving Romania one month to act.[^2] Romania dismissed the accusations as exaggerated and pointed to legal changes in the pipeline.[^2]
 
-In December 2024, the NGOs said the Commission had not referred the case to the EU Court of Justice, and that the destruction had continued.[^1] The Commission has since sent Romania a further reasoned opinion over its failure to fully implement the Habitats Directive.[^1]
+In December 2024, the NGOs said the Commission had not referred the case to the EU Court of Justice, and that the destruction had continued.[^1] The Commission has also sent Romania a reasoned opinion over its failure to fully implement the Habitats Directive.[^1]
 
 ## A minister changes the tone
 
@@ -87,7 +87,7 @@ Buzoianu said inspections rose sharply once the leadership of the Forest Guard h
 
 ## Tracking every truck
 
-Romania's main weapon against illegal timber is SUMAL, a digital system that tracks every timber transport. Each load has to be registered with a transport document and photos, and the public can see the data on the Inspectorul Pădurii (Forest Inspector) platform.[^4] WWF Romania says the system has cut down on traditional fraud, but still does not send out automatic alerts.[^4]
+Romania's main weapon against illegal timber is SUMAL, a digital system that records timber transports. Each load has to be registered with a transport document and photos, and the public can see the data on the Inspectorul Pădurii (Forest Inspector) platform.[^4] WWF Romania says the system has cut down on traditional fraud, but still does not send out automatic alerts.[^4]
 
 Between December 2025 and March 2026, WWF observers recorded 325 timber transports by 97 operators in 13 forest districts. Of the loads whose volume could be checked, about one in six was carrying significantly more wood than declared. A review of 4,300 transport documents in February 2026 confirmed that overloading is the biggest weak spot.[^4] "The report's findings show that the problem is no longer the lack of data, but their insufficient use for the prevention and automated detection of non-compliance," said Cătălin Vasile, a forestry expert at WWF Romania.[^4]
 

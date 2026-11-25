@@ -5,7 +5,7 @@ title_de: "Solar übernimmt die Führung: Erstmals größte Quelle für neue Ene
 subtitle: "Solar power met more of the world's rising energy demand in 2025 than oil, gas or coal, something no modern renewable had done before. Austria and Switzerland, though, installed less than a year earlier."
 subtitle_de: "2025 deckte Solarstrom einen größeren Teil des steigenden Energiebedarfs der Welt als Öl, Gas oder Kohle, was noch keiner modernen erneuerbaren Quelle gelungen war. Österreich und die Schweiz installierten jedoch weniger als im Jahr davor."
 date: 2026-11-23
-checked: 2026-11-23
+checked: 2026-11-25
 key_facts: |
   - In 2025, solar covered more than 25 % of the increase in global energy demand, gas 17 % (IEA)
   - Solar generation grew by 600 TWh, more than any source has added in one year outside post-crisis recoveries

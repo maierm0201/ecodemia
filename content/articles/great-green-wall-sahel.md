@@ -5,7 +5,7 @@ title_de: "19 Jahre Große Grüne Mauer: Hat Afrikas Bollwerk gegen die Sahara W
 subtitle: "The idea was a belt of trees reaching from Senegal to Djibouti. Now the Great Green Wall is measured in restored land, jobs and carbon, and the figures vary with who does the counting."
 subtitle_de: "Die Idee war ein Baumgürtel von Senegal bis Dschibuti. Heute misst man die Große Grüne Mauer in wiederhergestelltem Land, Arbeitsplätzen und Kohlenstoff, und die Zahlen hängen davon ab, wer zählt."
 date: 2026-11-22
-checked: 2026-11-22
+checked: 2026-11-25
 key_facts: |
   - By 2030, the aim is 100 million hectares of restored land, 250 million tonnes of stored carbon and 10 million jobs
   - A 2020 status report counted about 4 million hectares inside the core zones, or 4 % of the target
@@ -41,17 +41,17 @@ body_de: |
 
   Die Antwort hängt davon ab, was man zählt:
 
-  - **4 Millionen Hektar:** Laut dem ersten Statusbericht aus dem Jahr 2020 waren in den Kernzonen der Initiative rund 4 Millionen Hektar saniert, 4 Prozent des Ziels von 100 Millionen Hektar. Bezog man die weitere Region ein, darunter allein 12 Millionen Hektar in Äthiopien, kam man auf fast 17,8 Millionen Hektar.[^3]
+  - **4 Millionen Hektar:** Laut dem ersten Statusbericht aus dem Jahr 2020 waren in den strikten Interventionszonen der Initiative rund 4 Millionen Hektar saniert, 4 Prozent des Ziels von 100 Millionen Hektar. Bezog man die weitere Region ein, darunter allein 12 Millionen Hektar in Äthiopien, kam man auf fast 17,8 Millionen Hektar.[^3]
   - **Mehr als 20 Millionen Hektar:** Auf der UNCCD-Konferenz in der Mongolei sagte Mohammed im August 2026, mehr als 20 Millionen Hektar seien „durch Maßnahmen im Umfeld der Initiative und über ihren ursprünglichen Korridor hinaus“ wiederhergestellt worden, fünf Millionen davon von Bauern in Niger regeneriert.[^2]
-  - **1,66 Millionen Hektar:** Zum fünfjährigen Bestehen des Great Green Wall Accelerator, einer 2021 gegründeten Koordinierungsplattform, nennt ein Bericht 1,66 Millionen Hektar in Wiederherstellung, 24 Millionen Tonnen gebundenes oder vermiedenes CO₂-Äquivalent, 4,6 Millionen Arbeitsplätze und 46 Millionen erreichte Menschen. Erfasst werden mehr als 389 Projekte, aber weniger als 90 davon liefern Daten im vereinbarten Format. Die UNCCD spricht deshalb von frühen Erfolgen und erheblichen Lücken in der Berichterstattung.[^1]
+  - **1,66 Millionen Hektar:** Zum fünfjährigen Bestehen des Great Green Wall Accelerator, einer 2021 gegründeten Koordinierungsplattform, nennt ein Bericht 1,66 Millionen Hektar in Wiederherstellung, 24 Millionen Tonnen gebundenes oder gemindertes CO₂-Äquivalent, 4,6 Millionen Arbeitsplätze und 46 Millionen erreichte Menschen. Erfasst werden mehr als 389 Projekte, aber weniger als 90 davon liefern Daten im vereinbarten Format. Die UNCCD spricht deshalb von frühen Erfolgen und erheblichen Lücken in der Berichterstattung.[^1]
 
   Was ein Erfolg erfordern würde, rechnete der Bericht von 2020 ebenfalls vor: 8,2 Millionen Hektar Wiederherstellung jährlich, für 4,3 Milliarden US-Dollar pro Jahr.[^3]
 
   ## Wo ist das Geld geblieben?
 
-  Auf dem One Planet Summit 2021 versprachen Geldgeber mehr als 19 Milliarden US-Dollar.[^1] Wie viel davon tatsächlich ankommt, ist strittig. 2025 nahm eine Studie in der Fachzeitschrift *Land Use Policy* den Senegal unter die Lupe, der oft als Musterland gilt. Von 870 Millionen Dollar, die Geber von 2011 bis 2019 zusagten, fanden sich in nationalen Projektunterlagen nur 149 Millionen wieder.[^4]
+  Auf dem One Planet Summit 2021 versprachen Geldgeber mehr als 19 Milliarden US-Dollar.[^1] Wie viel davon tatsächlich ankommt, ist strittig. 2025 nahm eine Studie in der Fachzeitschrift *Land Use Policy* den Senegal unter die Lupe, der oft als Musterland gilt. Von 870 Millionen Dollar, die Geber von 2011 bis 2019 zusagten, kamen bei den Begünstigten nur 149 Millionen an.[^4]
 
-  Ökologisch fiel die Bilanz dürftig aus. Auf Satellitenbildern von 36 Aufforstungsflächen im Norden Senegals war nur bei zweien eine deutliche Begrünung zu sehen, und nur eine davon übertraf, was der Regen allein erklären würde. Die Gemeinden vor Ort hatten dagegen etwas von Saisonarbeit und sozialen Leistungen.[^4] Hauptautorin Annah Lake Zhu von der Universität Wageningen sagte Mongabay, die Mauer sei vor allem symbolisch, ein Traum in den Köpfen von Geldgebern, Politikern und Öffentlichkeit, und: „Wenn es ein Traum bleibt, droht es zur Fata Morgana zu werden.“[^4] Frust herrscht auch unter afrikanischen Verantwortlichen. „Wo sind denn diese 19 Milliarden Dollar?“, fragte Abakar Mahamat Zougoulou, wissenschaftlich-technischer Direktor der Panafrikanischen Agentur der Großen Grünen Mauer.[^4]
+  Ökologisch fiel die Bilanz dürftig aus. Satellitenbilder und Feldstudien zu 36 Aufforstungsflächen im Norden Senegals zeigten nur bei zweien eine nennenswerte Begrünung, und nur eine davon übertraf, was der Regen allein erklären würde. Die Gemeinden vor Ort hatten dagegen etwas von Saisonarbeit und sozialen Leistungen.[^4] Hauptautorin Annah Lake Zhu von der Universität Wageningen sagte Mongabay, die Mauer sei vor allem symbolisch, ein Traum in den Köpfen von Geldgebern, Politikern und Öffentlichkeit, und: „Wenn es ein Traum bleibt, droht es zur Fata Morgana zu werden.“[^4] Frust herrscht auch unter afrikanischen Verantwortlichen. „Wo sind denn diese 19 Milliarden Dollar?“, fragte Abakar Mahamat Zougoulou, wissenschaftlich-technischer Direktor der Panafrikanischen Agentur der Großen Grünen Mauer.[^4]
 
   ## Was funktioniert
 
@@ -85,17 +85,17 @@ Planting trees is now just one element. In August, UN Deputy Secretary-General A
 
 The answer depends on what gets counted:
 
-- **4 million hectares:** According to the first status report, from 2020, about 4 million hectares had been rehabilitated inside the initiative's core intervention zones, or 4 percent of the 100-million-hectare goal. Across the wider region, including 12 million hectares under restoration in Ethiopia alone, the total came to nearly 17.8 million hectares.[^3]
+- **4 million hectares:** According to the first status report, from 2020, about 4 million hectares had been rehabilitated inside the initiative's strict intervention zones, or 4 percent of the 100-million-hectare goal. Across the wider region, including 12 million hectares under restoration in Ethiopia alone, the total came to nearly 17.8 million hectares.[^3]
 - **More than 20 million hectares:** Speaking at the UNCCD conference in Mongolia in August 2026, Mohammed said more than 20 million hectares had been restored "through efforts associated with the initiative and beyond its original corridor", five million of them regenerated by farmers in Niger.[^2]
-- **1.66 million hectares:** The Great Green Wall Accelerator, a coordination platform created in 2021, marked five years with a report listing 1.66 million hectares under restoration, 24 million tonnes of CO₂ equivalent sequestered or avoided, 4.6 million jobs and 46 million people reached. More than 389 projects are tracked by its monitoring system, yet fewer than 90 of them report data in the agreed format, so the UNCCD describes the gains as early and points to significant gaps in reporting.[^1]
+- **1.66 million hectares:** The Great Green Wall Accelerator, a coordination platform created in 2021, marked five years with a report listing 1.66 million hectares under restoration, 24 million tonnes of CO₂ equivalent sequestered or mitigated, 4.6 million jobs and 46 million people reached. More than 389 projects are tracked by its monitoring system, yet fewer than 90 of them report data in the agreed format, so the UNCCD describes the gains as early and points to significant gaps in reporting.[^1]
 
 The 2020 report also spelled out what success would require: restoring 8.2 million hectares a year, at a cost of 4.3 billion US dollars annually.[^3]
 
 ## Where did the money go?
 
-Donors pledged more than 19 billion US dollars at the One Planet Summit in 2021.[^1] How much of that has actually arrived on the ground is contested. In 2025, a study in the journal *Land Use Policy* examined Senegal, a country often presented as a model. Of the 870 million dollars donors pledged from 2011 to 2019, national project records accounted for only 149 million.[^4]
+Donors pledged more than 19 billion US dollars at the One Planet Summit in 2021.[^1] How much of that has actually arrived on the ground is contested. In 2025, a study in the journal *Land Use Policy* examined Senegal, a country often presented as a model. Of the 870 million dollars donors pledged from 2011 to 2019, only 149 million reached beneficiaries.[^4]
 
-The ecological gains there were meagre. Satellite images of 36 reforestation plots in northern Senegal showed clear greening on just two, and only one of those did better than rainfall alone would explain. Communities nearby did gain from seasonal work and social services.[^4] Annah Lake Zhu of Wageningen University, the lead author, told Mongabay that the wall is largely symbolic, a dream in the minds of donors, politicians and the public, and that "if it remains a dream, it risks becoming a mirage".[^4] Frustration runs high among African officials as well. "So, where is this $19 billion?" asked Abakar Mahamat Zougoulou, scientific and technical director of the Pan-African Agency of the Great Green Wall.[^4]
+The ecological gains there were meagre. Satellite imagery and field surveys of 36 reforestation plots in northern Senegal found notable greening on just two, and only one of those did better than rainfall alone would explain. Communities nearby did gain from seasonal work and social services.[^4] Annah Lake Zhu of Wageningen University, the lead author, told Mongabay that the wall is largely symbolic, a dream in the minds of donors, politicians and the public, and that "if it remains a dream, it risks becoming a mirage".[^4] Frustration runs high among African officials as well. "So, where is this $19 billion?" asked Abakar Mahamat Zougoulou, scientific and technical director of the Pan-African Agency of the Great Green Wall.[^4]
 
 ## What works
 

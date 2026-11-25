@@ -5,7 +5,7 @@ title_de: "Einen Kontinent reparieren: Das Renaturierungsgesetz an seiner ersten
 subtitle: "By 1 September 2026, member states were supposed to submit draft plans for restoring damaged ecosystems. Many did not make it. What the law really demands, and where Germany and Austria stand."
 subtitle_de: "Am 1. September 2026 lief die Frist ab, bis zu der die Mitgliedstaaten Entwürfe für die Wiederherstellung geschädigter Ökosysteme einreichen sollten. Viele schafften das nicht. Was das Gesetz wirklich fordert und wie weit Deutschland und Österreich sind."
 date: 2026-11-21
-checked: 2026-11-22
+checked: 2026-11-25
 updated: 2026-11-22
 update_note: "Added a section on the draft plans in Germany and Austria."
 update_note_de: "Abschnitt zu den Planentwürfen in Deutschland und Österreich ergänzt."
@@ -43,7 +43,7 @@ body_de: |
 
   Auf welchem Weg die Ziele erreicht werden, regeln nationale Wiederherstellungspläne. Bis zum **1. September 2026** mussten die Entwürfe in Brüssel vorliegen. Das Portal Eunews zählte zum Stichtag **20 Mitgliedstaaten**, die noch keinen Entwurf eingereicht hatten, Italien eingeschlossen. Spanien gab seinen Plan am 31. August ab.[^3]
 
-  Knapp ist auch das Geld. Euronews zufolge fehlen für die Umsetzung pro Jahr rund **65 Milliarden Euro**.[^4]
+  Knapp ist auch das Geld. Forschende der Partnerschaft Biodiversa+ beziffern die jährliche Finanzierungslücke für die Umsetzung laut Euronews auf rund **65 Milliarden Euro**.[^4]
 
   ## Deutschland und Österreich
 
@@ -51,7 +51,7 @@ body_de: |
 
   ### Deutschland
 
-  Vom 25. April bis zum 25. Juni 2026 konnte sich die Öffentlichkeit online zum Entwurf des Nationalen Wiederherstellungsplans äußern, den das Bundesumweltministerium vorgelegt hatte.[^5] Unklar ist, ob er rechtzeitig in Brüssel einging: Laut einem Bericht vom September war Deutschland im öffentlichen EU-Register zu Monatsbeginn noch als „ausstehend“ verzeichnet.[^6] Als Abgabetermin nennt das Ministerium selbst den September, für den endgültigen Plan das Jahr 2027.[^5]
+  Vom 25. April bis zum 28. Juni 2026 konnte sich die Öffentlichkeit online zum Entwurf des Nationalen Wiederherstellungsplans äußern, den das Bundesumweltministerium vorgelegt hatte.[^5] Unklar ist, ob er rechtzeitig in Brüssel einging: Laut einem Bericht vom September war Deutschland im öffentlichen EU-Register zu Monatsbeginn noch als „ausstehend“ verzeichnet.[^6] Als Abgabetermin nennt das Ministerium selbst den September, für den endgültigen Plan das Jahr 2027.[^5]
 
   Vorgelegt haben den Entwurf Ende April das Bundesumweltministerium und das Bundesamt für Naturschutz.[^9] Erarbeitet wurde er in bestehenden Arbeitsgruppen von Bund und Ländern, denn beim Naturschutz gibt der Bund den Rahmen vor und die Länder füllen ihn aus.[^8]
 
@@ -78,14 +78,14 @@ body_de: |
 
   ## Wie es weitergeht
 
-  Voraussichtlich bis März 2027 prüft die Kommission die Entwürfe und meldet sich bei den Staaten zurück. Bis September 2027 müssen die endgültigen Pläne vorliegen. Dann zeigt sich, ob aus den Zielen konkrete Flächen, Budgets und Zuständigkeiten werden. Durch einen Plan wird noch kein Moor nass, doch er macht Untätigkeit überprüfbar.
+  Voraussichtlich bis zum Frühjahr 2027 prüft die Kommission die Entwürfe und meldet sich bei den Staaten zurück.[^5] Bis September 2027 müssen die endgültigen Pläne vorliegen. Dann zeigt sich, ob aus den Zielen konkrete Flächen, Budgets und Zuständigkeiten werden. Durch einen Plan wird noch kein Moor nass, doch er macht Untätigkeit überprüfbar.
 
 
   ---
 
   **Quellen:** [Verordnung (EU) 2024/1991 auf EUR-Lex](https://eur-lex.europa.eu/eli/reg/2024/1991/oj) · [EU-Kommission: Nature Restoration Regulation](https://environment.ec.europa.eu/topics/nature-and-biodiversity/nature-restoration-regulation_en) · [Eunews: 20 Staaten im Verzug (2. Sept. 2026)](https://www.eunews.it/en/2026/09/02/twenty-eu-countries-including-italy-are-behind-schedule-with-their-national-nature-restoration-plans/) · [Euronews: 65 Mrd. Euro Finanzierungslücke](https://www.euronews.com/2026/08/27/eu-countries-urged-to-invest-in-nature-restoration-plans-and-close-65bn-annual-shortfall) · [BMUKN: Nationaler Wiederherstellungsplan](https://www.bundesumweltministerium.de/themen/naturschutz/wiederherstellung-von-oekosystemen/die-eu-verordnung-zur-wiederherstellung-der-natur/nationaler-wiederherstellungsplan-fuer-die-natur-in-deutschland) · [Techzeitgeist: Deutschland und die Frist](https://www.techzeitgeist.de/deutschland-naturplan-frist-verpasst-wiederherstellung/) · [Neue Landschaft: Agrarminister fordern Abschaffung](https://neuelandschaft.de/artikel/bundesumweltministerium-arbeitet-an-deutschem-wiederherstellungsplan-unions-agrarminister-wollen-nature-restoration-law-abschaffen-14006) · [NABU: Zwischenbilanz zum Nationalen Wiederherstellungsplan (8. Juli 2026)](https://blogs.nabu.de/naturschaetze-retten/nwp-entwurf/) · [Klimareporter: Was aus Deutschlands beschädigten Landschaften werden soll (11. Mai 2026)](https://klimareporter.de/deutschland/was-aus-deutschlands-beschaedigten-landschaften-werden-soll) · [MeinBezirk: Österreich übermittelt Entwurf (1. Sept. 2026)](https://www.meinbezirk.at/c-politik/entwurf-des-oesterreichischen-wiederherstellungsplans-uebermittelt_a8875898) · [Kommunal: Was Gemeinden erwartet (2. Sept. 2026)](https://kommunal.at/nationaler-wiederherstellungsplan-was-gemeinden-erwartet) · [WWF Österreich: Städte-Teil des Plans (12. Sept. 2026)](https://www.ots.at/presseaussendung/OTM_20260912_OTM0001/wwf-auswertung-renaturierungsplan-vernachlaessigt-gruenflaechenschutz-in-staedten) · [BirdLife, Naturschutzbund, Umweltdachverband: Mut zur Natur (15. Sept. 2026)](https://www.ots.at/presseaussendung/OTS_20260915_OTS0033/mut-zur-natur-statt-mut-zur-luecke)
 ---
-For a long time, conservation law played defence: it banned making a bad situation worse. The EU Nature Restoration Regulation (Regulation (EU) 2024/1991) turns that logic around. Member states now have a duty to actively repair damaged ecosystems, against measurable targets and to fixed deadlines. The regulation has applied since 18 August 2024.[^2]
+For a long time, conservation law played defence: it banned making a bad situation worse. The EU Nature Restoration Regulation (Regulation (EU) 2024/1991) turns that logic around. Member states now have a duty to actively repair damaged ecosystems, against measurable targets and to fixed deadlines. The regulation entered into force on 18 August 2024.[^2]
 
 ## What the Law Requires
 
@@ -102,7 +102,7 @@ Hardly any environmental law has drawn more opposition. Farm groups were worried
 
 How each country will meet the targets is laid down in national restoration plans. Brussels needed the drafts by **1 September 2026**. When the deadline passed, **20 member states** had still not submitted a draft, Italy included, according to a tally by the news site Eunews. Spain handed in its plan on 31 August.[^3]
 
-Funding is also short. Euronews reports a yearly gap of around **65 billion euros** for implementation.[^4]
+Funding is also short. Researchers from the Biodiversa+ partnership put the yearly funding gap for implementation at around **65 billion euros**, Euronews reports.[^4]
 
 ## Germany and Austria
 
@@ -110,11 +110,11 @@ Both countries have draft plans, and in both, critics say the drafts lean mainly
 
 ### Germany
 
-From 25 April to 25 June 2026, the Federal Environment Ministry held a public online consultation on its draft National Restoration Plan.[^5] It is unclear whether the plan arrived in Brussels in time: according to a report from September, Germany's entry in the public EU register was still listed as "pending" early that month.[^6] For its part, the ministry gives September as the submission date and 2027 for the final plan.[^5]
+From 25 April to 28 June 2026, the Federal Environment Ministry held a public online consultation on its draft National Restoration Plan.[^5] It is unclear whether the plan arrived in Brussels in time: according to a report from September, Germany's entry in the public EU register was still listed as "pending" early that month.[^6] For its part, the ministry gives September as the submission date and 2027 for the final plan.[^5]
 
 The draft was presented at the end of April by the Federal Environment Ministry and the Federal Agency for Nature Conservation.[^9] It was drawn up in existing working groups of the federal and state governments, because in nature conservation the federal government sets the framework and the states fill it in.[^8]
 
-The conservation group NABU welcomes the fact that a plan exists but finds it too vague. "It is good that the plan is finally here. But paper alone restores no bogs and brings back no species," said NABU president Jörg-Andreas Krüger.[^9] NABU also criticises that for pollinators and urban ecosystems the draft lists only federal measures, because the states did not contribute their own programmes, and that key documents, such as Germany's definition of a free-flowing river, have not been made public.[^8]
+The conservation group NABU welcomes the fact that a plan exists but finds it too vague. "It is good that the plan is finally here. But paper alone does not yet restore a single bog or bring back a single species," said NABU president Jörg-Andreas Krüger.[^9] NABU also criticises that for pollinators and urban ecosystems the draft lists only federal measures, because the states did not contribute their own programmes, and that key documents, such as Germany's definition of a free-flowing river, have not been made public.[^8]
 
 There is resistance from the other side as well. The German Farmers' Association objects to planned pre-emption rights for nature conservation, new categories of protected area and additional planning tools.[^9] The CDU/CSU group in the Bundestag wants the regulation repealed altogether, while Chancellery Minister Thorsten Frei (CDU) has repeatedly called it "right and important".[^9]
 
@@ -137,7 +137,7 @@ That is exactly what environmental groups and the Greens criticise. "Totschnig i
 
 ## What Happens Next
 
-The Commission is expected to finish reviewing the drafts around March 2027 and then send countries its feedback. The final plans have to be in by September 2027. Only then will it be clear whether the targets become concrete areas, budgets and responsibilities. No bog gets wetter because of a plan, but a plan does make inaction measurable.
+The Commission is expected to finish reviewing the drafts in spring 2027 and then send countries its feedback.[^5] The final plans have to be in by September 2027. Only then will it be clear whether the targets become concrete areas, budgets and responsibilities. No bog gets wetter because of a plan, but a plan does make inaction measurable.
 
 
 ---

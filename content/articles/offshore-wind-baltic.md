@@ -5,14 +5,14 @@ title_de: "Stahlwälder im Meer: Der Offshore-Ausbau in der Ostsee nach vier Jah
 subtitle: "Eight Baltic countries promised in 2022 to multiply their offshore wind seven times over by 2030. Poland's first large wind farm now supplies the grid, while tenders in other places are stuck."
 subtitle_de: "Acht Ostseestaaten sagten 2022 zu, ihre Offshore-Windkraft bis 2030 auf das Siebenfache zu steigern. Inzwischen liefert Polens erster großer Windpark Strom, während andernorts Ausschreibungen festhängen."
 date: 2026-11-21
-checked: 2026-11-21
+checked: 2026-11-25
 key_facts: |
   - Eight Baltic countries pledged in 2022 to reach at least 19.6 GW of offshore wind by 2030, seven times what was installed then
-  - Baltic Power in Poland (about 1.2 GW) sent its first electricity to the grid in July 2026
+  - Baltic Power in Poland (1.14 GW) sent its first electricity to the grid in July 2026
   - With only one bidder, Lithuania's second 700 MW tender failed
 key_facts_de: |
   - Acht Ostseestaaten sagten 2022 zu, bis 2030 mindestens 19,6 GW Offshore-Wind zu erreichen, siebenmal so viel wie damals installiert
-  - Im Juli 2026 floss erstmals Strom aus dem polnischen Windpark Baltic Power (rund 1,2 GW)
+  - Im Juli 2026 floss erstmals Strom aus dem polnischen Windpark Baltic Power (1,14 GW)
   - Mit nur einem Bieter scheiterte Litauens zweite Ausschreibung über 700 MW
 category: energy
 cover_image: /assets/images/baltic-offshore-wind-farm.jpg
@@ -27,15 +27,15 @@ body_de: |
 
   ## Das Versprechen von Marienborg
 
-  Dänemark, Deutschland, Estland, Finnland, Lettland, Litauen, Polen und Schweden einigten sich in der **Marienborg-Erklärung** vom 30. August 2022 darauf, die Offshore-Windkraft in der Ostsee bis 2030 auf **mindestens 19,6 Gigawatt** zu steigern. Damit würde sich die damals installierte Leistung von 2,8 Gigawatt versiebenfachen.[^1] Auf lange Sicht halten die Staaten bis 2050 bis zu 93 Gigawatt für möglich.[^1]
+  Dänemark, Deutschland, Estland, Finnland, Lettland, Litauen, Polen und Schweden einigten sich in der **Marienborg-Erklärung** vom 30. August 2022 darauf, die Offshore-Windkraft in der Ostsee bis 2030 auf **mindestens 19,6 Gigawatt** zu steigern. Damit würde sich die damals installierte Leistung von 2,8 Gigawatt versiebenfachen.[^1] Das Potenzial der Ostsee beziffert die Erklärung auf bis zu 93 Gigawatt.[^1]
 
   ## Wo der Ausbau steht
 
   In der Region war die Kapazität bis 2023 lediglich auf rund **3,1 Gigawatt** gestiegen.[^2] Seither tut sich mehr:
 
-  - **Polen:** Am 10. Juli 2026 floss zum ersten Mal Strom aus dem Windpark **Baltic Power** ins polnische Netz.[^3] Anfang Oktober standen alle 76 Turbinen, und das Projekt wurde in Betrieb genommen. Je nach Quelle wird die Leistung mit 1,14 bis 1,2 Gigawatt angegeben.[^4] Für Polen ist es der erste Offshore-Windpark.
-  - **Litauen:** An der zweiten Ausschreibung über 700 Megawatt beteiligte sich nur ein Bieter, der Versorger Ignitis, weshalb sie scheiterte.[^5] Im September 2026 hatte die Fläche noch immer keinen Entwickler.[^5]
-  - **Dänemark:** Die Energieinsel Bornholm soll künftig Windparks mit mehreren Gigawatt Leistung an Dänemark und Deutschland anbinden. Wie groß sie wird, dazu gibt es Angaben zwischen 2 und 3 Gigawatt.[^6]
+  - **Polen:** Am 10. Juli 2026 floss zum ersten Mal Strom aus dem Windpark **Baltic Power** ins polnische Netz.[^3] Inzwischen sind alle 76 Turbinen installiert, die Fertigstellung ist für 2026 vorgesehen. Die Leistung liegt bei 1,14 Gigawatt, genehmigt sind bis zu 1,2 Gigawatt.[^4] Für Polen ist es der erste Offshore-Windpark, der Strom liefert.[^3]
+  - **Litauen:** An der zweiten Ausschreibung über 700 Megawatt beteiligte sich nur ein Bieter, der Versorger Ignitis, weshalb sie im Oktober 2025 für ungültig erklärt wurde. Ob und wann eine neue Ausschreibung folgt, liegt bei der Regierung.[^5]
+  - **Dänemark:** Über die Energieinsel Bornholm sollen künftig Windparks mit 3 Gigawatt Leistung Strom nach Dänemark und Deutschland liefern.[^6]
 
   Eine aktuelle Gesamtzahl für die Ostsee haben die Staaten nicht vorgelegt. Für ganz Europa geht der Branchenverband WindEurope mittlerweile davon aus, dass bis 2030 nur etwa 70 der geplanten 120 Gigawatt Offshore-Wind entstehen.[^7] Ohne deutlich höheres Tempo dürfte auch die Ostsee ihr 19,6-Gigawatt-Ziel verfehlen.
 
@@ -52,21 +52,21 @@ body_de: |
 
   ---
 
-  **Quellen:** [Marienborg-Erklärung (2022)](https://regeringen.se/contentassets/5eff59cd49fe44bba8ab3677e9a70155/the-marienborg-declaration) · [BOWE2H-Roadmap: Kapazität 2023](https://www.ena.lt/uploads/TT-projektai/BOWE2H/240930%20Roadmap%20BOWE2H_FINAL.pdf) · [Baltic Power: Projektinformationen](https://balticpower.pl/about-the-project/) · [Northland Power: Baltic Power](https://www.northlandpower.com/en/projects-and-updates/baltic-power-polish-offshore-wind.aspx) · [OE Digital: Litauen stoppt zweite Ausschreibung](https://www.oedigital.com/news/530878-lithuania-scraps-second-offshore-wind-tender-as-only-one-bidder-applies) · [Bornholm Energy Island](https://balticenergyisland.com/) · [WindEurope](https://windeurope.org/?p=49781)
+  **Quellen:** [Dänisches Energieministerium: Marienborg-Erklärung (31. Aug. 2022)](https://www.en.kefm.dk/news/news-archive/2022/aug/countries-of-the-baltic-sea-strengthen-their-cooperation-on-energy-security-and-expansion-of-renewables-) · [BOWE2H-Roadmap: Kapazität 2023](https://www.ena.lt/uploads/TT-projektai/BOWE2H/240930%20Roadmap%20BOWE2H_FINAL.pdf) · [Polnisches Klimaministerium: Strom aus Ostsee-Windparks fließt (10. Juli 2026)](https://www.gov.pl/web/climate/electricity-is-now-flowing-from-polish-wind-farms-on-the-baltic-sea) · [Northland Power: Baltic Power](https://www.northlandpower.com/en/projects-and-updates/baltic-power-polish-offshore-wind.aspx) · [OE Digital: Litauen stoppt zweite Ausschreibung (8. Okt. 2025)](https://www.oedigital.com/news/530878-lithuania-scraps-second-offshore-wind-tender-as-only-one-bidder-applies) · [Bornholm Energy Island](https://balticenergyisland.com/) · [WindEurope](https://windeurope.org/?p=49781)
 ---
 The Baltic Sea offers wind planners good conditions: shallow water, steady wind, short distances to the coast and hardly any tides. That is why, in August 2022, only a few months after Russia invaded Ukraine, the countries bordering it set themselves an ambitious target.
 
 ## The Marienborg Pledge
 
-Denmark, Estonia, Finland, Germany, Latvia, Lithuania, Poland and Sweden agreed in the **Marienborg Declaration** of 30 August 2022 to increase offshore wind in the Baltic to **at least 19.6 gigawatts** by 2030. That would mean multiplying the 2.8 gigawatts installed at the time by seven.[^1] Looking further ahead, the countries consider up to 93 gigawatts possible by 2050.[^1]
+Denmark, Estonia, Finland, Germany, Latvia, Lithuania, Poland and Sweden agreed in the **Marienborg Declaration** of 30 August 2022 to increase offshore wind in the Baltic to **at least 19.6 gigawatts** by 2030. That would mean multiplying the 2.8 gigawatts installed at the time by seven.[^1] The declaration puts the Baltic's total potential at up to 93 gigawatts.[^1]
 
 ## Where the Build-Out Stands
 
 Regional capacity had only risen to about **3.1 gigawatts** by 2023.[^2] Things have been moving faster since:
 
-- **Poland:** On 10 July 2026, electricity from the **Baltic Power** wind farm reached the Polish grid for the first time.[^3] All 76 turbines were in place by early October, and commissioning was under way. Sources put its capacity at between 1.14 and 1.2 gigawatts.[^4] It is the first offshore wind farm in Poland.
-- **Lithuania:** Only one bidder, the utility Ignitis, entered the second tender for 700 megawatts, so it failed.[^5] In September 2026, there was still no developer for the site.[^5]
-- **Denmark:** The plan is for the Bornholm energy island to link several gigawatts of wind farms to Denmark and Germany. Figures given for its size range from 2 to 3 gigawatts.[^6]
+- **Poland:** On 10 July 2026, electricity from the **Baltic Power** wind farm reached the Polish grid for the first time.[^3] All 76 turbines have since been installed, and completion is expected in 2026. Its capacity is 1.14 gigawatts, under a licence for up to 1.2 gigawatts.[^4] It is the first offshore wind farm to supply power in Poland.[^3]
+- **Lithuania:** Only one bidder, the utility Ignitis, entered the second tender for 700 megawatts, so it was declared void in October 2025. Whether and when a new tender follows is up to the government.[^5]
+- **Denmark:** The plan is for the Bornholm energy island to carry power from 3 gigawatts of wind farms to Denmark and Germany.[^6]
 
 No current total for the Baltic has been published by the countries. For Europe as a whole, the industry association WindEurope now expects that only around 70 of the planned 120 gigawatts of offshore wind will be built by 2030.[^7] The Baltic is also likely to fall short of its 19.6-gigawatt target unless the pace increases markedly.
 
@@ -83,4 +83,4 @@ Should the build-out succeed, the Baltic will go from a sideshow to one of Europ
 
 ---
 
-**Sources:** [Marienborg Declaration (2022)](https://regeringen.se/contentassets/5eff59cd49fe44bba8ab3677e9a70155/the-marienborg-declaration) · [BOWE2H roadmap: 2023 capacity](https://www.ena.lt/uploads/TT-projektai/BOWE2H/240930%20Roadmap%20BOWE2H_FINAL.pdf) · [Baltic Power: about the project](https://balticpower.pl/about-the-project/) · [Northland Power: Baltic Power](https://www.northlandpower.com/en/projects-and-updates/baltic-power-polish-offshore-wind.aspx) · [OE Digital: Lithuania scraps second tender](https://www.oedigital.com/news/530878-lithuania-scraps-second-offshore-wind-tender-as-only-one-bidder-applies) · [Bornholm Energy Island](https://balticenergyisland.com/) · [WindEurope](https://windeurope.org/?p=49781)
+**Sources:** [Danish energy ministry: Marienborg Declaration (31 Aug 2022)](https://www.en.kefm.dk/news/news-archive/2022/aug/countries-of-the-baltic-sea-strengthen-their-cooperation-on-energy-security-and-expansion-of-renewables-) · [BOWE2H roadmap: 2023 capacity](https://www.ena.lt/uploads/TT-projektai/BOWE2H/240930%20Roadmap%20BOWE2H_FINAL.pdf) · [Polish climate ministry: electricity is now flowing from Baltic wind farms (10 July 2026)](https://www.gov.pl/web/climate/electricity-is-now-flowing-from-polish-wind-farms-on-the-baltic-sea) · [Northland Power: Baltic Power](https://www.northlandpower.com/en/projects-and-updates/baltic-power-polish-offshore-wind.aspx) · [OE Digital: Lithuania scraps second tender (8 Oct 2025)](https://www.oedigital.com/news/530878-lithuania-scraps-second-offshore-wind-tender-as-only-one-bidder-applies) · [Bornholm Energy Island](https://balticenergyisland.com/) · [WindEurope](https://windeurope.org/?p=49781)

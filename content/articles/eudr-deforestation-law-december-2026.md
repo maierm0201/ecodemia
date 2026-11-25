@@ -5,7 +5,7 @@ title_de: "Entwaldungsfrei ab 30. Dezember: Das EU-Waldgesetz gilt endlich"
 subtitle: "Postponed twice, the EU Deforestation Regulation will apply to large companies from the end of the year. What it demands, which parts were simplified, and what it means for coffee, chocolate and furniture."
 subtitle_de: "Zweimal wurde sie verschoben, zum Jahresende gilt die EU-Entwaldungsverordnung nun für große Unternehmen. Was sie fordert, wo sie vereinfacht wurde und was das für Kaffee, Schokolade und Möbel bedeutet."
 date: 2026-11-18
-checked: 2026-11-21
+checked: 2026-11-25
 key_facts: |
   - Starting 30 December 2026, large and medium companies may sell cattle, cocoa, coffee, palm oil, rubber, soy and wood products only if they are deforestation-free since 2020
   - For micro and small companies, the date is 30 June 2027
@@ -35,13 +35,13 @@ body_de: |
 
   Es geht um **Rinder, Kakao, Kaffee, Palmöl, Kautschuk, Soja und Holz** und damit auch um Schokolade, Möbel, Papier oder Reifen.[^3]
 
-  Wer gegen die Regeln verstößt, riskiert hohe Kosten. Die Mitgliedstaaten müssen Bußgelder in Höhe von **mindestens 4 Prozent des EU-weiten Jahresumsatzes** vorsehen, hinzu kommen Rückrufe und die Beschlagnahme von Waren oder Erlösen.[^2]
+  Wer gegen die Regeln verstößt, riskiert hohe Kosten. Die Mitgliedstaaten müssen Höchstbußgelder von **mindestens 4 Prozent des EU-weiten Jahresumsatzes** vorsehen, hinzu kommen Rückrufe und die Beschlagnahme von Waren oder Erlösen.[^2]
 
   ## Was sich seit 2023 geändert hat
 
   Deutlich abgeschwächt wurden die Regeln durch die Reform vom Dezember 2025 (Verordnung (EU) 2025/2650):
 
-  - **Nur noch der Erste meldet:** Zur Sorgfaltserklärung verpflichtet ist nur, wer ein Produkt erstmals in der EU in Verkehr bringt oder es exportiert. Händler weiter unten in der Kette reichen nur die Referenznummern weiter.[^2]
+  - **Nur noch der Erste meldet:** Zur Sorgfaltserklärung verpflichtet ist nur, wer ein Produkt erstmals in der EU in Verkehr bringt oder es exportiert. Händler und Unternehmen weiter unten in der Kette erhalten von ihnen nur die Referenznummern und müssen diese aufbewahren.[^2]
   - **Kleinbetriebe:** Kleinst- und Kleinerzeuger reichen **ein einziges Mal eine vereinfachte Erklärung** ein. Geokoordinaten brauchen sie nicht, die Postadresse reicht.[^2]
   - **Mehr Zeit für Kleine:** Kleinst- und Kleinunternehmen müssen die Pflichten erst ab dem **30. Juni 2027** erfüllen, es sei denn, sie unterlagen schon der alten EU-Holzhandelsverordnung.[^2]
   - **Gedrucktes raus:** Für Bücher, Zeitungen und andere Druckerzeugnisse gilt die Verordnung nicht mehr.[^2]
@@ -58,11 +58,11 @@ body_de: |
 
   Aus Sicht von Umweltverbänden verwässern die Vereinfachungen das Gesetz. Dass Leder herausfällt, trifft zum Beispiel ausgerechnet die Rinderhaltung, die im Amazonas am stärksten zur Entwaldung beiträgt. Wirtschaftsverbände und Erzeugerländer beklagen dagegen die Bürokratie und warnen, dass Kleinbauern ohne Geodaten den Zugang zum EU-Markt verlieren könnten.
 
-  Brasilien zeigt, dass es auch ohne erneute Verschiebung gehen kann: Nach Angaben der Regierung ist die Entwaldung im Amazonas so niedrig wie nie seit Beginn der Messungen 1988.[^4] Zugleich gibt es mit der El-Niño-Dürre wieder mehr Brände. Das macht deutlich, warum ein Stichtag den Wald allein nicht schützen kann.
+  Brasilien zeigt, dass es auch ohne erneute Verschiebung gehen kann: Nach Angaben der Regierung ist die Entwaldung im Amazonas so niedrig wie nie seit Beginn der Messungen 1988.[^4] Zugleich hat die Zahl der Brände mit der El-Niño-Dürre seit September wieder stark zugenommen.[^4] Das macht deutlich, warum ein Stichtag den Wald allein nicht schützen kann.
 
   ## Was jetzt passiert
 
-  Mitte November gab es noch keinen Vorschlag, den Start ein weiteres Mal zu verschieben.[^5] Im Laden merken Verbraucherinnen und Verbraucher zunächst wenig davon, denn die Verordnung setzt bei den Lieferketten an. Ob sie wirkt, entscheidet sich daran, wie konsequent die Behörden in Deutschland und den übrigen Mitgliedstaaten ab Januar kontrollieren.
+  Die mit der Reform vom Dezember 2025 gesetzten Fristen gelten als feststehend.[^5] Im Laden merken Verbraucherinnen und Verbraucher zunächst wenig davon, denn die Verordnung setzt bei den Lieferketten an. Ob sie wirkt, entscheidet sich daran, wie konsequent die Behörden in Deutschland und den übrigen Mitgliedstaaten ab Januar kontrollieren.
 
 
   ---
@@ -81,13 +81,13 @@ Seven commodities, and the products made from them, can only be sold in the EU o
 
 The list consists of **cattle, cocoa, coffee, palm oil, rubber, soy and wood**, so chocolate, furniture, paper and tyres fall under it as well.[^3]
 
-Breaking the rules can be expensive. Member states have to provide for fines of **at least 4 percent of EU-wide annual turnover**, as well as recalls and the confiscation of goods or revenues.[^2]
+Breaking the rules can be expensive. Member states have to provide for maximum fines of **at least 4 percent of EU-wide annual turnover**, as well as recalls and the confiscation of goods or revenues.[^2]
 
 ## What Has Changed Since 2023
 
 The rules were considerably relaxed by the December 2025 reform (Regulation (EU) 2025/2650):
 
-- **Only the first operator files:** Only the company that places a product on the EU market for the first time, or exports it, has to submit a due diligence statement. Traders further down the chain just pass the reference numbers along.[^2]
+- **Only the first operator files:** Only the company that places a product on the EU market for the first time, or exports it, has to submit a due diligence statement. Operators and traders further down the chain only have to collect the reference numbers that are passed down to them.[^2]
 - **Small producers:** Micro and small primary producers file a **simplified declaration once**. They can give a postal address instead of geolocation coordinates.[^2]
 - **More time for small firms:** The obligations apply to micro and small enterprises only from **30 June 2027**, except for those already covered by the old EU Timber Regulation.[^2]
 - **Print is out:** The regulation no longer covers books, newspapers or other printed products.[^2]
@@ -104,11 +104,11 @@ At the heart of the system is the risk rating of countries of origin. A list sor
 
 To environmental groups, the simplifications dilute the law. Taking leather out, for instance, touches cattle ranching, which does more than anything else to drive deforestation in the Amazon. Business associations and producer countries, for their part, object to the paperwork and warn that smallholders lacking geolocation data could be shut out of the EU market.
 
-Brazil is evidence that things can move without a further delay. The government says deforestation in the Amazon is at its lowest since records began in 1988.[^4] Yet the El Niño drought is bringing more fires again, which shows why a cut-off date cannot protect the forest on its own.
+Brazil is evidence that things can move without a further delay. The government says deforestation in the Amazon is at its lowest since records began in 1988.[^4] Yet since September, fires have surged again with the El Niño drought,[^4] which shows why a cut-off date cannot protect the forest on its own.
 
 ## What Happens Now
 
-By mid-November, nobody had put forward a proposal to postpone the start once more.[^5] Shoppers will see little difference on the shelves to begin with, because the regulation operates through supply chains. Whether it bites will depend on how rigorously authorities in Germany and the other member states enforce it from January.
+The deadlines set by the December 2025 reform are regarded as fixed.[^5] Shoppers will see little difference on the shelves to begin with, because the regulation operates through supply chains. Whether it bites will depend on how rigorously authorities in Germany and the other member states enforce it from January.
 
 
 ---

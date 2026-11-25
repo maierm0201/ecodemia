@@ -5,7 +5,7 @@ title_de: "Die USA gehen am Meeresboden ihren eigenen Weg"
 subtitle: "Washington aims to decide by mid-December whether The Metals Company can take a step toward mining the deep Pacific seabed, sidestepping the UN body that has overseen the international seabed for three decades."
 subtitle_de: "Washington will bis Mitte Dezember festlegen, ob The Metals Company dem Abbau am Pazifikboden ein Stück näherkommt, unter Umgehung der UN-Behörde, die seit drei Jahrzehnten für den internationalen Meeresboden zuständig ist."
 date: 2026-11-18
-checked: 2026-11-21
+checked: 2026-11-25
 key_facts: |
   - By mid-December 2026, NOAA expects to decide whether The Metals Company's application will be certified
   - Certification does not amount to a mining permit: an environmental impact statement would come next
@@ -29,15 +29,15 @@ body_de: |
 
   ## Der Antrag
 
-  Bei der US-Wetter- und Ozeanbehörde NOAA stellte die US-Tochter von The Metals Company (TMC USA) am 6. Februar 2026 einen kombinierten Antrag, der eine Explorationslizenz und eine Genehmigung für den kommerziellen Abbau zusammenfasst. Berichten zufolge geht es um ein Gebiet von rund **65.000 Quadratkilometern**, nahezu das Dreifache dessen, was der ursprüngliche Antrag von 2025 vorsah.[^5]
+  Bei der US-Wetter- und Ozeanbehörde NOAA stellte die US-Tochter von The Metals Company (TMC USA) am 6. Februar 2026 einen kombinierten Antrag, der eine Explorationslizenz und eine Genehmigung für den kommerziellen Abbau zusammenfasst.[^2] Berichten zufolge geht es um ein Gebiet von rund **65.000 Quadratkilometern**, nahezu das Dreifache dessen, was der ursprüngliche Antrag von 2025 vorsah.[^5]
 
-  Gestützt wird der Antrag auf ein US-Gesetz aus dem Jahr 1980, den Deep Seabed Hard Mineral Resources Act (DSHMRA). Das UN-Seerechtsübereinkommen haben die USA nie ratifiziert. Politisch unterstützt wird der Vorstoß durch eine Präsidentenverfügung vom April 2025 mit dem Titel „Unleashing America's Offshore Minerals and Resources“.[^2]
+  Gestützt wird der Antrag auf ein US-Gesetz aus dem Jahr 1980, den Deep Seabed Hard Mineral Resources Act (DSHMRA). Das UN-Seerechtsübereinkommen haben die USA nie ratifiziert.[^3] Politisch unterstützt wird der Vorstoß durch eine Präsidentenverfügung vom April 2025 mit dem Titel „Unleashing America's Offshore Minerals and Resources“.[^2]
 
   Die bisherigen Schritte:
 
   - **1. Mai:** Laut NOAA ist der Antrag formal vollständig, womit er weiter geprüft werden kann.[^1]
   - **19. August:** Die NOAA startet eine 60-tägige öffentliche Kommentarfrist. Nach den Worten von NOAA-Chef Neil Jacobs setzt seine Behörde „den globalen Standard für wissenschaftsbasierten Tiefseebergbau“.[^2]
-  - **13. und 19. Oktober:** Eine Anhörung findet statt, dann endet die Kommentarfrist. Insgesamt kommen mehr als 1.600 Stellungnahmen zusammen.[^4]
+  - **13. und 19. Oktober:** Für den 13. Oktober ist eine virtuelle Anhörung angesetzt,[^2] am 19. Oktober endet die Kommentarfrist. Insgesamt kommen mehr als 1.600 Stellungnahmen zusammen.[^4]
   - **3. November:** Die NOAA teilt TMC per Brief mit, dass sie über die sogenannte Zertifizierung **Mitte Dezember** entscheiden will, also später, als TMC gehofft hatte.[^4]
 
   Entscheidend ist: Mit der Zertifizierung ist noch kein Abbau genehmigt. Es schließen sich eine Umweltverträglichkeitsprüfung und weitere Runden der Öffentlichkeitsbeteiligung an. Gerard Barron, Chef von TMC, erwartet die Genehmigung „um diese Zeit nächstes Jahr“. In Betrieb gehen soll das Abbausystem im vierten Quartal 2027. Finanziell steht das Unternehmen unter Zeitdruck: Ende September verfügte TMC noch über 79,3 Millionen US-Dollar.[^4]
@@ -46,13 +46,13 @@ body_de: |
 
   Der Conservation Council for Hawaiʻi und das Center for Biological Diversity reichten am 30. September, vertreten durch Earthjustice, Klage gegen die NOAA ein. Angefochten wird die Zertifizierung eines TMC-Explorationsantrags, die erste nach diesem Gesetz seit dem Amtsantritt von Präsident Trump. Die Kläger werfen der Behörde vor, wichtige Unterlagen, etwa zu den Umweltfolgen, nicht öffentlich zugänglich gemacht zu haben. „Die NOAA hat das Gesetz in ihrer Eile umgangen, um eine unerprobte, spekulative Industrie anzuschieben“, sagt Chris Eaton, Anwalt bei Earthjustice.[^3]
 
-  Auf internationaler Ebene stößt das Vorgehen auf Widerspruch. Die Deep Sea Conservation Coalition bezeichnet den Antrag als einen „direkten Angriff auf das Völkerrecht“. Über 160 Staaten haben das Seerechtsübereinkommen ratifiziert. Ein Moratorium oder eine vorsorgliche Pause für den Tiefseebergbau verlangen mittlerweile **45 Länder**.[^6]
+  Auf internationaler Ebene stößt das Vorgehen auf Widerspruch. Sofia Tsenikli von der Deep Sea Conservation Coalition bezeichnet den Antrag als einen „direkten Angriff auf das Völkerrecht“. Rund 170 Staaten haben das Seerechtsübereinkommen ratifiziert.[^5] Ein Moratorium oder eine vorsorgliche Pause für den Tiefseebergbau verlangen mittlerweile **45 Länder**.[^6]
 
   ## Was auf dem Spiel steht
 
-  Kaum ein Ökosystem der Erde ist so wenig erforscht wie die Tiefsee der CCZ. Zahlreiche Arten dort hat noch niemand beschrieben, und einige leben ausschließlich auf den Knollen, die beim Abbau abgetragen würden. Wissenschaftlerinnen und Wissenschaftler warnen vor Lärm, Licht, Sedimentwolken und Schwermetallen, die sich weit über die Abbaugebiete hinaus verteilen könnten, und vor Schäden, die in menschlichen Zeiträumen nicht mehr verheilen.[^8]
+  Kaum ein Ökosystem der Erde ist so wenig erforscht wie die Tiefsee der CCZ. Zahlreiche Arten dort hat noch niemand beschrieben, und die Knollen, die beim Abbau abgetragen würden, sind selbst ein wichtiger Lebensraum. Wissenschaftlerinnen und Wissenschaftler warnen vor Lärm, Licht, Sedimentwolken und Schwermetallen, die sich weit über die Abbaugebiete hinaus verteilen könnten, und vor Schäden, die in menschlichen Zeiträumen nicht mehr verheilen.[^3][^8]
 
-  Wie empfindlich das Leben in der Tiefsee ist, macht die Rote Liste der Weltnaturschutzunion IUCN vom Juli 2026 deutlich: **62 Prozent** der Weichtierarten, die nur an Hydrothermalquellen vorkommen, sind gefährdet, hauptsächlich durch einen möglichen Tiefseebergbau.[^7] Zwar geht es dabei um heiße Quellen und nicht um Knollenfelder, doch es zeigt, wie klein diese Lebensräume sind. Noch offen ist, ob ein künftiges Regelwerk der ISA auch Quellen und Seeberge einschließt.
+  Wie empfindlich das Leben in der Tiefsee ist, macht die Rote Liste der Weltnaturschutzunion IUCN vom Juli 2026 deutlich: **62 Prozent** der Weichtierarten, die nur an Hydrothermalquellen vorkommen, sind gefährdet, hauptsächlich wegen des Tiefseebergbaus.[^7] Zwar geht es dabei um heiße Quellen und nicht um Knollenfelder, doch es zeigt, wie klein diese Lebensräume sind. Noch offen ist, ob ein künftiges Regelwerk der ISA auch Quellen und Seeberge einschließt.
 
   TMC hält eigene Studien dagegen, nach denen sich die Folgen für die Artenvielfalt und die Sedimentwolken auf die unmittelbar abgebaute Fläche beschränken.[^5]
 
@@ -80,15 +80,15 @@ Now a Canadian company is trying a different path.
 
 ## The Application
 
-The US subsidiary of The Metals Company (TMC USA) filed a consolidated application with the US National Oceanic and Atmospheric Administration (NOAA) on 6 February 2026, combining an exploration licence and a commercial recovery permit. According to reports, the area it covers is about **65,000 square kilometres**, close to three times what the original 2025 application sought.[^5]
+The US subsidiary of The Metals Company (TMC USA) filed a consolidated application with the US National Oceanic and Atmospheric Administration (NOAA) on 6 February 2026, combining an exploration licence and a commercial recovery permit.[^2] According to reports, the area it covers is about **65,000 square kilometres**, close to three times what the original 2025 application sought.[^5]
 
-The application rests on a US law from 1980, the Deep Seabed Hard Mineral Resources Act (DSHMRA). The United States has never ratified the UN Convention on the Law of the Sea. An executive order from April 2025, "Unleashing America's Offshore Minerals and Resources," gives the effort political backing.[^2]
+The application rests on a US law from 1980, the Deep Seabed Hard Mineral Resources Act (DSHMRA). The United States has never ratified the UN Convention on the Law of the Sea.[^3] An executive order from April 2025, "Unleashing America's Offshore Minerals and Resources," gives the effort political backing.[^2]
 
 The steps taken so far:
 
 - **1 May:** NOAA determines that the application fully complies with the law's information requirements, which allows the review to continue.[^1]
 - **19 August:** NOAA starts a 60-day public comment period. Neil Jacobs, NOAA's administrator, says his agency is proud "to set the global standard for science-based deep sea mining practices."[^2]
-- **13 and 19 October:** A public hearing is held and the comment period closes. In total, more than 1,600 comments come in.[^4]
+- **13 and 19 October:** A virtual public hearing is scheduled for 13 October;[^2] on 19 October the comment period closes. In total, more than 1,600 comments come in.[^4]
 - **3 November:** NOAA writes to TMC that it expects to make its decision on so-called certification by **mid-December**, which is later than TMC had hoped.[^4]
 
 The key point is that certification does not yet mean mining is permitted. An environmental impact statement and further rounds of public consultation would come after it. Gerard Barron, TMC's chief executive, expects to have the permit "by this time next year," and the company is aiming to commission its offshore collection system in the fourth quarter of 2027. Finances add to the time pressure: TMC had 79.3 million US dollars in cash left at the end of September.[^4]
@@ -97,13 +97,13 @@ The key point is that certification does not yet mean mining is permitted. An en
 
 The Conservation Council for Hawaiʻi and the Center for Biological Diversity, with Earthjustice representing them, filed suit against NOAA on 30 September. What they are challenging is the agency's certification of a TMC exploration application, the first under the law since President Trump took office. The plaintiffs argue that the agency did not make relevant materials, including studies of environmental effects, available for the public to review. "NOAA short-circuited the law in its haste to jump-start an untested, speculative industry," says Chris Eaton, an attorney at Earthjustice.[^3]
 
-Around the world, the move has drawn objections. The Deep Sea Conservation Coalition describes the application as "a direct challenge to international law." Over 160 countries have ratified the Law of the Sea convention, and **45 countries** are now calling for a moratorium or a precautionary pause on deep-sea mining.[^6]
+Around the world, the move has drawn objections. Sofia Tsenikli of the Deep Sea Conservation Coalition describes the application as "a direct challenge to international law." Around 170 countries have ratified the Law of the Sea convention,[^5] and **45 countries** are now calling for a moratorium or a precautionary pause on deep-sea mining.[^6]
 
 ## What Is at Stake
 
-Few ecosystems on Earth have been explored as little as the abyssal plains of the CCZ. Many of the species living there have never been described, and some exist only on the nodules themselves, which mining would strip away. Scientists warn of noise, light, sediment plumes and heavy metals that might spread far beyond the mined areas, and of harm that would not recover on any human timescale.[^8]
+Few ecosystems on Earth have been explored as little as the abyssal plains of the CCZ. Many of the species living there have never been described, and the nodules themselves, which mining would strip away, are an important habitat. Scientists warn of noise, light, sediment plumes and heavy metals that might spread far beyond the mined areas, and of harm that would not recover on any human timescale.[^3][^8]
 
-The IUCN Red List update of July 2026 illustrates how fragile deep-sea life is: **62 percent** of mollusc species that live only at hydrothermal vents are threatened, chiefly by possible deep-sea mining.[^7] Those are hot vents, not nodule fields, but the finding shows how limited these habitats can be. It is still open whether a future ISA mining code would also apply to vents and seamounts.
+The IUCN Red List update of July 2026 illustrates how fragile deep-sea life is: **62 percent** of mollusc species that live only at hydrothermal vents are threatened, chiefly because of deep-sea mining.[^7] Those are hot vents, not nodule fields, but the finding shows how limited these habitats can be. It is still open whether a future ISA mining code would also apply to vents and seamounts.
 
 TMC counters with its own research, which it says shows that effects on biodiversity and sediment plumes stay within the area mined directly.[^5]
 

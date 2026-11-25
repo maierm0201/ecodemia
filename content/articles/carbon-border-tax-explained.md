@@ -5,11 +5,11 @@ title_de: "Die CO₂-Grenze im ersten Jahr: Wie CBAM funktioniert und warum die 
 subtitle: "Anyone importing steel, cement, aluminium, fertiliser, hydrogen or electricity into the EU has had to report the emissions behind those goods since January. The first payments are due next year, a case is pending at the WTO, and most small importers are exempt."
 subtitle_de: "Wer Stahl, Zement, Aluminium, Dünger, Wasserstoff oder Strom in die EU einführt, muss seit Januar die damit verbundenen Emissionen ausweisen. Zahlen müssen Importeure erst nächstes Jahr, vor der WTO läuft ein Verfahren, und die meisten kleinen Importeure bleiben außen vor."
 date: 2026-11-21
-checked: 2026-11-21
+checked: 2026-11-25
 key_facts: |
   - Importers of six groups of goods have had to account for embedded emissions since 1 January 2026; certificate purchases start on 1 February 2027
   - There is an exemption for importers who bring in less than 50 tonnes a year
-  - Russia has brought CBAM before the WTO, and 18 countries are taking part as third parties
+  - Russia has brought CBAM before the WTO, and 18 WTO members are taking part as third parties
 key_facts_de: |
   - Importeure von sechs Warengruppen müssen seit 1. Januar 2026 eingebettete Emissionen ausweisen; Zertifikate gibt es ab 1. Februar 2027 zu kaufen
   - Ausgenommen ist, wer jährlich weniger als 50 Tonnen einführt
@@ -31,10 +31,10 @@ body_de: |
 
   Die zentralen Regeln:
 
-  - **Nur zugelassene Anmelder** dürfen diese Waren oberhalb der Schwelle weiterhin in die EU bringen.[^1]
+  - **Nur zugelassene Anmelder** dürfen diese Waren oberhalb der Schwelle weiterhin in die EU bringen, bei Strom und Wasserstoff schon ab der ersten Einfuhr.[^1]
   - **Die 50-Tonnen-Schwelle:** Nach einer Vereinfachung im Herbst 2025 sind Importeure befreit, die im Jahr weniger als 50 Tonnen CBAM-Waren einführen. Liegt man darüber, gelten die Pflichten für sämtliche Importe und nicht bloß für die Menge jenseits der 50 Tonnen.[^1]
-  - **Gezahlt wird ab 2027:** Für das Jahr 2026 wird noch nichts fällig. Die CBAM-Zertifikate für die diesjährigen Importe lassen sich ab dem **1. Februar 2027** erwerben. Bis zum **30. September 2027** müssen die erste Jahreserklärung eingereicht und die Zertifikate abgegeben sein.[^3]
-  - **Preis:** Der Preis eines Zertifikats entspricht dem einer Tonne CO₂ im EU-Emissionshandel; 2026 wird er als Quartalsmittel der Versteigerungspreise berechnet, ab 2027 als Wochenmittel.[^1]
+  - **Gezahlt wird ab 2027:** Im Jahr 2026 werden noch keine Zertifikate gekauft oder bezahlt, die Kosten für die diesjährigen Importe fallen aber bereits an.[^1] Die CBAM-Zertifikate für die diesjährigen Importe lassen sich ab dem **1. Februar 2027** erwerben. Bis zum **30. September 2027** müssen die erste Jahreserklärung eingereicht und die Zertifikate abgegeben sein.[^3]
+  - **Preis:** Der Preis eines Zertifikats entspricht dem einer Tonne CO₂ im EU-Emissionshandel; 2026 wird er als Quartalsmittel der Versteigerungspreise berechnet, ab 2027 als Wochenmittel.[^2][^3]
 
   ## Warum die Belastung langsam steigt
 
@@ -44,18 +44,18 @@ body_de: |
 
   ## Der Streit vor der WTO
 
-  Nicht jeder Handelspartner betrachtet das als Anreiz. **Russland** hat die EU vor der Welthandelsorganisation (WTO) verklagt. Das Streitschlichtungsgremium hat dazu ein Panel gebildet.[^6] Zu Russlands Kritikpunkten gehört, dass nationale Klimamaßnahmen nicht ausreichend anerkannt würden und dass EU-Standardwerte zum Einsatz kommen.[^6]
+  Nicht jeder Handelspartner betrachtet das als Anreiz. **Russland** hat die EU vor der Welthandelsorganisation (WTO) verklagt.[^6] Im September 2026 setzte das Streitschlichtungsgremium dazu ein Panel ein.[^5] Zu Russlands Kritikpunkten gehört, dass nationale Klimamaßnahmen nicht ausreichend anerkannt würden und dass EU-Standardwerte zum Einsatz kommen.[^6]
 
-  **18 Staaten**, unter ihnen China, Indien, die USA und Großbritannien, haben sich als Drittparteien angemeldet. Mitkläger sind sie damit nicht, sie können sich aber mit eigenen Stellungnahmen am Verfahren beteiligen.[^5] Aus Sicht Chinas verstößt CBAM gegen Grundprinzipien der WTO, und Entwicklungsländer bekämen die Nebenwirkungen stärker zu spüren.[^7] Indiens Finanzministerin bezeichnete CBAM als Handelsbarriere.[^7] Zugleich schafft Indien eigene Prüfkapazitäten, damit die EU indische Emissionsnachweise anerkennt.[^7]
+  **18 WTO-Mitglieder**, unter ihnen China, Indien, die USA und Großbritannien, haben sich als Drittparteien angemeldet. Mitkläger sind sie damit nicht, sie können sich aber mit eigenen Stellungnahmen am Verfahren beteiligen.[^5] Aus Sicht Chinas verstößt CBAM gegen Grundprinzipien der WTO, und Entwicklungsländer bekämen die Nebenwirkungen stärker zu spüren.[^7] Indien erklärte vor der WTO, CBAM sei eine willkürliche oder verschleierte Beschränkung des Handels.[^7]
 
   ## Was offen ist
 
-  Erst ab 2027, wenn Zertifikate tatsächlich gekauft werden müssen, wird sichtbar, wie stark CBAM greift. Drei Fragen sind ungeklärt: ob die WTO das Instrument akzeptiert, ob Handelsströme etwa auf nicht erfasste weiterverarbeitete Produkte ausweichen und ob die geplante Ausweitung beschlossen wird. Im Dezember 2025 hat die Kommission vorgeschlagen, CBAM ab 2028 auf rund 180 nachgelagerte Produkte mit hohem Stahl- und Aluminiumanteil auszudehnen.[^8]
+  Erst ab 2027, wenn Zertifikate tatsächlich gekauft werden müssen, wird sichtbar, wie stark CBAM greift. Drei Fragen sind ungeklärt: ob die WTO das Instrument akzeptiert, ob Handelsströme etwa auf nicht erfasste weiterverarbeitete Produkte ausweichen und ob die geplante Ausweitung beschlossen wird. Im Dezember 2025 hat die Kommission vorgeschlagen, CBAM ab 2028 auf rund 180 nachgelagerte Produkte mit hohem Stahl- und Aluminiumanteil auszudehnen.[^2][^8]
 
 
   ---
 
-  **Quellen:** [EY: EU verabschiedet CBAM-Omnibus-Verordnung (Okt. 2025)](https://www.ey.com/en_gl/technical/tax-alerts/eu-adopts-cbam-omnibus-regulation) · [ICAP: CBAM startet in die Umsetzungsphase](https://icapcarbonaction.com/en/news/eu-cbam-enters-compliance-phase-and-outlines-path-ahead) · [Irische Umweltbehörde EPA: CBAM-Zertifikate](https://www.epa.ie/our-services/licensing/climate-change/eu-carbon-border-adjustment-mechanism/cbam-certificates/) · [EU-Kommission: CBAM-Leitfaden](https://taxation-customs.ec.europa.eu/document/download/031abf60-21a9-4822-b258-ac8b111d8358_en?filename=Guidance+No.+1+-+Introduction+to+CBAM+concepts.pdf) · [Business Standard: Indien als Drittpartei im WTO-Streit](https://www.business-standard.com/amp/world-news/india-reserves-third-party-rights-in-russia-eu-cbam-trade-dispute-in-wto-126092501118_1.html) · [Squire Patton Boggs: Russlands WTO-Klage](https://www.squirepattonboggs.com/insights/publications/russia-brings-wto-claims-against-cbam-and-other-countries-express-serious-concerns/) · [EST: Reaktionen aus Indien und China](https://esthinktank.com/2026/10/23/the-eu-cbam-responses-from-india-and-china/) · [EPRS: Ausweitung auf nachgelagerte Produkte](https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/07/EPRS_BRI(2026)789314.html)
+  **Quellen:** [EY: EU verabschiedet CBAM-Omnibus-Verordnung (Okt. 2025)](https://www.ey.com/en_gl/technical/tax-alerts/eu-adopts-cbam-omnibus-regulation) · [ICAP: CBAM startet in die Umsetzungsphase](https://icapcarbonaction.com/en/news/eu-cbam-enters-compliance-phase-and-outlines-path-ahead) · [Irische Umweltbehörde EPA: CBAM-Zertifikate](https://www.epa.ie/our-services/licensing/climate-change/eu-carbon-border-adjustment-mechanism/cbam-certificates/) · [EU-Kommission: CBAM-Leitfaden](https://taxation-customs.ec.europa.eu/document/download/031abf60-21a9-4822-b258-ac8b111d8358_en?filename=Guidance+No.+1+-+Introduction+to+CBAM+concepts.pdf) · [WTO: Streitschlichtungsgremium setzt CBAM-Panel ein (25. Sept. 2026)](https://www.wto.org/english/news_e/news26_e/dsb_25sep26_496_e.htm) · [Squire Patton Boggs: Russlands WTO-Klage](https://www.squirepattonboggs.com/insights/publications/russia-brings-wto-claims-against-cbam-and-other-countries-express-serious-concerns/) · [EST: Reaktionen aus Indien und China](https://esthinktank.com/2026/10/23/the-eu-cbam-responses-from-india-and-china/) · [EPRS: Ausweitung auf nachgelagerte Produkte](https://research.europarl.europa.eu/contents/publications/EPRS/2026/07/EPRS_BRI(2026)789314.html)
 ---
 For a long time, European climate policy had a weak spot. A country that puts a price on emissions only at home risks driving emission-heavy production to other countries, which specialists call "carbon leakage." The climate would gain nothing from that, and European industry would pay the price. The Carbon Border Adjustment Mechanism (CBAM) exists to stop it.
 
@@ -65,10 +65,10 @@ The transitional phase, during which importers merely had to file reports, ended
 
 The main rules:
 
-- **Only authorised declarants** are still permitted to bring these goods into the EU above the threshold.[^1]
+- **Only authorised declarants** are still permitted to bring these goods into the EU above the threshold, and for electricity and hydrogen from the very first import.[^1]
 - **The 50-tonne threshold:** A simplification agreed in autumn 2025 exempts importers who bring in less than 50 tonnes of CBAM goods per year. Once that threshold is crossed, every import counts towards CBAM, not only the amount beyond 50 tonnes.[^1]
-- **Payment starts in 2027:** Nothing has to be paid for 2026. Certificates covering this year's imports go on sale on **1 February 2027**. The first annual declaration must be filed, and the certificates surrendered, by **30 September 2027**.[^3]
-- **Price:** Each certificate is priced like a tonne of CO₂ in the EU Emissions Trading System, based on a quarterly average of auction prices in 2026 and on a weekly average from 2027.[^1]
+- **Payment starts in 2027:** No certificates are bought or paid for during 2026, although the cost of this year's imports already accrues.[^1] Certificates covering this year's imports go on sale on **1 February 2027**. The first annual declaration must be filed, and the certificates surrendered, by **30 September 2027**.[^3]
+- **Price:** Each certificate is priced like a tonne of CO₂ in the EU Emissions Trading System, based on a quarterly average of auction prices in 2026 and on a weekly average from 2027.[^2][^3]
 
 ## Why the Charge Rises Slowly
 
@@ -78,15 +78,15 @@ This deduction is where the instrument's real leverage lies. It makes it worthwh
 
 ## The Dispute at the WTO
 
-Some trading partners do not see it as an incentive at all. **Russia** has taken the EU to the World Trade Organization (WTO), where the Dispute Settlement Body has established a panel.[^6] Among Russia's complaints are that national climate measures are not properly recognised and that EU default values are used.[^6]
+Some trading partners do not see it as an incentive at all. **Russia** has taken the EU to the World Trade Organization (WTO),[^6] and in September 2026 the Dispute Settlement Body established a panel to hear the case.[^5] Among Russia's complaints are that national climate measures are not properly recognised and that EU default values are used.[^6]
 
-**Eighteen countries**, among them China, India, the United States and the United Kingdom, have reserved third-party rights. They are not co-complainants, but they can follow the case and make their own submissions.[^5] In China's view, CBAM conflicts with fundamental WTO principles, and developing countries suffer more of its spillover effects.[^7] India's finance minister has described CBAM as a trade barrier.[^7] India is also building up its own verification capacity so that the EU will accept Indian emissions data.[^7]
+**Eighteen WTO members**, among them China, India, the United States and the United Kingdom, have reserved third-party rights. They are not co-complainants, but they can follow the case and make their own submissions.[^5] In China's view, CBAM conflicts with fundamental WTO principles, and developing countries suffer more of its spillover effects.[^7] India has told the WTO that CBAM amounts to an arbitrary or disguised restriction on trade.[^7]
 
 ## What Remains Open
 
-Only from 2027, once certificates actually have to be purchased, will it become clear how hard CBAM bites. Three questions remain: whether the WTO accepts the instrument, whether trade shifts towards processed products that fall outside its scope, and whether a planned expansion is adopted. In December 2025, the Commission proposed extending CBAM from 2028 to about 180 downstream products with a high steel or aluminium content.[^8]
+Only from 2027, once certificates actually have to be purchased, will it become clear how hard CBAM bites. Three questions remain: whether the WTO accepts the instrument, whether trade shifts towards processed products that fall outside its scope, and whether a planned expansion is adopted. In December 2025, the Commission proposed extending CBAM from 2028 to about 180 downstream products with a high steel or aluminium content.[^2][^8]
 
 
 ---
 
-**Sources:** [EY: EU adopts CBAM Omnibus Regulation (Oct 2025)](https://www.ey.com/en_gl/technical/tax-alerts/eu-adopts-cbam-omnibus-regulation) · [ICAP: CBAM enters compliance phase](https://icapcarbonaction.com/en/news/eu-cbam-enters-compliance-phase-and-outlines-path-ahead) · [Irish EPA: CBAM certificates](https://www.epa.ie/our-services/licensing/climate-change/eu-carbon-border-adjustment-mechanism/cbam-certificates/) · [European Commission: CBAM guidance](https://taxation-customs.ec.europa.eu/document/download/031abf60-21a9-4822-b258-ac8b111d8358_en?filename=Guidance+No.+1+-+Introduction+to+CBAM+concepts.pdf) · [Business Standard: India reserves third-party rights at the WTO](https://www.business-standard.com/amp/world-news/india-reserves-third-party-rights-in-russia-eu-cbam-trade-dispute-in-wto-126092501118_1.html) · [Squire Patton Boggs: Russia's WTO claims](https://www.squirepattonboggs.com/insights/publications/russia-brings-wto-claims-against-cbam-and-other-countries-express-serious-concerns/) · [EST: responses from India and China](https://esthinktank.com/2026/10/23/the-eu-cbam-responses-from-india-and-china/) · [EPRS: extension to downstream goods](https://eprs.europarl.europa.eu/contents/publications/EPRS/2026/07/EPRS_BRI(2026)789314.html)
+**Sources:** [EY: EU adopts CBAM Omnibus Regulation (Oct 2025)](https://www.ey.com/en_gl/technical/tax-alerts/eu-adopts-cbam-omnibus-regulation) · [ICAP: CBAM enters compliance phase](https://icapcarbonaction.com/en/news/eu-cbam-enters-compliance-phase-and-outlines-path-ahead) · [Irish EPA: CBAM certificates](https://www.epa.ie/our-services/licensing/climate-change/eu-carbon-border-adjustment-mechanism/cbam-certificates/) · [European Commission: CBAM guidance](https://taxation-customs.ec.europa.eu/document/download/031abf60-21a9-4822-b258-ac8b111d8358_en?filename=Guidance+No.+1+-+Introduction+to+CBAM+concepts.pdf) · [WTO: Dispute Settlement Body establishes CBAM panel (25 Sept 2026)](https://www.wto.org/english/news_e/news26_e/dsb_25sep26_496_e.htm) · [Squire Patton Boggs: Russia's WTO claims](https://www.squirepattonboggs.com/insights/publications/russia-brings-wto-claims-against-cbam-and-other-countries-express-serious-concerns/) · [EST: responses from India and China](https://esthinktank.com/2026/10/23/the-eu-cbam-responses-from-india-and-china/) · [EPRS: extension to downstream goods](https://research.europarl.europa.eu/contents/publications/EPRS/2026/07/EPRS_BRI(2026)789314.html)
