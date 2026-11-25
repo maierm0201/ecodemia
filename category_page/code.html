@@ -16,11 +16,10 @@
 <link rel="preload" href="/assets/fonts/schibsted-grotesk-normal-400-800-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/ecodemia.css">
 <script>
-  // Section comes from the clean URL (/climate) or ?category=
+  // Built pages carry the section on <html data-section>; ?category= is a fallback
   (function () {
-    var seg = location.pathname.split('/').filter(Boolean)[0] || '';
-    var c = (new URLSearchParams(location.search).get('category') || seg).toLowerCase();
-    document.documentElement.dataset.section = c;
+    var h = document.documentElement;
+    if (!h.dataset.section) h.dataset.section = (new URLSearchParams(location.search).get('category') || '').toLowerCase();
   })();
 </script>
 </head>
@@ -56,6 +55,7 @@
 
 <div id="site-footer"></div>
 
+<script src="/js/routes.js"></script>
 <script src="/js/ecodemia.js"></script>
 <script>
 (function () {
@@ -67,8 +67,6 @@
   document.getElementById('sec-main').dataset.cat = cat;
 
   var info = E.sectionInfo(cat);
-  document.title = E.t(cat) + ' | Ecodemia';
-  document.querySelector('meta[name="description"]').setAttribute('content', info.desc);
   document.getElementById('sec-title').textContent = E.t(cat);
   document.getElementById('sec-desc').textContent = info.desc;
   document.getElementById('sec-fig').innerHTML = E.figureHTML(info, cat);

@@ -2,70 +2,25 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "installCommand": "npm install",
+  "cleanUrls": true,
   "redirects": [
     {
       "source": "/admin",
       "destination": "/admin/",
       "permanent": false
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/environmental_news_homepage/code.html"
-    },
-    {
-      "source": "/climate",
-      "destination": "/category_page/code.html"
-    },
-    {
-      "source": "/wildlife",
-      "destination": "/category_page/code.html"
-    },
-    {
-      "source": "/energy",
-      "destination": "/category_page/code.html"
-    },
-    {
-      "source": "/living",
-      "destination": "/category_page/code.html"
-    },
-    {
-      "source": "/tech",
-      "destination": "/category_page/code.html"
-    },
-    {
-      "source": "/policy",
-      "destination": "/category_page/code.html"
-    },
-    {
-      "source": "/live",
-      "destination": "/live_updates/code.html"
-    },
-    {
-      "source": "/about",
-      "destination": "/about_page/code.html"
     },
     {
       "source": "/impressum",
-      "destination": "/imprint_page/code.html"
-    },
-    {
-      "source": "/imprint",
-      "destination": "/imprint_page/code.html"
+      "destination": "/de/impressum",
+      "permanent": true
     },
     {
       "source": "/datenschutz",
-      "destination": "/privacy_page/code.html"
-    },
-    {
-      "source": "/privacy",
-      "destination": "/privacy_page/code.html"
-    },
-    {
-      "source": "/article/:slug",
-      "destination": "/article_view/code.html"
-    },
+      "destination": "/de/datenschutz",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
     {
       "source": "/admin/",
       "destination": "/admin/index.html"

@@ -48,17 +48,17 @@
     <div data-lang-block="de" hidden>
       <p>Ecodemia ist eine unabhängige Umwelt-Nachrichtenseite auf Englisch und Deutsch. Wir berichten über Klimawissenschaft, Tierwelt und Artenvielfalt, die Energiewende, nachhaltiges Leben, Technologie und Umweltpolitik, mit besonderem Blick auf Europa und den deutschsprachigen Raum.</p>
 
-      <h2 id="standards-de">Redaktionelle Standards</h2>
+      <h2 id="standards">Redaktionelle Standards</h2>
       <ul>
         <li><strong>Jeder Artikel nennt seine Quellen.</strong> Am Ende jedes Beitrags steht eine nummerierte Liste der Dokumente, auf denen er beruht, und nummerierte Markierungen im Text zeigen, welche Aussage sich auf welche Quelle stützt. Wir bevorzugen Primärquellen: wissenschaftliche Institutionen, offizielle Berichte, Gesetzestexte und die Studien selbst.</li>
         <li><strong>Nur echte Menschen, nur echte Zitate.</strong> Wir zitieren namentlich genannte Personen aus veröffentlichten Aussagen oder eigenen Interviews und sagen, woher das Zitat stammt. Wir erfinden niemals Personen, Zitate oder Anekdoten.</li>
         <li><strong>Prognosen sind als Prognosen gekennzeichnet.</strong> Ist eine Zahl eine Projektion oder Modellschätzung, sagen wir das, und wir nennen die Spannbreite, wenn Quellen voneinander abweichen.</li>
         <li><strong>Fotos sind lizenziert.</strong> Wir verwenden nur gemeinfreie oder für die kommerzielle Nutzung lizenzierte Bilder und nennen unter jedem Bild Urheber, Quelle und Lizenz.</li>
         <li><strong>Artikel sind datiert.</strong> Jeder Artikel zeigt, wann er veröffentlicht und gegebenenfalls zuletzt geprüft oder aktualisiert wurde.</li>
-        <li><strong>KI-Werkzeuge helfen, Menschen entscheiden.</strong> Bei Recherche, Entwurf und Übersetzung setzen wir KI-Werkzeuge ein. Jeder Beitrag wird vor der Veröffentlichung von der Redaktion gegen die Quellen geprüft und freigegeben; sie trägt die redaktionelle Verantwortung. Siehe <a href="/impressum">Impressum</a>.</li>
+        <li><strong>KI-Werkzeuge helfen, Menschen entscheiden.</strong> Bei Recherche, Entwurf und Übersetzung setzen wir KI-Werkzeuge ein. Jeder Beitrag wird vor der Veröffentlichung von der Redaktion gegen die Quellen geprüft und freigegeben; sie trägt die redaktionelle Verantwortung. Siehe <a href="/imprint">Impressum</a>.</li>
       </ul>
 
-      <h2 id="corrections-de">Korrekturen</h2>
+      <h2 id="corrections">Korrekturen</h2>
       <p>Wenn uns ein Fehler unterläuft, korrigieren wir ihn und ergänzen oben im Artikel einen datierten Hinweis, was geändert wurde.</p>
 
       <h2>Aktuell</h2>
@@ -69,17 +69,13 @@
 
 <div id="site-footer"></div>
 
+<script src="/js/routes.js"></script>
 <script src="/js/ecodemia.js"></script>
 <script>
 (function () {
   var isDE = window.Eco.isDE;
   document.querySelectorAll('[data-lang-block]').forEach(function (el) { el.hidden = el.getAttribute('data-lang-block') !== (isDE ? 'de' : 'en'); });
   document.querySelectorAll('[data-en]').forEach(function (el) { el.textContent = el.getAttribute(isDE ? 'data-de' : 'data-en'); });
-  document.title = (isDE ? 'Über Ecodemia' : 'About Ecodemia') + ' | Ecodemia';
-  if (isDE && (location.hash === '#standards' || location.hash === '#corrections')) {
-    var t = document.getElementById(location.hash.slice(1) + '-de');
-    if (t) setTimeout(function () { t.scrollIntoView(); }, 50);
-  }
 }());
 </script>
 </body>

@@ -55,6 +55,7 @@
 <div id="site-footer"></div>
 
 <script src="/js/vendor/marked.min.js"></script>
+<script src="/js/routes.js"></script>
 <script src="/js/ecodemia.js"></script>
 <script>
 (function () {
@@ -102,10 +103,10 @@
   }
   function slugify(s) { return 'sec-' + s.toLowerCase().replace(/[^a-z0-9äöüß]+/g, '-').replace(/^-|-$/g, '').slice(0, 50); }
 
-  var slug = (location.pathname.match(/^\/article\/([^/?#]+)/) || [])[1] || new URLSearchParams(location.search).get('slug');
+  // Built pages carry the slug on <html data-slug>; ?slug= is a fallback for local previews
+  var slug = document.documentElement.dataset.slug || new URLSearchParams(location.search).get('slug');
   var status = document.getElementById('art-status');
   if (!slug) { status.textContent = isDE ? 'Artikel nicht gefunden.' : 'Article not found.'; return; }
-  slug = decodeURIComponent(slug);
 
   Promise.all([
     fetch('/content/articles/' + encodeURIComponent(slug) + '.md').then(function (r) { if (!r.ok) throw 0; return r.text(); }),
@@ -119,8 +120,6 @@
     var split = splitSources(rawBody);
     var sources = split.sources;
 
-    document.title = title + ' | Ecodemia';
-    document.querySelector('meta[name="description"]').setAttribute('content', (isDE && d.excerpt_de) ? d.excerpt_de : (d.excerpt || stand));
     document.body.dataset.cat = cat;
     document.getElementById('art').dataset.cat = cat;
     document.getElementById('related').dataset.cat = cat;
@@ -158,7 +157,7 @@
       img.src = d.cover_image;
       img.alt = (isDE && d.cover_alt_de) ? d.cover_alt_de : (d.cover_alt || '');
       var credit = (isDE && d.cover_credit_de) ? d.cover_credit_de : (d.cover_credit || '');
-      if (credit) document.getElementById('art-credit').innerHTML = marked.parseInline(credit);
+      if (credit) { document.getElementById('art-credit').innerHTML = marked.parseInline(credit); E.localizeLinks(document.getElementById('art-credit')); }
       document.getElementById('art-cover').hidden = false;
     }
 
@@ -170,6 +169,7 @@
       fx.dataset.cat = cat;
       fx.innerHTML = '<span class="kicker">' + (isDE ? 'Das Wichtigste' : 'Key facts') + '</span><ul>' +
         factItems.map(function (f) { return '<li>' + marked.parseInline(f) + '</li>'; }).join('') + '</ul>';
+      E.localizeLinks(fx);
       fx.hidden = false;
     }
 
@@ -181,6 +181,7 @@
     });
     var bodyEl = document.getElementById('art-body');
     bodyEl.innerHTML = marked.parse(body);
+    E.localizeLinks(bodyEl);
     bodyEl.querySelectorAll('a[href^="http"]').forEach(function (a) { a.target = '_blank'; a.rel = 'noopener'; });
 
     // Contents rail from h2 headings
@@ -216,8 +217,8 @@
             '<span class="dom">' + esc(domain(s.url)) + '</span></span></li>';
         }).join('') + '</ol>' +
         '<p class="sources-note">' + (isDE
-          ? 'Fehler gefunden? Wir korrigieren ihn und vermerken die Änderung. <a href="/about#corrections">Korrekturrichtlinie</a>'
-          : 'Found an error? We correct it and note the change. <a href="/about#corrections">Corrections policy</a>') + '</p>';
+          ? 'Fehler gefunden? Wir korrigieren ihn und vermerken die Änderung. <a href="' + E.href('about') + '#corrections">Korrekturrichtlinie</a>'
+          : 'Found an error? We correct it and note the change. <a href="' + E.href('about') + '#corrections">Corrections policy</a>') + '</p>';
       sec.hidden = false;
     }
 
@@ -241,8 +242,8 @@
     var robots = document.createElement('meta'); robots.name = 'robots'; robots.content = 'noindex'; document.head.appendChild(robots);
     document.title = (isDE ? 'Artikel nicht gefunden' : 'Article not found') + ' | Ecodemia';
     status.innerHTML = (isDE
-      ? 'Dieser Artikel wurde nicht gefunden. <a href="/" style="color:var(--forest);text-decoration:underline">Zur Startseite</a>'
-      : 'This article could not be found. <a href="/" style="color:var(--forest);text-decoration:underline">Back to the homepage</a>');
+      ? 'Dieser Artikel wurde nicht gefunden. <a href="' + E.href('home') + '" style="color:var(--forest);text-decoration:underline">Zur Startseite</a>'
+      : 'This article could not be found. <a href="' + E.href('home') + '" style="color:var(--forest);text-decoration:underline">Back to the homepage</a>');
   });
 }());
 </script>

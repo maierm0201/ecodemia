@@ -68,7 +68,7 @@
       <p>Unsere Beiträge verlinken auf Websites Dritter, vor allem auf die zitierten Quellen. Für deren Inhalte sind ausschließlich die jeweiligen Betreiber verantwortlich. Zum Zeitpunkt der Verlinkung waren keine rechtswidrigen Inhalte erkennbar; werden uns solche bekannt, entfernen wir den Link umgehend.</p>
 
       <h2>Datenschutz</h2>
-      <p>Informationen zur Verarbeitung personenbezogener Daten finden Sie in der <a href="/datenschutz">Datenschutzerklärung</a>.</p>
+      <p>Informationen zur Verarbeitung personenbezogener Daten finden Sie in der <a href="/privacy">Datenschutzerklärung</a>.</p>
     </div>
 
     <!-- ───────────── ENGLISH (translation) ───────────── -->
@@ -118,13 +118,13 @@
 
 <div id="site-footer"></div>
 
+<script src="/js/routes.js"></script>
 <script src="/js/ecodemia.js"></script>
 <script>
 (function () {
   var isDE = window.Eco.isDE;
   document.querySelectorAll('[data-lang-block]').forEach(function (el) { el.hidden = el.getAttribute('data-lang-block') !== (isDE ? 'de' : 'en'); });
   document.querySelectorAll('[data-en]').forEach(function (el) { el.textContent = el.getAttribute(isDE ? 'data-de' : 'data-en'); });
-  document.title = (isDE ? 'Impressum' : 'Imprint') + ' | Ecodemia';
 }());
 </script>
 </body>

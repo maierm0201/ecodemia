@@ -47,6 +47,7 @@
 
 <div id="site-footer"></div>
 
+<script src="/js/routes.js"></script>
 <script src="/js/ecodemia.js"></script>
 <script>
 (function () {
@@ -89,7 +90,7 @@
       var items = all.filter(function (x) { return x.category === cat && !shown[x.slug]; }).slice(0, 3);
       if (!items.length) return '';
       return '<section class="sec-row" data-cat="' + cat + '">' +
-        '<div class="sec-row-head"><h2><i></i>' + esc(E.t(cat)) + '</h2><a href="/' + cat + '">' + (isDE ? 'Alle Artikel' : 'All articles') + ' →</a></div>' +
+        '<div class="sec-row-head"><h2><i></i>' + esc(E.t(cat)) + '</h2><a href="' + E.href(cat) + '">' + (isDE ? 'Alle Artikel' : 'All articles') + ' →</a></div>' +
         '<div class="cards">' + items.map(function (x) {
           return '<a class="card" href="' + E.articleUrl(x) + '">' + photo(x) +
             '<h3 class="hl">' + esc(E.loc(x, 'title')) + '</h3>' +
