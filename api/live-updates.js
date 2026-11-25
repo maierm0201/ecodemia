@@ -74,12 +74,11 @@ async function fetchFeed(feed) {
       return {
         title,
         link,
-        description: desc,
         source: feed.source,
         date: isNaN(date) ? null : date.toISOString(),
         category: categorize(title + ' ' + desc),
       };
-    }).filter(i => i.title && i.link);
+    }).filter(i => i.title && /^https?:\/\//i.test(i.link));
   } catch {
     return []; // one dead feed must not break the endpoint
   } finally {

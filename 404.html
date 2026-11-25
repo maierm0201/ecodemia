@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Page not found | Ecodemia</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/brand/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/brand/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0b3d2b">
+<link rel="stylesheet" href="/css/ecodemia.css">
+</head>
+<body data-page="404">
+<div id="site-header"></div>
+
+<main class="wrap">
+  <header class="page-head">
+    <span class="label">404</span>
+    <h1 data-en="Page not found" data-de="Seite nicht gefunden">Page not found</h1>
+  </header>
+  <div class="page-body prose">
+    <p data-en="This page does not exist or has moved." data-de="Diese Seite gibt es nicht oder sie ist umgezogen.">This page does not exist or has moved.</p>
+    <p><a href="/" data-en="Go to the homepage" data-de="Zur Startseite">Go to the homepage</a></p>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="/js/ecodemia.js"></script>
+<script>
+(function () {
+  var isDE = window.Eco.isDE;
+  document.querySelectorAll('[data-en]').forEach(function (el) { el.textContent = el.getAttribute(isDE ? 'data-de' : 'data-en'); });
+  document.title = (isDE ? 'Seite nicht gefunden' : 'Page not found') + ' | Ecodemia';
+}());
+</script>
+</body>
+</html>

@@ -9,6 +9,8 @@
 <link rel="icon" href="/assets/brand/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Ecodemia (English)" href="/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Ecodemia (Deutsch)" href="/feed-de.xml">
 <meta name="theme-color" content="#0b3d2b">
 <meta name="description" content="Environmental headlines from the Guardian, BBC, Mongabay, Grist and CleanTechnica, refreshed throughout the day.">
 <link rel="preload" href="/assets/fonts/schibsted-grotesk-normal-400-800-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -82,7 +84,6 @@
         '<div class="meta">' + (i.category ? '<span class="kicker" data-cat="' + esc(i.category) + '">' + esc(E.t(i.category)) + '</span>' : '') +
           '<span>' + esc(i.source) + '</span><span>' + esc(relTime(i.date)) + '</span></div>' +
         '<h2 class="hl">' + esc(i.title) + ' ↗</h2>' +
-        (i.description ? '<p class="stand">' + esc(i.description.length > 260 ? i.description.slice(0, 257) + '…' : i.description) + '</p>' : '') +
       '</a>';
     }).join('') : '<p class="status">' + (isDE ? 'Zurzeit keine Meldungen in dieser Rubrik.' : 'No updates in this section right now.') + '</p>';
   }

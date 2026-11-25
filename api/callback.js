@@ -1,10 +1,38 @@
-// api/callback.js — Step 2: exchange the GitHub code for an access token,
-// then hand it back to Decap CMS via postMessage so the popup can close.
+// api/callback.js — Step 2: check the state, exchange the GitHub code for an
+// access token, then hand it back to Decap CMS via postMessage so the popup can close.
+//
+// The token is only ever posted to the site's own origins, never to '*', so a
+// foreign page that opens this popup cannot receive it.
+const crypto = require('crypto');
+
+const ALLOWED_ORIGINS = ['https://www.ecodemia.org', 'https://ecodemia.org'];
+
+function readCookie(req, name) {
+  const m = (req.headers.cookie || '').match(new RegExp('(?:^|;\\s*)' + name + '=([^;]*)'));
+  return m ? m[1] : '';
+}
+
+function sameString(a, b) {
+  const x = Buffer.from(String(a)), y = Buffer.from(String(b));
+  return x.length === y.length && x.length > 0 && crypto.timingSafeEqual(x, y);
+}
+
 module.exports = async (req, res) => {
-  const { code } = req.query;
+  const { code, state } = req.query;
+  const proto  = req.headers['x-forwarded-proto'] || 'https';
+  const host   = req.headers['x-forwarded-host'] || req.headers.host;
+  const self   = `${proto}://${host}`;
+  const allowed = ALLOWED_ORIGINS.includes(self) ? ALLOWED_ORIGINS : ALLOWED_ORIGINS.concat(self);
+
+  res.setHeader('Set-Cookie', 'ecodemia_oauth_state=; Path=/api; Max-Age=0; HttpOnly; Secure; SameSite=Lax');
+  res.setHeader('Cache-Control', 'no-store');
 
   if (!code) {
     res.status(400).end('Missing code parameter');
+    return;
+  }
+  if (!sameString(state, readCookie(req, 'ecodemia_oauth_state'))) {
+    res.status(400).end('Login expired or started in another browser. Close this window and try again.');
     return;
   }
 
@@ -30,37 +58,28 @@ module.exports = async (req, res) => {
     errorMsg = 'Server error during token exchange';
   }
 
-  res.setHeader('Content-Type', 'text/html');
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
 
-  if (errorMsg) {
-    // Send error back to Decap CMS
-    res.end(`<!DOCTYPE html><html><body><script>
-(function () {
-  var msg = 'authorization:github:error:' + JSON.stringify({ error: ${JSON.stringify(errorMsg)} });
-  window.opener.postMessage(msg, '*');
-  window.close();
-})();
-<\/script></body></html>`);
-    return;
-  }
+  // Decap CMS handshake: the popup announces itself, the CMS answers, and the
+  // popup replies with the result, but only to an allowed origin.
+  const payload = errorMsg
+    ? 'authorization:github:error:' + JSON.stringify({ error: errorMsg })
+    : 'authorization:github:success:' + JSON.stringify({ token, provider: 'github' });
 
-  // Send token back to Decap CMS using its handshake protocol:
-  // 1. popup signals "authorizing:github" to the opener
-  // 2. opener responds with a message (any origin)
-  // 3. popup replies with the token to opener's origin
   res.end(`<!DOCTYPE html><html><body><script>
 (function () {
-  var TOKEN    = ${JSON.stringify(token)};
-  var PROVIDER = 'github';
+  var ALLOWED = ${JSON.stringify(allowed)};
+  var PAYLOAD = ${JSON.stringify(payload).replace(/</g, '\\u003c')};
+  if (!window.opener) { document.body.textContent = 'Please start the login from the Ecodemia admin page.'; return; }
   function receiveMessage(e) {
+    if (ALLOWED.indexOf(e.origin) === -1) return;
     window.removeEventListener('message', receiveMessage);
-    window.opener.postMessage(
-      'authorization:' + PROVIDER + ':success:' + JSON.stringify({ token: TOKEN, provider: PROVIDER }),
-      e.origin
-    );
+    window.opener.postMessage(PAYLOAD, e.origin);
   }
   window.addEventListener('message', receiveMessage, false);
-  window.opener.postMessage('authorizing:' + PROVIDER, '*');
+  ALLOWED.forEach(function (o) {
+    try { window.opener.postMessage('authorizing:github', o); } catch (err) {}
+  });
 })();
 <\/script></body></html>`);
 };
