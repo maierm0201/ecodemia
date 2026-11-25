@@ -47,6 +47,22 @@
       "destination": "/about_page/code.html"
     },
     {
+      "source": "/impressum",
+      "destination": "/imprint_page/code.html"
+    },
+    {
+      "source": "/imprint",
+      "destination": "/imprint_page/code.html"
+    },
+    {
+      "source": "/datenschutz",
+      "destination": "/privacy_page/code.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy_page/code.html"
+    },
+    {
       "source": "/article/:slug",
       "destination": "/article_view/code.html"
     },

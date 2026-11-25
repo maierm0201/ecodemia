@@ -21,24 +21,24 @@
       live: 'Live', about: 'About', home: 'Home', menu: 'Menu', close: 'Close',
       tagline: 'Independent, bilingual reporting on climate, nature and the energy transition. Every article lists its sources.',
       sections: 'Sections', aboutHead: 'About', aboutUs: 'About Ecodemia', standards: 'Editorial standards',
-      corrections: 'Corrections', privacy: 'Privacy', terms: 'Terms of use',
+      corrections: 'Corrections', privacy: 'Privacy', terms: 'Terms of use', imprint: 'Imprint',
       minRead: 'min read', sources: 'sources', source: 'source', checked: 'Checked', updated: 'Updated', published: 'Published',
       privacyTitle: 'Privacy',
       privacyBody: 'Ecodemia does not set cookies, run analytics or ask for personal data. Fonts, scripts and images are served from this website itself; your language choice is stored only in your own browser. The Live page loads headlines through our own server. The site is hosted by Vercel. A full privacy policy will be published here.',
       termsTitle: 'Terms of use',
-      termsBody: 'Ecodemia articles may be read and shared via link. Texts are © Ecodemia. Photos remain the property of their creators and are used under the licences named below each image. Links to external sources lead to third-party websites for whose content Ecodemia is not responsible.',
+      termsBody: 'Ecodemia articles may be read and shared via link. Texts are © the media owner named in the imprint. Photos remain the property of their creators and are used under the licences named below each image. Links to external sources lead to third-party websites for whose content Ecodemia is not responsible.',
     },
     de: {
       climate: 'Klima', wildlife: 'Tierwelt', energy: 'Energie', living: 'Leben', tech: 'Technologie', policy: 'Politik',
       live: 'Aktuell', about: 'Über uns', home: 'Startseite', menu: 'Menü', close: 'Schließen',
       tagline: 'Unabhängige, zweisprachige Berichterstattung über Klima, Natur und Energiewende. Jeder Artikel nennt seine Quellen.',
       sections: 'Rubriken', aboutHead: 'Über uns', aboutUs: 'Über Ecodemia', standards: 'Redaktionelle Standards',
-      corrections: 'Korrekturen', privacy: 'Datenschutz', terms: 'Nutzungsbedingungen',
+      corrections: 'Korrekturen', privacy: 'Datenschutz', terms: 'Nutzungsbedingungen', imprint: 'Impressum',
       minRead: 'Min. Lesezeit', sources: 'Quellen', source: 'Quelle', checked: 'Geprüft', updated: 'Aktualisiert', published: 'Veröffentlicht',
       privacyTitle: 'Datenschutz',
       privacyBody: 'Ecodemia setzt keine Cookies, nutzt keine Analyse-Tools und fragt keine personenbezogenen Daten ab. Schriften, Skripte und Bilder werden von dieser Website selbst ausgeliefert; deine Sprachwahl wird nur in deinem eigenen Browser gespeichert. Die Seite „Aktuell“ lädt Schlagzeilen über unseren eigenen Server. Gehostet wird die Seite bei Vercel. Eine vollständige Datenschutzerklärung wird hier veröffentlicht.',
       termsTitle: 'Nutzungsbedingungen',
-      termsBody: 'Ecodemia-Artikel dürfen gelesen und per Link geteilt werden. Texte © Ecodemia. Fotos bleiben Eigentum ihrer Urheber und werden unter den jeweils unter dem Bild genannten Lizenzen verwendet. Links zu externen Quellen führen zu Websites Dritter, für deren Inhalte Ecodemia nicht verantwortlich ist.',
+      termsBody: 'Ecodemia-Artikel dürfen gelesen und per Link geteilt werden. Texte © des im Impressum genannten Medieninhabers. Fotos bleiben Eigentum ihrer Urheber und werden unter den jeweils unter dem Bild genannten Lizenzen verwendet. Links zu externen Quellen führen zu Websites Dritter, für deren Inhalte Ecodemia nicht verantwortlich ist.',
     },
   };
   function t(key) { return (T[lang] && T[lang][key]) || T.en[key] || key; }
@@ -215,7 +215,8 @@
         '</ul></div>' +
         '<div><span class="label">' + esc(t('aboutHead')) + '</span><ul>' +
           li('/about', t('aboutUs')) + li('/about#standards', t('standards')) + li('/about#corrections', t('corrections')) +
-          li('#', t('privacy'), ' data-policy="privacy"') + li('#', t('terms'), ' data-policy="terms"') +
+          li(isDE ? '/impressum' : '/imprint', t('imprint')) + li(isDE ? '/datenschutz' : '/privacy', t('privacy')) +
+          li('#', t('terms'), ' data-policy="terms"') +
         '</ul></div>' +
       '</div><div class="footer-base"><div class="wrap"><span>© 2026 Ecodemia</span>' + langToggle() + '</div></div></footer>';
   }

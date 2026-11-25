@@ -243,6 +243,7 @@ a:hover .photo img { transform: scale(1.03); }
 
 .prose { font-family: var(--f-body); font-size: 20px; line-height: 1.65; color: var(--ink); }
 .prose > * + * { margin-top: 1.1em; }
+.prose .ph { background: #ffe58a; color: #3a2c00; padding: 0 3px; border-radius: 2px; }
 .prose h2 { font-family: var(--f-head); font-size: 28px; line-height: 1.2; letter-spacing: -0.02em; margin-top: 1.9em; scroll-margin-top: 96px; }
 .prose h3 { font-family: var(--f-head); font-size: 22px; margin-top: 1.6em; }
 .prose a { color: var(--forest); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }

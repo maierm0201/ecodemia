@@ -24,6 +24,8 @@ const PUBLIC = [
   'article_view/code.html',
   'live_updates/code.html',
   'about_page/code.html',
+  'imprint_page/code.html',
+  'privacy_page/code.html',
   'admin/index.html',
   'admin/config.yml',
   'css',
@@ -80,6 +82,8 @@ const urls = [
   ...SECTIONS.map(s => ({ loc: SITE + '/' + s, lastmod: newest })),
   { loc: SITE + '/live' },
   { loc: SITE + '/about' },
+  { loc: SITE + '/impressum' },
+  { loc: SITE + '/datenschutz' },
   ...articles.map(a => ({
     loc: SITE + '/article/' + encodeURIComponent(a.slug),
     lastmod: parseDate(a.updated) || parseDate(a.date),
