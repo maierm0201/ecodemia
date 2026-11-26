@@ -22,6 +22,10 @@ cover_credit: "Beef cattle in a feedlot in New Mexico, USA. Photo: Quintin Solov
 cover_credit_de: "Mastrinder in einem Feedlot in New Mexico, USA. Foto: Quintin Soloviev / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Beef_cattle_in_a_feedlot_in_New_Mexico.jpg), gemeinfrei ([CC0](https://creativecommons.org/publicdomain/zero/1.0/))"
 excerpt: "Livestock causes around 12 percent of global emissions, and per gram of protein, beef emits more than 100 times as much as peas. Why feeding crops to animals wastes so much, and how policy is responding."
 excerpt_de: "Rund 12 Prozent der weltweiten Emissionen gehen auf die Tierhaltung zurück, und pro Gramm Eiweiß verursacht Rindfleisch mehr als hundertmal so viel wie Erbsen. Warum das Verfüttern von Ackerfrüchten so verschwenderisch ist und wie die Politik reagiert."
+seo_title: "Meat and Climate: How Much Livestock Adds to Emissions"
+seo_title_de: "Fleisch und Klima: Die Emissionen der Tierhaltung in Zahlen"
+seo_description: "Livestock causes about 12% of human-caused emissions and uses about 80% of farmland, but supplies 17% of the world's calories. The figures and the policy."
+seo_description_de: "Die Tierhaltung verursacht rund 12 % der menschengemachten Emissionen und beansprucht 80 % der Agrarfläche, liefert aber nur 17 % der Kalorien der Welt."
 body_de: |
   Etwa ein Viertel der weltweiten Treibhausgasemissionen entsteht bei der Erzeugung von Lebensmitteln.[^2] Ein Teil davon fällt besonders auf: die Tiere, die für Fleisch, Milch und Eier gehalten werden. Sie beanspruchen den Großteil der Agrarflächen der Erde, und ein großer Teil ihres Futters hätte direkt Menschen satt machen können.
 

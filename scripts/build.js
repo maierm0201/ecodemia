@@ -2,7 +2,7 @@
 /**
  * Ecodemia build script
  * Scans content/articles/*.md and generates content/articles.json
- * Runs automatically on every Netlify deploy.
+ * Runs on every deploy (npm run build), before scripts/build-site.js.
  */
 
 const fs   = require('fs');
@@ -11,55 +11,7 @@ const path = require('path');
 const ARTICLES_DIR = path.join(__dirname, '..', 'content', 'articles');
 const OUTPUT_FILE  = path.join(__dirname, '..', 'content', 'articles.json');
 
-// ---------------------------------------------------------------------------
-// Front-matter parser — handles plain `key: value` AND YAML block scalars
-// (`key: >` or `key: |`) as produced by Netlify Visual Editor.
-// ---------------------------------------------------------------------------
-function parseFrontMatter(raw) {
-  const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
-  if (!match) return { data: {}, body: raw };
-
-  const data  = {};
-  const lines = match[1].split(/\r?\n/);
-  let i = 0;
-
-  while (i < lines.length) {
-    const line = lines[i];
-
-    // Skip indented lines (they belong to a block scalar already consumed)
-    if (line.startsWith(' ') || line.startsWith('\t')) { i++; continue; }
-
-    const colon = line.indexOf(':');
-    if (colon === -1) { i++; continue; }
-
-    const key  = line.slice(0, colon).trim();
-    const rest = line.slice(colon + 1).trim();
-
-    // YAML block scalar indicator: > (folded) or | (literal), with optional
-    // chomping modifier (>- |- >+ |+) as produced by Decap CMS
-    if (/^[>|][+-]?$/.test(rest)) {
-      const blockLines = [];
-      i++;
-      while (i < lines.length) {
-        const bl = lines[i];
-        if (bl === '' || bl.startsWith('  ') || bl.startsWith('\t')) {
-          blockLines.push(bl.startsWith('  ') ? bl.slice(2) : (bl.startsWith('\t') ? bl.slice(1) : ''));
-          i++;
-        } else {
-          break; // Un-indented line signals end of block
-        }
-      }
-      // Trim trailing blank lines
-      while (blockLines.length && blockLines[blockLines.length - 1] === '') blockLines.pop();
-      data[key] = blockLines.join('\n');
-    } else {
-      data[key] = rest.replace(/^["']|["']$/g, '');
-      i++;
-    }
-  }
-
-  return { data, body: match[2] };
-}
+const { parseFrontMatter, SOURCES_RE } = require('./frontmatter.js');
 
 // ---------------------------------------------------------------------------
 // Date parser — handles both ISO (2024-03-14) and DD.MM.YYYY (26.03.2026)
@@ -85,8 +37,7 @@ function stripMarkdown(md) {
     .trim();
 }
 
-// The article body ends with "---" and a "**Sources:** [label](url) · …" line
-const SOURCES_RE = /\n-{3,}\s*\n+\s*\*\*(Sources|Quellen):\*\*([\s\S]*)$/;
+// The article body ends with "---" and a "**Sources:** [label](url) · …" line (SOURCES_RE)
 function withoutSources(md) {
   const m = (md || '').match(SOURCES_RE);
   return m ? md.slice(0, m.index) : (md || '');

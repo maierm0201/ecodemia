@@ -22,6 +22,10 @@ cover_credit: "Technicians service a buoy of the TAO array, which measures El Ni
 cover_credit_de: "Techniker warten eine Boje des TAO-Messnetzes, das El Niño im tropischen Pazifik erfasst. Foto: Lt. Elizabeth Crapo, NOAA Corps / NOAA Photo Library, gemeinfrei, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ship1279_-_Flickr_-_NOAA_Photo_Library.jpg)"
 excerpt: "According to NOAA, there is about a 60 percent chance of a historic El Niño, and the UN has called it a wrecking ball. What the forecasts show, which regions will be hit, and why Europeans will notice it at the supermarket."
 excerpt_de: "Rund 60 Prozent beträgt laut NOAA die Wahrscheinlichkeit für einen historischen El Niño, die UN nennt ihn eine Abrissbirne. Was die Vorhersagen zeigen, welche Regionen betroffen sind und warum man ihn in Europa an der Supermarktkasse merken wird."
+seo_title: "El Niño 2026: A Possible Record Event and What It Means"
+seo_title_de: "El Niño 2026: Möglicher Rekord und die Folgen bis 2027"
+seo_description: "NOAA gives a historic El Niño about a 60% chance, with a peak likely around the turn of the year. What it means for drought, floods and food prices."
+seo_description_de: "Die NOAA sieht rund 60 % Wahrscheinlichkeit für einen historischen El Niño, der Höhepunkt dürfte zum Jahreswechsel kommen. Folgen für Ernten und Preise."
 body_de: |
   Im tropischen Pazifik baut sich seit August ein El Niño auf, für den Meteorologen ungewöhnlich drastische Worte finden. „El Niño wird vor unseren Augen aufgepumpt“, sagte UN-Generalsekretär António Guterres im September.[^1] Noch deutlicher wurde im Oktober UN-Nothilfekoordinator Tom Fletcher: „Dieser El Niño ist ein Ungetüm. Er ist eine Abrissbirne.“[^5]
 

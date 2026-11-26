@@ -27,6 +27,10 @@ cover_credit: "Antalya, host city of COP31. Photo: Maksym Kozlenko / [Wikimedia 
 cover_credit_de: "Antalya, Gastgeberstadt der COP31. Foto: Maksym Kozlenko / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2023-01-17_Antalya_Harbour.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
 excerpt: "After one of the longest overtimes in COP history, the Antalya climate summit fell apart. How a text that once called for a phase-out ended up not mentioning fossil fuels at all, who said no, and what survives."
 excerpt_de: "Nach einer der längsten Verlängerungen der COP-Geschichte ist der Klimagipfel von Antalya gescheitert. Wie aus einer Ausstiegsforderung ein Text wurde, der fossile Brennstoffe gar nicht mehr nennt, wer Nein sagte und was übrig bleibt."
+seo_title: "COP31 in Antalya Ends Without a Deal on Fossil Fuels"
+seo_title_de: "COP31 in Antalya: Weltklimakonferenz endet ohne Einigung"
+seo_description: "The COP31 cover decision failed 44 hours after the scheduled close, with a final text that never named fossil fuels. Who said no, and what survives."
+seo_description_de: "Die Abschlusserklärung der COP31 scheiterte 44 Stunden nach Plan-Ende, fossile Brennstoffe nannte der Text nicht mehr. Wer Nein sagte, was übrig bleibt."
 body_de: |
   Ohne politische Abschlusserklärung ist die 31. UN-Klimakonferenz in Antalya zu Ende gegangen. Am Nachmittag des 22. November, einem Sonntag, 44 Stunden nach dem offiziellen Schluss, wiesen die EU und mehrere andere Staaten den letzten Entwurf der sogenannten Cover Decision zurück.[^2] Australiens Sender ABC und andere Medien sprachen vom längsten UN-Klimagipfel aller Zeiten; allerdings hatte auch die COP25 in Madrid 2019 erst rund 44 Stunden nach dem geplanten Ende geschlossen.[^2][^7] Das letzte Mal, dass ein UN-Klimagipfel ohne einen von allen mitgetragenen Beschluss endete, war 2009 in Kopenhagen.[^1]
 

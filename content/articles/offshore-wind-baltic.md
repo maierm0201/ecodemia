@@ -22,6 +22,10 @@ cover_credit: "The Baltic 2 offshore wind farm between Germany and Sweden. Photo
 cover_credit_de: "Der Offshore-Windpark Baltic 2 zwischen Deutschland und Schweden. Foto: Molgreen / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:20170613_xl_214235-Ostsee-Windpark-zwischen-Deutschland-und-Schweden.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
 excerpt: "Under the Marienborg Declaration, the Baltic was to reach at least 19.6 gigawatts of offshore wind by 2030. How far the build-out has come, what is slowing it, and why grids that cross borders are important."
 excerpt_de: "Mindestens 19,6 Gigawatt Offshore-Wind in der Ostsee bis 2030 lautet das Ziel der Marienborg-Erklärung. Wie weit der Ausbau ist, woran er hakt und warum Netze über Grenzen hinweg zählen."
+seo_title: "Baltic Sea Offshore Wind: How Close Is the 19.6 GW Goal?"
+seo_title_de: "Offshore-Windkraft in der Ostsee: Wo der Ausbau steht"
+seo_description: "Eight Baltic countries pledged at least 19.6 GW of offshore wind by 2030. Poland's Baltic Power now feeds the grid; a Lithuanian tender failed."
+seo_description_de: "Acht Ostseestaaten wollen bis 2030 mindestens 19,6 GW Offshore-Wind. Baltic Power in Polen liefert Strom, Litauens zweite Ausschreibung scheiterte."
 body_de: |
   Wer Windparks plant, findet in der Ostsee gute Bedingungen: flaches Wasser, beständigen Wind, kurze Entfernungen zur Küste und fast keine Gezeiten. Deshalb steckten sich die Anrainerstaaten im August 2022, nur wenige Monate nach Russlands Überfall auf die Ukraine, ein ehrgeiziges Ziel.
 

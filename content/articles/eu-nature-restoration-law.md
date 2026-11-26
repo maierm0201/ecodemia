@@ -25,6 +25,10 @@ cover_credit: "Rewetting in the Altwarmbüchener Moor near Hanover. Photo: Puust
 cover_credit_de: "Wiedervernässung im Altwarmbüchener Moor bei Hannover. Foto: Puusterke / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Wiedervern%C3%A4ssung_im_Altwarmb%C3%BCchener_Moor_%28LSG_H-S_00011%29.JPG), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)"
 excerpt: "Peatlands rewetted, 25,000 kilometres of rivers flowing freely, urban green space with no net loss: the EU restoration law sets binding targets. The national plans are its first test, and that test is proving bumpy."
 excerpt_de: "Moore, die wieder nass werden, 25.000 Kilometer frei fließende Flüsse, keine Verluste beim Stadtgrün: Das EU-Renaturierungsgesetz macht verbindliche Vorgaben. Bei seinem ersten Test, den nationalen Plänen, hakt es."
+seo_title: "EU Nature Restoration Law: Countries Miss the First Deadline"
+seo_title_de: "Renaturierungsgesetz: Viele EU-Staaten verpassen erste Frist"
+seo_description: "About 20 EU countries missed the 1 September 2026 deadline for draft restoration plans. What the law requires, and where Germany and Austria stand."
+seo_description_de: "Rund 20 EU-Staaten verpassten die Frist für ihre Entwürfe im September 2026. Was das Renaturierungsgesetz fordert, wo Deutschland und Österreich stehen."
 body_de: |
   Lange Zeit war Naturschutzrecht auf Abwehr ausgerichtet: Untersagt war, einen schlechten Zustand weiter zu verschlechtern. Mit der EU-Verordnung zur Wiederherstellung der Natur (Verordnung (EU) 2024/1991) kehrt sich diese Logik um. Die Mitgliedstaaten müssen geschädigte Ökosysteme nun aktiv reparieren, und zwar nach messbaren Zielen und mit festen Fristen. Seit dem 18. August 2024 ist die Verordnung in Kraft.[^2]
 

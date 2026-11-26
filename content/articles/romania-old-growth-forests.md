@@ -22,6 +22,10 @@ cover_credit: "Beech forest near Bușteni in the Romanian Carpathians. Photo: Ti
 cover_credit_de: "Buchenwald bei Bușteni in den rumänischen Karpaten. Foto: Tiia Monto / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Busteni_-_forest_2.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
 excerpt: "4.7 million cubic metres taken from old forests in four years, an EU case that stalled, and a minister who says the problem was played down: where Romania's ancient forests stand today."
 excerpt_de: "4,7 Millionen Kubikmeter aus alten Wäldern in vier Jahren, ein EU-Verfahren, das stockt, und eine Ministerin, die sagt, das Problem sei kleingeredet worden: Wie es um Rumäniens alte Wälder steht."
+seo_title: "Romania's Old-Growth Forests and the Illegal Logging Fight"
+seo_title_de: "Urwälder in Rumänien: Kampf gegen illegalen Holzeinschlag"
+seo_description: "An estimated 525,000 hectares of potential primary and old-growth forest remain in Romania. NGOs say over 4.7 million m³ were cut there in 2021–2024."
+seo_description_de: "Rumänien hat schätzungsweise noch 525.000 Hektar potenzieller Ur- und Altwälder. Laut Umweltverbänden wurden dort 2021–2024 über 4,7 Mio. m³ geschlagen."
 body_de: |
   In den Karpaten wachsen noch Wälder, die stärker von der Natur als von der Forstwirtschaft geprägt sind. Bären, Wölfe, Schwarzstörche, Eulen, Spechte, Fledermäuse und Käfer leben dort.[^1] Ein Teil dieser Wälder gehört zum UNESCO-Welterbe „Alte Buchenwälder und Buchenurwälder der Karpaten und anderer Regionen Europas“, das mittlerweile 93 Teilgebiete in 18 Ländern umfasst.[^6] Seit Jahren stehen dieselben Wälder zugleich im Mittelpunkt des größten europäischen Konflikts um illegalen Holzeinschlag.
 

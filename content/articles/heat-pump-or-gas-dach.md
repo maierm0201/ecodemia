@@ -22,6 +22,10 @@ cover_credit: "An air-source heat pump retrofitted on a terraced house in Southe
 cover_credit_de: "Eine nachgerüstete Luft-Wasser-Wärmepumpe an einem Reihenhaus in Southend-on-Sea, England. Foto: Southend-on-Sea Borough Council / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Air_Source_Heat_Pump_-_Vailliant_aroTherm_Plus_on_a_terraced_house.jpg), gemeinfrei ([CC0](https://creativecommons.org/publicdomain/zero/1.0/))"
 excerpt: "In Germany, new gas boilers are permitted again, though from 2029 they need a growing share of green fuel. The rules, subsidies and running costs in the three German-speaking countries side by side."
 excerpt_de: "In Deutschland dürfen neue Gasheizungen wieder eingebaut werden, ab 2029 aber mit einem wachsenden Anteil grüner Brennstoffe. Regeln, Förderung und Betriebskosten in den drei deutschsprachigen Ländern im Überblick."
+seo_title: "Heat Pump or Gas? The New Heating Rules for Homeowners"
+seo_title_de: "Wärmepumpe oder Gasheizung? Regeln und Förderung 2026"
+seo_description: "Germany dropped its 65% renewable heating rule, Austria allows no gas heating in new buildings, Swiss cantons decide. Rules, subsidies and costs."
+seo_description_de: "Deutschland hat die 65-Prozent-Regel abgeschafft, Österreich erlaubt im Neubau keine Gasheizung mehr, in der Schweiz entscheiden die Kantone."
 body_de: |
   Eine neue Heizung gehört zu den teuersten und langlebigsten Entscheidungen, die ein Haushalt trifft. Deutschland, Österreich und die Schweiz gehen bei den Regeln dafür unterschiedliche Wege, und in Deutschland wurden diese Regeln in diesem Sommer erneut umgeschrieben.
 

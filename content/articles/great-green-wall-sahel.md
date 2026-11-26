@@ -22,6 +22,10 @@ cover_credit: "Seedlings at a reforestation site in Tolotama, Burkina Faso, one 
 cover_credit_de: "Setzlinge auf einer Aufforstungsfläche in Tolotama, Burkina Faso, einem der Länder der Großen Grünen Mauer. Foto: US-Landwirtschaftsministerium / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Burkina_Faso_-_Tolotama_Reforestation.jpg), gemeinfrei"
 excerpt: "Anywhere from 1.66 to more than 20 million hectares: how much land the Great Green Wall has truly restored, why the Sahara has grown, and what became of the billions that were pledged."
 excerpt_de: "Von 1,66 bis über 20 Millionen Hektar: wie viel Land die Große Grüne Mauer tatsächlich wiederhergestellt hat, warum die Sahara gewachsen ist und was aus den zugesagten Milliarden wurde."
+seo_title: "Great Green Wall at 19: How Much Land Has It Restored?"
+seo_title_de: "Große Grüne Mauer im Sahel: Bilanz nach 19 Jahren"
+seo_description: "From 1.66 to over 20 million hectares, depending on who counts: what Africa's Great Green Wall has restored, against a goal of 100 million by 2030."
+seo_description_de: "Von 1,66 bis über 20 Millionen Hektar, je nachdem, wer zählt: wie viel Land Afrikas Große Grüne Mauer wiederhergestellt hat. Das Ziel: 100 Millionen."
 body_de: |
   Die Afrikanische Union und das UN-Übereinkommen zur Bekämpfung der Wüstenbildung (UNCCD) starteten die Große Grüne Mauer 2007 mit einem eingängigen Bild: ein Streifen aus Bäumen quer durch den Kontinent, vom Senegal-Becken im Westen bis zum Horn von Afrika im Osten, der die Sahara in Schach hält.[^1] 19 Jahre danach erzählen die Verantwortlichen eine andere Geschichte, und wie viel wirklich erreicht wurde, lässt sich auf mehrere Arten beantworten.
 

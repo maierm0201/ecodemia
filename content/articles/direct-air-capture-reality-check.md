@@ -22,6 +22,10 @@ cover_credit: "A Climeworks direct air capture unit on display on the Bundesplat
 cover_credit_de: "Eine Anlage von Climeworks zur CO₂-Abscheidung aus der Luft auf dem Bundesplatz in Bern, 2015. Foto: TRx340 / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Climeworks-Anlage.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
 excerpt: "500 to 1,900 dollars per tonne, a plant far short of its capacity and a flagship project running late: the state of direct air capture today, and why net-zero strategies still depend on it."
 excerpt_de: "500 bis 1.900 Dollar pro Tonne, eine Anlage weit unter ihrer Kapazität und ein Vorzeigeprojekt mit Verspätung: der Stand der direkten CO₂-Abscheidung aus der Luft und warum Netto-Null-Strategien weiter auf sie angewiesen sind."
+seo_title: "Direct Air Capture Reality Check: Costs and Capacity"
+seo_title_de: "CO₂ aus der Luft holen: Direct Air Capture im Realitätscheck"
+seo_description: "Removing a tonne of CO₂ from the air costs an estimated 500 to 1,900 dollars (IEA). The Mammoth plant removed 675 tonnes in the first half of 2026."
+seo_description_de: "Eine Tonne CO₂ aus der Luft zu holen kostet laut IEA schätzungsweise 500 bis 1.900 Dollar. Die Anlage Mammoth entnahm im ersten Halbjahr 2026 675 Tonnen."
 body_de: |
   Auf dem Papier ist es ganz einfach. Ventilatoren ziehen Luft an, ein Filtermaterial hält das Kohlendioxid fest, und das CO₂ wird anschließend für immer tief im Untergrund oder in Mineralien eingeschlossen. Die Internationale Energieagentur (IEA) zählt die direkte CO₂-Abscheidung aus der Luft (Direct Air Capture, DAC) zu den beiden wichtigsten heute eingesetzten Verfahren der CO₂-Entnahme, das andere ist Bioenergie mit CO₂-Abscheidung und -Speicherung.[^1] In der Realität erweist sich der Ausbau der Technologie als schwieriger, als ihre Unterstützer erwartet hatten.
 

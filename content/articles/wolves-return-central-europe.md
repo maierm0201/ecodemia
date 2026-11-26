@@ -22,6 +22,10 @@ cover_credit: "A European grey wolf in the Lüneburg Heath wildlife park. Photo:
 cover_credit_de: "Ein Europäischer Grauwolf im Wildpark Lüneburger Heide. Foto: Quartl / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Canis_lupus_lupus_qtl2.jpg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)"
 excerpt: "Hunting law has governed the culling of wolves in Germany since 2 April 2026. EU law still protects the wolf, but the federal states may now manage its numbers. An overview of the rules, the figures and the evidence."
 excerpt_de: "Wann in Deutschland Wölfe getötet werden dürfen, bestimmt seit dem 2. April 2026 das Jagdrecht. Das EU-Recht schützt den Wolf weiterhin, doch die Länder dürfen die Bestände jetzt regulieren. Regeln, Zahlen und der Stand der Forschung."
+seo_title: "Wolves in Germany: What Changed Under the New Hunting Law"
+seo_title_de: "Wolf in Deutschland: Was das neue Jagdrecht ändert"
+seo_description: "Since 2 April 2026, hunting law has governed wolf culls in Germany, while EU law still protects the wolf. The rules, 219 packs and the evidence."
+seo_description_de: "Seit 2. April 2026 regelt in Deutschland das Jagdrecht, wann Wölfe getötet werden dürfen. Das EU-Recht schützt den Wolf weiter. Regeln, Zahlen, Forschung."
 body_de: |
   In der Muskauer Heide in der Lausitz zog im Jahr 2000 ein Wolfsrudel Junge auf, zum ersten Mal seit mehr als 150 Jahren in Deutschland. Inzwischen lebt der Wolf in weiten Teilen des Landes. Darauf hat die Politik 2026 reagiert, und das von Grund auf.
 

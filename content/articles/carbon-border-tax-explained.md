@@ -22,6 +22,10 @@ cover_credit: "The Tollerort container terminal in the port of Hamburg. Photo: R
 cover_credit_de: "Das Containerterminal Tollerort im Hamburger Hafen. Foto: Raimond Spekking / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hamburg_Hafen_Containerterminal.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
 excerpt: "On 1 January 2026, the EU's carbon border adjustment mechanism moved into its definitive phase. What importers now have to do, when payments begin, and what Russia, China and India have against it."
 excerpt_de: "Mit dem 1. Januar 2026 ist der CO₂-Grenzausgleich der EU in die endgültige Phase eingetreten. Welche Pflichten Importeure jetzt haben, ab wann gezahlt wird und was Russland, China und Indien dagegen einwenden."
+seo_title: "CBAM Explained: How the EU Carbon Border Tax Works"
+seo_title_de: "CBAM erklärt: So funktioniert der CO₂-Grenzausgleich der EU"
+seo_description: "Since January 2026, EU importers of steel, cement, aluminium, fertiliser, hydrogen and electricity report embedded emissions. Payments start in 2027."
+seo_description_de: "Seit Januar 2026 müssen Importeure von Stahl, Zement, Aluminium, Dünger, Wasserstoff und Strom Emissionen ausweisen. Zertifikate gibt es ab Februar 2027."
 body_de: |
   Lange gab es in Europas Klimapolitik eine Schwachstelle. Bepreist ein Land Emissionen nur zu Hause, droht emissionsintensive Produktion in andere Länder abzuwandern, was in der Fachsprache „Carbon Leakage“ heißt. Für das Klima wäre nichts gewonnen, für Europas Industrie einiges verloren. Genau dagegen richtet sich der CO₂-Grenzausgleichsmechanismus (Carbon Border Adjustment Mechanism, CBAM).
 

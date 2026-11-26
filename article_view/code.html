@@ -103,10 +103,12 @@
   }
   function slugify(s) { return 'sec-' + s.toLowerCase().replace(/[^a-z0-9äöüß]+/g, '-').replace(/^-|-$/g, '').slice(0, 50); }
 
-  // Built pages carry the slug on <html data-slug>; ?slug= is a fallback for local previews
+  // Built pages carry the slug on <html data-slug> and are prerendered by the build
+  // (scripts/prerender.js), so #art-status may be missing; ?slug= is a fallback for local previews
   var slug = document.documentElement.dataset.slug || new URLSearchParams(location.search).get('slug');
   var status = document.getElementById('art-status');
-  if (!slug) { status.textContent = isDE ? 'Artikel nicht gefunden.' : 'Article not found.'; return; }
+  var prerendered = !status;
+  if (!slug) { if (status) status.textContent = isDE ? 'Artikel nicht gefunden.' : 'Article not found.'; return; }
 
   Promise.all([
     fetch('/content/articles/' + encodeURIComponent(slug) + '.md').then(function (r) { if (!r.ok) throw 0; return r.text(); }),
@@ -235,10 +237,12 @@
       r.hidden = false;
     }
 
-    status.remove();
+    if (status) status.remove();
     document.getElementById('art').hidden = false;
     if (location.hash) { var tg = document.getElementById(location.hash.slice(1)); if (tg) tg.scrollIntoView(); }
   }).catch(function () {
+    // A prerendered article stays as built if the browser cannot load or render it
+    if (prerendered) return;
     var robots = document.createElement('meta'); robots.name = 'robots'; robots.content = 'noindex'; document.head.appendChild(robots);
     document.title = (isDE ? 'Artikel nicht gefunden' : 'Article not found') + ' | Ecodemia';
     status.innerHTML = (isDE

@@ -75,6 +75,20 @@ collections:
         required: false
         hint: "Short summary shown in article lists and category pages"
 
+      - label: "Search title (SEO)"
+        name: "seo_title"
+        widget: "string"
+        required: false
+        pattern: ['^.{30,60}$', "Search title: 30 to 60 characters"]
+        hint: "Title shown in Google results. 30–60 characters, the term people search for first (e.g. 'Heat Pump or Gas? The New Heating Rules for Homeowners'). ' | Ecodemia' is optional. Must not promise more than the headline. Check: node scripts/seo.js"
+
+      - label: "Search description (SEO)"
+        name: "seo_description"
+        widget: "text"
+        required: false
+        pattern: ['^[\s\S]{120,155}$', "Search description: 120 to 155 characters"]
+        hint: "Text below the title in Google results and on social cards. 120–155 characters. Only what the article says, with the same numbers, qualifiers ('about', 'an estimated', 'up to') and attribution. No added facts or superlatives."
+
       - label: "Key facts"
         name: "key_facts"
         widget: "text"
@@ -128,6 +142,20 @@ collections:
         widget: "text"
         required: false
         hint: "German excerpt — leave blank to show the English excerpt"
+
+      - label: "Search title (Deutsch, SEO)"
+        name: "seo_title_de"
+        widget: "string"
+        required: false
+        pattern: ['^.{30,60}$', "Suchtitel: 30 bis 60 Zeichen"]
+        hint: "Titel in den Google-Ergebnissen. 30–60 Zeichen, deutscher Suchbegriff zuerst (Wärmepumpe, Strompreis, Balkonkraftwerk …), nicht wörtlich übersetzt."
+
+      - label: "Search description (Deutsch, SEO)"
+        name: "seo_description_de"
+        widget: "text"
+        required: false
+        pattern: ['^[\s\S]{120,155}$', "Suchbeschreibung: 120 bis 155 Zeichen"]
+        hint: "Text unter dem Titel in den Google-Ergebnissen. 120–155 Zeichen. Nur was im Artikel steht, mit denselben Zahlen, Einschränkungen und Quellenangaben."
 
       - label: "Key facts (Deutsch)"
         name: "key_facts_de"

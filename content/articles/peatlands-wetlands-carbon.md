@@ -22,6 +22,10 @@ cover_credit: "Viru Bog in Lahemaa National Park, Estonia. Photo: Diego Delso / 
 cover_credit_de: "Das Viru-Hochmoor im Lahemaa-Nationalpark, Estland. Foto: Diego Delso / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Viru_Bog,_Parque_Nacional_Lahemaa,_Estonia,_2012-08-12,_DD_62.JPG), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)"
 excerpt: "Since 1970 the world has lost a fifth of its wetlands, and drained peat already accounts for about 4 percent of human greenhouse gas emissions. What is at stake, and what rewetting can achieve."
 excerpt_de: "Seit 1970 hat die Welt ein Fünftel ihrer Feuchtgebiete verloren, und entwässerte Moore verursachen schon rund 4 Prozent der menschengemachten Treibhausgase. Was auf dem Spiel steht und was Wiedervernässung bewirken kann."
+seo_title: "Peatlands and Wetlands: Why the Carbon Stores Are Vanishing"
+seo_title_de: "Moore und Klima: Warum trockengelegte Moore CO₂ ausstoßen"
+seo_description: "Peatlands hold up to a third of the world's soil carbon on 3–4% of land, and over 92% of Germany's are drained. What rewetting can achieve."
+seo_description_de: "Moore speichern bis zu einem Drittel des Bodenkohlenstoffs der Welt. Über 92 % der deutschen Moore sind trockengelegt. Was Wiedervernässung bringen kann."
 body_de: |
   Torf wächst langsam. Wo Hoch- und Niedermoore das ganze Jahr über nass bleiben, zersetzen sich abgestorbene Pflanzen nie ganz, und über Jahrtausende sammeln sie sich zu einer mächtigen, nassen Kohlenstoffschicht an. Darum zählen diese unauffälligen Landschaften so viel fürs Klima, und darum hat es so große Folgen, wenn man sie trockenlegt.
 

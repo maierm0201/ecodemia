@@ -22,6 +22,10 @@ cover_credit: "Server racks in a data centre. Photo: Carl Lender / [Wikimedia Co
 cover_credit_de: "Serverschränke in einem Rechenzentrum. Foto: Carl Lender / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Datacenter_Server_Racks_(22370909788).jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)"
 excerpt: "From 415 terawatt hours today to around 945 by 2030: what the IEA projects, what a new study of 403 US hyperscale data centres found, and what German and Swiss figures reveal about AI's appetite for electricity."
 excerpt_de: "Von 415 Terawattstunden heute auf rund 945 bis 2030: was die IEA erwartet, was eine neue Studie zu 403 Hyperscale-Rechenzentren in den USA ergab und was Zahlen aus Deutschland und der Schweiz über den Stromappetit der KI verraten."
+seo_title: "AI Data Centres: How Much Electricity They Use and Emit"
+seo_title_de: "KI und Stromverbrauch: Was Rechenzentren wirklich brauchen"
+seo_description: "Data centres used about 1.5% of the world's electricity in 2024; the IEA projects around 945 TWh by 2030. AI's power demand, with German and Swiss figures."
+seo_description_de: "Rechenzentren verbrauchten 2024 rund 1,5 % des weltweiten Stroms, die IEA erwartet bis 2030 rund 945 TWh. Der Strombedarf der KI, mit Zahlen aus D und CH."
 body_de: |
   Ob ein Chatbot eine Frage beantwortet, ein Bild erzeugt oder ein neues KI-Modell trainiert wird: Am Ende steht dahinter Strom, den ein Rechenzentrum verbraucht. Wie groß diese Last tatsächlich ist, zählt zu den umstrittensten Fragen der Energiepolitik, und die Schätzungen liegen weit auseinander.
 

@@ -22,6 +22,10 @@ cover_credit: "Fire at the edge of the forest near the Jacundá National Forest,
 cover_credit_de: "Feuer am Waldrand nahe dem Nationalwald Jacundá, Rondônia, Brasilien, August 2020. Foto: Bruno Kelly / Amazônia Real, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:SOBREVVO_EM_RONDONIA_DIA_07-08-2020_%28FOTO_BRUNO_KELLY%29_%2835%29_%2850224380121%29.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)"
 excerpt: "Only if they did not come from land deforested after 2020 may coffee, cocoa, soy, palm oil, beef, rubber and wood enter the EU market. An overview of the rules that take effect on 30 December."
 excerpt_de: "In die EU dürfen Kaffee, Kakao, Soja, Palmöl, Rindfleisch, Kautschuk und Holz nur noch, wenn dafür nach 2020 kein Wald gerodet wurde. Die Regeln, die ab 30. Dezember gelten, im Überblick."
+seo_title: "EU Deforestation Regulation (EUDR): Rules From 30 December"
+seo_title_de: "EUDR: EU-Entwaldungsverordnung gilt ab 30. Dezember 2026"
+seo_description: "From 30 December 2026, large and medium firms may sell coffee, cocoa, soy, palm oil, cattle, rubber and wood only if deforestation-free since 2020."
+seo_description_de: "Ab 30. Dezember 2026 dürfen große und mittlere Firmen Kaffee, Kakao, Soja, Palmöl, Rinder, Kautschuk und Holz nur ohne Rodung seit 2020 verkaufen."
 body_de: |
   Kaum eine Region importiert so viele Waren, für die Wald gerodet wird, wie die Europäische Union. Damit soll die EU-Entwaldungsverordnung (EUDR, Verordnung (EU) 2023/1115) Schluss machen. Verabschiedet wurde sie 2023, danach wurde ihr Start zweimal verschoben. Inzwischen ist das Datum fix: **Ab dem 30. Dezember 2026** müssen große und mittlere Unternehmen die Pflichten erfüllen.[^2]
 

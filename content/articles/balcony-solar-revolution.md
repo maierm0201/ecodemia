@@ -22,6 +22,10 @@ cover_credit: "A plug-in solar system on a balcony in Tauberbischofsheim. Photo:
 cover_credit_de: "Ein Balkonkraftwerk in Tauberbischofsheim. Foto: Triplec85 / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2023-05-05_Sogenanntes_Balkonkraftwerk,_eine_Mini-PV-Anlage,_in_Tauberbischofsheim_01.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
 excerpt: "Clip a panel to the railing and plug it in: no other climate technology is quite this easy to start with. German law has smoothed the way considerably since 2024. Here are the rules as they stand in 2026."
 excerpt_de: "Modul ans Geländer, Stecker in die Dose: Einfacher kommt man an keine Klimatechnik heran. Seit 2024 hat der Gesetzgeber in Deutschland vieles erleichtert. Ein Überblick über die Regeln im Jahr 2026."
+seo_title: "Balcony Solar in Germany: The Rules for Plug-In Solar 2026"
+seo_title_de: "Balkonkraftwerk 2026: Regeln, 800 Watt und Rechte für Mieter"
+seo_description: "Germany has about 1.49 million plug-in solar devices registered. The 2026 rules: 800 W into the home circuit, up to 2,000 W of panels, rights for tenants."
+seo_description_de: "In Deutschland sind rund 1,49 Millionen Balkonkraftwerke angemeldet. Die Regeln 2026: 800 W ins Hausnetz, bis 2.000 W Module, kein pauschales Nein."
 body_de: |
   Das Modul ans Balkongeländer, den Stecker in die Steckdose, und schon läuft es: Leichter kommt man an kaum eine Klimatechnik heran als an das Steckersolargerät, das im Alltag meist Balkonkraftwerk heißt. Gerade diese Einfachheit hat es hierzulande zur Massenware gemacht.
 

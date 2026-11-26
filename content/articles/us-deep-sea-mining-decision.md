@@ -22,6 +22,10 @@ cover_credit: "Life on manganese nodules in the Clarion-Clipperton Zone, photogr
 cover_credit_de: "Leben auf Manganknollen in der Clarion-Clipperton-Zone, aufgenommen bei der deutschen Forschungsexpedition SO268 (MiningImpact). Foto: ROV KIEL 6000, GEOMAR / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2019-03-03_20-06-50_Sonne_SO268-1_020ROV02_nurLogo_klein_original%281%29.jpg), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
 excerpt: "When NOAA rules on The Metals Company's application, it will be the first real test of a US route around international seabed law. What the deep sea stands to lose, and what comes next."
 excerpt_de: "Mit der Entscheidung der NOAA über den Antrag von The Metals Company steht erstmals wirklich auf dem Prüfstand, ob die USA das internationale Meeresbodenrecht umgehen können. Was für die Tiefsee auf dem Spiel steht und was als Nächstes kommt."
+seo_title: "Deep-Sea Mining: US Decision on The Metals Company Due"
+seo_title_de: "Tiefseebergbau: USA entscheiden über The Metals Company"
+seo_description: "By mid-December, NOAA expects to decide on The Metals Company's application, sidestepping the UN seabed authority. What is at stake for the deep sea."
+seo_description_de: "Bis Mitte Dezember will die NOAA über den Antrag von The Metals Company entscheiden, vorbei an der UN-Meeresbodenbehörde. Was auf dem Spiel steht."
 body_de: |
   Auf dem Meeresboden zwischen Hawaii und Mexiko liegen in vier bis fünf Kilometern Tiefe Milliarden von Knollen, jede etwa so groß wie eine Kartoffel. In ihnen stecken Nickel, Kobalt, Kupfer und Mangan, also Metalle, nach denen die Batterieindustrie verlangt. Das Gebiet trägt den Namen Clarion-Clipperton-Zone (CCZ). Weil es in internationalen Gewässern liegt, ist dafür die Internationale Meeresbodenbehörde (ISA) der Vereinten Nationen zuständig.
 

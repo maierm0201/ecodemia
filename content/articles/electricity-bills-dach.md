@@ -22,6 +22,10 @@ cover_credit: "A smart electricity meter on the day it was installed in a Berlin
 cover_credit_de: "Ein Smart Meter am Tag seiner Installation in einem Berliner Haushalt. Foto: RobbieIanMorrison / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Logarex_smart_household_electricity_meter_build_year_2023.jpg), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
 excerpt: "At 36.2 euros per 100 kilowatt hours, German households pay some of the highest prices in the EU. What goes into a power bill, how Austria and Switzerland compare, and why 2027 could bring increases again."
 excerpt_de: "Mit 36,2 Euro pro 100 Kilowattstunden zahlen deutsche Haushalte mit die höchsten Preise in der EU. Was in der Stromrechnung steckt, wie Österreich und die Schweiz im Vergleich liegen und warum 2027 wieder Erhöhungen bringen könnte."
+seo_title: "High Electricity Prices in Germany, Austria and Switzerland"
+seo_title_de: "Strompreis: Warum die Stromrechnung so hoch bleibt"
+seo_description: "Grid fees, taxes and levies make up over half of Germany's average 37.3 cents per kWh. What is in a power bill and how Austria and Switzerland compare."
+seo_description_de: "Mehr als die Hälfte des deutschen Strompreises von 37,3 Cent pro kWh sind Netzentgelte, Steuern und Abgaben. Der Vergleich mit Österreich und der Schweiz."
 body_de: |
   An einem sonnigen Nachmittag kann Strom im Großhandel in Teilen Europas unter null gehandelt werden. Die Rechnungen, die in den Briefkästen der Haushalte landen, sind dagegen stärker gestiegen als die Löhne. Von 2019 bis 2024 verteuerte sich Haushaltsstrom in der EU laut der Internationalen Energieagentur (IEA) im Schnitt um 36 Prozent. In denselben Jahren wuchsen die Nettoeinkommen eines Paares mit zwei Verdienern und zwei Kindern um 25 Prozent, die allgemeine Inflation betrug 22 Prozent.[^1]
 

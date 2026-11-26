@@ -22,6 +22,10 @@ cover_credit: "Photo: Ivan Radic / [Wikimedia Commons](https://commons.wikimedia
 cover_credit_de: "Foto: Ivan Radic / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Electric_car_charging_%289213%29.jpg), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)"
 excerpt: "A cut of 87.5 percent rather than 100, credits for steel, and zero-emission status for e-fuel cars: what the committee agreed, who gains from it, and what it means for the switch to electric cars."
 excerpt_de: "87,5 statt 100 Prozent, Gutschriften für Stahl und E-Fuel-Autos mit Null-Emissions-Status: was der Ausschuss beschlossen hat, wer davon profitiert und was es für den Umstieg aufs Elektroauto heißt."
+seo_title: "EU 2035 Car CO₂ Rules: Committee Backs an 87.5% Target"
+seo_title_de: "Verbrenner-Aus 2035: EU-Ausschuss will 87,5 % statt 100 %"
+seo_description: "The European Parliament's environment committee voted 48 to 30 to cut the 2035 car target to 87.5% and treat e-fuel cars as zero-emission. Not yet law."
+seo_description_de: "Mit 48 zu 30 Stimmen will der EU-Umweltausschuss das Pkw-Ziel für 2035 auf 87,5 % senken und E-Fuel-Autos als emissionsfrei werten. Das Plenum folgt."
 body_de: |
   Zu den Symbolprojekten des europäischen Green Deal gehörte, dass in der EU ab 2035 nur noch Neuwagen ohne CO₂-Ausstoß zugelassen werden sollten. An dieser Linie wird nun gerüttelt. Am 4. November stimmte der Umweltausschuss des Europäischen Parlaments (ENVI) mit **48 zu 30 Stimmen bei zwei Enthaltungen** für eine deutliche Lockerung.[^1]
 

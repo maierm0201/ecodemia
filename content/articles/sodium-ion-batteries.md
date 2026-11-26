@@ -22,6 +22,10 @@ cover_credit: "Chemist Ronald Väli demonstrates a self-made sodium-ion battery.
 cover_credit_de: "Der Chemiker Ronald Väli zeigt eine selbst gebaute Natrium-Ionen-Batterie. Foto: Tavo Romann / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Na-ion_battery_scientist2.jpg), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
 excerpt: "In 2025, output was under 1 percent of lithium-ion's. A 60-gigawatt-hour supply contract and CATL's plans for mass production could change that. Where sodium-ion batteries already make sense, and where they do not yet."
 excerpt_de: "2025 erreichte die Produktion nicht einmal 1 Prozent der Lithium-Ionen-Menge. Ein Liefervertrag über 60 Gigawattstunden und CATLs Pläne für die Serienfertigung könnten das ändern. Wo Natrium-Ionen-Akkus schon sinnvoll sind und wo noch nicht."
+seo_title: "Sodium-Ion Batteries: Mass Production Without Lithium"
+seo_title_de: "Natrium-Ionen-Akku: Salz statt Lithium geht in Serie"
+seo_description: "CATL aims to make sodium-ion cells at full scale by the end of 2026. They contain no lithium and work well in the cold, but store less energy."
+seo_description_de: "CATL will bis Ende 2026 Natrium-Ionen-Zellen in vollem Umfang fertigen. Sie kommen ohne Lithium aus und arbeiten gut bei Kälte, speichern aber weniger."
 body_de: |
   Natrium zählt zu den häufigsten Elementen auf der Erde; in jedem Körnchen Kochsalz steckt etwas davon. Seit Jahrzehnten arbeiten Forschende daran, es in Batterien statt Lithium zu verwenden. 2026 verlässt diese Idee endlich das Labor und zieht in die Fabrik ein.
 

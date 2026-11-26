@@ -22,6 +22,10 @@ cover_credit: "The Weesow-Willmersdorf solar park in Brandenburg, Germany. Photo
 cover_credit_de: "Der Solarpark Weesow-Willmersdorf in Brandenburg. Foto: Paul Langrock für EnBW / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Solarpark_Weesow-Willmersdorf.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)"
 excerpt: "Over 600 gigawatts of solar capacity added in one year, and the biggest jump in power generation ever recorded from a single source outside a recovery. What the IEA data show, and why the Alpine countries are losing pace."
 excerpt_de: "Über 600 Gigawatt neue Solarleistung in einem einzigen Jahr und der stärkste Anstieg der Stromerzeugung, den eine einzelne Quelle außerhalb einer Erholungsphase je verzeichnet hat. Was die IEA-Daten zeigen und warum die Alpenländer an Tempo verlieren."
+seo_title: "Solar Becomes the Biggest Source of New Energy in 2025"
+seo_title_de: "Photovoltaik 2025: Solar erstmals größte neue Energiequelle"
+seo_description: "In 2025, solar covered more than 25% of the growth in global energy demand, gas 17% (IEA). Why Austria and Switzerland installed less than a year earlier."
+seo_description_de: "Solarenergie deckte 2025 über 25 % des Anstiegs der weltweiten Energienachfrage, Gas 17 % (IEA). Warum Österreich und die Schweiz weniger PV zubauten."
 body_de: |
   Noch nie hat eine moderne erneuerbare Quelle mehr als alle anderen dazu beigetragen, den steigenden Energiebedarf der Welt zu decken. Laut dem Global Energy Review der Internationalen Energieagentur deckte Solarenergie 2025 mehr als 25 Prozent des Anstiegs der weltweiten Energienachfrage, vor Erdgas mit 17 Prozent. Zusammengenommen lieferten emissionsarme Quellen wie Solar, Wind, Atomkraft und Wasserkraft fast 60 Prozent des Zuwachses.[^1]
 

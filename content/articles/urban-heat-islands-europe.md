@@ -22,6 +22,10 @@ cover_credit: "Shade under the plane trees of the Platanenallee in Tübingen. Ph
 cover_credit_de: "Schatten unter den Platanen der Platanenallee in Tübingen. Foto: Dktue / [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Platanenallee-5.jpg), gemeinfrei ([CC0](https://creativecommons.org/publicdomain/zero/1.0/))"
 excerpt: "By day, asphalt and concrete soak up heat; at night, when bodies need to recover, they give it off again. The toll of summer 2026, why cities intensify heat, and which measures are backed by evidence."
 excerpt_de: "Tagsüber nehmen Asphalt und Beton Hitze auf, nachts geben sie sie wieder ab, wenn der Körper sich erholen muss. Die Bilanz des Sommers 2026, warum Städte Hitze verstärken und welche Maßnahmen nachweislich helfen."
+seo_title: "Urban Heat Islands: Lessons From Europe's Deadliest Summer"
+seo_title_de: "Städtische Hitzeinseln: Lehren aus dem Hitzesommer 2026"
+seo_description: "A new study estimates 50,391 heat-related excess deaths in 854 European cities in summer 2026. Why cities trap heat, and how trees can help."
+seo_description_de: "Eine Studie schätzt 50.391 hitzebedingte zusätzliche Todesfälle in 854 europäischen Städten im Sommer 2026. Warum Städte Hitze speichern und was Bäume tun."
 body_de: |
   Kein Sommer in Europa forderte nach solchen Auswertungen bislang so viele Todesopfer wie der von 2026. Forschende des Imperial College London kommen in einer Studie für die Fachzeitschrift Nature Health für 854 europäische Städte zwischen Juni und August auf geschätzt **50.391 hitzebedingte zusätzliche Todesfälle**.[^1] Etwa **65 Prozent** davon gehen nach ihrer Analyse auf den Klimawandel zurück. Den bisherigen Höchstwert gab es 2022 mit rund 29.500.[^1][^2]
 
