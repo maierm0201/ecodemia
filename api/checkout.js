@@ -145,7 +145,7 @@ module.exports = async (req, res) => {
     integration_identifier: 'hosted_web_0001',
     origin_context: 'web',
     branding_settings: {
-      background_color: '#dfe5e1',
+      background_color: '#ffffff',
       button_color: '#0b3d2b',
       font_family: 'default',
       border_style: 'rounded',
