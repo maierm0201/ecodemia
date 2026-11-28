@@ -23,6 +23,7 @@ const MIN_EUR = 3;
 const MAX_EUR = 400;
 const STRIPE_API = 'https://api.stripe.com/v1';
 const PAGE = { en: '/support', de: '/de/unterstuetzen' };
+const THANKS = { en: '/support/thanks', de: '/de/unterstuetzen/danke' };
 
 // ─── Best-effort rate limit (per serverless instance; add a Vercel Firewall rule for a hard limit)
 const WINDOW_MS = 10 * 60 * 1000;
@@ -131,7 +132,7 @@ module.exports = async (req, res) => {
 
   const session = {
     locale: lang,
-    success_url: page + '?status=thanks',
+    success_url: 'https://' + host + THANKS[lang] + '?type=' + mode,
     cancel_url: page + '?status=cancelled',
     billing_address_collection: 'auto',
     // Optional name field, so invoices can be addressed to the supporter

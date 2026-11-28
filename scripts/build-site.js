@@ -114,6 +114,13 @@ const PAGES = {
     desc: { en: 'Terms for using Ecodemia and for supporting it with a payment via Stripe: monthly or one-time, cancel any time, 14-day withdrawal right and full refunds.',
             de: 'Bedingungen für die Nutzung von Ecodemia und Unterstützung per Zahlung über Stripe: monatlich oder einmalig, jederzeit kündbar, 14 Tage Rücktrittsrecht.' },
   },
+  thanks: {
+    tpl: 'thanks_page/code.html', noindex: true,
+    title: { en: 'Thank You for Supporting Ecodemia | Ecodemia', de: 'Danke für Ihre Unterstützung | Ecodemia' },
+    ogTitle: { en: 'Thank you for supporting Ecodemia', de: 'Danke für Ihre Unterstützung' },
+    desc: { en: 'Thank you for supporting Ecodemia. Your receipt and invoice arrive by email; monthly support can be changed or cancelled at any time.',
+            de: 'Danke für Ihre Unterstützung von Ecodemia. Beleg und Rechnung kommen per E-Mail; monatliche Unterstützung jederzeit änderbar oder kündbar.' },
+  },
   climate: {
     title: { en: 'Climate News and Science for Europe | Ecodemia', de: 'Klimawandel: Nachrichten und Analysen | Ecodemia' },
     desc: { en: 'Climate change news and analysis: climate science, extreme weather, El Niño, heat in cities and what a warming world means for Europe. With all sources.',
@@ -245,7 +252,7 @@ function headTags(o) {
   const size = o.image ? P.imageSize(o.image) : { w: 1200, h: 630 };
   const t = [
     '<meta name="description" content="' + attr(o.desc) + '">',
-    '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">',
+    '<meta name="robots" content="' + (o.noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1') + '">',
     '<link rel="canonical" href="' + attr(abs(u[o.lang])) + '">',
     '<link rel="alternate" hreflang="en" href="' + attr(abs(u.en)) + '">',
     '<link rel="alternate" hreflang="de" href="' + attr(abs(u.de)) + '">',
@@ -321,7 +328,7 @@ for (const key of Object.keys(PAGES)) {
       tpl: p.tpl, lang, key, section: p.section, urls,
       title: p.title[lang],
       ogTitle: (p.ogTitle && p.ogTitle[lang]) || brandless(p.title[lang]),
-      desc: p.desc[lang], ld,
+      desc: p.desc[lang], ld, noindex: p.noindex,
       transform: key === 'home' ? h => P.home(h, articles, lang)
         : p.section ? h => P.section(h, articles, lang, key) : null,
     });
@@ -388,7 +395,7 @@ fs.writeFileSync(path.join(DIST, 'robots.txt'),
 
 // sitemap.xml — every page in both languages, each listing its alternates
 const pairs = [
-  ...Object.keys(PAGES).map(k => ({ en: R.url(k, 'en'), de: R.url(k, 'de'),
+  ...Object.keys(PAGES).filter(k => !PAGES[k].noindex).map(k => ({ en: R.url(k, 'en'), de: R.url(k, 'de'),
     lastmod: (k === 'home' || PAGES[k].section) ? newest : null })),
   ...articles.map(a => ({ en: R.articleUrl(a.slug, 'en'), de: R.articleUrl(a.slug, 'de'),
     lastmod: parseDate(a.updated) || parseDate(a.date) })),

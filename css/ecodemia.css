@@ -442,3 +442,11 @@ a:hover .photo img { transform: scale(1.03); }
   .support-box { padding: 20px; }
   .support-amounts { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ── Thank-you page ─────────────────────────────────────────── */
+.thanks-head { font-size: 22px; }
+.thanks-list { margin: 0; padding-left: 1.2em; display: grid; gap: 10px; font-family: var(--f-body); font-size: 18px; line-height: 1.5; color: var(--ink); }
+.thanks-list li::marker { color: var(--forest); }
+.thanks-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
+.thanks-actions .support-cta { display: inline-block; width: auto; text-align: center; }
+.thanks-manage { font: 600 15px/1.2 var(--f-head); color: var(--forest); text-decoration: underline; text-underline-offset: 3px; }

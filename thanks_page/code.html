@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thank you for supporting Ecodemia</title>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/brand/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/brand/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Ecodemia (English)" href="/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Ecodemia (Deutsch)" href="/feed-de.xml">
+<meta name="theme-color" content="#0b3d2b">
+<meta name="description" content="Thank you for supporting Ecodemia.">
+<link rel="stylesheet" href="/css/ecodemia.css">
+</head>
+<body data-page="thanks">
+<div id="site-header"></div>
+
+<main class="wrap">
+  <header class="page-head">
+    <span class="label" data-en="Thank you" data-de="Danke">Thank you</span>
+    <h1 data-en="Thank you for supporting Ecodemia" data-de="Danke für Ihre Unterstützung">Thank you for supporting Ecodemia</h1>
+    <p class="stand support-lede" data-en="Your support helps keep independent, source-based environmental journalism free for everyone to read." data-de="Sie helfen damit, unabhängigen, quellengestützten Umweltjournalismus für alle frei lesbar zu halten.">Your support helps keep independent, source-based environmental journalism free for everyone to read.</p>
+  </header>
+
+  <section class="support-box thanks-box" aria-labelledby="next-head">
+    <h2 id="next-head" class="thanks-head" data-en="What happens next" data-de="Wie es weitergeht">What happens next</h2>
+    <ul class="thanks-list">
+      <li data-en="Stripe emails you a receipt and an invoice within a few minutes. If nothing arrives, please check your spam folder." data-de="Stripe schickt Ihnen in wenigen Minuten Beleg und Rechnung per E-Mail. Falls nichts ankommt, sehen Sie bitte im Spam-Ordner nach.">Stripe emails you a receipt and an invoice within a few minutes. If nothing arrives, please check your spam folder.</li>
+      <li class="if-monthly" data-en="Your monthly support renews automatically each month. You can change the amount or cancel at any time." data-de="Ihre monatliche Unterstützung verlängert sich automatisch jeden Monat. Sie können den Betrag jederzeit ändern oder kündigen.">Your monthly support renews automatically each month. You can change the amount or cancel at any time.</li>
+      <li data-en="Questions or a refund within 14 days? Write to info@ecodemia.org." data-de="Fragen oder eine Erstattung innerhalb von 14 Tagen? Schreiben Sie an info@ecodemia.org.">Questions or a refund within 14 days? Write to info@ecodemia.org.</li>
+    </ul>
+    <p class="thanks-actions">
+      <a class="support-cta" href="/" data-en="Read the latest news" data-de="Zu den neuesten Nachrichten">Read the latest news</a>
+      <a class="thanks-manage if-monthly" id="manage-link" href="#" hidden data-en="Manage your support" data-de="Unterstützung verwalten">Manage your support</a>
+    </p>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="/js/routes.js"></script>
+<script src="/js/ecodemia.js"></script>
+<script>
+(function () {
+  'use strict';
+  // Stripe customer portal login links, the same as on the support page
+  var PORTAL_LIVE = '';
+  var PORTAL_TEST = 'https://billing.stripe.com/p/login/test_4gM3cvbBJ94c03BcTy9IQ00';
+  var PORTAL_URL = /^(www\.)?ecodemia\.org$/.test(location.hostname) ? PORTAL_LIVE : PORTAL_TEST;
+
+  var isDE = window.Eco.isDE;
+  document.querySelectorAll('[data-en]').forEach(function (el) { el.textContent = el.getAttribute(isDE ? 'data-de' : 'data-en'); });
+
+  // ?type=monthly|once comes from the checkout function's success link
+  var once = new URLSearchParams(location.search).get('type') === 'once';
+  if (once) document.querySelectorAll('.if-monthly').forEach(function (el) { el.hidden = true; });
+  var manage = document.getElementById('manage-link');
+  if (!once && /^https:\/\/billing\.stripe\.com\//.test(PORTAL_URL)) { manage.href = PORTAL_URL; manage.hidden = false; }
+}());
+</script>
+</body>
+</html>

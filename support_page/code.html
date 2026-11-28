@@ -25,7 +25,6 @@
     <p class="stand support-lede" data-en="Ecodemia is independent and free to read, and every article lists its sources. Reader support pays for the research and keeps it that way. Monthly support lets us plan ahead; any amount helps." data-de="Ecodemia ist unabhängig und frei lesbar, und jeder Artikel nennt seine Quellen. Die Unterstützung unserer Leserinnen und Leser finanziert die Recherche und sorgt dafür, dass das so bleibt. Monatliche Beiträge machen uns planbar; jeder Betrag hilft.">Ecodemia is independent and free to read, and every article lists its sources. Reader support pays for the research and keeps it that way. Monthly support lets us plan ahead; any amount helps.</p>
   </header>
 
-  <p class="support-status" id="status-thanks" role="status" hidden data-en="Thank you for supporting Ecodemia! Stripe will email you a receipt and invoice in a few minutes." data-de="Danke, dass Sie Ecodemia unterstützen! Stripe schickt Ihnen in wenigen Minuten Beleg und Rechnung per E-Mail.">Thank you for supporting Ecodemia! Stripe will email you a receipt and invoice in a few minutes.</p>
   <p class="support-status is-muted" id="status-cancelled" role="status" hidden data-en="Payment cancelled. Nothing was charged." data-de="Zahlung abgebrochen. Es wurde nichts abgebucht.">Payment cancelled. Nothing was charged.</p>
 
   <form class="support-box" id="support-form" novalidate>
@@ -115,9 +114,9 @@
     });
   }
 
-  var status = new URLSearchParams(location.search).get('status');
-  if (status === 'thanks' || status === 'cancelled') {
-    document.getElementById('status-' + status).hidden = false;
+  // Back from Stripe without paying (a successful payment goes to the thank-you page)
+  if (new URLSearchParams(location.search).get('status') === 'cancelled') {
+    document.getElementById('status-cancelled').hidden = false;
     history.replaceState(null, '', location.pathname);
   }
 

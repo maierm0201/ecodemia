@@ -21,6 +21,7 @@
     privacy:  { en: '/privacy',  de: '/de/datenschutz' },
     support:  { en: '/support',  de: '/de/unterstuetzen' },
     terms:    { en: '/terms',    de: '/de/nutzungsbedingungen' },
+    thanks:   { en: '/support/thanks', de: '/de/unterstuetzen/danke' },
   };
   const SECTIONS = ['climate', 'wildlife', 'energy', 'living', 'tech', 'policy'];
   const ARTICLE = { en: '/article/', de: '/de/artikel/' };
