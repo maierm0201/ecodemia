@@ -12,6 +12,7 @@
 //   STRIPE_PRODUCT_ONCE      prod_… of "Ecodemia Support (one-time)"
 //   STRIPE_REQUIRE_TERMS     optional, "1" = supporters must accept the terms of use on
 //                            Stripe's page (needs the terms URL set in Stripe first)
+//   STRIPE_BRAND_ICON_FILE   optional, file_… of the checkout icon (Stripe → Checkout → Implement)
 //
 // Security: same-origin requests only, amount and mode validated here (the
 // browser's values are never trusted), a best-effort rate limit per IP, and
@@ -138,6 +139,19 @@ module.exports = async (req, res) => {
     // Terms checkbox on Stripe's page. Only works once the terms URL is set in Stripe
     // (Settings → Public details), so it is switched on with STRIPE_REQUIRE_TERMS=1.
     consent_collection: process.env.STRIPE_REQUIRE_TERMS === '1' ? { terms_of_service: 'required' } : undefined,
+    // Design of the "Full page 1" checkout configured in Stripe (Checkout → Checkouts).
+    // The icon is a Stripe file ID, which differs between sandbox and live account.
+    ui_mode: 'hosted_page',
+    integration_identifier: 'hosted_web_0001',
+    origin_context: 'web',
+    branding_settings: {
+      background_color: '#dfe5e1',
+      button_color: '#0b3d2b',
+      font_family: 'default',
+      border_style: 'rounded',
+      icon: /^file_\w+$/.test(process.env.STRIPE_BRAND_ICON_FILE || '')
+        ? { type: 'file', file: process.env.STRIPE_BRAND_ICON_FILE } : undefined,
+    },
     metadata: { source: 'support-page', lang },
   };
 
