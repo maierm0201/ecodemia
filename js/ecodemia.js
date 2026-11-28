@@ -38,8 +38,6 @@
       sections: 'Sections', aboutHead: 'About', aboutUs: 'About Ecodemia', standards: 'Editorial standards',
       corrections: 'Corrections', privacy: 'Privacy', terms: 'Terms of use', imprint: 'Imprint',
       minRead: 'min read', sources: 'sources', source: 'source', checked: 'Checked', updated: 'Updated', published: 'Published',
-      termsTitle: 'Terms of use',
-      termsBody: 'Ecodemia articles may be read and shared via link. Texts are © the media owner named in the imprint. Photos remain the property of their creators and are used under the licences named below each image. Links to external sources lead to third-party websites for whose content Ecodemia is not responsible.',
     },
     de: {
       climate: 'Klima', wildlife: 'Tierwelt', energy: 'Energie', living: 'Leben', tech: 'Technologie', policy: 'Politik',
@@ -48,8 +46,6 @@
       sections: 'Rubriken', aboutHead: 'Über uns', aboutUs: 'Über Ecodemia', standards: 'Redaktionelle Standards',
       corrections: 'Korrekturen', privacy: 'Datenschutz', terms: 'Nutzungsbedingungen', imprint: 'Impressum',
       minRead: 'Min. Lesezeit', sources: 'Quellen', source: 'Quelle', checked: 'Geprüft', updated: 'Aktualisiert', published: 'Veröffentlicht',
-      termsTitle: 'Nutzungsbedingungen',
-      termsBody: 'Ecodemia-Artikel dürfen gelesen und per Link geteilt werden. Texte © des im Impressum genannten Medieninhabers. Fotos bleiben Eigentum ihrer Urheber und werden unter den jeweils unter dem Bild genannten Lizenzen verwendet. Links zu externen Quellen führen zu Websites Dritter, für deren Inhalte Ecodemia nicht verantwortlich ist.',
     },
   };
   function t(key) { return (T[lang] && T[lang][key]) || T.en[key] || key; }
@@ -211,29 +207,11 @@
         '<div><span class="label">' + esc(t('aboutHead')) + '</span><ul>' +
           li(href('about'), t('aboutUs')) + li(href('about') + '#standards', t('standards')) + li(href('about') + '#corrections', t('corrections')) +
           li(href('imprint'), t('imprint')) + li(href('privacy'), t('privacy')) +
-          li('#', t('terms'), ' data-policy="terms"') +
+          li(href('terms'), t('terms')) +
         '</ul></div>' +
       '</div><div class="footer-base"><div class="wrap"><span>© 2026 Ecodemia</span>' + langToggle() + '</div></div></footer>';
   }
 
-  function initPolicies() {
-    document.querySelectorAll('[data-policy]').forEach(el => el.addEventListener('click', e => {
-      e.preventDefault();
-      const which = 'terms';
-      const dlg = document.createElement('div');
-      dlg.className = 'scrim';
-      dlg.style.display = 'grid'; dlg.style.placeItems = 'center'; dlg.style.zIndex = '300'; dlg.style.padding = '20px';
-      dlg.innerHTML = '<div role="dialog" aria-modal="true" style="background:var(--paper);max-width:520px;padding:28px;border-radius:4px;display:grid;gap:14px">' +
-        '<h2 style="font-size:24px">' + esc(t(which + 'Title')) + '</h2>' +
-        '<p style="font-family:var(--f-body);font-size:17px;color:var(--sub);line-height:1.5">' + esc(t(which + 'Body')) + '</p>' +
-        '<button type="button" style="justify-self:start;font:600 14px var(--f-head);background:var(--ink);color:var(--paper);padding:10px 18px;border-radius:3px">' + esc(t('close')) + '</button></div>';
-      document.body.appendChild(dlg);
-      const close = () => dlg.remove();
-      dlg.querySelector('button').addEventListener('click', close);
-      dlg.addEventListener('click', ev => { if (ev.target === dlg) close(); });
-      dlg.querySelector('button').focus();
-    }));
-  }
 
   // ─── Public API for page scripts ───────────────────────────────────────────
   window.Eco = {
@@ -245,7 +223,6 @@
     renderHeader();
     renderDrawer();
     renderFooter();
-    initPolicies();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Support Ecodemia</title>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/brand/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/brand/favicon/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="/assets/brand/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Ecodemia (English)" href="/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Ecodemia (Deutsch)" href="/feed-de.xml">
+<meta name="theme-color" content="#0b3d2b">
+<meta name="description" content="Support Ecodemia with a monthly or one-time payment.">
+<link rel="stylesheet" href="/css/ecodemia.css">
+</head>
+<body data-page="support">
+<div id="site-header"></div>
+
+<main class="wrap">
+  <header class="page-head">
+    <span class="label" data-en="Support" data-de="Unterstützen">Support</span>
+    <h1 data-en="Support independent environmental journalism" data-de="Unabhängigen Umwelt&shy;journalismus unterstützen">Support independent environmental journalism</h1>
+    <p class="stand support-lede" data-en="Ecodemia is independent and free to read, and every article lists its sources. Reader support pays for the research and keeps it that way. Monthly support lets us plan ahead; any amount helps." data-de="Ecodemia ist unabhängig und frei lesbar, und jeder Artikel nennt seine Quellen. Die Unterstützung unserer Leserinnen und Leser finanziert die Recherche und sorgt dafür, dass das so bleibt. Monatliche Beiträge machen uns planbar; jeder Betrag hilft.">Ecodemia is independent and free to read, and every article lists its sources. Reader support pays for the research and keeps it that way. Monthly support lets us plan ahead; any amount helps.</p>
+  </header>
+
+  <p class="support-status" id="status-thanks" role="status" hidden data-en="Thank you for supporting Ecodemia! Stripe will email you a receipt and invoice in a few minutes." data-de="Danke, dass Sie Ecodemia unterstützen! Stripe schickt Ihnen in wenigen Minuten Beleg und Rechnung per E-Mail.">Thank you for supporting Ecodemia! Stripe will email you a receipt and invoice in a few minutes.</p>
+  <p class="support-status is-muted" id="status-cancelled" role="status" hidden data-en="Payment cancelled. Nothing was charged." data-de="Zahlung abgebrochen. Es wurde nichts abgebucht.">Payment cancelled. Nothing was charged.</p>
+
+  <form class="support-box" id="support-form" novalidate>
+    <fieldset class="support-freq">
+      <legend class="visually-hidden" data-en="How often" data-de="Wie oft">How often</legend>
+      <input type="radio" name="freq" id="freq-monthly" value="monthly" checked>
+      <label for="freq-monthly" data-en="Monthly" data-de="Monatlich">Monthly</label>
+      <input type="radio" name="freq" id="freq-once" value="once">
+      <label for="freq-once" data-en="One-time" data-de="Einmalig">One-time</label>
+    </fieldset>
+
+    <fieldset class="support-amounts" id="monthly-amounts">
+      <legend class="label" data-en="Amount per month" data-de="Betrag pro Monat">Amount per month</legend>
+      <input type="radio" name="amount" id="amt-5" value="5"><label for="amt-5" data-en="€5" data-de="5 €">€5</label>
+      <input type="radio" name="amount" id="amt-10" value="10" checked><label for="amt-10" data-en="€10" data-de="10 €">€10</label>
+      <input type="radio" name="amount" id="amt-15" value="15"><label for="amt-15" data-en="€15" data-de="15 €">€15</label>
+      <input type="radio" name="amount" id="amt-25" value="25"><label for="amt-25" data-en="€25" data-de="25 €">€25</label>
+      <input type="radio" name="amount" id="amt-50" value="50"><label for="amt-50" data-en="€50" data-de="50 €">€50</label>
+      <input type="radio" name="amount" id="amt-100" value="100"><label for="amt-100" data-en="€100" data-de="100 €">€100</label>
+      <input type="radio" name="amount" id="amt-other" value="other"><label for="amt-other" class="amt-other" data-en="Other amount" data-de="Anderer Betrag">Other amount</label>
+    </fieldset>
+
+    <div class="support-custom" id="custom-row" hidden>
+      <label for="custom-amount" class="label" id="custom-label" data-en="Your amount in euros (3–400)" data-de="Ihr Betrag in Euro (3–400)">Your amount in euros (3–400)</label>
+      <span class="support-input"><span aria-hidden="true">€</span><input type="number" id="custom-amount" inputmode="numeric" min="3" max="400" step="1" value="20"></span>
+    </div>
+
+    <button type="submit" class="support-cta" id="support-cta">Support with €10 a month</button>
+    <p class="support-msg" id="support-msg" role="alert" hidden></p>
+    <p class="support-note" data-en="You pay on Stripe’s secure checkout page: card, Apple Pay, Google Pay, SEPA Direct Debit, EPS or PayPal. Monthly support can be cancelled at any time." data-de="Sie bezahlen auf der sicheren Bezahlseite von Stripe: Karte, Apple Pay, Google Pay, SEPA-Lastschrift, EPS oder PayPal. Monatliche Unterstützung ist jederzeit kündbar.">You pay on Stripe’s secure checkout page: card, Apple Pay, Google Pay, SEPA Direct Debit, EPS or PayPal. Monthly support can be cancelled at any time.</p>
+  </form>
+
+  <div class="page-body prose">
+    <!-- ───────────── DEUTSCH ───────────── -->
+    <div data-lang-block="de">
+      <h2>Gut zu wissen</h2>
+      <ul>
+        <li><strong>Jederzeit kündbar.</strong> Monatliche Unterstützung endet zum Ende des laufenden Monats. Kündigen, den Betrag oder das Zahlungsmittel ändern können Sie selbst über „Unterstützung verwalten“ oder mit einer E-Mail an <a href="mailto:info@ecodemia.org">info@ecodemia.org</a>.</li>
+        <li><strong>Sicher bezahlen.</strong> Die Zahlung läuft über Stripe. Ihre Karten- und Kontodaten erreichen Ecodemia nie.</li>
+        <li><strong>Rechnung per E-Mail.</strong> Für jede Zahlung erhalten Sie automatisch eine Rechnung. Umsatzsteuerfrei aufgrund der Kleinunternehmerregelung.</li>
+        <li><strong>Keine Spende im steuerlichen Sinn.</strong> Ecodemia wird als Einzelunternehmen in Graz betrieben (siehe <a href="/imprint">Impressum</a>) und ist keine gemeinnützige Organisation. Ihre Unterstützung ist eine freiwillige Zahlung an das Unternehmen und steuerlich nicht absetzbar. Alle Artikel bleiben für alle frei lesbar.</li>
+        <li><strong>Größere Beträge oder Partnerschaften?</strong> Schreiben Sie uns an <a href="mailto:info@ecodemia.org">info@ecodemia.org</a>.</li>
+      </ul>
+      <p class="support-portal" hidden><a class="portal-link" href="#">Unterstützung verwalten</a></p>
+      <p>Es gelten unsere <a href="/terms">Nutzungsbedingungen</a> (Teil B: Unterstützung per Zahlung, mit Widerrufsbelehrung). Wie wir Zahlungsdaten verarbeiten, steht in der <a href="/privacy">Datenschutzerklärung</a>.</p>
+    </div>
+
+    <!-- ───────────── ENGLISH ───────────── -->
+    <div data-lang-block="en" hidden>
+      <h2>Good to know</h2>
+      <ul>
+        <li><strong>Cancel any time.</strong> Monthly support ends at the end of the current month. You can cancel or change the amount or payment method yourself via “Manage your support”, or by emailing <a href="mailto:info@ecodemia.org">info@ecodemia.org</a>.</li>
+        <li><strong>Secure payment.</strong> Payments are processed by Stripe. Your card and bank details never reach Ecodemia.</li>
+        <li><strong>Invoice by email.</strong> You automatically receive an invoice for every payment. No VAT is charged under the Austrian small business scheme (Kleinunternehmerregelung).</li>
+        <li><strong>Not a tax-deductible donation.</strong> Ecodemia is run as a sole proprietorship in Graz, Austria (see <a href="/imprint">imprint</a>), not as a charity. Your support is a voluntary payment to the business and is not tax-deductible. Every article stays free to read for everyone.</li>
+        <li><strong>Larger amounts or partnerships?</strong> Write to us at <a href="mailto:info@ecodemia.org">info@ecodemia.org</a>.</li>
+      </ul>
+      <p class="support-portal" hidden><a class="portal-link" href="#">Manage your support</a></p>
+      <p>Our <a href="/terms">terms of use</a> apply (part B: support by payment, including the right of withdrawal). How we process payment data is explained in our <a href="/privacy">privacy policy</a>.</p>
+    </div>
+  </div>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="/js/routes.js"></script>
+<script src="/js/ecodemia.js"></script>
+<script>
+(function () {
+  'use strict';
+  // Stripe customer portal login links (Stripe → Settings → Billing → Customer portal).
+  // Not secret. The live site uses the live link (empty until it exists: the "manage"
+  // link then stays hidden); previews and local tests use the sandbox link.
+  var PORTAL_LIVE = '';
+  var PORTAL_TEST = 'https://billing.stripe.com/p/login/test_4gM3cvbBJ94c03BcTy9IQ00';
+  var PORTAL_URL = /^(www\.)?ecodemia\.org$/.test(location.hostname) ? PORTAL_LIVE : PORTAL_TEST;
+  var MIN = 3, MAX = 400;
+
+  var isDE = window.Eco.isDE;
+  document.querySelectorAll('[data-lang-block]').forEach(function (el) { el.hidden = el.getAttribute('data-lang-block') !== (isDE ? 'de' : 'en'); });
+  document.querySelectorAll('[data-en]').forEach(function (el) { el.textContent = el.getAttribute(isDE ? 'data-de' : 'data-en'); });
+
+  if (/^https:\/\/billing\.stripe\.com\//.test(PORTAL_URL)) {
+    document.querySelectorAll('.support-portal').forEach(function (p) {
+      p.querySelector('a').href = PORTAL_URL;
+      p.hidden = false;
+    });
+  }
+
+  var status = new URLSearchParams(location.search).get('status');
+  if (status === 'thanks' || status === 'cancelled') {
+    document.getElementById('status-' + status).hidden = false;
+    history.replaceState(null, '', location.pathname);
+  }
+
+  var form = document.getElementById('support-form');
+  var monthlyAmounts = document.getElementById('monthly-amounts');
+  var customRow = document.getElementById('custom-row');
+  var custom = document.getElementById('custom-amount');
+  var customLabel = document.getElementById('custom-label');
+  var cta = document.getElementById('support-cta');
+  var msg = document.getElementById('support-msg');
+
+  var TXT = isDE ? {
+    monthly: function (a) { return 'Mit ' + a + ' € monatlich unterstützen'; },
+    once: function (a) { return 'Einmalig mit ' + a + ' € unterstützen'; },
+    pick: 'Betrag wählen',
+    onceLabel: 'Ihr Betrag in Euro (3–400)',
+    otherLabel: 'Ihr monatlicher Betrag in Euro (3–400)',
+    busy: 'Weiter zu Stripe …',
+    input: 'Bitte geben Sie einen ganzen Betrag zwischen 3 € und 400 € ein.',
+    rate: 'Zu viele Versuche. Bitte versuchen Sie es in ein paar Minuten noch einmal.',
+    unavailable: 'Die Online-Zahlung ist noch nicht verfügbar. Bitte versuchen Sie es später noch einmal oder schreiben Sie an info@ecodemia.org.',
+    error: 'Etwas ist schiefgegangen. Es wurde nichts abgebucht. Bitte versuchen Sie es noch einmal.',
+  } : {
+    monthly: function (a) { return 'Support with €' + a + ' a month'; },
+    once: function (a) { return 'Support once with €' + a; },
+    pick: 'Choose an amount',
+    onceLabel: 'Your amount in euros (3–400)',
+    otherLabel: 'Your monthly amount in euros (3–400)',
+    busy: 'Opening Stripe …',
+    input: 'Please enter a whole amount between €3 and €400.',
+    rate: 'Too many attempts. Please try again in a few minutes.',
+    unavailable: 'Online payment isn’t available yet. Please try again later or write to info@ecodemia.org.',
+    error: 'Something went wrong. Nothing was charged. Please try again.',
+  };
+
+  function freq() { return form.freq.value; }
+  function selected() {
+    if (freq() === 'once' || form.amount.value === 'other') {
+      var v = custom.value.trim();
+      return /^\d+$/.test(v) ? Number(v) : NaN;
+    }
+    return Number(form.amount.value);
+  }
+  function valid(a) { return Number.isInteger(a) && a >= MIN && a <= MAX; }
+
+  function update() {
+    var once = freq() === 'once';
+    var other = !once && form.amount.value === 'other';
+    monthlyAmounts.hidden = once;
+    customRow.hidden = !(once || other);
+    customLabel.textContent = once ? TXT.onceLabel : TXT.otherLabel;
+    var a = selected();
+    cta.textContent = valid(a) ? (once ? TXT.once(a) : TXT.monthly(a)) : TXT.pick;
+    msg.hidden = true;
+  }
+
+  form.addEventListener('change', function (e) {
+    update();
+    if (e.target === form.querySelector('#amt-other') || (e.target.name === 'freq' && e.target.value === 'once')) custom.focus();
+  });
+  custom.addEventListener('input', update);
+
+  function fail(text) {
+    msg.textContent = text;
+    msg.hidden = false;
+    cta.disabled = false;
+    update();
+    msg.hidden = false;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var a = selected();
+    if (!valid(a)) { fail(TXT.input); custom.focus(); return; }
+    cta.disabled = true;
+    cta.textContent = TXT.busy;
+    fetch('/api/checkout', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ mode: freq(), amount: a, lang: isDE ? 'de' : 'en' }),
+    }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (d) { return { status: r.status, data: d }; });
+    }).then(function (r) {
+      if (r.status === 200 && /^https:\/\/checkout\.stripe\.com\//.test(r.data.url || '')) { location.assign(r.data.url); return; }
+      fail(r.status === 400 ? TXT.input : r.status === 429 ? TXT.rate : r.status === 503 ? TXT.unavailable : TXT.error);
+    }).catch(function () { fail(TXT.error); });
+  });
+
+  // Back from Stripe via the browser's back button: re-enable the form
+  window.addEventListener('pageshow', function () { cta.disabled = false; update(); });
+  update();
+}());
+</script>
+</body>
+</html>

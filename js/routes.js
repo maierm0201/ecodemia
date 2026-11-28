@@ -19,6 +19,8 @@
     about:    { en: '/about',    de: '/de/ueber-uns' },
     imprint:  { en: '/imprint',  de: '/de/impressum' },
     privacy:  { en: '/privacy',  de: '/de/datenschutz' },
+    support:  { en: '/support',  de: '/de/unterstuetzen' },
+    terms:    { en: '/terms',    de: '/de/nutzungsbedingungen' },
   };
   const SECTIONS = ['climate', 'wildlife', 'energy', 'living', 'tech', 'policy'];
   const ARTICLE = { en: '/article/', de: '/de/artikel/' };

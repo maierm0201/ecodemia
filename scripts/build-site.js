@@ -100,6 +100,20 @@ const PAGES = {
     desc: { en: 'Ecodemia privacy policy under the GDPR: no cookies for readers, no analytics or advertising, no forms. What our host processes and what rights you have.',
             de: 'Datenschutz bei Ecodemia nach DSGVO: keine Cookies für Lesende, keine Analyse- oder Werbedienste, keine Formulare. Was der Hoster verarbeitet, Ihre Rechte.' },
   },
+  support: {
+    tpl: 'support_page/code.html',
+    title: { en: 'Support Ecodemia: Independent Environmental News', de: 'Ecodemia unterstützen: unabhängiger Umweltjournalismus' },
+    ogTitle: { en: 'Support Ecodemia', de: 'Ecodemia unterstützen' },
+    desc: { en: 'Support Ecodemia with a monthly or one-time payment. Every article stays free to read. Pay securely via Stripe; cancel monthly support at any time.',
+            de: 'Ecodemia monatlich oder einmalig unterstützen. Alle Artikel bleiben frei lesbar. Sicher bezahlen über Stripe, monatliche Unterstützung jederzeit kündbar.' },
+  },
+  terms: {
+    tpl: 'terms_page/code.html',
+    title: { en: 'Terms of Use and Supporter Terms | Ecodemia', de: 'Nutzungsbedingungen und Unterstützung | Ecodemia' },
+    ogTitle: { en: 'Terms of use', de: 'Nutzungsbedingungen' },
+    desc: { en: 'Terms for using Ecodemia and for supporting it with a payment via Stripe: monthly or one-time, cancel any time, 14-day withdrawal right and full refunds.',
+            de: 'Bedingungen für die Nutzung von Ecodemia und Unterstützung per Zahlung über Stripe: monatlich oder einmalig, jederzeit kündbar, 14 Tage Rücktrittsrecht.' },
+  },
   climate: {
     title: { en: 'Climate News and Science for Europe | Ecodemia', de: 'Klimawandel: Nachrichten und Analysen | Ecodemia' },
     desc: { en: 'Climate change news and analysis: climate science, extreme weather, El Niño, heat in cities and what a warming world means for Europe. With all sources.',
